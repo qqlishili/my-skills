@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "62e97fb4-8b69-43a4-a9ac-1f708f022752",
+  "path": "chinese-commit-conventions",
+  "path_key": "chinese-commit-conventions",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/jnMetaCode/superpowers-zh",
+    "subpath": "skills\\chinese-commit-conventions",
+    "branch": null
+  }
+}

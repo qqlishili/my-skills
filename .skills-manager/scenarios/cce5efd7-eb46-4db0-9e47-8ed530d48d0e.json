@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "scenario_id": "cce5efd7-eb46-4db0-9e47-8ed530d48d0e",
+  "name": "全局",
+  "description": "Default startup scenario",
+  "icon": "briefcase",
+  "sort_order": 0
+}

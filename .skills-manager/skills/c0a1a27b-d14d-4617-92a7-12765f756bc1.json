@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "c0a1a27b-d14d-4617-92a7-12765f756bc1",
+  "path": "practice-cognition",
+  "path_key": "practice-cognition",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/HughYau/qiushi-skill",
+    "subpath": "skills\\practice-cognition",
+    "branch": null
+  }
+}

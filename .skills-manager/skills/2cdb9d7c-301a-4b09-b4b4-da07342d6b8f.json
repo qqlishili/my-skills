@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "2cdb9d7c-301a-4b09-b4b4-da07342d6b8f",
+  "path": "mass-line",
+  "path_key": "mass-line",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/HughYau/qiushi-skill",
+    "subpath": "skills\\mass-line",
+    "branch": null
+  }
+}

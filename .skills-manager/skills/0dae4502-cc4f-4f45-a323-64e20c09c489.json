@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "0dae4502-cc4f-4f45-a323-64e20c09c489",
+  "path": "proactive-self-improving-agent",
+  "path_key": "proactive-self-improving-agent",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "skillssh",
+    "ref": "yanhongxi-openclaw/proactive-self-improving-agent/proactive-self-improving-agent",
+    "subpath": null,
+    "branch": null
+  }
+}

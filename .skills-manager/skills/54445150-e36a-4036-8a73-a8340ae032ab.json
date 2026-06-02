@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "54445150-e36a-4036-8a73-a8340ae032ab",
+  "path": "spark-prairie-fire",
+  "path_key": "spark-prairie-fire",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/HughYau/qiushi-skill",
+    "subpath": "skills\\spark-prairie-fire",
+    "branch": null
+  }
+}

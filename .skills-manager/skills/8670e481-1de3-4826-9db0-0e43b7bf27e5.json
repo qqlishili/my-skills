@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "8670e481-1de3-4826-9db0-0e43b7bf27e5",
+  "path": "protracted-strategy",
+  "path_key": "protracted-strategy",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/HughYau/qiushi-skill",
+    "subpath": "skills\\protracted-strategy",
+    "branch": null
+  }
+}

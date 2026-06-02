@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "4db2a461-ab87-4df0-9aee-1ac4a069e420",
+  "path": "overall-planning",
+  "path_key": "overall-planning",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/HughYau/qiushi-skill",
+    "subpath": "skills\\overall-planning",
+    "branch": null
+  }
+}

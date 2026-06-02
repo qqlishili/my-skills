@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "20fcc097-a439-48c8-b2fc-592ab06c5dbd",
+  "path": "criticism-self-criticism",
+  "path_key": "criticism-self-criticism",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/HughYau/qiushi-skill",
+    "subpath": "skills\\criticism-self-criticism",
+    "branch": null
+  }
+}

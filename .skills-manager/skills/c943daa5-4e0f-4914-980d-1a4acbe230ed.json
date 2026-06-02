@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "c943daa5-4e0f-4914-980d-1a4acbe230ed",
+  "path": "arming-thought",
+  "path_key": "arming-thought",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/HughYau/qiushi-skill",
+    "subpath": "skills\\arming-thought",
+    "branch": null
+  }
+}

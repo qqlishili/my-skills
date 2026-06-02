@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "baafcc52-fa37-435b-89e1-a238f51cebd9",
+  "path": "pua-loop",
+  "path_key": "pua-loop",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/tanweai/pua",
+    "subpath": "skills\\pua-loop",
+    "branch": null
+  }
+}

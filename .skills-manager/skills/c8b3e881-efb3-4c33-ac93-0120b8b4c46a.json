@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "c8b3e881-efb3-4c33-ac93-0120b8b4c46a",
+  "path": "test-driven-development",
+  "path_key": "test-driven-development",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/jnMetaCode/superpowers-zh",
+    "subpath": "skills\\test-driven-development",
+    "branch": null
+  }
+}

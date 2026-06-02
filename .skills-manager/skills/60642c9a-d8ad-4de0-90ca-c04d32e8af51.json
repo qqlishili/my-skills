@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "60642c9a-d8ad-4de0-90ca-c04d32e8af51",
+  "path": "contradiction-analysis",
+  "path_key": "contradiction-analysis",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/HughYau/qiushi-skill",
+    "subpath": "skills\\contradiction-analysis",
+    "branch": null
+  }
+}

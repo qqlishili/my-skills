@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "bd9daba6-a37d-416d-976e-a8ff005b3cf7",
+  "path": "shot",
+  "path_key": "shot",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/tanweai/pua",
+    "subpath": "skills\\shot",
+    "branch": null
+  }
+}

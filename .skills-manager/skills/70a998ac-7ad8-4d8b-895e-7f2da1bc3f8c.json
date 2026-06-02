@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "70a998ac-7ad8-4d8b-895e-7f2da1bc3f8c",
+  "path": "didongsheng-perspective",
+  "path_key": "didongsheng-perspective",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/ligelang-zhang/didongsheng-perspective",
+    "subpath": null,
+    "branch": null
+  }
+}

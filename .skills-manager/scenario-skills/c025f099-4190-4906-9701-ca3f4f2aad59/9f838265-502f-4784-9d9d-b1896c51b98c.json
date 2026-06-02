@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "scenario_id": "c025f099-4190-4906-9701-ca3f4f2aad59",
+  "skill_id": "9f838265-502f-4784-9d9d-b1896c51b98c",
+  "sort_order": 7,
+  "tools": {
+    "claude_code": true
+  }
+}

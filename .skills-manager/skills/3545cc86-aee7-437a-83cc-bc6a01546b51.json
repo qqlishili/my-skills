@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "3545cc86-aee7-437a-83cc-bc6a01546b51",
+  "path": "verification-before-completion",
+  "path_key": "verification-before-completion",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/jnMetaCode/superpowers-zh",
+    "subpath": "skills\\verification-before-completion",
+    "branch": null
+  }
+}

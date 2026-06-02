@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "ba23c7e4-c904-4bc1-9fe1-fbfa4b1ecb10",
+  "path": "executing-plans",
+  "path_key": "executing-plans",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/jnMetaCode/superpowers-zh",
+    "subpath": "skills\\executing-plans",
+    "branch": null
+  }
+}

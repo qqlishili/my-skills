@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "91f26882-fb7f-4458-b9b9-e90c58f91f5e",
+  "path": "a-stock-data",
+  "path_key": "a-stock-data",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/simonlin1212/a-stock-data",
+    "subpath": null,
+    "branch": null
+  }
+}

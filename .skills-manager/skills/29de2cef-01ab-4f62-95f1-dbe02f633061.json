@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "29de2cef-01ab-4f62-95f1-dbe02f633061",
+  "path": "workflows",
+  "path_key": "workflows",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/HughYau/qiushi-skill",
+    "subpath": "skills\\workflows",
+    "branch": null
+  }
+}

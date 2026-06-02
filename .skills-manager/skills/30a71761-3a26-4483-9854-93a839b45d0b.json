@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "30a71761-3a26-4483-9854-93a839b45d0b",
+  "path": "concentrate-forces",
+  "path_key": "concentrate-forces",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/HughYau/qiushi-skill",
+    "subpath": "skills\\concentrate-forces",
+    "branch": null
+  }
+}

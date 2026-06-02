@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "4a20d60d-430b-44a3-806d-728da92f7684",
+  "path": "investigation-first",
+  "path_key": "investigation-first",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/HughYau/qiushi-skill",
+    "subpath": "skills\\investigation-first",
+    "branch": null
+  }
+}

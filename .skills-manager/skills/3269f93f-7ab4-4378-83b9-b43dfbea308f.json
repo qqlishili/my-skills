@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "3269f93f-7ab4-4378-83b9-b43dfbea308f",
+  "path": "skill-vetter",
+  "path_key": "skill-vetter",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "skillssh",
+    "ref": "useai-pro/openclaw-skills-security/skill-vetter",
+    "subpath": "skills\\skill-vetter",
+    "branch": null
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "40739bd5-0770-4592-a118-d383f7289ce5",
+  "path": "brainstorming",
+  "path_key": "brainstorming",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/jnMetaCode/superpowers-zh",
+    "subpath": "skills\\brainstorming",
+    "branch": null
+  }
+}

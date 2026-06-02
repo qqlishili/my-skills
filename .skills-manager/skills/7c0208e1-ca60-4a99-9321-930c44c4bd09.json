@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "7c0208e1-ca60-4a99-9321-930c44c4bd09",
+  "path": "mama",
+  "path_key": "mama",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/tanweai/pua",
+    "subpath": "skills\\mama",
+    "branch": null
+  }
+}
