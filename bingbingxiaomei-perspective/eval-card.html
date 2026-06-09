@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>bingbingxiaomei-perspective · 评估卡</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  body { display:flex; justify-content:center; align-items:flex-start; min-height:100vh; background:#FAFAF5; font-family:'Noto Sans SC','Inter',sans-serif; }
+  .card { width:900px; min-height:640px; position:relative; display:flex; flex-direction:column; background:#FAFAF5; color:#1A1A1A; }
+  .brand-bar { background:#1A1A1A; padding:24px 48px; display:flex; justify-content:space-between; align-items:center; }
+  .brand-name { font-size:22px; font-weight:800; color:#fff; letter-spacing:.02em; font-family:'Inter','Noto Sans SC',sans-serif; }
+  .brand-name .dot { color:#E8590C; }
+  .brand-date { font-size:15px; font-weight:500; color:#888; font-family:'Inter',sans-serif; }
+  .hero { padding:40px 48px 24px; display:flex; align-items:center; gap:48px; background:linear-gradient(180deg,#FAFAF5 0%,#F5F0E8 100%); }
+  .ring { flex-shrink:0; width:240px; height:240px; position:relative; }
+  .ring svg { transform:rotate(-90deg); }
+  .ring-bg { fill:none; stroke:#E8E0D4; stroke-width:14; }
+  .ring-fg { fill:none; stroke:#E8590C; stroke-width:14; stroke-linecap:round; transition:stroke-dashoffset 1s; }
+  .ring-center { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); text-align:center; }
+  .ring-num { font-size:64px; font-weight:900; color:#1A1A1A; font-family:'Inter',sans-serif; line-height:1; }
+  .ring-max { font-size:14px; font-weight:500; color:#888; margin-top:4px; }
+  .meta { flex:1; }
+  .meta h1 { font-size:28px; font-weight:800; margin-bottom:8px; }
+  .meta .sub { font-size:15px; color:#555; margin-bottom:16px; }
+  .badge { display:inline-block; padding:4px 10px; background:#1A1A1A; color:#fff; font-size:11px; font-weight:700; border-radius:3px; letter-spacing:.05em; margin-right:6px; }
+  .badge.warn { background:#E8590C; }
+  .dims { padding:0 48px 24px; }
+  .dim-row { display:grid; grid-template-columns: 60px 1fr 60px; gap:16px; padding:10px 0; align-items:center; border-bottom:1px dashed #E8E0D4; }
+  .dim-row:last-child { border-bottom:0; }
+  .dim-name { font-size:13px; font-weight:700; color:#1A1A1A; }
+  .dim-bar-bg { height:8px; background:#E8E0D4; border-radius:4px; overflow:hidden; }
+  .dim-bar-fg { height:100%; background:#E8590C; border-radius:4px; }
+  .dim-pts { font-size:13px; font-weight:700; color:#1A1A1A; text-align:right; font-family:'Inter',sans-serif; }
+  .dim-pts small { color:#888; font-weight:500; }
+  .insight { padding:24px 48px; background:#F5F0E8; border-top:2px solid #1A1A1A; }
+  .insight h2 { font-size:14px; font-weight:800; letter-spacing:.1em; margin-bottom:12px; color:#1A1A1A; }
+  .insight p { font-size:14px; line-height:1.7; color:#333; margin-bottom:8px; }
+  .insight ul { margin:8px 0 0 20px; font-size:13px; line-height:1.8; color:#333; }
+  .insight li strong { color:#E8590C; }
+  .footer { padding:16px 48px; background:#1A1A1A; color:#888; font-size:11px; text-align:center; letter-spacing:.05em; }
+  .footer .gh { color:#fff; font-weight:600; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="brand-bar">
+    <div class="brand-name">Darwin<span class="dot">.</span>skill · 评估报告</div>
+    <div class="brand-date">2026-06-09 · DRY_RUN</div>
+  </div>
+
+  <div class="hero">
+    <div class="ring">
+      <svg width="240" height="240">
+        <circle class="ring-bg" cx="120" cy="120" r="100"></circle>
+        <circle class="ring-fg" cx="120" cy="120" r="100" stroke-dasharray="628" stroke-dashoffset="123"></circle>
+      </svg>
+      <div class="ring-center">
+        <div class="ring-num">80.9</div>
+        <div class="ring-max">/ 100</div>
+      </div>
+    </div>
+    <div class="meta">
+      <h1>bingbingxiaomei-perspective</h1>
+      <div class="sub">冰冰小美的思维框架与表达方式 · 507 行 · 392 字符 description</div>
+      <div>
+        <span class="badge">9-DIM RUBRIC</span>
+        <span class="badge">SKILLLENS</span>
+        <span class="badge warn">DRY_RUN · 缺 full_test</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="dims">
+    <div class="dim-row"><div class="dim-name">1 Frontmatter</div><div class="dim-bar-bg"><div class="dim-bar-fg" style="width:90%"></div></div><div class="dim-pts">6.3<small> /7</small></div></div>
+    <div class="dim-row"><div class="dim-name">2 工作流</div><div class="dim-bar-bg"><div class="dim-bar-fg" style="width:90%"></div></div><div class="dim-pts">10.8<small> /12</small></div></div>
+    <div class="dim-row"><div class="dim-name">3 失败模式</div><div class="dim-bar-bg"><div class="dim-bar-fg" style="width:80%"></div></div><div class="dim-pts">9.6<small> /12</small></div></div>
+    <div class="dim-row"><div class="dim-name">4 检查点</div><div class="dim-bar-bg"><div class="dim-bar-fg" style="width:60%"></div></div><div class="dim-pts">3.6<small> /6</small></div></div>
+    <div class="dim-row"><div class="dim-name">5 具体性</div><div class="dim-bar-bg"><div class="dim-bar-fg" style="width:80%"></div></div><div class="dim-pts">13.6<small> /17</small></div></div>
+    <div class="dim-row"><div class="dim-name">6 资源</div><div class="dim-bar-bg"><div class="dim-bar-fg" style="width:90%"></div></div><div class="dim-pts">3.6<small> /4</small></div></div>
+    <div class="dim-row"><div class="dim-name">7 架构</div><div class="dim-bar-bg"><div class="dim-bar-fg" style="width:80%"></div></div><div class="dim-pts">9.6<small> /12</small></div></div>
+    <div class="dim-row"><div class="dim-name">8 实测</div><div class="dim-bar-bg"><div class="dim-bar-fg" style="width:80%"></div></div><div class="dim-pts">18.4<small> /23</small></div></div>
+    <div class="dim-row"><div class="dim-name">9 反例清单</div><div class="dim-bar-bg"><div class="dim-bar-fg" style="width:90%"></div></div><div class="dim-pts">5.4<small> /6</small></div></div>
+  </div>
+
+  <div class="insight">
+    <h2>关键发现</h2>
+    <p><strong>结构强项</strong>:frontmatter(9/7)、工作流清晰度(9/12)、资源整合(9/4)、反例黑名单(9/6)四项满分,体现女娲蒸馏标准工艺。</p>
+    <p><strong>结构短板</strong>:dim4 检查点设计仅 3.6/6,全文件仅 1 个 ⚠️ 标记,无 🔴/STOP 显性视觉锚——按 HL-1 经验,这是高杠杆区,加 4 个 🔴 标记可撬动 +1.4 分。</p>
+    <p><strong>效果维度限制</strong>:dim8 实测为 dry_run(主 agent 模拟推演),未跑子 agent 真实测试——分数 <strong>不可信</strong>。建议下次使用本 skill 前,先在 2-3 个 runtime 各跑一次 full_test 校准。</p>
+    <ul>
+      <li><strong>P0 修复</strong>(推荐):在 Step 1.5/Step 2 末尾/不适用场景/退出角色 4 处补 🔴 CHECKPOINT 标记</li>
+      <li><strong>P1 修复</strong>:沉默规则(行 38-41)从"如果…→"升级为 if-then 三段式(触发条件/一线修复/仍失败兜底)</li>
+      <li><strong>P2 修复</strong>:补硬约束"输出长度限制 + 表格优先",减少"不硬撑"等软化措辞</li>
+    </ul>
+  </div>
+
+  <div class="footer">
+    Train your Skills like you train your models · <span class="gh">github.com/alchaincyf/darwin-skill</span>
+  </div>
+</div>
+</body>
+</html>

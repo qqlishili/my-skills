@@ -5,6 +5,7 @@
   "sort_order": 0,
   "tools": {
     "claude_code": true,
+    "codex": true,
     "openclaw": true,
     "workbuddy": true
   }
