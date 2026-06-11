@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "c1960d2b-adf3-41f6-b068-ddcd54ecc398",
+  "path": "ingest",
+  "path_key": "ingest",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "local",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

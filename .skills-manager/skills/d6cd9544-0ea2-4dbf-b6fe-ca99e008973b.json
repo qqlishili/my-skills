@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "d6cd9544-0ea2-4dbf-b6fe-ca99e008973b",
+  "path": "lint",
+  "path_key": "lint",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "local",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

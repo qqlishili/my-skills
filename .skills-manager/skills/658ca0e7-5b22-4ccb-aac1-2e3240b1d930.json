@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "658ca0e7-5b22-4ccb-aac1-2e3240b1d930",
+  "path": "subtitle-cleaner",
+  "path_key": "subtitle-cleaner",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "local",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

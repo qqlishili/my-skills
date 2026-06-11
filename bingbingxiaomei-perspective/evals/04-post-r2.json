@@ -1,0 +1,23 @@
+{
+  "timestamp": "2026-06-11T22:30:00",
+  "round": "R2",
+  "total": 82.0,
+  "old_total": 80.4,
+  "delta": 1.6,
+  "dimensions": {
+    "frontmatter": 8.0,
+    "workflow": 9.2,
+    "failure_modes": 8.2,
+    "checkpoints": 8.0,
+    "specificity": 7.0,
+    "resources": 8.0,
+    "architecture": 8.0,
+    "testing": 9.5,
+    "counterexamples": 7.0
+  },
+  "changes": {
+    "dim3": "+1.2 (core: fallback table)",
+    "dim2": "+0.2 (HL-3 cluster联动)",
+    "note": "westock限流/multi-source冲突的二级fallback深度不足，限制dim3天花板"
+  }
+}

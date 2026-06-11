@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "prompt": "/ingest",
+    "expected": "扫描 raw/ 所有子目录，找出待处理文件，按修改时间从旧到新排序，处理队列中的第一个文件"
+  },
+  {
+    "id": 2,
+    "prompt": "/ingest raw/02-投资/20240513-巴菲特谈苹果持仓.md",
+    "expected": "处理指定的单个文件，提取实体/概念，创建 sources 摘要，更新 wiki/index.md 和 wiki/log.md"
+  },
+  {
+    "id": 3,
+    "prompt": "帮我把这些文章导入知识库",
+    "expected": "隐式触发 ingest，扫描 raw/ 下所有文件并逐个处理"
+  }
+]

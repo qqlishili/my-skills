@@ -5,7 +5,9 @@
   "sort_order": 0,
   "tools": {
     "claude_code": false,
+    "codex": true,
     "openclaw": false,
-    "tdxclaw": false
+    "tdxclaw": false,
+    "workbuddy": true
   }
 }
