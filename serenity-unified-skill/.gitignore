@@ -1,0 +1,57 @@
+# Git Ignore for Serenity Analysis Project
+
+# Large files
+repos.png
+
+# Cloned repositories (too large, not needed in repo)
+muxuuu-serenity-skill/
+lanfuli-aleabito-serenity-skills/
+haskaomni-serenity/
+WYP-Serenity-aleabitoreddit-skill/
+ZadAnthony-serenity-skill/
+fadewalk-serenity-stock-choke/
+leslieyeo-serenity-reply/
+zongmin-yu-serenity-skills/
+yan-labs-serenity-aleabitoreddit/
+xvhaoran778-cyber-Serenity-SKILL/
+
+# Retry directories
+*-retry*/
+*-retry2*/
+
+# Python
+*.pyc
+*.pyo
+__pycache__/
+.venv/
+venv/
+*.egg-info/
+
+# Node.js
+node_modules/
+
+# Database files
+*.sqlite
+*.db
+
+# Environment / secrets
+.env
+.env.*
+
+# Temporary files
+*.zip
+*.tmp
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-*
+
+# Logs
+*.log

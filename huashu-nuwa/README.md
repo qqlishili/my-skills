@@ -345,6 +345,15 @@ MIT License © [花叔 Huashu](https://github.com/alchaincyf)
 
 ---
 
+<div align="center">
+<sub>作者的其他项目 · also by 花叔</sub>
+
+[![FanBox · Coding Agent 的驾驶舱](https://raw.githubusercontent.com/alchaincyf/fanbox/master/assets/promo-banner.jpg)](https://github.com/alchaincyf/fanbox)
+
+</div>
+
+---
+
 ## English
 
 > *"The next person you want to distill doesn't have to be a colleague."*

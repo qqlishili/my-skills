@@ -2,16 +2,20 @@
 name: a-stock-data
 description: A股全栈数据工具包 — 覆盖行情(mootdx+腾讯+百度K线)、研报(东财+同花顺+iwencai)、信号(同花顺热点+北向+龙虎榜+解禁+行业)、资金面(融资融券+大宗交易+股东户数+分红+资金流分钟级+资金流120日)、新闻(东财个股+全球资讯)、基础数据(mootdx财务/F10+东财+新浪三表)、公告(巨潮)七层数据源，内嵌全部调用代码，自包含零依赖外部文件。优先用通达信(mootdx)/腾讯(不封IP)，东财接口已内置限流防封。适用于个股估值、研报检索、题材归因、龙虎榜跟踪、解禁预警、行业轮动、融资融券跟踪、筹码分析、产业链调研、批量筛选等场景。
 origin: custom
-version: 3.2.2
+version: 3.2.3
 ---
 
 > 📦 项目主页：https://github.com/simonlin1212/a-stock-data — 更新、反馈、支持作者
 > 
 > 作者：Simon 林 · 抖音「Simon林」· 公众号「硅基世纪」
 
-# A股全栈数据工具包 V3.2.2
+# A股全栈数据工具包 V3.2.3
 
-七层数据架构，27 个端点实测可用（2026-06 验证；财联社快讯已下线，详见 §5.2），覆盖主板/中小板/科创板/ST。
+七层数据架构，28 个端点实测可用（2026-06 验证；财联社快讯已下线，详见 §5.2），覆盖主板/中小板/科创板/ST。
+
+> **V3.2.3（行业研报新增）：**
+> - **§2.1 东财行业研报 `eastmoney_industry_reports()`**：研报层补上行业研报端点（此前只有个股研报）。与个股研报**同端点** `reportapi.eastmoney.com/report/list`，仅 `qType=1`；`industry_code="*"` 拉全行业、传东财行业码（如 `1238`=IT服务Ⅱ）精确过滤，PDF 复用 `download_pdf()`，走 `em_get` 限流。端点数 27 → 28。
+> - 实测（2026-06-20）：全行业 `hits=47928`、按行业码 `1238` 过滤 `hits=1863`，首篇 PDF `H3_{infoCode}_1.pdf` 下载成功（2.5MB，`%PDF` 头）；行业码表端点（`bxpa` 等）404 不存在，用 `"*"` 拉取后从结果反查行业码。
 
 > **V3.2.2（失效接口替换 + 隐藏 Bug 修复）：**
 > - **§3.3 概念板块归属（#18）**：百度 PAE `getrelatedblock` 失效（`ResultCode 10003` + 空数组）→ 改用东财 `slist`（`spt=3`）`eastmoney_concept_blocks()`，一次请求拿全个股所属板块（行业/概念/地域 + BK码 + 涨跌幅 + 龙头股），零鉴权走 `em_get` 限流。
@@ -42,7 +46,7 @@ version: 3.2.2
 └── 百度股市通     → K线带MA5/10/20 (V3.0 新增，HTTP)
 
 研报层
-├── 东财 reportapi → 研报列表 + PDF下载 + 评级 + 三年EPS
+├── 东财 reportapi → 个股研报 + 行业研报 + PDF下载 + 评级 + 三年EPS
 ├── 同花顺 THS     → 一致预期EPS (直连 basic.10jqka.com.cn)
 └── iwencai        → NL语义搜索研报 (唯一能力，需X-Claw)
 
@@ -159,7 +163,7 @@ pip install mootdx requests pandas stockstats
 
 | 依赖 | 版本要求 | 用途 |
 |------|---------|------|
-| mootdx | >= 0.10 | TCP行情+财务+F10（唯一非HTTP依赖） |
+| mootdx | >= 0.10 | TCP行情+财务+F10（唯一非HTTP依赖）；0.11.x 用 `tdx_client()` 规避 BESTIP bug，见上节 |
 | requests | any | 所有HTTP API直连 |
 | pandas | any | 数据处理+HTML表格解析 |
 | stockstats | any | 技术指标计算（RSI/MACD/BOLL等） |
@@ -178,6 +182,63 @@ export IWENCAI_BASE_URL="https://openapi.iwencai.com"
 ```
 
 其他数据源（mootdx / 腾讯 / 东财 / 同花顺 / 百度股市通 / 新浪 / 巨潮）全部免费，无需 key。
+
+### mootdx 客户端（必读，规避 0.11.x BESTIP 空串 bug）
+
+> **已知 bug（mootdx 0.11.x）：** 全新安装后 `Quotes.factory(market='std')` 裸调用可能抛 `ValueError: not enough values to unpack (expected 2, got 0)`。
+> 根因：`~/.mootdx/config.json` 的 `BESTIP.HQ` 初始是空字符串 `""`（不是缺失键），mootdx 用 `dict.get(key, default)` 取不到 default，拆包失败。**老用户（config 曾填充过 IP）不会触发，所以容易漏测。**
+> **不要靠锁版本解决：** 锁 `mootdx==0.10.12` 在部分环境（如干净的 Python 3.9）下 `import mootdx` 会因 numpy/pandas 二进制不兼容直接崩。正确做法是用下面的 `tdx_client()`——显式传 server 绕过 BESTIP，对 0.10 / 0.11 都适用。
+
+**统一用以下 helper 创建客户端（所有 mootdx 调用都走它）：**
+
+```python
+import socket
+from mootdx.quotes import Quotes
+
+# 实测可用的备选服务器（按延迟排序，2026-06 验证）
+_TDX_SERVERS = [
+    ('119.97.185.59', 7709), ('124.70.133.119', 7709), ('116.205.183.150', 7709),
+    ('123.60.73.44', 7709),  ('116.205.163.254', 7709), ('121.36.225.169', 7709),
+    ('123.60.70.228', 7709), ('124.71.9.153', 7709),    ('110.41.147.114', 7709),
+    ('124.71.187.122', 7709),
+]
+
+def _probe(ip, port, timeout=2.0):
+    """TCP 握手探测，判断服务器是否可达"""
+    try:
+        with socket.create_connection((ip, port), timeout=timeout):
+            return True
+    except Exception:
+        return False
+
+def tdx_client(market='std'):
+    """
+    创建 mootdx 客户端，规避 0.11.x BESTIP.HQ 空串 bug。
+    顺序兜底，保证 IP 列表老化/换网时仍能工作：
+      1) 顺序探测 _TDX_SERVERS，用第一个 TCP 可达的显式 server；
+      2) 全部不可达 → 回退 mootdx 自带 bestip 测速选优；
+      3) 再不行 → 回退裸 factory（老用户 config 已有可用 BESTIP 时成立）；
+      4) 仍失败 → 抛 RuntimeError，明确报错而非死等。
+    """
+    for ip, port in _TDX_SERVERS:
+        if _probe(ip, port):
+            return Quotes.factory(market=market, server=(ip, port))
+    try:
+        return Quotes.factory(market=market, bestip=True)   # fallback 1
+    except Exception:
+        pass
+    try:
+        return Quotes.factory(market=market)                # fallback 2
+    except Exception as e:
+        raise RuntimeError(
+            "所有 mootdx 服务器均不可达。海外网络通常全部超时（TCP 7709），"
+            "请走国内代理或更新 _TDX_SERVERS 列表。原始错误：%s" % e
+        )
+
+# 用法：client = tdx_client()   # 替代所有 Quotes.factory(market='std')
+```
+
+> **海外 IP 用户：** mootdx 走通达信 TCP 7709，海外环境通常全部超时。`tdx_client()` 会快速失败给出明确报错，而非死等。
 
 ### 市场前缀规则（全局通用）
 
@@ -266,7 +327,7 @@ TCP 二进制协议，连通达信服务器(7709)，无需注册，不封IP。
 ```python
 from mootdx.quotes import Quotes
 
-client = Quotes.factory(market='std')
+client = tdx_client()  # 见 Prerequisites 的 tdx_client() helper（规避 0.11.x BESTIP bug；等价 Quotes.factory(market='std')）
 
 # === K线数据 ===
 # market: 0=深圳, 1=上海
@@ -508,6 +569,61 @@ for r in reports[:5]:
 | predictNextTwoYearEps | 后年EPS预测 |
 | emRatingName | 评级(买入/增持/...) |
 | indvInduName | 行业分类 |
+
+#### 行业研报列表（qType=1）
+
+与个股研报**同一端点**（`reportapi.eastmoney.com/report/list`），仅 `qType` 不同：`qType=0` 个股研报，`qType=1` 行业研报。返回 record 可直接喂给上面的 `download_pdf()`（PDF 模板通用）。
+
+```python
+def eastmoney_industry_reports(industry_code: str = "*", max_pages: int = 5,
+                               begin: str = "2024-01-01") -> list[dict]:
+    """拉取行业研报列表（qType=1）。
+    industry_code="*" = 全行业；传东财行业码（如 "1238"=IT服务Ⅱ）= 单行业。
+    行业名 / 行业码在每条 record 的 industryName / industryCode 字段。"""
+    all_records = []
+    for page in range(1, max_pages + 1):
+        params = {
+            "industryCode": industry_code, "pageSize": "100", "industry": "*",
+            "rating": "*", "ratingChange": "*",
+            "beginTime": begin, "endTime": "2030-01-01",
+            "pageNo": str(page), "fields": "", "qType": "1",
+        }
+        r = em_get(REPORT_API, params=params,
+                   headers={"Referer": "https://data.eastmoney.com/"}, timeout=30)  # 已内置限流
+        d = r.json()
+        rows = d.get("data") or []
+        if not rows:
+            break
+        all_records.extend(rows)
+        if page >= (d.get("TotalPage", 1) or 1):
+            break
+    return all_records
+
+# 用法
+# 1) 全行业最新研报
+reports = eastmoney_industry_reports("*", max_pages=2)
+print(f"共 {len(reports)} 篇行业研报")
+for r in reports[:5]:
+    print(f"  {r.get('publishDate','')[:10]} | {r.get('industryName')} | {r.get('orgSName')} | {r.get('title','')[:50]}")
+
+# 2) 单行业（IT服务Ⅱ，行业码 1238）+ 下载首篇 PDF（复用 2.1 的 download_pdf）
+it = eastmoney_industry_reports("1238", max_pages=1)
+if it:
+    download_pdf(it[0])
+```
+
+行业研报特有/常用字段（其余字段同 2.1 个股研报）：
+
+| 字段 | 含义 |
+|------|------|
+| industryName | 行业名称（如 IT服务Ⅱ、风电设备、光伏设备） |
+| industryCode | 东财行业代码（用于 `industry_code` 精确过滤） |
+| emRatingName | 行业评级（买入/增持/中性/...） |
+| reportType | 报告类型 |
+| attachPages / attachSize | PDF 页数 / 大小(KB) |
+| infoCode | 喂给 `download_pdf()` 拼 PDF URL |
+
+> **行业码怎么拿：** 东财行业码不是通用记忆码，没有公开的码表端点（`bxpa` 等已 404）。常用做法：先用 `industry_code="*"` 拉一批，从结果的 `industryName`/`industryCode` 找到目标行业的码，再用该码精确过滤。
 
 ### 2.2 同花顺一致预期EPS（直连 basic.10jqka.com.cn）
 
@@ -1567,7 +1683,7 @@ for n in news[:10]:
 ```python
 from mootdx.quotes import Quotes
 
-client = Quotes.factory(market='std')
+client = tdx_client()  # 见 Prerequisites 的 tdx_client() helper（规避 0.11.x BESTIP bug；等价 Quotes.factory(market='std')）
 
 # market: 0=深圳, 1=上海
 fin = client.finance(symbol='688017')
@@ -1585,7 +1701,7 @@ fin = client.finance(symbol='688017')
 ```python
 from mootdx.quotes import Quotes
 
-client = Quotes.factory(market='std')
+client = tdx_client()  # 见 Prerequisites 的 tdx_client() helper（规避 0.11.x BESTIP bug；等价 Quotes.factory(market='std')）
 
 # 9 大类文本数据:
 categories = [
@@ -1790,7 +1906,7 @@ for a in anns[:10]:
 
 ```python
 from mootdx.quotes import Quotes
-client = Quotes.factory(market='std')
+client = tdx_client()  # 见 Prerequisites 的 tdx_client() helper（规避 0.11.x BESTIP bug；等价 Quotes.factory(market='std')）
 text = client.F10(symbol='688017', name='最新提示')
 # 包含最近的公告/分红/股东大会决议等摘要
 ```

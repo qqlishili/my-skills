@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "d977dade-50b1-4327-96e6-c5ae65d78c45",
+  "path": "serenity-unified-skill",
+  "path_key": "serenity-unified-skill",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "local",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

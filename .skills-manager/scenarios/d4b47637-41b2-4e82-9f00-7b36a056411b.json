@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "scenario_id": "d4b47637-41b2-4e82-9f00-7b36a056411b",
+  "name": "备份",
+  "description": null,
+  "icon": "flask-conical",
+  "sort_order": 999
+}
