@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "080a85d8-f6bf-4810-b020-a94087afb9d6",
+  "path": "xueqiu-summary",
+  "path_key": "xueqiu-summary",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/chenmuwen0930-rgb/openclaw-skill-snowtrace",
+    "subpath": null,
+    "branch": null
+  }
+}

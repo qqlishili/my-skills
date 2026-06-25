@@ -8,7 +8,7 @@
 
 ## 共享边界规则（所有 Agent 必须遵守）
 
-0. **路径基准（强制）**: 本 prompt 中所有 `references/research/` 和 `evals/` 相对路径，根目录为 `D:\Temp\create_skills\bingbingxiaomei-perspective`。启动后**第一步必须执行** `cd "D:\Temp\create_skills\bingbingxiaomei-perspective"`。
+0. **路径基准（强制）**: 本 prompt 中所有 `references/research/` 和 `evals/` 相对路径，根目录为当前 skill 所在目录（即本文件 `evals/agent-prompts.md` 的上一级目录）。启动后**第一步必须执行** `cd` 到 skill 根目录（agent 自带文件操作工具，从 prompt 所在位置解析）。
 1. **先读后写**: 启动后第一件事——Read 对应的 references/research/0X-xxx.md 全文
 2. **追加不覆盖**: 输出追加到文件末尾，原文件内容一字不动
 3. **标注来源**: 每条分析标注具体文章文件名和日期

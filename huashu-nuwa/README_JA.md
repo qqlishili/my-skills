@@ -68,16 +68,6 @@ Naval    ❯ 君は三つの欲望をリストアップした。
 
 ---
 
-## 自分で蒸留したくない？Bloomeを試してみよう
-
-[<img src="bloome-advisors.jpg" alt="Bloome - 彼らをあなたのブレーンチームに" width="720">](https://www.bloome.im/?utm_source=huashu-leon-202605&utm_medium=github&utm_campaign=nuwa-skill)
-
-いつでもジョブズや張小龍とプロダクトの相談を？マンガーと投資の話を？
-
-[Bloome](https://www.bloome.im/?utm_source=huashu-leon-202605&utm_medium=github&utm_campaign=nuwa-skill) —— 彼らをあなたのブレーンチームに。一つの対話の中で、人と複数のAgentが協力する。[www.bloome.im](https://www.bloome.im/?utm_source=huashu-leon-202605&utm_medium=github&utm_campaign=nuwa-skill)
-
----
-
 ## インストール
 
 Nuwa はオープンな [Agent Skills](https://agentskills.io) 標準に基づき構築されており、skills 互換の任意の AI agent runtime で動作する。

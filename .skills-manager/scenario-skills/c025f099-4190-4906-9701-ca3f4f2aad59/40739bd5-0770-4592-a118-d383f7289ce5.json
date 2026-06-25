@@ -4,6 +4,9 @@
   "skill_id": "40739bd5-0770-4592-a118-d383f7289ce5",
   "sort_order": 0,
   "tools": {
-    "claude_code": true
+    "claude_code": true,
+    "codebuddy": true,
+    "opencode": true,
+    "workbuddy": true
   }
 }

@@ -1,0 +1,2 @@
+timestamp	commit	skill	old_score	new_score	status	dimension	note	eval_mode
+2026-06-23T22:48	8af1f65	bingbingxiaomei-perspective	-	74.1	baseline	-	Darwin v2.0 dry_run 基线评估; dim1=7 dim2=7 dim3=9 dim4=8 dim5=6 dim6=7 dim7=7 dim8=8 dim9=9; gate=runtime_neutral_pass; note=dim8 dry_run(20 test cases 覆盖完整但未spawn agent实测); 对比: v1.4 full_test 79.2(agent_spawn)/ R4 independent 65.4(dry_run)	dry_run
