@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-06-23T22:42:00",
+  "round": "R4-independent",
+  "total": 65.4,
+  "rubric": "darwin-v2.0-strict",
+  "rubric_max": 100,
+  "eval_mode": "dry_run",
+  "note": "独立 Darwin 评估 agent（agent-22e1e716）对 v1.4 SKILL.md 的基线评分。评估为 dry_run——agent 未 spawn 子 agent 跑测试，dim8 基于结构推演。此分数与 06-post-r4.json（79.2，agent_spawn）来自不同 judge，体现了 Darwin ruble 的 LLM-as-judge 方差（SkillLens 实证：LLM judge 准确率 46.4%）",
+  "note_discrepancy": "dim8 最大分歧：5（dry_run推演）vs 9.0（实测agent_spawn）。dim1 分歧：5（过度冗长）vs 8（覆盖完整）。建议至少 3 个独立 judge + 1 个人类评估者交叉验证",
+  "dimensions": {
+    "1_frontmatter": {"score": 5, "weight": 7, "weighted": 3.5, "rationale": "描述覆盖做什么/何时用/触发词，但过度冗长含数据缺口和增量窗口等实现细节"},
+    "2_workflow": {"score": 7, "weight": 12, "weighted": 8.4, "rationale": "有清晰Step序列和分类表，但Step 1.B编号夹在1.5前造成层次混乱"},
+    "3_failure_modes": {"score": 9, "weight": 12, "weighted": 10.8, "rationale": "工具层5场景+认知/行为层5场景错误恢复表显式编码所有fallback路径"},
+    "4_checkpoints": {"score": 8, "weight": 6, "weighted": 4.8, "rationale": "4处CHECKPOINT分布在退出角色/场景筛查/模糊确认/研究验证等关键节点"},
+    "5_specificity": {"score": 6, "weight": 17, "weighted": 10.2, "rationale": "有研究足迹模板/八步框架固定输出/CLI命令示例，但绝大多数指令为定性描述，人物技能天然上限"},
+    "6_resources": {"score": 6, "weight": 4, "weighted": 2.4, "rationale": "references引用路径结构合理但无法在当前上下文验证可达性，强依赖外部插件"},
+    "7_architecture": {"score": 7, "weight": 12, "weighted": 8.4, "rationale": "整体层次逻辑通顺无AI腔，但心智模型证据子节冗长、沉默规则在不同段落重复"},
+    "8_testing_performance": {"score": 5, "weight": 23, "weighted": 11.5, "rationale": "dry_run推演——表达DNA详尽但9模型+17启发式总量过大LLM难内化，5个自述矛盾点制造歧义"},
+    "9_counterexamples": {"score": 9, "weight": 6, "weighted": 5.4, "rationale": "不适用场景6条+沉默规则3条件+禁忌词表4项+拒绝清单7条+绝不引用源列表+残留检测3条，覆盖充分"}
+  }
+}
