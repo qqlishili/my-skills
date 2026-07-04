@@ -12,6 +12,6 @@
     "openclaw": true,
     "opencode": true,
     "tdxclaw": true,
-    "workbuddy": false
+    "workbuddy": true
   }
 }

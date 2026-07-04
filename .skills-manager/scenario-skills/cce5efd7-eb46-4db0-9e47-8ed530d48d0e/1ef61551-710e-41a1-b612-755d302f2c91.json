@@ -11,6 +11,6 @@
     "github_copilot": true,
     "openclaw": true,
     "opencode": true,
-    "workbuddy": false
+    "workbuddy": true
   }
 }
