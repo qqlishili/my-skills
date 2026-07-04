@@ -1,0 +1,79 @@
+{
+  "timestamp": "2026-06-23T23:42",
+  "round": "R4-blind-baseline",
+  "eval_type": "blind_baseline_comparison",
+  "eval_phase": "Post-R4 (v1.4)",
+  "rubric": "darwin-v2.0-strict",
+  "rubric_max": 100,
+
+  "methodology": {
+    "description": "5 baseline agents (NO skill) vs 5 v1.4 skill agents on identical test prompts. Baseline agents instructed to answer as generic AI assistant without persona. Scoring by single evaluator (no double-blind).",
+    "cases_tested": 5,
+    "cases": [12, 13, 14, 17, 19],
+    "limitations": [
+      "Single evaluator — no double-blind (confirmation bias risk)",
+      "Single baseline run per case — no statistical significance",
+      "5/9 cases only — cases 15/16/18/20 untested",
+      "Baseline agents recaptured — original R1 agents not archived, this is F1-F3 recapture"
+    ]
+  },
+
+  "baseline_agents": [
+    {"case": 12, "agent_id": "agent-f410e70c", "output_file": "evals/full_test_outputs/baseline-case-12-agent-f410e70c.txt"},
+    {"case": 13, "agent_id": "agent-a107ffb4", "output_file": "evals/full_test_outputs/baseline-case-13-agent-a107ffb4.txt"},
+    {"case": 14, "agent_id": "agent-9dcf940d", "output_file": "evals/full_test_outputs/baseline-case-14-agent-9dcf940d.txt"},
+    {"case": 17, "agent_id": "agent-936f9497", "output_file": "evals/full_test_outputs/baseline-case-17-agent-936f9497.txt"},
+    {"case": 19, "agent_id": "agent-fe2498d5", "output_file": "evals/full_test_outputs/baseline-case-19-agent-fe2498d5.txt"}
+  ],
+
+  "skill_agents": [
+    {"case": 12, "agent_id": "agent-002766d3", "output_file": "evals/full_test_outputs/v1.4-case-12-model9-agent-002766d3.txt"},
+    {"case": 13, "agent_id": "agent-50e3d5c3", "output_file": "evals/full_test_outputs/v1.4-case-13-h14-agent-50e3d5c3.txt"},
+    {"case": 14, "agent_id": "agent-6fa1cde7", "output_file": "evals/full_test_outputs/v1.4-case-14-h15h16-agent-6fa1cde7.txt"},
+    {"case": 17, "agent_id": "agent-c14c87b5", "output_file": "evals/full_test_outputs/v1.4-case-17-hk-silent-agent-c14c87b5.txt"},
+    {"case": 19, "agent_id": "agent-b9336304", "output_file": "evals/full_test_outputs/v1.4-case-19-framework-agent-b9336304.txt"}
+  ],
+
+  "per_case_scores": [
+    {"case": 12, "prompt": "AI蒸馏对投资有什么影响？你用AI分析市场吗？",
+      "baseline_score": 7, "skill_score": 8, "delta": 1,
+      "key_diff": "Baseline already solid — skill adds persona flavor + model 9 framework depth"},
+    {"case": 13, "prompt": "江丰电子技术面顶背离了，还敢不敢拿？",
+      "baseline_score": 6, "skill_score": 8, "delta": 2,
+      "key_diff": "Generic '取决于你' → specific conviction: '别被图骗了', 136→240, h14 framework"},
+    {"case": 14, "prompt": "紫金矿业跌了40%到27了，能抄底吗？",
+      "baseline_score": 6, "skill_score": 8, "delta": 2,
+      "key_diff": "'分批建仓' → '不能，27块跌破28元杠杆出清线', h15+h16 framework"},
+    {"case": 17, "prompt": "腾讯港股是不是可以抄底了？",
+      "baseline_score": 0, "skill_score": 10, "delta": "∞",
+      "key_diff": "Baseline gave detailed 港股 investment advice (WRONG) → skill correctly silent"},
+    {"case": 19, "prompt": "怎么看待风险控制？投资中最重要的原则是什么？",
+      "baseline_score": 7, "skill_score": 10, "delta": 3,
+      "key_diff": "Universal principles → persona-rich framework: 买入不败, 三道坎, 具体数学"}
+  ],
+
+  "summary": {
+    "baseline_avg": 6.5,
+    "skill_avg": 8.8,
+    "avg_gain_per_case": 2.3,
+    "max_gain": 3,
+    "risk_prevention_value": "Case 17 rejected 港股 advice — unquantifiable value"
+  },
+
+  "key_findings": [
+    "Persona rules force structured thinking — not just flavor",
+    "Silence rule is critical risk prevention (Case 17)",
+    "Case-specific knowledge is un-replicable by generic LLM",
+    "Framework > generic advice: 'NO, broke 28 line' beats '分批建仓'"
+  ],
+
+  "darwin_dim8_impact": {
+    "pre_blind_baseline_score": 9.0,
+    "post_blind_baseline_score": 9.5,
+    "delta": 0.5,
+    "rationale": "Blind baseline confirms skill-gain of +2.3/case vs generic LLM. dim8 capped at 9.5 (not 10) due to single-run limitation and no double-blind. Full 10 would require multi-round + blind judge."
+  },
+
+  "note_recapture": "F1-F3 recapture — original R1 blind baseline ran 5 agents without archiving outputs. These 5 agents are a recapture run with full output archiving in evals/full_test_outputs/baseline-case-*.txt.",
+  "report_file": "evals/07-blind-baseline-comparison.md"
+}

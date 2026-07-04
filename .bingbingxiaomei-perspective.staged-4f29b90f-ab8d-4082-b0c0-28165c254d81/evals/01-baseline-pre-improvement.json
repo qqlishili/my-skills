@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-06-11T15:30:00",
+  "total": 81.3,
+  "dimensions": {
+    "frontmatter": 6.3,
+    "workflow": 10.8,
+    "failure_modes": 9.6,
+    "checkpoints": 3.6,
+    "specificity": 13.6,
+    "resources": 4.0,
+    "architecture": 9.6,
+    "testing": 18.4,
+    "counterexamples": 5.4
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-06-11T16:15:00",
+  "total": 85.2,
+  "dimensions": {
+    "frontmatter": 6.3,
+    "workflow": 10.8,
+    "failure_modes": 10.0,
+    "checkpoints": 5.3,
+    "specificity": 14.0,
+    "resources": 4.0,
+    "architecture": 10.6,
+    "testing": 18.8,
+    "counterexamples": 5.4
+  },
+  "delta_total": 3.9,
+  "eval_mode": "dry_run",
+  "notes": {
+    "overall": "P0+P1+P2 全量改进终评。总分 81.3 → 85.2 (+3.9)。",
+    "failure_modes": "P1 沉默规则表格化：3条规则从列表改为结构化表格（触发条件/检测方法/执行动作），边界处理更明确，9.6 → 10.0 (+0.4)",
+    "checkpoints": "P0 4处 CHECKPOINT 视觉锚已固化，5.3（与02-post-p0一致）",
+    "specificity": "P1 禁止词表表格化+替代句式+「我觉得」标注为推论扩展，14.0 (+0.4)；P2 模型【核心】/【扩展】标签提升指令精确度",
+    "architecture": "P2 模型 1-6【核心】/ 7-8【扩展】分组+节首说明+标题标记，从扁平8模型升级为2层层次结构，架构清晰度显著提升，9.6 → 10.6 (+1.0)",
+    "testing": "P2 追加 3 条边缘测试用例（沉默规则/纯框架/诚实边界），测试覆盖更全面，18.8 (+0.4)",
+    "unchanged": "frontmatter/workflow/resources/counterexamples 维度无改动，分数不变"
+  }
+}
