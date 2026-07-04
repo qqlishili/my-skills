@@ -1771,7 +1771,17 @@ def _resolve_js_import_target(raw: str, str_path: str) -> "tuple[str, Path | Non
     module_name = raw.split("/")[-1]
     if not module_name:
         return None
-    return _make_id(module_name), None
+    # Unresolved: relative/absolute, tsconfig-alias and workspace resolution have
+    # all run and failed, so this is an external package (or a dangling local
+    # path). Namespace the id with the "ref" prefix — the J-4 convention already
+    # used for tsconfig `extends`/`$ref` externals — so it can NEVER collapse to
+    # the same _make_id as a local file/symbol node. Without it, the bare
+    # last-segment id (e.g. "tailwindcss/colors" -> "colors") collides with any
+    # unrelated local file of that stem via build.py's pre-migration alias index,
+    # producing a confident (EXTRACTED) cross-language phantom imports_from edge
+    # (#1638). The ref-namespaced target has no node, so build drops it as an
+    # external reference — the correct outcome for a third-party import.
+    return _make_id("ref", raw), None
 
 
 def _import_js(node, source: bytes, file_nid: str, stem: str, edges: list, str_path: str, scope_stack: list[str] | None = None) -> None:
@@ -2338,6 +2348,55 @@ def _csharp_member_type_table(root, source: bytes) -> dict[str, str]:
         for c in n.children:
             stack.append(c)
     return table
+
+
+def _ts_receiver_type_table(root, source: bytes, table: dict[str, str]) -> None:
+    """Add TS/JS receiver bindings to ``table`` (name -> TypeName), for member-call
+    resolution beyond the constructor-injected `this.field` case (#1630):
+
+      * local ``const/let/var x = new Foo()`` -> ``x: Foo`` (Pattern A);
+      * a type-annotated parameter ``(svc: Svc)`` -> ``svc: Svc`` (Pattern B), so a
+        call on the param — including inside a returned closure — resolves.
+
+    File-scoped, first-binding-wins (merged into the constructor-injection table,
+    which is populated first and therefore wins on a name clash). Only a bare
+    ``type_identifier`` (a single class/interface name) is recorded — an array,
+    union, generic, qualified, or predefined type is skipped (precision over
+    recall, matching the receiver-typed resolvers for Swift/C#/C++)."""
+    def _bare_type_ident(type_annotation):
+        # type_annotation -> ": T"; accept only a single type_identifier child.
+        idents = [c for c in type_annotation.children if c.type == "type_identifier"]
+        others = [c for c in type_annotation.children
+                  if c.is_named and c.type not in ("type_identifier",)]
+        if len(idents) == 1 and not others:
+            return _read_text(idents[0], source)
+        return None
+
+    stack = [root]
+    while stack:
+        n = stack.pop()
+        t = n.type
+        if t == "variable_declarator":
+            name_n = n.child_by_field_name("name")
+            value = n.child_by_field_name("value")
+            if (name_n is not None and name_n.type == "identifier"
+                    and value is not None and value.type == "new_expression"):
+                ctor = value.child_by_field_name("constructor")
+                if ctor is not None and ctor.type in ("identifier", "type_identifier"):
+                    name = _read_text(name_n, source)
+                    tname = _read_text(ctor, source)
+                    if name and tname and name not in table:
+                        table[name] = tname
+        elif t == "required_parameter" or t == "optional_parameter":
+            pat = n.child_by_field_name("pattern")
+            ann = n.child_by_field_name("type")
+            if pat is not None and pat.type == "identifier" and ann is not None:
+                tname = _bare_type_ident(ann)
+                name = _read_text(pat, source)
+                if name and tname and name not in table:
+                    table[name] = tname
+        for c in n.children:
+            stack.append(c)
 
 
 def _objc_local_var_types(body_node, source: bytes, table: dict[str, str]) -> None:
@@ -2934,7 +2993,12 @@ _CPP_CONFIG = LanguageConfig(
 
 _RUBY_CONFIG = LanguageConfig(
     ts_module="tree_sitter_ruby",
-    class_types=frozenset({"class"}),
+    # `module Foo` is a container node just like `class Foo` in tree-sitter's
+    # Ruby grammar (name in a `constant` child, body in `body_statement`), so it
+    # gets a node and its methods attach via `method` (#1640). Without it, plain
+    # utility/`module_function` modules produced no node and their methods hung
+    # off the file via `contains` with dot-less labels.
+    class_types=frozenset({"class", "module"}),
     function_types=frozenset({"method", "singleton_method"}),
     import_types=frozenset(),
     call_types=frozenset({"call"}),
@@ -3222,6 +3286,92 @@ def _ruby_local_class_bindings(body_node, source: bytes) -> dict[str, str | None
 
     visit(body_node)
     return bindings
+
+
+def _ruby_const_last_name(node, source: bytes) -> str:
+    """Last constant of a ``constant`` or ``scope_resolution`` (``A::B::C`` -> ``C``)."""
+    if node is None:
+        return ""
+    if node.type == "constant":
+        return _read_text(node, source)
+    if node.type == "scope_resolution":
+        consts = [c for c in node.children if c.type == "constant"]
+        if consts:
+            return _read_text(consts[-1], source)
+    return ""
+
+
+# `Const = <factory>(...)` shapes that define a lightweight class named after the
+# constant. tree-sitter parses each as an `assignment`, not a `class`, so the
+# generic class branch never saw them (#1640).
+_RUBY_CLASS_FACTORIES = frozenset({("Struct", "new"), ("Class", "new"), ("Data", "define")})
+
+
+def _ruby_extra_walk(node, source: bytes, file_nid: str, stem: str, str_path: str,
+                     nodes: list, edges: list, seen_ids: set, function_bodies: list,
+                     parent_class_nid: str | None, add_node, add_edge, walk,
+                     callable_def_nids: set) -> bool:
+    """Ruby: a constant assignment whose RHS is ``Struct.new(...)``,
+    ``Class.new(Super)`` or ``Data.define(...)`` defines a class named after the
+    constant (#1640). Synthesize the class node, attach block-defined methods via
+    ``method`` (by recursing the block with the new node as parent), and emit an
+    ``inherits`` edge for ``Class.new(Super)``. Returns True if handled.
+    """
+    if node.type != "assignment":
+        return False
+    left = node.child_by_field_name("left")
+    right = node.child_by_field_name("right")
+    if left is None or right is None or left.type != "constant" or right.type != "call":
+        return False
+    recv = right.child_by_field_name("receiver")
+    meth = right.child_by_field_name("method")
+    if recv is None or meth is None or recv.type != "constant":
+        return False
+    if (_read_text(recv, source), _read_text(meth, source)) not in _RUBY_CLASS_FACTORIES:
+        return False
+
+    const_name = _read_text(left, source)
+    if not const_name:
+        return False
+    line = node.start_point[0] + 1
+    class_nid = _make_id(stem, const_name)
+    add_node(class_nid, const_name, line)
+    callable_def_nids.add(class_nid)  # a class is callable (its constructor)
+    # Mirror the generic class branch: containment always hangs off the file node.
+    add_edge(file_nid, class_nid, "contains", line)
+
+    # `Class.new(Super)` — the first positional constant argument is the superclass.
+    if _read_text(recv, source) == "Class":
+        args = next((c for c in right.children if c.type == "argument_list"), None)
+        if args is not None:
+            for arg in args.children:
+                if arg.type in ("constant", "scope_resolution"):
+                    base = _ruby_const_last_name(arg, source)
+                    if base:
+                        base_nid = _make_id(stem, base)
+                        if base_nid not in seen_ids:
+                            base_nid = _make_id(base)
+                            if base_nid not in seen_ids:
+                                nodes.append({
+                                    "id": base_nid, "label": base,
+                                    "file_type": "code", "source_file": "",
+                                    "source_location": "",
+                                })
+                                seen_ids.add(base_nid)
+                        add_edge(class_nid, base_nid, "inherits", line)
+                    break
+
+    # Recurse the do/brace block so block-defined methods attach to the class.
+    # The block wraps its statements in a `body_statement` (like a class body);
+    # descend into it so the method handler sees parent_class_nid — otherwise the
+    # default recurse resets the parent to None and the method hangs off the file
+    # with a dot-less label.
+    block = next((c for c in right.children if c.type in ("do_block", "block")), None)
+    if block is not None:
+        body = next((c for c in block.children if c.type == "body_statement"), block)
+        for child in body.children:
+            walk(child, parent_class_nid=class_nid)
+    return True
 
 
 # ── Generic extractor ─────────────────────────────────────────────────────────
@@ -3588,6 +3738,17 @@ def _extract_generic(
                                 break
                             if sub.type == "user_type":
                                 user_type_node = sub
+                                break
+                            # `class Foo : Bar by baz` wraps the delegated
+                            # interface `Bar` in an `explicit_delegation`
+                            # node; grab its first `user_type` descendant so
+                            # the implements edge (and generic-arg recovery)
+                            # still fire.
+                            if sub.type == "explicit_delegation":
+                                for inner in sub.children:
+                                    if inner.type == "user_type":
+                                        user_type_node = inner
+                                        break
                                 break
                         if user_type_node is None:
                             continue
@@ -4588,6 +4749,13 @@ def _extract_generic(
                                   ensure_named_node):
                 return
 
+        if config.ts_module == "tree_sitter_ruby":
+            if _ruby_extra_walk(node, source, file_nid, stem, str_path,
+                                nodes, edges, seen_ids, function_bodies,
+                                parent_class_nid, add_node, add_edge, walk,
+                                callable_def_nids):
+                return
+
         # Python's `@property` / `@staticmethod` / `@classmethod` wrap the
         # inner function_definition in a `decorated_definition` node. The
         # default recurse below clears parent_class_nid, which would cause the
@@ -4775,8 +4943,23 @@ def _extract_generic(
             return None
         return _read_text(scope, source)
 
+    _tracked_body_ids: set[int] = set()
+    _JS_CLOSURE_TYPES = ("arrow_function", "function_expression")
+
     def walk_calls(node, caller_nid: str) -> None:
         if node.type in config.function_boundary_types:
+            # JS/TS: an inline/returned closure not separately tracked in
+            # function_bodies would otherwise drop its calls at this boundary.
+            # Descend into it with the enclosing caller so `return () =>
+            # svc.doThing()` links to the caller (#1630). Tracked closures
+            # (const-assigned arrows) are walked with their own nid — skip to
+            # avoid double-counting.
+            if (config.ts_module in ("tree_sitter_javascript", "tree_sitter_typescript")
+                    and node.type in _JS_CLOSURE_TYPES):
+                body = node.child_by_field_name("body")
+                if body is not None and id(body) not in _tracked_body_ids:
+                    for child in node.children:
+                        walk_calls(child, caller_nid)
             return
 
         if node.type in config.call_types:
@@ -4957,6 +5140,11 @@ def _extract_generic(
                     is_member_call = True
                     if recv.type in ("identifier", "constant"):
                         member_receiver = _read_text(recv, source)
+                    elif recv.type == "scope_resolution":
+                        # Namespaced receiver `Billing::Processor.call` — capture the
+                        # last constant so cross-file resolution can bind it by the
+                        # bare class name (the god-node guard bails if ambiguous).
+                        member_receiver = _ruby_const_last_name(recv, source) or None
             else:
                 # Generic: get callee from call_function_field
                 func_node = node.child_by_field_name(config.call_function_field) if config.call_function_field else None
@@ -5282,6 +5470,14 @@ def _extract_generic(
         for _caller_nid, body_node in function_bodies:
             _swift_local_var_types(body_node, source, type_table)
 
+    # JS/TS: bodies already walked with their own caller_nid (const-assigned
+    # arrows, methods). An INLINE/returned arrow or function-expression that is
+    # NOT separately tracked (e.g. `return () => svc.doThing()`) is otherwise
+    # skipped at the arrow boundary in walk_calls, losing its calls — so let
+    # walk_calls descend into such untracked closures with the enclosing caller
+    # (#1630 Pattern B). Guarding on the tracked set prevents double-walking.
+    _tracked_body_ids.update(id(b) for _, b in function_bodies)
+
     for caller_nid, body_node in function_bodies:
         walk_calls(body_node, caller_nid)
 
@@ -5388,6 +5584,13 @@ def _extract_generic(
                 n["_callable"] = True
     if swift_extensions:
         result["swift_extensions"] = swift_extensions
+    # TS/JS: augment the constructor-injection type table with local `new`
+    # bindings and type-annotated parameters, so `const s = new Svc(); s.m()` and
+    # a call on a typed param (incl. inside a closure) resolve (#1630). The
+    # constructor-injection entries are populated during the walk above and win on
+    # a name clash (first-binding-wins in the helper).
+    if config.ts_module in ("tree_sitter_javascript", "tree_sitter_typescript"):
+        _ts_receiver_type_table(root, source, type_table)
     if type_table:
         if config.ts_module == "tree_sitter_swift":
             result["swift_type_table"] = {"path": str_path, "table": type_table}
@@ -6208,6 +6411,16 @@ def extract_apex(path: Path) -> dict:
             add_node(iface_nid, iface_name, lineno)
             add_edge(file_nid if current_class_nid is None else current_class_nid,
                      iface_nid, "contains", lineno)
+            if im.group(2):
+                for parent in im.group(2).split(","):
+                    parent = parent.strip()
+                    if parent:
+                        parent_nid = _make_id(stem, parent)
+                        if parent_nid not in seen_ids:
+                            parent_nid = _make_id(parent)
+                        if parent_nid not in seen_ids:
+                            add_node(parent_nid, parent, lineno)
+                        add_edge(iface_nid, parent_nid, "extends", lineno, confidence="INFERRED")
             pending_annotations = []
             continue
 
