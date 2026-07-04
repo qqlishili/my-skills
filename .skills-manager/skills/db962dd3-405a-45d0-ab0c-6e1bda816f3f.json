@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "skill_id": "db962dd3-405a-45d0-ab0c-6e1bda816f3f",
+  "path": "skills-manager-clone-8d06c3d7-0741-434e-8acb-c1f8fcb92dfa",
+  "path_key": "skills-manager-clone-8d06c3d7-0741-434e-8acb-c1f8fcb92dfa",
+  "enabled": true,
+  "tags": [
+    "obsidian-knowledge-brain"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/Tubo2333/obsidian-knowledge-brain",
+    "subpath": null,
+    "branch": null
+  }
+}

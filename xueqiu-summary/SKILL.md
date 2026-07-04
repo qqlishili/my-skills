@@ -5,6 +5,7 @@ user-invocable: true
 metadata:
   requires: node (with playwright-extra, puppeteer-extra-plugin-stealth), curl, jq
   primaryEnv: XQ_A_TOKEN
+disable: true
 ---
 
 # 雪球大V动态汇总与投资建议

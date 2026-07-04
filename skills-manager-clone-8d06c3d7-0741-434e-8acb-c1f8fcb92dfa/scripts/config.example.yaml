@@ -1,0 +1,24 @@
+# Obsidian Knowledge Brain v4.0 — Configuration Example
+# ======================================================
+# Copy this file to config.yaml and fill in your paths.
+# config.yaml is git-ignored and never committed.
+# v4.0 uses stdlib only — no PyYAML needed for core operations.
+
+version: "4.0"
+
+# --- GLOBAL ATOM TABLE ---
+# Default location: ~/.obsidian-knowledge-brain/atoms.json
+# Override for testing or custom setups:
+# atoms_path: ""
+
+# --- AGENT DIRECTORY ---
+# Auto-detected from .claude/, .cursor/, .gemini/, .codex/
+# Override if auto-detection fails:
+# agent_dir: ".claude"
+
+# --- OPTIONAL: LLM analysis (Tier 2, off by default) ---
+# api:
+#   base_url: ""
+#   model: ""
+#   temperature: 0.3
+#   max_tokens: 4000

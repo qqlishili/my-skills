@@ -8,6 +8,7 @@
     "codebuddy": true,
     "codex": true,
     "gemini_cli": true,
+    "github_copilot": true,
     "openclaw": true,
     "opencode": true,
     "workbuddy": false
