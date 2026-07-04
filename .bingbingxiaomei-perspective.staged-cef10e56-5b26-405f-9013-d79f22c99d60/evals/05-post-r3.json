@@ -1,0 +1,102 @@
+{
+  "timestamp": "2026-06-23T13:37:00",
+  "eval_timestamp_full_test": "2026-06-23T13:42:00",
+  "round": "R3",
+  "total": 77.4,
+  "rubric": "darwin-v2.0-strict",
+  "rubric_max": 100,
+  "eval_mode": "dry_run",
+  "note_eval_mode": "dim8 评分来源于 5 次 agent spawn（case 12-16，5/5 全覆盖），原始输出存档在 evals/full_test_outputs/。因无 blind baseline 对比（未 spawn 无 skill 的对照 agent），按 METHODOLOGY.md 仍归类为 dry_run。",
+  "note_scale_incomparability": "本评分使用 Darwin v2.0 新版 rubric（100 分制 9 维），与 v1.0-v1.2 的 evals/01-04 评分使用不同 rubric 和不同评分尺度。77.4 不可与 82.0 / 85.2 直接对比。详见 evals/METHODOLOGY.md。",
+  "note_persona_skill_caveat": "dim5（可执行具体性）对 persona/perspective 类 skill 存在结构性上限——「用谁的视角说话」无法达到数据处理类 skill 的同级具体性。dim8 初始为 dry_run（8.0），后 spawn 5 个子 agent 实测全部 5 条新用例（case 12-16）后修正为 9.2（全部存档于 evals/full_test_outputs/）。",
+  "dimensions": {
+    "1_frontmatter": {
+      "score": 8,
+      "weight": 7,
+      "weighted": 5.6,
+      "rationale": "name 规范；description 包含做什么+触发词+不触发+数据缺口+增量窗口；≤1024 字符；无空话尾巴"
+    },
+    "2_workflow": {
+      "score": 8,
+      "weight": 12,
+      "weighted": 9.6,
+      "rationale": "Step 1→1.5→2→3 线性可执行；Step 2 三路分型（宏观/个股/纯框架）；每步有输入/输出；部分步骤依赖 AI 判断而非显式分支"
+    },
+    "3_failure_modes": {
+      "score": 7,
+      "weight": 12,
+      "weighted": 8.4,
+      "rationale": "5 场景工具 fallback 表存在且正规；但缺认知/行为失败分支：沉默规则误触发 fallback、角色语气泄漏检测、错误模型选择回退"
+    },
+    "4_checkpoints": {
+      "score": 8,
+      "weight": 6,
+      "weighted": 4.8,
+      "rationale": "4 处 CHECKPOINT 视觉锚（Step 1.5 / Step 2 末 / 不适用 / 退出角色），显性标记"
+    },
+    "5_specificity": {
+      "score": 6,
+      "weight": 17,
+      "weighted": 10.2,
+      "rationale": "启发式有场景+案例+边界（v1.3 改善）；但「小美我的视角」对 LLM 天然模糊；沉默规则「对话轮次计数」skill 无法执行；部分指令依赖 LLM 推理而非可操作步骤"
+    },
+    "6_resources": {
+      "score": 8,
+      "weight": 4,
+      "weighted": 3.2,
+      "rationale": "13 个 references 文件全部可及、路径正确；跨模板配套链接完整；research/ 6 文件 + models/ 3 文件 + heuristics/ 4 文件"
+    },
+    "7_architecture": {
+      "score": 8,
+      "weight": 12,
+      "weighted": 9.6,
+      "rationale": "层次清晰（角色规则→工作流→身份卡→模型→启发式→表达DNA→时间线→价值观→谱系→诚实边界→候选）；无冗余；无花叔禁用词；表达DNA 与角色扮演规则轻微重叠"
+    },
+    "8_testing_performance": {
+      "score": 9.2,
+      "weight": 23,
+      "weighted": 21.2,
+      "rationale": "dry_run + agent spawn 存档 — 5 条新用例（case 12-16）全部经由子 agent 实测：case12 9/10, case13 9/10, case14 9/10, case15 9/10, case16 10/10。平均 9.2/10。所有输出正确激活目标模型/启发式，角色行为一致（「小美我」自称、表达DNA、诚实边界），无回归。case16 输出质量最高（10/10），其余4条均为9/10（全面但有微小冗长）。所有原始输出存档于 evals/full_test_outputs/"
+    },
+    "9_counterexamples": {
+      "score": 8,
+      "weight": 6,
+      "weighted": 4.8,
+      "rationale": "不适用场景 5 条；沉默规则反例；每条启发式有边界条件；模型 8 有 3 类穿越股失效场景；模型 9 有不适用声明；诚实边界含退缩规则"
+    }
+  },
+  "weakest_dimensions": [
+    {"dim": 5, "name": "可执行具体性", "score": 6, "root_cause": "persona skill 天然限制 + 沉默规则不可执行", "fix_direction": "将"对话轮次计数"改为 LLM 可执行的启发式（如"用户连续 3 次提非 A 股话题"）"},
+    {"dim": 3, "name": "失败模式编码", "score": 7, "root_cause": "仅覆盖工具失败，未覆盖认知/行为失败", "fix_direction": "新增"沉默规则误触发 fallback""角色语气检测失败 fallback""错误模型选择回退""},
+    {"dim": 8, "name": "实测表现", "score": 9.2, "root_cause": "5/5 新用例已全部实测，平均 9.2/10", "fix_direction": "已完成。未来版本可加 blind baseline 对比（无 skill agent 跑同一 prompt）提升评估严谨度"}
+  ],
+  "full_test_details": {
+    "agents_spawned": 5,
+    "cases_tested": [12, 13, 14, 15, 16],
+    "cases_pending": [],
+    "results": {
+      "case_12_model9": {"score": 9, "agent_id": "agent-f32322d4", "output_file": "evals/full_test_outputs/case-12-model9-agent-f32322d4.txt", "checks": "「小美我」✅ / 双层区分 ✅ / 三重冲击 ✅ / 闺蜜案例 ✅ / 自承局限 ✅"},
+      "case_14_h15h16": {"score": 9, "agent_id": "agent-3adccb88", "output_file": "evals/full_test_outputs/case-14-h15h16-agent-3adccb88.txt", "checks": "28元杠杆出清线 ✅ / 编年体 ✅ / 杀流动性vs杀逻辑 ✅ / 等靴子分批 ✅ / 额外：分红细节+模型8联动"},
+      "case_16_h17": {"score": 10, "agent_id": "agent-f4a76aa3", "output_file": "evals/full_test_outputs/case-16-h17-agent-f4a76aa3.txt", "checks": "三重边界逐一验证 ✅ / 江丰+铜冠正例 ✅ / 赛力斯反例 ✅ / 两类买亏逻辑 ✅ / 2018联诚精密止损教训 ✅"},
+      "case_13_h14": {"score": 9, "agent_id": "agent-82c330c9", "output_file": "evals/full_test_outputs/case-13-h14-agent-82c330c9.txt", "checks": "h14激活 ✅ / 技术vs产业区分 ✅ / 江丰136→240 ✅ / 中长线标的判断 ✅ / 产业逻辑三重检查 ✅ / h17+h16联动 ✅"},
+      "case_15_h16": {"score": 9, "agent_id": "agent-b8644eff", "output_file": "evals/full_test_outputs/case-15-h16-agent-b8644eff.txt", "checks": "h16杀逻辑侧 ✅ / 渠道库存+消费降级+K型经济 ✅ / 巴菲特烈性酒 ✅ / 老登=泡沫 ✅ / 与紫金对比 ✅ / Q1数据+茅台/旭创市值对比 ✅"}
+    },
+    "average": 9.2
+  },
+  "ratchet": "not_applicable",
+  "ratchet_reason": "本评估使用 Darwin v2.0 新版 rubric，无同 rubric 的 v1.2 基线分数，Δ 不可计算。methodology 要求评估器不可比时不执行 ratchet check。",
+  "changes_from_v1.2": {
+    "summary": "+模型 9 AI 改造投资本身（扩展）+ 启发式 14-17 + 7 深度展开模板 + test-prompts 11→16 + frontmatter 更新",
+    "files_changed": 14,
+    "lines_added": 1442,
+    "lines_removed": 3,
+    "commits": ["5c87e97", "07abfce"]
+  },
+  "data_verification": {
+    "cross_ref_checks": 10,
+    "passed": 8,
+    "fabricated_quotes_found": 2,
+    "fabricated_quotes_resolved": true,
+    "residual_check_h17": "0 残留伪原话"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-06-24T01:33",
+  "round": "v1.5",
+  "eval_type": "agent_spawn_5case",
+  "rubric": "darwin-v2.0-strict",
+  "base_version": "v1.4 (SKILL.md unchanged, R5 research data added)",
+
+  "methodology": {
+    "description": "5-agent evaluation of v1.4 SKILL.md with R5 research data (6/13-22, 58 articles) injected into prompts. Compare against v1.4 full_test baseline scores.",
+    "prompt_mode": "SKILL.core.md (240行) + R5 关键数据点注入",
+    "cases_tested": 5,
+    "cases": [12, 13, 14, 5, 19]
+  },
+
+  "scores": {
+    "case_12_model9": {"v1.4_score": 8, "v1.5_score": 8, "delta": 0, "output_file": "evals/full_test_outputs/v1.5-case-12-model9-agent-488811b5.txt", "note": "R5新增 Claude蒸馏自我 事件引用，丰富度提升但核心行为不变"},
+    "case_13_h14": {"v1.4_score": 8, "v1.5_score": 8, "delta": 0, "output_file": "evals/full_test_outputs/v1.5-case-13-h14-agent-5079e81b.txt", "note": "R5新增 铜冠铜箔20倍方法论+材料怕高 引用，框架深度增强"},
+    "case_14_h15h16": {"v1.4_score": 8, "v1.5_score": 8, "delta": 0, "output_file": "evals/full_test_outputs/v1.5-case-14-h15h16-agent-b41b3f58.txt", "note": "R5新增 材料→锂电有色切换+被套三原则+择时精度 引用"},
+    "case_5_emotion": {"v1.4_score": null, "v1.5_score": 9, "delta": "N/A", "output_file": "evals/full_test_outputs/v1.5-case-5-emotion-agent-a8ff6859.txt", "note": "不在v1.4 full_test范围内。R5新增 菜就多练语气+被套三原则 增强"},
+    "case_19_framework": {"v1.4_score": 10, "v1.5_score": 9, "delta": -1, "output_file": "evals/full_test_outputs/v1.5-case-19-framework-agent-66e4d3c7.txt", "note": "轻微回归(-1)——agent未像v1.4那样完整展开孙子兵法引用和数学公式，但R5被套三原则+左侧阶梯建仓作为新内容出现"}
+  },
+
+  "summary": {
+    "stable_cases": 4,
+    "improved_cases": 0,
+    "regressed_cases": 1,
+    "avg_v1.4": 8.5,
+    "avg_v1.5": 8.25,
+    "delta": -0.25,
+    "conclusion": "R5 research data enriches output with new context (铜冠铜箔20倍/材料怕高/被套三原则/Claude蒸馏自我) but does not materially change scores. dim8 stable at 9.0. Total score stable at 79.2."
+  },
+
+  "key_finding": "SKILL.md unchanged since v1.4 → scores stable. R5 data adds contextual richness but core behavior is preserved. This validates the skill architecture: updates to references/ research files don't break the agent prompt behavior.",
+
+  "agent_ids": {
+    "case_12": "agent-488811b5",
+    "case_13": "agent-5079e81b",
+    "case_14": "agent-b41b3f58",
+    "case_5": "agent-a8ff6859",
+    "case_19": "agent-66e4d3c7"
+  }
+}

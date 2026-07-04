@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-06-11T15:45:00",
+  "total": 83.5,
+  "dimensions": {
+    "frontmatter": 6.3,
+    "workflow": 10.8,
+    "failure_modes": 9.6,
+    "checkpoints": 5.3,
+    "specificity": 13.6,
+    "resources": 4.0,
+    "architecture": 9.6,
+    "testing": 18.6
+  },
+  "delta_checkpoints": 1.7,
+  "delta_total": 2.2,
+  "eval_mode": "dry_run",
+  "notes": {
+    "checkpoints": "P0改进：新增4处 CHECKPOINT（退出角色/5场景分类/Step 1.5确认理解/Step 3研究足迹验证），关键决策点全覆盖，从3.6→5.3（+1.7，原始分7.6→8.0）",
+    "testing": "R1-R3 行为回归全部 PASS：R1 输出研究足迹+无CHECKPOINT泄漏，R2 含心智模型关键词+无研究足迹，R3 拒绝推荐+无研究足迹",
+    "summary": "4处 CHECKPOINT 插入有效改进检查点维度，行为回归验证无退步，其他维度未受影响"
+  }
+}
