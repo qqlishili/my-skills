@@ -151,37 +151,40 @@ description: |
 **常用查询工具**（金融数据查询由 `references/tools/finance-data/` plugin 提供,覆盖 A股/港股/美股）:
 
 > ⚠️ **调用方式(必读)**:`westock-data` 和 `neodata-financial-search` **不是全局命令**。
-> - **westock-data**:需 `cd` 到本 skill 的 `references/tools/finance-data/skills/westock-data/` 目录后,用 `node scripts/index.js <子命令>` 运行(脚本为单文件打包,Node ≥18,无需 npm install)。`package.json` 的 `bin` 仅在 `npm link`/全局安装后才能当全局命令用,默认安装不生效。
+> - **westock-data**:通过 ClawHub/skillhub 发布的公开 npm 包,**v1.0.5 起改名为 `westock-data-skillhub`**。调用方式统一为 `npx -y westock-data-skillhub@latest <子命令>`; `@latest` 适合主 skill,若需要回放稳定性可在测试文档里固定版本号。
 > - **neodata-financial-search**:用 `python3 scripts/query.py --query "..."` 运行。**依赖 CodeBuddy/WorkBuddy 平台的 `connect_cloud_service` 工具取鉴权 token**,ZCode 等非 CodeBuddy 环境无法鉴权 → 此工具不可用,应跳过,直接用 westock-data。
-> - 每次新会话首次调用前,先 `node scripts/index.js quote sz000001` 试一次确认环境可用,再正式查询。
+> - 每次新会话首次调用前,先 `npx -y westock-data-skillhub@latest search 长电` 试一次确认环境可用,再正式查询。
 
-**第一优先:结构化数据**(westock-data,本环境实测可用;代码格式:沪市 sh600519 / 深市 sz000001 / 港股 hk00700 / 美股 usAAPL)
+**第一优先:结构化数据**(westock-data,任何 node+npx 环境可用;代码格式:沪市 sh600519 / 深市 sz000001 / 港股 hk00700 / 美股 usAAPL)
 
 ```bash
-cd references/tools/finance-data/skills/westock-data
-node scripts/index.js quote <code>                       # 实时行情
-node scripts/index.js kline <code> --period day --limit 20   # K线
-node scripts/index.js minute <code>                      # 分时
-node scripts/index.js profile <code>                     # 公司简况
-node scripts/index.js finance <code> --num 4             # 财务报表(最近4期)
-node scripts/index.js asfund <code>                      # A股资金流向
-node scripts/index.js hkfund <hk>                        # 港股资金流向
-node scripts/index.js usfund <us>                        # 美股卖空
-node scripts/index.js technical <code> --group all       # 技术指标(全部)
-node scripts/index.js chip <code>                        # 筹码成本(A股)
-node scripts/index.js shareholder <code>                 # 股东结构(A股+港股)
-node scripts/index.js sector --search <关键词>            # 板块/概念成份股
-node scripts/index.js consensus <code>                   # 机构一致预期
-node scripts/index.js reserve <code>                     # 业绩预告
-node scripts/index.js risk <code>                        # 风险事件(质押/解禁/诉讼,A股)
-node scripts/index.js macro --indicator gdp --year <年>  # 宏观经济数据
-node scripts/index.js calendar <日期>                    # 投资日历
+npx -y westock-data-skillhub@latest search <关键词>                     # 默认股票搜索
+npx -y westock-data-skillhub@latest search <关键词> --type sector        # 板块/概念搜索
+npx -y westock-data-skillhub@latest kline <code> --period day --limit 20
+npx -y westock-data-skillhub@latest technical <code> --indicator macd
+npx -y westock-data-skillhub@latest chip <code>
+npx -y westock-data-skillhub@latest consensus <code>
+npx -y westock-data-skillhub@latest score <code>
+npx -y westock-data-skillhub@latest finance <code> --num 4
+npx -y westock-data-skillhub@latest fund flow <code>
+npx -y westock-data-skillhub@latest market-overview
+npx -y westock-data-skillhub@latest profile <code>
+npx -y westock-data-skillhub@latest etf detail sh510300
+npx -y westock-data-skillhub@latest macro indicator cn_core --date <日期>
+npx -y westock-data-skillhub@latest disclosure <code>
+npx -y westock-data-skillhub@latest notice list <code> --type 1
 ```
+
+| 命令 | 验证状态 |
+|---|---|
+| `search / search --type sector / kline / technical / chip / consensus / score / finance / fund flow / market-overview / profile / etf detail / macro indicator cn_core / disclosure / notice list` | ✅ 已实测(@latest) |
+| `calendar / report / rating / buyback / changedist / ipo / risk / lhb / esg / connect / trade-calendar / suspension / futures / forex / fund short / sector constituent/info/valuation/forecast/finance` | ⚠ 参考 upstream `commands.md`(未逐一实测) |
+| `minute` | ❌ v1.0.5 不存在，已从示例中删除 |
 
 **第二优先:自然语言搜索**(`neodata-financial-search`,**仅 CodeBuddy/WorkBuddy 等有 `connect_cloud_service` 工具的环境可用**;支持自然语言提问,覆盖股票/基金/宏观/外汇/商品/指数/板块等7大类,A股/港股/美股/全球宏观)
 
 **数据查询原则**:
-1. **先测可用性**:新会话先跑一次 `node scripts/index.js quote sz000001`,确认 westock-data 可用。
+1. **先测可用性**:新会话先跑一次 `npx -y westock-data-skillhub@latest search 长电`,确认 westock-data 可用。
 2. **环境无 neodata 鉴权时(如 ZCode)**:跳过 neodata,**直接用 westock-data** 作为主数据源(覆盖行情/财报/资金/技术/股东/板块/预期/风险,基本够用)。
 3. **westock-data 也覆盖不到时**(如最新新闻、研报观点、宏观点评):用 WebSearch 公开信息检索,明确告知数据来源与非实时性。
 4. 命中限制时(港股美股无龙虎榜/筹码/风险事件等)切换或补充其他来源。
@@ -190,17 +193,18 @@ node scripts/index.js calendar <日期>                    # 投资日历
 
 **第二，明确核心投资逻辑**——成长驱动/周期反转/价值修复/事件催化/产业趋势/竞争格局改善，只抓最核心的一条，不堆逻辑。
 
-**第三，行业和竞争格局**——景气度方向、格局稳定性、公司是龙头还是跟随者、未来1-2季度最重要的行业变量。用 `sector --search` 看行业分类。
+**第三，行业和竞争格局**——景气度方向、格局稳定性、公司是龙头还是跟随者、未来1-2季度最重要的行业变量。用 `search <关键词> --type sector` 看行业分类（`sector --search` 已废弃）。
 
 **第四，验证财务质量**——收入利润增速、毛利率净利率变化、现金流质量、ROE、费用率、存货应收变化。用 `finance --num 4` 拉财务摘要。财务与叙事不匹配 → 降置信度。
 
-**第五，理解市场在交易什么预期**——业绩超预期/新产品放量/景气反转/估值切换/政策驱动/情绪催化。结合 `quote`(行情+估值) + `kline`(走势) + `consensus`(机构一致预期) 判断预期是否已被价格反映;无 neodata 环境用 WebSearch 搜研报补充。
+**第五，理解市场在交易什么预期**——业绩超预期/新产品放量/景气反转/估值切换/政策驱动/情绪催化。结合 `kline`(走势) + `consensus`(机构一致预期) 判断预期是否已被价格反映;`score` 的资金/技术评分在第七步风险分析中使用。
 
-**第六，估值是否匹配逻辑**——成长股看PE/PEG/PS，价值股看PE/PB/股息率，周期股看PB/周期中枢估值。用 `quote` 取估值数据(PE-TTM/PE-FWD/PB/PS 一站式返回)。
+**第六，估值是否匹配逻辑**——成长股看PE/PEG/PS，价值股看PE/PB/股息率，周期股看PB/周期中枢估值。用 `consensus` 取估值数据(EPS/PE/PB/PS/目标价 + 机构数)。
 
-**第七，列出风险点**——短期（情绪/预期差/交易拥挤）/中期（需求/竞争/产能）/长期（商业模式/政策/技术替代），分层列清。
+**第七，列出风险点**——短期（情绪/预期差/交易拥挤）/中期（需求/竞争/产能）/长期（商业模式/政策/技术替代），分层列清。**短期风险量化**:用 `score` 取资金评分(判断主力是否派发)与技术评分(判断短期恶化速度)及其周/月趋势——周内显著下跌是派发/恶化的硬信号。
 
-**第八，给出结论**——综合前七步，给出明确判断：买入/卖出/持有，附合理估值区间。列出至少2条前提条件，每条以「如果XX，则判断可能不成立」开头。
+**第八，给出结论**——综合前七步，给出明确判断：买入/卖出/持有，附合理估值区间。列出至少2条前提条件，每条以「如果XX，则判断可能不成立」开头。**整体判断量化**:用 `score` 取综合评分(整体打分)与基本面评分(行业地位,周趋势判断长期竞争力)及风险评分(异常预警,稳定度判断)——高综合评分 + 高基本面评分通常意味着行业地位强、基本面稳健。
+需结合同行业可比公司评分判断:优先选择同一细分赛道、主营业务相近、商业模式一致、市场地位和市值层级接近的 3-5 家公司,取其中位数或区间作参照。若行业内样本分化明显,应以同细分赛道公司为准,不以宽口径一级行业替代。
 
 > 核心原则：区分事实、逻辑、预期、风险，不写空泛长文。适合用表格的优先用表格。
 
@@ -235,6 +239,10 @@ node scripts/index.js calendar <日期>                    # 投资日历
 | 场景 | 失败信号 | 处理动作 |
 |------|---------|---------|
 | WebSearch 超时 | 15 秒无响应 | 重试 1 次；仍超时 → 「小美我搜索超时了，数据没拉到」 |
+| npx 首次下载超时 | npx 下载 westock-data-skillhub 超过 60 秒 | 检查网络/代理，重试 1 次；仍超时 → 用 WebSearch 公开信息兜底 |
+| consensus / report / score 失败 | 返回鉴权/限流/空数据 | 优先重试 1 次；仍失败 → 切 WebSearch 或公告/研报原文，但必须明确标注不是机构一致预期 |
+| kline 当作实时行情用 | 误把 `--limit 1` 当现价 | kline 有延迟，展示时必须标注数据日期，勿称「现价」「实时涨跌」 |
+| 多股没批量 | 同业对比用了 N 条命令 | 立即改为逗号批量调用（核心铁律第 5 条） |
 | neodata 无结果 | 返回空或 error | 切换到 `westock-data`；仍无结果 → 用 WebSearch 公开信息 |
 | westock-data 限流 | 返回限流提示 | 歇 30 秒再试一次 |
 | 多源数据冲突 | 不同来源给出矛盾数据 | 在「小美我看了→」中标注 [来源分歧]，优先采信近 30 日研报/官方公告 |

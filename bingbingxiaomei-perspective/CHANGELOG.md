@@ -7,6 +7,26 @@
 
 ## 更新日志
 
+### v1.5 — 2026-07-06
+
+**基于 westock-data v1.0.5 实测反馈的紧急同步：Bingbingxiaomei 的金融数据调用、风险分层和同业判断方法全面对齐。**
+
+| 优先级 | 改动 | 描述 | 行数 |
+|--------|------|------|------|
+| P0 | westock-data 调用方式统一 | 改为 `npx -y westock-data-skillhub@latest <子命令>`，补充 `@latest` 风险说明与首次探测流程 | +6 |
+| P0 | 旧命令清理 | 删除 `quote` / `minute` / `asfund` / `hkfund` / `usfund` / `reserve` 等旧写法，修正 `sector --search` / `technical --group` / `macro --indicator` | +18 |
+| P0 | 个股八步框架更新 | 第 193 / 197 / 201 / 203-204 行同步改写：`search --type sector`、`kline + consensus`、`score` 风险拆分、同业可比公司中位数法 | +14 |
+| P1 | 状态表重做 | `search / kline / consensus / score / finance / fund flow / market-overview / etf detail / macro indicator cn_core / disclosure / notice list` 归为已实测，其余命令标注参考 upstream | +10 |
+| P1 | test-prompts 扩展 | 新增 case 21-22：`npx` 探测、同业批量对比 | +12 |
+
+**关键结论**：
+1. `minute` 在 v1.0.5 不存在，必须从主文档删除。
+2. `sector --search` 不可用，正确写法是 `search <关键词> --type sector`。
+3. `disclosure` / `notice list` / `etf detail` / `macro indicator cn_core` 已实测可用，应升级为已验证命令。
+4. `score` 不应放在“预期是否已被价格反映”段落，而应拆到“风险分析”和“投资结论”。
+
+**实测快照**：`search` / `kline` / `consensus` / `score` / `finance` / `fund flow` / `market-overview` / `etf detail` / `macro indicator cn_core` / `disclosure` / `notice list`
+
 ### v1.1 — 2026-06-11
 
 **基于 Darwin 评估（81.3→85.2，+3.9）的迭代改进（v1 评估器，dry_run 模式；详见 `evals/METHODOLOGY.md`）。**
