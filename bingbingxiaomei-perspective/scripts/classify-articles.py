@@ -11,14 +11,13 @@ Usage:
 
 import os, re, json, sys
 from collections import Counter, defaultdict
-from datetime import datetime, timedelta
+from datetime import datetime
 
 # ============================================================
 # CONFIGURATION
 # ============================================================
+VAULT = r"D:\Temp\karpathy-llm-wiki-vault\raw\02-投资\01-xueqiu\冰冰小美"
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-SKILL_DIR = os.path.dirname(SCRIPT_DIR)
-VAULT = os.path.join(SKILL_DIR, "references", "sources", "articles")
 OUTDIR = os.path.join(SCRIPT_DIR, "classification_output")
 os.makedirs(OUTDIR, exist_ok=True)
 
@@ -27,7 +26,7 @@ DEFAULT_START = "2023-01-01"
 DEFAULT_END = "2026-12-31"
 
 # ============================================================
-# MODEL KEYWORDS (12 models, ordered by priority)
+# MODEL KEYWORDS (9 models, ordered by priority)
 # ============================================================
 MODEL_KEYWORDS = {
     "model_1_three_elements": {
@@ -92,31 +91,10 @@ MODEL_KEYWORDS = {
         "keywords": ["AI蒸馏", "信息差抹平", "经验贬值", "体系失效",
                      "AI改造", "AI效率", "AI竞争", "Claude"],
     },
-    "model_10_information_finance": {
-        "name": "信息金融意义",
-        "type": "扩展",
-        "keywords": ["信息的金融意义", "五略", "战略", "方略", "策略",
-                     "显学", "隐学", "话语权", "媒体", "新闻", "吃瓜",
-                     "烟雾弹", "实事求是"],
-    },
-    "model_11_national_dividend": {
-        "name": "国运红利切换",
-        "type": "扩展",
-        "keywords": ["国运红利", "房地产黄金时代", "科技红利", "全民脱贫",
-                     "共同富裕", "乡村振兴", "新钱", "旧钱", "新产业",
-                     "旧产业", "财政主导", "产业驱动"],
-    },
-    "model_12_ai_infra_materials": {
-        "name": "AI基建材料端",
-        "type": "扩展",
-        "keywords": ["AI基建", "五层架构", "能源", "芯片", "算力", "大模型",
-                     "应用层", "先进封装", "高速铜箔", "氟化工", "电子特气",
-                     "六氟磷酸锂", "材料端", "物理极限"],
-    },
 }
 
 # ============================================================
-# HEURISTIC KEYWORDS (21 heuristics)
+# HEURISTIC KEYWORDS (17 heuristics)
 # ============================================================
 HEURISTIC_KEYWORDS = {
     "h1_pbc": {"name": "信央妈信国运", "keywords": ["央妈", "央行", "相信国运", "降准", "降息", "MLF", "LPR"]},
@@ -136,10 +114,6 @@ HEURISTIC_KEYWORDS = {
     "h15_leverage": {"name": "杠杆出清线", "keywords": ["杠杆出清", "杠杆", "出清线", "跌破", "编年体"]},
     "h16_liquidity_vs_biz": {"name": "流动性预期≠经营", "keywords": ["杀流动性", "杀逻辑", "企业经营", "没发生", "基本面"]},
     "h17_active_loss": {"name": "主动买亏边界", "keywords": ["主动买亏", "三重边界", "止损线", "产业逻辑"]},
-    "h18_five_strategies": {"name": "五略处理信息", "keywords": ["五略", "战略", "方略", "策略", "烟雾弹", "集中优势兵力"]},
-    "h19_profit_position": {"name": "利润持仓纪律", "keywords": ["盈利持仓", "利润持仓", "对半减仓", "成本", "超级重仓", "做T"]},
-    "h20_cycle_to_supply": {"name": "库存周期到供需周期", "keywords": ["库存周期", "供需周期", "国标", "新需求", "需求扩张", "涨价推动"]},
-    "h21_old_target_psych": {"name": "旧红利衰退不抄底", "keywords": ["房地产周期", "白酒", "老登", "消费降级", "周期", "主业遇到瓶颈"]},
 }
 
 # ============================================================
@@ -405,8 +379,8 @@ def output_summary(all_results):
 # MAIN
 # ============================================================
 def main():
-    start = datetime.strptime(DEFAULT_START, "%Y-%m-%d")
-    end = datetime.strptime(DEFAULT_END, "%Y-%m-%d") + timedelta(days=1) - timedelta(microseconds=1)
+    start = DEFAULT_START
+    end = DEFAULT_END
     min_score = 0.3
     
     # Parse CLI args
@@ -417,7 +391,7 @@ def main():
             start = datetime.strptime(args[i+1], "%Y-%m-%d")
             i += 2
         elif args[i] == '--end' and i + 1 < len(args):
-            end = datetime.strptime(args[i+1], "%Y-%m-%d") + timedelta(days=1) - timedelta(microseconds=1)
+            end = datetime.strptime(args[i+1], "%Y-%m-%d")
             i += 2
         elif args[i] == '--min-score' and i + 1 < len(args):
             min_score = float(args[i+1])
