@@ -8,7 +8,7 @@
     "codebuddy": false,
     "codex": true,
     "github_copilot": true,
-    "opencode": true,
+    "opencode": false,
     "workbuddy": true
   }
 }
