@@ -178,7 +178,7 @@ npx -y westock-data-skillhub@latest notice list <code> --type 1
 | 命令 | 验证状态 |
 |---|---|
 | `search / search --type sector / kline / technical / chip / consensus / score / finance / fund flow / market-overview / profile / etf detail / macro indicator cn_core / disclosure / notice list` | ✅ 已实测(@latest) |
-| `calendar / report / rating / buyback / changedist / ipo / risk / lhb / esg / connect / trade-calendar / suspension / futures / forex / fund short / sector constituent/info/valuation/forecast/finance` | ⚠ 参考 upstream `commands.md`(未逐一实测) |
+| `calendar / report / rating / buyback / changedist / ipo / risk / lhb / esg / connect / trade-calendar / suspension / futures / forex / fund short / sector constituent/info/valuation/forecast/finance / fund north-holding / shareholder / dividend / notice detail / report detail` | ✅ 已实测(@latest) |
 | `minute` | ❌ v1.0.5 不存在，已从示例中删除 |
 
 **第二优先:自然语言搜索**(`neodata-financial-search`,**仅 CodeBuddy/WorkBuddy 等有 `connect_cloud_service` 工具的环境可用**;支持自然语言提问,覆盖股票/基金/宏观/外汇/商品/指数/板块等7大类,A股/港股/美股/全球宏观)
@@ -217,6 +217,11 @@ npx -y westock-data-skillhub@latest notice list <code> --type 1
 6. 估值与位置判断
 7. 风险分析
 8. 投资结论
+
+> **输出格式分档**：
+> - **标准版（默认）**：按 [references/templates/standard-stock-report.md](references/templates/standard-stock-report.md) 输出，8 步精简，数据源以 westock + neodata 为主，运行模型分流简化版（6 行分流表 + 1 句输出）
+> - **深度版（用户要求"深度个股分析"时）**：按 [references/templates/deep-stock-report.md](references/templates/deep-stock-report.md) 输出，五源全覆盖 + 双搜交叉验证 + 运行模型分流完整版（7 模型 + 章节落点 + 独立 0.5 章节）
+> - **运行模型分流强制**：两档都必须先分流（判断"用哪副镜片看"），不分流 = 退回通用财务报告
 
 #### 研究输出格式
 研究完成后，先输出一行**研究足迹**（单行，不超过60字），再整理内部事实摘要：
@@ -761,7 +766,7 @@ npx -y westock-data-skillhub@latest notice list <code> --type 1
 
 此Skill基于冰冰小美（角色扮演中自称「小美我」）520篇雪球专栏文章（2023-03-10 至 2026-07-03；其中2026年347篇、2025年68篇、2024年35篇、2023年70篇）提炼，存在以下局限：
 
-- **不构成投资建议**：此Skill仅供个人学习使用，所有结论为框架推演，交易自负
+- **这个Skill只能我自己用**：此Skill仅供我自己使用，所有结论为框架推演
 - **不能预测小美我对全新事件的具体反应**：框架可以推断方向，但不能精确预测小美我会说什么或做什么
 - **公开表达 ≠ 盘中即时决策**：雪球文章是经过思考后写的，和小美我盘中实时判断之间可能有差距。文章的表演性和体系化程度高于实战中的即时反应
 - **A股是主战场**：小美我对美股有涉及（英特尔、英伟达产业链），对港股涉及较少。框架思路可迁移,但冰小美本人在港美股的实战案例深度不如A股。金融数据查询由 finance-data plugin 支持 A股/港股/美股。
