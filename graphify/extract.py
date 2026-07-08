@@ -868,6 +868,69 @@ def _java_type_parameters_in_scope(node, source: bytes) -> frozenset[str]:
     return frozenset(names)
 
 
+# java.lang (auto-imported) plus the ubiquitous java.util / java.io / java.time /
+# java.util.{stream,function,concurrent} / java.math / java.nio.file types that
+# appear as field, parameter, return, and generic-argument annotations. They never
+# resolve to a project node, so emitting `references` edges to them is pure noise
+# (mirrors _GO_PREDECLARED_TYPES / _PYTHON_ANNOTATION_NOISE). Suppressed at the
+# type-ref walker so they are never created as nodes or emitted as edges. The
+# boxed-scalar/`void` primitives are already dropped by grammar node type above;
+# these are the class/interface names the grammar reports as identifiers.
+_JAVA_BUILTIN_TYPES = frozenset({
+    # java.lang — core
+    "Object", "String", "CharSequence", "StringBuilder", "StringBuffer",
+    "Number", "Byte", "Short", "Integer", "Long", "Float", "Double",
+    "Boolean", "Character", "Void", "Class", "Enum", "Record", "Math",
+    "System", "Thread", "Runnable", "Comparable", "Iterable", "Cloneable",
+    "AutoCloseable", "Appendable", "Readable", "Process", "ProcessBuilder",
+    "Runtime", "Package", "ThreadLocal", "InheritableThreadLocal",
+    # java.lang — throwables
+    "Throwable", "Exception", "RuntimeException", "Error",
+    "IllegalArgumentException", "IllegalStateException", "NullPointerException",
+    "IndexOutOfBoundsException", "ArrayIndexOutOfBoundsException",
+    "ClassCastException", "NumberFormatException", "ArithmeticException",
+    "UnsupportedOperationException", "InterruptedException",
+    "CloneNotSupportedException", "SecurityException", "StackOverflowError",
+    "OutOfMemoryError", "AssertionError",
+    # java.util — collections & core
+    "Collection", "List", "ArrayList", "LinkedList", "Vector", "Stack",
+    "Set", "HashSet", "LinkedHashSet", "TreeSet", "SortedSet", "NavigableSet",
+    "EnumSet", "Map", "HashMap", "LinkedHashMap", "TreeMap", "SortedMap",
+    "NavigableMap", "Hashtable", "EnumMap", "Properties", "Queue", "Deque",
+    "ArrayDeque", "PriorityQueue", "Iterator", "ListIterator", "Comparator",
+    "Optional", "OptionalInt", "OptionalLong", "OptionalDouble", "Collections",
+    "Arrays", "Objects", "Date", "Calendar", "Random", "UUID", "Scanner",
+    "StringJoiner", "StringTokenizer", "BitSet", "Spliterator", "Locale",
+    "NoSuchElementException", "ConcurrentModificationException",
+    # java.util.stream
+    "Stream", "IntStream", "LongStream", "DoubleStream", "Collector",
+    "Collectors",
+    # java.util.function
+    "Function", "BiFunction", "Consumer", "BiConsumer", "Supplier",
+    "Predicate", "BiPredicate", "UnaryOperator", "BinaryOperator",
+    "IntFunction", "ToIntFunction", "ToLongFunction", "ToDoubleFunction",
+    # java.util.concurrent
+    "Callable", "Future", "CompletableFuture", "CompletionStage", "Executor",
+    "ExecutorService", "Executors", "ScheduledExecutorService", "TimeUnit",
+    "ConcurrentHashMap", "ConcurrentMap", "CopyOnWriteArrayList",
+    "BlockingQueue", "CountDownLatch", "Semaphore", "CyclicBarrier",
+    "AtomicInteger", "AtomicLong", "AtomicBoolean", "AtomicReference",
+    # java.time
+    "Instant", "Duration", "Period", "LocalDate", "LocalTime", "LocalDateTime",
+    "ZonedDateTime", "OffsetDateTime", "ZoneId", "ZoneOffset", "DayOfWeek",
+    "Month", "Year", "Clock", "DateTimeFormatter",
+    # java.io / java.nio.file
+    "IOException", "UncheckedIOException", "FileNotFoundException", "File",
+    "InputStream", "OutputStream", "Reader", "Writer", "BufferedReader",
+    "BufferedWriter", "InputStreamReader", "OutputStreamWriter", "FileReader",
+    "FileWriter", "PrintStream", "PrintWriter", "ByteArrayInputStream",
+    "ByteArrayOutputStream", "Serializable", "Closeable", "Path", "Paths",
+    "Files",
+    # java.math
+    "BigDecimal", "BigInteger",
+})
+
+
 def _java_collect_type_refs(
     node,
     source: bytes,
@@ -885,19 +948,23 @@ def _java_collect_type_refs(
         return
     if t == "type_identifier":
         name = _read_text(node, source)
-        if name and name not in skip:
+        if name and name not in skip and name not in _JAVA_BUILTIN_TYPES:
             out.append((name, "generic_arg" if generic else "type"))
         return
     if t == "scoped_type_identifier":
         text = _read_text(node, source).rsplit(".", 1)[-1]
-        if text:
+        if text and text not in _JAVA_BUILTIN_TYPES:
             out.append((text, "generic_arg" if generic else "type"))
         return
     if t == "generic_type":
         for c in node.children:
             if c.type in ("type_identifier", "scoped_type_identifier"):
                 text = _read_text(c, source).rsplit(".", 1)[-1]
-                if text and (c.type == "scoped_type_identifier" or text not in skip):
+                if (
+                    text
+                    and text not in _JAVA_BUILTIN_TYPES
+                    and (c.type == "scoped_type_identifier" or text not in skip)
+                ):
                     out.append((text, "generic_arg" if generic else "type"))
                 break
         for c in node.children:
@@ -2866,6 +2933,32 @@ def _swift_extra_walk(node, source: bytes, file_nid: str, stem: str, str_path: s
     return False
 
 
+# ── Java extra walk for enum constants ───────────────────────────────────────
+
+def _java_extra_walk(node, source: bytes, file_nid: str, stem: str, str_path: str,
+                     nodes: list, edges: list, seen_ids: set, function_bodies: list,
+                     parent_class_nid: str | None, add_node_fn, add_edge_fn,
+                     walk_fn) -> bool:
+    """Handle enum_constant for Java. Returns True if handled."""
+    if node.type == "enum_constant" and parent_class_nid:
+        name_node = node.child_by_field_name("name")
+        if name_node is None:
+            return True
+        const_name = _read_text(name_node, source)
+        line = node.start_point[0] + 1
+        const_nid = _make_id(parent_class_nid, const_name)
+        add_node_fn(const_nid, const_name, line)
+        add_edge_fn(parent_class_nid, const_nid, "case_of", line)
+        # Anonymous-body constants (`MONDAY { void greet(){} }`): descend so the
+        # body's methods aren't dropped; const_nid attaches them to the constant.
+        for child in node.children:
+            if child.type == "class_body":
+                for member in child.children:
+                    walk_fn(member, parent_class_nid=const_nid)
+        return True
+    return False
+
+
 # ── Language configs ──────────────────────────────────────────────────────────
 
 _PYTHON_CONFIG = LanguageConfig(
@@ -3357,10 +3450,16 @@ def _ruby_extra_walk(node, source: bytes, file_nid: str, stem: str, str_path: st
                         if base_nid not in seen_ids:
                             base_nid = _make_id(base)
                             if base_nid not in seen_ids:
+                                # origin_file lets _disambiguate_colliding_node_ids
+                                # tell this file's unresolved reference apart from
+                                # another file's same-named one, instead of every
+                                # file's stub collapsing onto one shared bare id
+                                # (see ensure_named_node(), which sets the same
+                                # field for this exact reason).
                                 nodes.append({
                                     "id": base_nid, "label": base,
                                     "file_type": "code", "source_file": "",
-                                    "source_location": "",
+                                    "source_location": "", "origin_file": str_path,
                                 })
                                 seen_ids.add(base_nid)
                         add_edge(class_nid, base_nid, "inherits", line)
@@ -3614,18 +3713,7 @@ def _extract_generic(
                     for arg in args.children:
                         if arg.type == "identifier":
                             base = _read_text(arg, source)
-                            base_nid = _make_id(stem, base)
-                            if base_nid not in seen_ids:
-                                base_nid = _make_id(base)
-                                if base_nid not in seen_ids:
-                                    nodes.append({
-                                        "id": base_nid,
-                                        "label": base,
-                                        "file_type": "code",
-                                        "source_file": "",
-                                        "source_location": "",
-                                    })
-                                    seen_ids.add(base_nid)
+                            base_nid = ensure_named_node(base, line)
                             add_edge(class_nid, base_nid, "inherits", line)
 
             # Swift-specific: conformance / inheritance
@@ -3764,18 +3852,7 @@ def _extract_generic(
                         base = _kotlin_user_type_name(user_type_node, source)
                         if not base:
                             continue
-                        base_nid = _make_id(stem, base)
-                        if base_nid not in seen_ids:
-                            base_nid = _make_id(base)
-                            if base_nid not in seen_ids:
-                                nodes.append({
-                                    "id": base_nid,
-                                    "label": base,
-                                    "file_type": "code",
-                                    "source_file": "",
-                                    "source_location": "",
-                                })
-                                seen_ids.add(base_nid)
+                        base_nid = ensure_named_node(base, line)
                         add_edge(class_nid, base_nid, relation, line)
                         for arg_child in user_type_node.children:
                             if arg_child.type != "type_arguments":
@@ -3809,18 +3886,7 @@ def _extract_generic(
                                 base = _read_text(consts[-1], source)
                             break
                     if base:
-                        base_nid = _make_id(stem, base)
-                        if base_nid not in seen_ids:
-                            base_nid = _make_id(base)
-                            if base_nid not in seen_ids:
-                                nodes.append({
-                                    "id": base_nid,
-                                    "label": base,
-                                    "file_type": "code",
-                                    "source_file": "",
-                                    "source_location": "",
-                                })
-                                seen_ids.add(base_nid)
+                        base_nid = ensure_named_node(base, line)
                         add_edge(class_nid, base_nid, "inherits", line)
 
                 # `include`/`extend`/`prepend <Const>` in the class/module body ->
@@ -4086,18 +4152,7 @@ def _extract_generic(
                             continue
                         if not base:
                             continue
-                        base_nid = _make_id(stem, base)
-                        if base_nid not in seen_ids:
-                            base_nid = _make_id(base)
-                            if base_nid not in seen_ids:
-                                nodes.append({
-                                    "id": base_nid,
-                                    "label": base,
-                                    "file_type": "code",
-                                    "source_file": "",
-                                    "source_location": "",
-                                })
-                                seen_ids.add(base_nid)
+                        base_nid = ensure_named_node(base, line)
                         add_edge(class_nid, base_nid, "inherits", line)
                         # Emit a generic_arg reference for each type argument on the
                         # base (Base<Dep> -> Car references Dep). _cpp_collect_type_refs
@@ -4786,6 +4841,12 @@ def _extract_generic(
                                   nodes, edges, seen_ids, function_bodies,
                                   parent_class_nid, add_node, add_edge,
                                   ensure_named_node):
+                return
+
+        if config.ts_module == "tree_sitter_java":
+            if _java_extra_walk(node, source, file_nid, stem, str_path,
+                                nodes, edges, seen_ids, function_bodies,
+                                parent_class_nid, add_node, add_edge, walk):
                 return
 
         if config.ts_module == "tree_sitter_ruby":
@@ -5799,7 +5860,114 @@ def extract_js(path: Path) -> dict:
         config = _TS_CONFIG
     else:
         config = _JS_CONFIG
-    return _extract_generic(path, config)
+    result = _extract_generic(path, config)
+    if "error" not in result:
+        _extract_js_rationale(path, result)
+    return result
+
+
+# ── JS/TS rationale + doc-reference extraction ────────────────────────────────
+#
+# Parity with _extract_python_rationale: Python files get rationale nodes from
+# docstrings and `# NOTE:`-style comments, but JS/TS comments were discarded
+# entirely. That silently drops two high-value signals in mixed corpora:
+#   1. rationale comments (`// NOTE:`, `// WHY:`, ...) — same as Python;
+#   2. architecture-decision references (`ADR-0011`, `RFC 793`) that teams
+#      conventionally cite in file/function headers. These are the natural
+#      join points between code and design docs in the same graph — without
+#      them, code<->ADR edges never form even when the code cites the ADR.
+
+_JS_RATIONALE_PREFIXES = (
+    "// NOTE:", "// IMPORTANT:", "// HACK:", "// WHY:", "// RATIONALE:",
+    "// TODO:", "// FIXME:",
+    "* NOTE:", "* IMPORTANT:", "* HACK:", "* WHY:", "* RATIONALE:",
+    "* TODO:", "* FIXME:",
+)
+
+# Doc-reference tokens worth first-classing as graph nodes. Deliberately
+# conservative: ADR-NNNN (Architecture Decision Records, any zero padding)
+# and RFC NNNN / RFC-NNNN.
+_JS_DOC_REF_RE = re.compile(r"\b(ADR[- ]?\d{1,5}|RFC[- ]?\d{1,5})\b", re.IGNORECASE)
+
+# Only look for doc references inside comments, not string literals or code.
+_JS_COMMENT_LINE_RE = re.compile(r"^\s*(//|/\*|\*)")
+
+
+def _extract_js_rationale(path: Path, result: dict) -> None:
+    """Post-pass: extract rationale comments and doc references from JS/TS source.
+    Mutates result in-place by appending to result['nodes'] and result['edges'].
+    """
+    try:
+        source_text = path.read_text(encoding="utf-8", errors="replace")
+    except Exception:
+        return
+
+    stem = _file_stem(path)
+    str_path = str(path)
+    nodes = result["nodes"]
+    edges = result["edges"]
+    seen_ids = {n["id"] for n in nodes}
+    file_nid = _make_id(str(path))
+    seen_doc_refs: set[str] = set()
+
+    def _add_rationale(text: str, line: int) -> None:
+        label = text[:80].replace("\r\n", " ").replace("\r", " ").replace("\n", " ").strip()
+        rid = _make_id(stem, "rationale", str(line))
+        if rid not in seen_ids:
+            seen_ids.add(rid)
+            nodes.append({
+                "id": rid,
+                "label": label,
+                "file_type": "rationale",
+                "source_file": str_path,
+                "source_location": f"L{line}",
+            })
+        edges.append({
+            "source": rid,
+            "target": file_nid,
+            "relation": "rationale_for",
+            "confidence": "EXTRACTED",
+            "source_file": str_path,
+            "source_location": f"L{line}",
+            "weight": 1.0,
+        })
+
+    def _add_doc_ref(token: str, line: int) -> None:
+        # Normalize "adr 11" / "ADR-0011" spellings to a canonical "ADR-0011"
+        # style label so references to the same document collapse to one node.
+        kind, num = re.match(r"([A-Za-z]+)[- ]?(\d+)", token).groups()
+        kind = kind.upper()
+        label = f"{kind}-{num.zfill(4)}" if kind == "ADR" else f"{kind}-{num}"
+        if label in seen_doc_refs:
+            return
+        seen_doc_refs.add(label)
+        rid = _make_id("docref", label)
+        if rid not in seen_ids:
+            seen_ids.add(rid)
+            nodes.append({
+                "id": rid,
+                "label": label,
+                "file_type": "doc_ref",
+                "source_file": str_path,
+                "source_location": f"L{line}",
+            })
+        edges.append({
+            "source": file_nid,
+            "target": rid,
+            "relation": "cites",
+            "confidence": "EXTRACTED",
+            "source_file": str_path,
+            "source_location": f"L{line}",
+            "weight": 1.0,
+        })
+
+    for lineno, line_text in enumerate(source_text.splitlines(), start=1):
+        stripped = line_text.strip()
+        if any(stripped.startswith(p) for p in _JS_RATIONALE_PREFIXES):
+            _add_rationale(stripped.lstrip("/* "), lineno)
+        if _JS_COMMENT_LINE_RE.match(line_text):
+            for m in _JS_DOC_REF_RE.finditer(stripped):
+                _add_doc_ref(m.group(1), lineno)
 
 
 def extract_svelte(path: Path) -> dict:
@@ -9652,6 +9820,52 @@ def _lang_is_case_insensitive(source_file: object) -> bool:
     if not source_file:
         return False
     return Path(str(source_file)).suffix.lower() in _CASE_INSENSITIVE_EXTS
+
+
+# Language interop families for cross-file call resolution. A call in one language
+# can never bind by name to a definition in another family — a TSX component does
+# not invoke a Kotlin method, and a Python function does not invoke a Java one.
+# Families are grouped by REAL interop so legitimate cross-language resolution
+# keeps working: Kotlin/Java/Scala/Groovy share the JVM, C/C++/Objective-C/CUDA
+# share headers and symbols (Swift bridges to Objective-C), and JS/TS variants
+# (plus Vue/Svelte/Astro SFC script blocks) compile into one module graph.
+# Extensions absent from this map (docs, configs, unknown languages) resolve to
+# no family and are never filtered — same permissive default as before.
+_LANG_FAMILY_BY_EXT: dict[str, str] = {
+    # JS/TS module graph (SFCs embed JS/TS)
+    ".js": "jsts", ".jsx": "jsts", ".mjs": "jsts", ".cjs": "jsts",
+    ".ts": "jsts", ".tsx": "jsts", ".mts": "jsts", ".cts": "jsts",
+    ".vue": "jsts", ".svelte": "jsts", ".astro": "jsts",
+    # JVM interop
+    ".java": "jvm", ".kt": "jvm", ".kts": "jvm",
+    ".scala": "jvm", ".groovy": "jvm", ".gradle": "jvm",
+    # C-family: shared headers, Objective-C/C++ mix, Swift↔ObjC bridging
+    ".c": "native", ".h": "native", ".cpp": "native", ".cc": "native",
+    ".cxx": "native", ".hpp": "native", ".cu": "native", ".cuh": "native",
+    ".metal": "native", ".m": "native", ".mm": "native", ".swift": "native",
+    # Single-language families
+    ".py": "python",
+    ".go": "go",
+    ".rs": "rust",
+    ".rb": "ruby",
+    ".php": "php", ".phtml": "php", ".php3": "php", ".php4": "php",
+    ".php5": "php", ".php7": "php", ".phps": "php",
+    ".cs": "dotnet", ".razor": "dotnet", ".cshtml": "dotnet", ".xaml": "dotnet",
+    ".lua": "lua", ".luau": "lua",
+    ".zig": "zig",
+    ".ex": "elixir", ".exs": "elixir",
+    ".jl": "julia",
+    ".dart": "dart",
+    ".sh": "shell", ".bash": "shell",
+    ".ps1": "powershell", ".psm1": "powershell", ".psd1": "powershell",
+}
+
+
+def _lang_family(source_file: object) -> str | None:
+    """Interop family of the file's language, or None when unknown/not code."""
+    if not source_file:
+        return None
+    return _LANG_FAMILY_BY_EXT.get(Path(str(source_file)).suffix.lower())
 
 
 def _node_label_key(node: dict, fold: bool = False) -> str:
@@ -15821,6 +16035,30 @@ _DISPATCH: dict[str, Any] = {
 }
 
 
+# Extensionless executables (CLI entry points like `devctl` or `manage`) carry
+# their language in the shebang, not the suffix. detect.classify_file already
+# routes them to the CODE path via _shebang_interpreter; _get_extractor must
+# honor the same signal or these files are classified as code and then silently
+# dropped by extraction. Only interpreters with a real extractor are mapped —
+# detect's wider set (perl, fish, tcsh, Rscript) stays unmapped and skipped.
+_SHEBANG_DISPATCH: dict[str, Any] = {
+    "python": extract_python,
+    "python2": extract_python,
+    "python3": extract_python,
+    "bash": extract_bash,
+    "sh": extract_bash,
+    "dash": extract_bash,
+    "zsh": extract_bash,
+    "ksh": extract_bash,
+    "node": extract_js,
+    "nodejs": extract_js,
+    "ruby": extract_ruby,
+    "lua": extract_lua,
+    "php": extract_php,
+    "julia": extract_julia,
+}
+
+
 # ObjC-only directives. They are illegal in C and C++, so finding one in a `.h`
 # file is a near-zero-false-positive signal that the header is Objective-C (and so
 # belongs to extract_objc, not extract_c). `@property` is deliberately excluded: it
@@ -15863,6 +16101,20 @@ _CPP_HEADER_MARKERS = (
     b"class ", b"namespace ", b"template", b"::",
     b"public:", b"private:", b"protected:",
 )
+
+
+def _is_objc_source(path: Path) -> bool:
+    """Whether a `.m` file is Objective-C rather than MATLAB/Octave (#1702).
+
+    `.m` is shared by Objective-C implementation files and MATLAB (also Octave).
+    The suffix map routes `.m` to extract_objc unconditionally, which force-parses
+    MATLAB through the Objective-C tree-sitter grammar and emits garbage nodes/edges
+    (worse than skipping). A genuine ObjC `.m` always carries an ObjC directive
+    (@implementation/@interface/@import/#import); MATLAB has none of them. Reuses
+    the same marker set as the `.h` sniff. `.mm` is unambiguously Objective-C++ and
+    is not sniffed.
+    """
+    return _is_objc_header(path)
 
 
 def _is_cpp_header(path: Path) -> bool:
@@ -15908,6 +16160,21 @@ def _get_extractor(path: Path) -> Any | None:
         # grammar has no class_specifier). Reroute to extract_cpp (#1547).
         if _is_cpp_header(path):
             return extract_cpp
+    # `.m` is Objective-C OR MATLAB. extract_objc unconditionally would force-parse
+    # MATLAB through the ObjC grammar into garbage (#1702). Route to extract_objc
+    # only when the file actually looks like Objective-C; otherwise leave it without
+    # an extractor (surfaced by the no-AST-extractor warning, #1689) rather than
+    # mis-parsed. `.mm` is unambiguously Objective-C++ and stays on extract_objc.
+    if suffix == ".m" and not _is_objc_source(path):
+        return None
+    # Extensionless files: resolve by shebang, mirroring detect.classify_file.
+    # Without this, detect labels e.g. `#!/usr/bin/env bash` CLIs as code but
+    # extraction returns no extractor and the file silently contributes nothing.
+    if not suffix:
+        from graphify.detect import _shebang_interpreter
+        interp = _shebang_interpreter(path)
+        if interp is not None:
+            return _SHEBANG_DISPATCH.get(interp)
     return _DISPATCH.get(suffix)
 
 
@@ -16048,8 +16315,13 @@ def _extract_parallel(
         )
         return False
     if total_files >= _PROGRESS_INTERVAL:
+        # Report the same denominator the intermediate lines used (uncached files
+        # actually processed this run), not total_files — switching to the full
+        # corpus made the count jump upward at the end (cached hits + files with no
+        # extractor never entered uncached_work), which read as inconsistent (#1693).
+        _done = len(uncached_work)
         print(
-            f"  AST extraction: {total_files}/{total_files} files (100%) [{max_workers} workers]",
+            f"  AST extraction: {_done}/{_done} uncached files (100%) [{max_workers} workers]",
             flush=True,
         )
     return True
@@ -16084,7 +16356,9 @@ def _extract_sequential(
             save_cached(path, result, effective_root)
         per_file[idx] = result
     if total_files >= _PROGRESS_INTERVAL:
-        print(f"  AST extraction: {total_files}/{total_files} files (100%)", flush=True)
+        # Consistent denominator with the intermediate lines (#1693).
+        _done = len(uncached_work)
+        print(f"  AST extraction: {_done}/{_done} uncached files (100%)", flush=True)
 
 
 _PARALLEL_THRESHOLD = 20
@@ -16194,6 +16468,29 @@ def extract(
             f"are absent from the graph: {_shown}{_more}. A re-run will retry them "
             f"(empties are no longer cached); if it persists, please report the "
             f"file(s) (#1666).",
+            file=sys.stderr, flush=True,
+        )
+
+    # #1689: a file counted as code (extension in CODE_EXTENSIONS) but with no AST
+    # extractor wired up (e.g. .r/.R — there is no tree-sitter-r dispatch) silently
+    # contributes zero nodes. The #1666 warning above deliberately skips these (it
+    # only fires when an extractor exists), so surface them explicitly, grouped by
+    # extension, rather than reporting success as if the language were mapped.
+    from graphify.detect import CODE_EXTENSIONS as _CODE_EXTS
+    _no_extractor: dict[str, int] = {}
+    for _p in paths:
+        _ext = _p.suffix.lower()
+        if _ext in _CODE_EXTS and _get_extractor(_p) is None:
+            _no_extractor[_ext] = _no_extractor.get(_ext, 0) + 1
+    if _no_extractor:
+        _by_count = ", ".join(
+            f"{ext} ({n})" for ext, n in sorted(_no_extractor.items(), key=lambda kv: (-kv[1], kv[0]))
+        )
+        _tot = sum(_no_extractor.values())
+        print(
+            f"  warning: {_tot} file(s) are classified as code but graphify has no AST "
+            f"extractor for their language, so they contributed nothing to the graph: "
+            f"{_by_count}. Please open an issue to request support for these (#1689).",
             file=sys.stderr, flush=True,
         )
 
@@ -16491,6 +16788,23 @@ def extract(
             candidates = global_label_to_nids_ci.get(callee.lower(), [])
         if not candidates:
             continue
+        # Cross-language guard: never bind a call to a definition in a different
+        # language family. Name-only matching was resolving a TSX callback passed
+        # by name to a same-named Kotlin method in the Android half of the repo
+        # (and a Python call to a Kotlin fun) — phantom edges the extraction spec
+        # explicitly forbids. Candidates whose family is unknown (no source_file,
+        # non-code nodes) are kept, preserving the previous permissive behavior;
+        # real interop pairs (Kotlin↔Java, C↔C++↔ObjC, JS↔TS) share a family and
+        # still resolve.
+        caller_family = _lang_family(rc.get("source_file"))
+        if caller_family is not None:
+            candidates = [
+                c for c in candidates
+                if (candidate_family := _lang_family(nid_to_source_file.get(c))) is None
+                or candidate_family == caller_family
+            ]
+            if not candidates:
+                continue
         caller = rc["caller_nid"]
         # Resolve the caller's file via the raw_call's own source_file string,
         # which is stable regardless of any caller_nid remap. An indirect

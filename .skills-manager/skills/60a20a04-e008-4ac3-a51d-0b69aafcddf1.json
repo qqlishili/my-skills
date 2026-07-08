@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "60a20a04-e008-4ac3-a51d-0b69aafcddf1",
+  "path": "stock-deep-analyst",
+  "path_key": "stock-deep-analyst",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/koopa1025/stock-deep-analyst",
+    "subpath": null,
+    "branch": null
+  }
+}
