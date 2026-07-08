@@ -2053,8 +2053,19 @@ def _install_claude_hook(project_dir: Path) -> None:
 
 
 def _uninstall_claude_hook(project_dir: Path) -> None:
-    """Remove graphify PreToolUse hook from .claude/settings.json."""
-    settings_path = project_dir / ".claude" / "settings.json"
+    """Remove the graphify PreToolUse hook from .claude/settings.json and its
+    local-only sibling .claude/settings.local.json.
+
+    A user may relocate the hook into settings.local.json so it is not committed
+    to a shared repo, so uninstall has to clean whichever file holds it (#1731).
+    """
+    claude_dir = project_dir / ".claude"
+    for name in ("settings.json", "settings.local.json"):
+        _strip_graphify_hook(claude_dir / name)
+
+
+def _strip_graphify_hook(settings_path: Path) -> None:
+    """Drop graphify PreToolUse hooks from a single Claude settings file, if present."""
     if not settings_path.exists():
         return
     try:
@@ -2067,7 +2078,7 @@ def _uninstall_claude_hook(project_dir: Path) -> None:
         return
     settings["hooks"]["PreToolUse"] = filtered
     settings_path.write_text(json.dumps(settings, indent=2), encoding="utf-8")
-    print(f"  .claude/settings.json  ->  PreToolUse hook removed")
+    print(f"  .claude/{settings_path.name}  ->  PreToolUse hook removed")
 
 
 def uninstall_all(project_dir: Path | None = None, purge: bool = False) -> None:
@@ -2116,25 +2127,54 @@ def uninstall_all(project_dir: Path | None = None, purge: bool = False) -> None:
 
 
 def claude_uninstall(project_dir: Path | None = None, *, project: bool = False) -> None:
-    """Remove the graphify skill tree (SKILL.md + references/) and the CLAUDE.md section.
+    """Remove the graphify skill tree (SKILL.md + references/) and the graphify
+    section from CLAUDE.md and its local-only variants, plus the PreToolUse hook.
 
     Mirrors gemini_uninstall: the bare `graphify uninstall` and `graphify claude
     uninstall` must remove the installed skill, not just strip CLAUDE.md, or the
     progressive-disclosure tree (SKILL.md + references/) is orphaned (#1121).
+
+    A user may relocate the section/hook into the local-only files Claude Code
+    supports so they are not committed to a shared repo, so uninstall also cleans
+    CLAUDE.local.md, .claude/CLAUDE.local.md and .claude/settings.local.json (#1731).
     """
     project_dir = project_dir or Path(".")
     _remove_skill_file("claude", project=project, project_dir=project_dir)
-    target = project_dir / "CLAUDE.md"
 
-    if not target.exists():
+    md_targets = [
+        project_dir / "CLAUDE.md",
+        project_dir / "CLAUDE.local.md",
+        project_dir / ".claude" / "CLAUDE.local.md",
+    ]
+    existing = [t for t in md_targets if t.exists()]
+    removed_any = False
+    for target in existing:
+        # Not short-circuited: every present file must be cleaned, not just the first.
+        if _strip_graphify_md_section(target):
+            removed_any = True
+
+    if not existing:
         print("No CLAUDE.md found in current directory - nothing to do")
-        return
-
-    content = target.read_text(encoding="utf-8")
-    if _CLAUDE_MD_MARKER not in content:
+    elif not removed_any:
         print("graphify section not found in CLAUDE.md - nothing to do")
-        return
 
+    _uninstall_claude_hook(project_dir)
+
+
+def _strip_graphify_md_section(target: Path) -> bool:
+    """Strip the ## graphify section from one CLAUDE.md-style file.
+
+    Returns True if a section was removed. Deletes the file if nothing else
+    remains after removal.
+    """
+    try:
+        content = target.read_text(encoding="utf-8")
+    except (OSError, UnicodeDecodeError):
+        # An unreadable/undecodable CLAUDE.md-style file (e.g. non-UTF-8, or a
+        # directory of that name) must not abort uninstall - nothing to strip.
+        return False
+    if _CLAUDE_MD_MARKER not in content:
+        return False
     # Remove the ## graphify section: from the marker to the next ## heading or EOF
     cleaned = re.sub(
         r"\n*## graphify\n.*?(?=\n## |\Z)",
@@ -2147,9 +2187,8 @@ def claude_uninstall(project_dir: Path | None = None, *, project: bool = False) 
         print(f"graphify section removed from {target.resolve()}")
     else:
         target.unlink()
-        print(f"CLAUDE.md was empty after removal - deleted {target.resolve()}")
-
-    _uninstall_claude_hook(project_dir or Path("."))
+        print(f"{target.name} was empty after removal - deleted {target.resolve()}")
+    return True
 
 
 def codebuddy_install(project_dir: Path | None = None) -> None:
@@ -2433,6 +2472,7 @@ def main() -> None:
         print("    --out DIR               output dir (default: <path>); writes <DIR>/graphify-out/")
         print("    --google-workspace      export .gdoc/.gsheet/.gslides shortcuts via gws before extraction")
         print("    --no-cluster            skip clustering, write raw extraction only")
+        print("    --code-only             index code (local AST, no API key) and skip doc/paper/image files")
         print("    --postgres DSN          extract schema from a live PostgreSQL database")
         print("                            maps tables, views, functions + FK relationships;")
         print("                            column-level detail is not represented in the graph")
@@ -3993,7 +4033,7 @@ def main() -> None:
             sys.exit(1)
         import networkx as _nx
         from networkx.readwrite import json_graph as _jg
-        from graphify.build import prefix_graph_for_global as _prefix
+        from graphify.build import prefix_graph_for_global as _prefix, distinct_repo_tags as _repo_tags
         graphs = []
         for gp in graph_paths:
             if not gp.exists():
@@ -4025,9 +4065,16 @@ def main() -> None:
             if type(g) is not _nx.Graph:
                 return _nx.Graph(g)
             return g
+        # Unique repo tag per graph. The bare `graphify-out/..` dir name is not
+        # unique across inputs (src/graphify-out and frontend/src/graphify-out both
+        # → "src"), which collides same-stem node ids and silently merges unrelated
+        # entities (#1729). distinct_repo_tags guarantees a distinct prefix per graph.
+        repo_tags = _repo_tags(graph_paths)
+        naive_tags = [gp.parent.parent.name for gp in graph_paths]
+        if len(set(naive_tags)) != len(naive_tags):
+            print(f"  note: repo dir names collide; using distinct tags: {', '.join(repo_tags)}")
         merged = _nx.Graph()
-        for G, gp in zip(graphs, graph_paths):
-            repo_tag = gp.parent.parent.name  # graphify-out/../ → repo dir name
+        for G, repo_tag in zip(graphs, repo_tags):
             prefixed = _to_simple(_prefix(G, repo_tag))
             merged = _nx.compose(merged, prefixed)
         try:
@@ -4480,6 +4527,7 @@ def main() -> None:
         dedup_llm = False
         google_workspace = False
         global_merge = False
+        code_only = False
         global_repo_tag: str | None = None
         # Performance/tuning knobs (issue #792). None means "use library default".
         cli_max_workers: int | None = None
@@ -4538,6 +4586,8 @@ def main() -> None:
                 no_cluster = True; i += 1
             elif a == "--dedup-llm":
                 dedup_llm = True; i += 1
+            elif a == "--code-only":
+                code_only = True; i += 1
             elif a == "--google-workspace":
                 google_workspace = True; i += 1
             elif a == "--global":
@@ -4661,6 +4711,20 @@ def main() -> None:
             unchanged_total = 0
 
         semantic_files = doc_files + paper_files + image_files
+        # --code-only: index code (pure local AST, no key) and skip the semantic
+        # (doc/paper/image) pass entirely, so a mixed repo doesn't hard-fail when no
+        # LLM backend is configured (#1734). Report what was skipped rather than
+        # silently dropping it.
+        if code_only and semantic_files:
+            print(
+                f"[graphify extract] --code-only: skipping {len(semantic_files)} "
+                f"non-code file(s) ({len(doc_files)} docs, {len(paper_files)} papers, "
+                f"{len(image_files)} images) — no LLM extraction"
+            )
+            semantic_files = []
+            doc_files = []
+            paper_files = []
+            image_files = []
         if incremental_mode:
             print(
                 f"[graphify extract] {len(code_files)} code, {len(doc_files)} docs, "
@@ -4716,12 +4780,16 @@ def main() -> None:
                     )
                 if dedup_llm:
                     reasons.append("--dedup-llm was passed")
+                hint = ""
+                if semantic_files:
+                    hint = (" Or pass --code-only to index just the code "
+                            "(local AST, no key) and skip the non-code files.")
                 print(
                     "error: no LLM API key found (" + "; ".join(reasons) + "). "
                     "Set GEMINI_API_KEY or GOOGLE_API_KEY (gemini), MOONSHOT_API_KEY "
                     "(kimi), ANTHROPIC_API_KEY (claude), OPENAI_API_KEY (openai), "
                     "DEEPSEEK_API_KEY (deepseek), or pass --backend. A code-only "
-                    "corpus needs no key.",
+                    "corpus needs no key." + hint,
                     file=sys.stderr,
                 )
                 sys.exit(1)
