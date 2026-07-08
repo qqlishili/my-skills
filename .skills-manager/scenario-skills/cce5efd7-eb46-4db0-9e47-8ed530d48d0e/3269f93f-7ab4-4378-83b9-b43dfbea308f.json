@@ -10,7 +10,7 @@
     "gemini_cli": true,
     "github_copilot": true,
     "openclaw": true,
-    "opencode": false,
+    "opencode": true,
     "workbuddy": true
   }
 }
