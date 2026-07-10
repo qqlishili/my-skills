@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "5ffbb711-884c-4880-9efe-fc37ca963ffe",
+  "path": "session-handoff",
+  "path_key": "session-handoff",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/qqlishili/agent-toolkit",
+    "subpath": "skills\\session-handoff",
+    "branch": null
+  }
+}
