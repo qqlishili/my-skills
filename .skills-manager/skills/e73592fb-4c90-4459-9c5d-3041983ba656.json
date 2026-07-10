@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "e73592fb-4c90-4459-9c5d-3041983ba656",
+  "path": "graphify-2",
+  "path_key": "graphify-2",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/Graphify-Labs/graphify",
+    "subpath": "graphify",
+    "branch": null
+  }
+}
