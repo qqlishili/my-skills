@@ -1,0 +1,1560 @@
+{
+  "communities": {
+    "0": [
+      "author_bingbingxiaomei",
+      "concept_antihuman_torture",
+      "concept_arbritrage_harm",
+      "concept_borrowing_momentum",
+      "concept_catastrophe_dragontiger",
+      "concept_competition_pattern_advantage",
+      "concept_emotional_position_change",
+      "concept_favorable_vs_unfavorable",
+      "concept_herd_effect",
+      "concept_illusion",
+      "concept_indirect_direct_strategy",
+      "concept_limit_up_system",
+      "concept_liquidity_dialectical_analysis",
+      "concept_liquidity_premium",
+      "concept_lock_chest_buy",
+      "concept_matthew_effect",
+      "concept_money_losing_effect",
+      "concept_money_making_effect",
+      "concept_position_sizing",
+      "concept_reduction_game",
+      "concept_save_wei_rescue_zhao",
+      "concept_series_emotion_system",
+      "concept_series_hotmoney",
+      "concept_series_money_losing",
+      "concept_three_element_system",
+      "concept_trading_intention",
+      "concept_waiting",
+      "references_sources_articles_2023-08-15_104616_\u60c5\u7eea\u4f53\u7cfb\u4ea4\u6613\u7bc7\u7b2c\u4e8c\u671f\u501f\u52bf",
+      "references_sources_articles_2023-08-15_205331_\u5e38\u89c1\u7684\u4e8f\u94b1\u8ba4\u77e5\u7b2c\u5341\u56db\u671f\u5047\u8c61\u4e0e\u53cd\u4eba\u6027\u7684\u6298\u78e8",
+      "references_sources_articles_2023-08-18_175526_\u60c5\u7eea\u4f53\u7cfb\u4ea4\u6613\u7bc7\u7b2c\u4e09\u671f\u7b49",
+      "references_sources_articles_2023-08-21_103152_\u6e38\u8d44\u6c5f\u6e56\u624b\u6cd5\u7b2c\u516d\u671f\u5236\u9020\u5047\u8c61",
+      "references_sources_articles_2023-08-21_113941_\u5e38\u89c1\u7684\u4e8f\u94b1\u8ba4\u77e5\u7b2c\u5341\u4e94\u671f\u5957\u5229\u7684\u5371\u5bb3",
+      "references_sources_articles_2023-09-03_152451_\u60c5\u7eea\u4f53\u7cfb\u4ea4\u6613\u7bc7\u7b2c\u56db\u671f\u8fc2\u76f4",
+      "references_sources_articles_2023-09-04_115339_\u4ec0\u4e48\u6709\u5229\u4ec0\u4e48\u4e0d\u5229",
+      "references_sources_articles_2023-09-04_203237_\u60c5\u7eea\u4f53\u7cfb\u4ea4\u6613\u7bc7\u7b2c\u4e94\u671f\u610f\u613f",
+      "stock_baoming",
+      "stock_boteli",
+      "stock_changqingkeji",
+      "stock_chinajianqiao",
+      "stock_chinayidong",
+      "stock_enjie",
+      "stock_hangzhouredian",
+      "stock_hengrui",
+      "stock_hongbo",
+      "stock_jingyeda",
+      "stock_lirunkeji",
+      "stock_longi",
+      "stock_nantianxinxi",
+      "stock_ningdeshidai",
+      "stock_nvidia",
+      "stock_renrenle",
+      "stock_rongjie",
+      "stock_shouzhengquan",
+      "stock_stmeigu",
+      "stock_taichenguang",
+      "stock_teli_a",
+      "stock_tuowei",
+      "stock_zgweitong",
+      "stock_zgweixing",
+      "stock_zhongyangshangchang"
+    ],
+    "1": [
+      "changelog_md_changelog",
+      "changelog_v1_1",
+      "changelog_v1_2",
+      "changelog_v1_3",
+      "changelog_v1_4",
+      "changelog_v1_5",
+      "changelog_v1_7",
+      "docs_maintenance_md_maintenance",
+      "docs_maintenance_probe_pipeline",
+      "docs_maintenance_promotion_rules",
+      "docs_maintenance_seven_step",
+      "docs_maintenance_trigger_conditions",
+      "docs_v1_4_pr_description_md_v1_4_pr",
+      "docs_v1_4_pr_dim3_changes",
+      "docs_v1_4_pr_dim5_changes",
+      "docs_v1_4_pr_r1_blind_baseline",
+      "docs_v1_4_pr_r3_layering",
+      "skill_core_md_skill_core",
+      "skill_md_bingbingxiaomei",
+      "skill_md_checkpoints",
+      "skill_md_cognitive_failure_handling",
+      "skill_md_dna_drift_detection",
+      "skill_md_expression_dna",
+      "skill_md_heuristic_11_liquidity_squeeze",
+      "skill_md_heuristic_12_new_old_deng",
+      "skill_md_heuristic_13_central_bank",
+      "skill_md_heuristic_14_industry_belief",
+      "skill_md_heuristic_15_leverage_cleanup",
+      "skill_md_heuristic_16_liquidity_vs_business",
+      "skill_md_heuristic_17_active_loss_boundary",
+      "skill_md_honesty_boundary",
+      "skill_md_hong_mao",
+      "skill_md_identity_card",
+      "skill_md_intellectual_genealogy",
+      "skill_md_methodology",
+      "skill_md_model_1_three_elements",
+      "skill_md_model_2_illusion",
+      "skill_md_model_3_buy_no_defeat",
+      "skill_md_model_4_competition_determinism",
+      "skill_md_model_5_explicit_knowledge",
+      "skill_md_model_6_talent_industry",
+      "skill_md_model_7_crisis_chain",
+      "skill_md_model_8_timing_dual_track",
+      "skill_md_model_9_ai_distillation",
+      "skill_md_neodata_financial",
+      "skill_md_prohibited_words",
+      "skill_md_research_dimensions",
+      "skill_md_research_references",
+      "skill_md_residual_detection",
+      "skill_md_routing_tree",
+      "skill_md_silence_rules",
+      "skill_md_skill",
+      "skill_md_stock_eight_step",
+      "skill_md_tool_failure_handling",
+      "skill_md_v1_7_runtime_layer",
+      "skill_md_westock_data",
+      "skill_md_workflow",
+      "skill_md_xiaomei_self_reference"
+    ],
+    "2": [
+      "concept_15_5_plan",
+      "concept_a_share_market",
+      "concept_apac_capital_inflow",
+      "concept_author_bingbingxiaomei",
+      "concept_china_high_quality_development",
+      "concept_japan_intrate_hike",
+      "concept_jiangong_alpha_picks",
+      "concept_middle_east_crisis_2026",
+      "concept_monetism_2_0",
+      "concept_re_inflation_china",
+      "concept_silver_short_squeeze",
+      "concept_speculation_industrial_chain",
+      "concept_trump_2nd_admin_policy",
+      "concept_us_china_decoupling",
+      "concept_us_debt_crisis",
+      "concept_us_dollar_hegemony",
+      "concept_yu_heng_speculation_mode",
+      "references_sources_articles_2026-01-20_\u51b0\u51b0\u5c0f\u7f8e_\u54c0\u5176\u4e0d\u5e78_\u6012\u5176\u4e0d\u4e89_article",
+      "references_sources_articles_2026-01-21_\u51b0\u51b0\u5c0f\u7f8e_\u54c0\u5176\u4e0d\u5e78_\u6012\u5176\u4e0d\u4e89_\u4e8c_article",
+      "references_sources_articles_2026-01-23_\u51b0\u51b0\u5c0f\u7f8e_\u4f20\u7edf\u4ea7\u4e1a\u4e0e\u65b0\u5174\u4ea7\u4e1a_article",
+      "references_sources_articles_2026-01-27_\u51b0\u51b0\u5c0f\u7f8e_2026\u5e74\u4e00\u6708\u6708\u62a5_\u767d\u94f6\u8d44\u4ea7\u5386\u53f2\u6027\u5468\u671f\u518d\u73b0\u7684\u8d44\u4ea7\u6ce2\u52a8\u7814\u7a76_article",
+      "references_sources_articles_2026-01-29_\u51b0\u51b0\u5c0f\u7f8e_2026\u5e741\u6708\u6708\u62a5\uff08\u4e8c\uff09_\u8d27\u5e01\u4f53\u7cfb\u53d8\u8fc1\u4e0e\u5168\u7403\u8d44\u672c\u70ed\u94b1\u6d8c\u52a8\u7684\u80cc\u540e\u5b89\u5168\u6027\u7684\u8003\u91cf_article",
+      "references_sources_articles_2026-01-29_\u51b0\u51b0\u5c0f\u7f8e_2026\u5e74\u4e00\u6708\u6708\u62a5\uff08\u4e8c\uff09_\u767d\u94f6\u4e0e\u7ecf\u6d4e\u5371\u673a\u4ee5\u53ca\u65e5\u672c\u91ce\u5fc3_article",
+      "references_sources_articles_2026-02-24_\u51b0\u51b0\u5c0f\u7f8e_2026\u5e74\u4e8c\u6708\u6708\u62a5_article",
+      "references_sources_articles_2026-02-24_\u51b0\u51b0\u5c0f\u7f8e_2026\u5e74\u4e8c\u6708\u6708\u62a5\uff08\u4e8c\uff09_article",
+      "references_sources_articles_2026-02-26_\u51b0\u51b0\u5c0f\u7f8e_2026\u5e74\u4e8c\u6708\u6708\u62a5\uff08\u4e09\uff09_article",
+      "references_sources_articles_2026-02-26_\u51b0\u51b0\u5c0f\u7f8e_\u957f\u5174\u6750\u6599_\u98de\u51ef\u6750\u6599_article",
+      "references_sources_articles_2026-02-28_\u51b0\u51b0\u5c0f\u7f8e_\u7559\u4e00\u534a\u6e05\u9192_\u7559\u4e00\u534a\u9189_article",
+      "references_sources_articles_2026-03-19_\u51b0\u51b0\u5c0f\u7f8e_2026\u5e743\u6708\uff08\u534a\u6708\u62a5\uff09_article",
+      "references_sources_articles_2026-03-20_\u51b0\u51b0\u5c0f\u7f8e_\u5982\u4f55\u7406\u89e3\u65f6\u95f4\u7a97\u53e3_article",
+      "references_sources_articles_2026-03-20_\u51b0\u51b0\u5c0f\u7f8e_\u5b8f\u89c2\u5206\u6790\u7684\u6846\u67b6_\u7b80\u5316\u7248\u672c_article",
+      "references_sources_articles_2026-03-21_\u51b0\u51b0\u5c0f\u7f8e_\u7f8e\u56fd\u8d22\u653f\u653f\u7b56\u7684\u63a3\u8098\u4e0e\u6218\u4e89\u7ecf\u6d4e_article",
+      "ticker_03690",
+      "ticker_300059",
+      "ticker_aapl",
+      "ticker_baba",
+      "ticker_csi931775",
+      "ticker_goog",
+      "ticker_msft",
+      "ticker_nvda",
+      "ticker_sh000016",
+      "ticker_sh000819",
+      "ticker_sh000941",
+      "ticker_sh600176",
+      "ticker_sh600418",
+      "ticker_sh601869",
+      "ticker_sz000528",
+      "ticker_sz002594",
+      "ticker_sz002931",
+      "ticker_sz160723",
+      "ticker_sz300398",
+      "ticker_sz300666",
+      "ticker_sz301217",
+      "ticker_sz399979"
+    ],
+    "3": [
+      "runtimeerror",
+      "scripts_article_corpus_preflight",
+      "scripts_article_corpus_preflight_apply_final_status",
+      "scripts_article_corpus_preflight_articles_dir",
+      "scripts_article_corpus_preflight_build_index_plan",
+      "scripts_article_corpus_preflight_build_parser",
+      "scripts_article_corpus_preflight_codegraph_command",
+      "scripts_article_corpus_preflight_copy_to_staging",
+      "scripts_article_corpus_preflight_copy_update_real_directory",
+      "scripts_article_corpus_preflight_ensure_real_directory_target",
+      "scripts_article_corpus_preflight_exit_code_for_status",
+      "scripts_article_corpus_preflight_file_sha256",
+      "scripts_article_corpus_preflight_final_status",
+      "scripts_article_corpus_preflight_get_file_attributes",
+      "scripts_article_corpus_preflight_graphify_command",
+      "scripts_article_corpus_preflight_graphify_env",
+      "scripts_article_corpus_preflight_has_reparse_flag",
+      "scripts_article_corpus_preflight_has_valid_receipts",
+      "scripts_article_corpus_preflight_is_external_source",
+      "scripts_article_corpus_preflight_is_reparse_point",
+      "scripts_article_corpus_preflight_load_previous_state",
+      "scripts_article_corpus_preflight_lock_path",
+      "scripts_article_corpus_preflight_lockhelderror",
+      "scripts_article_corpus_preflight_main",
+      "scripts_article_corpus_preflight_mcp_for_plan",
+      "scripts_article_corpus_preflight_parse_utc",
+      "scripts_article_corpus_preflight_preflightlock",
+      "scripts_article_corpus_preflight_preflightlock_enter",
+      "scripts_article_corpus_preflight_preflightlock_exit",
+      "scripts_article_corpus_preflight_preflightlock_init",
+      "scripts_article_corpus_preflight_preflightlock_is_stale",
+      "scripts_article_corpus_preflight_prepare",
+      "scripts_article_corpus_preflight_prepare_corpus_snapshot",
+      "scripts_article_corpus_preflight_read_state",
+      "scripts_article_corpus_preflight_record_mcp_result",
+      "scripts_article_corpus_preflight_relative_files",
+      "scripts_article_corpus_preflight_relative_posix",
+      "scripts_article_corpus_preflight_render_status",
+      "scripts_article_corpus_preflight_replace_reparse_with_staging",
+      "scripts_article_corpus_preflight_required_mcp_keys",
+      "scripts_article_corpus_preflight_scan_corpus",
+      "scripts_article_corpus_preflight_scan_markdown_root",
+      "scripts_article_corpus_preflight_semantic_hits_value",
+      "scripts_article_corpus_preflight_sha256_bytes",
+      "scripts_article_corpus_preflight_sha256_json",
+      "scripts_article_corpus_preflight_snapshotblockederror",
+      "scripts_article_corpus_preflight_snapshotblockederror_init",
+      "scripts_article_corpus_preflight_state_path",
+      "scripts_article_corpus_preflight_sync_real_directory",
+      "scripts_article_corpus_preflight_unsafereparsetargeterror",
+      "scripts_article_corpus_preflight_utc_now",
+      "scripts_article_corpus_preflight_utc_now_iso",
+      "scripts_article_corpus_preflight_verify_graphify_graph",
+      "scripts_article_corpus_preflight_write_state"
+    ],
+    "4": [
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_ai\u57fa\u5efa",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_k\u578b\u7ecf\u6d4e",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_spacex",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u4e09\u73af\u96c6\u56e2",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u4e1c\u6750\u79d1\u6280",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u4e2d\u56fd\u536b\u661f",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u4e2d\u671b\u8f6f\u4ef6",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u4e2d\u8239\u7279\u6c14",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u4e70\u6bd4\u5356\u91cd\u8981",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u4e9a\u9a6c\u900a",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u4f53\u7cfb\u4e09\u8981\u7d20",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u4fe1\u7ef4\u901a\u4fe1",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u5174\u53d1\u96c6\u56e2",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u51b0\u51b0\u5c0f\u7f8e",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u521b\u4e1a\u677f",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u535a\u901a",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u536b\u661f\u901a\u4fe1\u6307\u6570",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u53f0\u79ef\u7535",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u5723\u6cc9\u96c6\u56e2",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u591a\u6c1f\u591a",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u5b81\u5fb7\u65f6\u4ee3",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u5c0f\u7c73",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u5eb7\u5f3a\u7535\u5b50",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u5fae\u8f6f",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u610f\u6cd5\u534a\u5bfc\u4f53",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u623f\u5730\u4ea7\u6307\u6570",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u65b0\u767b\u8001\u767b",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u65b0\u80fd\u6e90\u6307\u6570",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u6709\u8272\u91d1\u5c5e\u6307\u6570",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u6bd4\u4e9a\u8fea",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u6c5f\u4e30\u7535\u5b50",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u6c5f\u6ce2\u9f99",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u6caa\u7845\u4ea7\u4e1a",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u6e56\u5357\u88d5\u80fd",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u7269\u7406ai",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u7279\u65af\u62c9",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u751f\u76ca\u79d1\u6280",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u7d2b\u91d1\u77ff\u4e1a",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u7eff\u7684\u8c10\u6ce2",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u822a\u5929\u7535\u5b50",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u82af\u7247\u4ea7\u4e1a\u6307\u6570",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u82f1\u4f1f\u8fbe",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u82f1\u7279\u5c14",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u82f9\u679c",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u8305\u53f0",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u897f\u90e8\u77ff\u4e1a",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u8c37\u6b4c",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u8d5b\u529b\u65af",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u94dc\u51a0\u94dc\u7b94",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u957f\u7535\u79d1\u6280",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u963f\u91cc\u5df4\u5df4",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u96c5\u514b\u79d1\u6280",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u9f0e\u9f99\u80a1\u4efd"
+    ],
+    "5": [
+      "book_\u7e41\u8363\u4e0e\u8870\u9000",
+      "concept_\u4f53\u7cfb\u4e09\u8981\u7d20",
+      "concept_\u4fee\u8eab\u9759",
+      "concept_\u521b\u9020\u6027\u7834\u574f",
+      "concept_\u5957\u5229\u4e0e\u6284\u5e95\u98ce\u9669",
+      "concept_\u5b58\u91cf\u51cf\u91cf\u535a\u5f08",
+      "concept_\u60c5\u7eea\u6807\u5207\u6362",
+      "concept_\u60c5\u7eea\u6807\u5c01\u5efa\u53f2\u6a21\u578b",
+      "concept_\u60c5\u7eea\u8d2a\u5a6a\u4e0e\u6050\u60e7",
+      "concept_\u6295\u8d44\u8005\u56f0\u5883\u6295\u673a\u6c1b\u56f4",
+      "concept_\u718a\u5e02\u591a\u957f\u9633",
+      "concept_\u80a1\u606f\u7ea2\u5229\u4ef7\u503c\u62a5\u56e2",
+      "concept_\u884c\u60c5\u4e0d\u7b49\u4e8e\u98ce\u9669",
+      "concept_\u9020\u52bf\u624b\u6cd5",
+      "concept_\u9f99\u864e\u699c\u89e3\u8bfb",
+      "historical_\u5b97\u6cfd",
+      "references_sources_articles_2023-12-06_130551_\u51b0\u51b0\u5c0f\u7f8e_\u60c5\u7eea\u4f53\u7cfb\uff0c\u6e38\u8d44\u6c5f\u6e56\u624b\u6cd5\uff0c\u7b2c\u516b\u671f\uff0c\u9020\u52bf",
+      "references_sources_articles_2023-12-17_205516_\u51b0\u51b0\u5c0f\u7f8e_\u60c5\u7eea\u4f53\u7cfb\u4fee\u8eab\u60c5\u7eea\u7bc7\uff0c\u7b2c\u4e00\u671f\u9759_\u65e9\u53d1",
+      "references_sources_articles_2023-12-21_115310_\u51b0\u51b0\u5c0f\u7f8e_\u4e3a\u4ec0\u4e48\u5957\u5229\u4e0e\u6284\u5e95\uff0c\u6211\u90fd\u4e0d\u5efa\u8bae\u505a",
+      "references_sources_articles_2023-12-26_100435_\u51b0\u51b0\u5c0f\u7f8e_\u4e13\u573a_\u94f6\u5b9d\u5c71\u65b0_\u4e0a\u5858\u8def_\u4ee3\u8868\u4f5c",
+      "references_sources_articles_2023-12-27_114654_\u51b0\u51b0\u5c0f\u7f8e_\u60c5\u7eea\u6807\u8f6c\u5316\u8fc7\u7a0b\u4e2d_\u9ad8\u5ea6\u662f\u5982\u4f55\u6253\u5f00\u7684\u95ee\u9898",
+      "references_sources_articles_2024-02-28_115510_\u51b0\u51b0\u5c0f\u7f8e_\u63a8\u8350\u4e00\u672c\u4e66_\u7e41\u8363\u4e0e\u8870\u9000",
+      "references_sources_articles_2025-01-25_130322_\u884c\u60c5\u4e0d\u7b49\u4e8e\u98ce\u9669",
+      "references_sources_articles_2025-01-27_145015_\u8fd1\u5e74\u6765\u66f4\u65b0\u7684\u603b\u7ed3",
+      "references_sources_articles_2025-05-17_185004_\u80a1\u5e02\u6295\u8d44\u8005\u7684\u56f0\u5883",
+      "references_sources_articles_2025-06-30_231117_\u60c5\u7eea\u4f53\u7cfb\u77ed\u7ebf\u4ea4\u6613\u7bc7\u884c\u60c5\u7684\u6301\u7eed\u6027\u6765\u81ea\u8ba9\u5229",
+      "references_sources_articles_2025-08-11_160337_\u77ed\u7ebf\u5982\u4f55\u5bfb\u627e\u60c5\u7eea\u6807",
+      "references_sources_articles_2025-08-13_162814_\u4e2a\u80a1\u60c5\u7eea\u4e0e\u6574\u4f53\u60c5\u7eea",
+      "references_sources_articles_2025-08-13_213200_\u7559\u4e00\u534a\u6e05\u9192\u4e00\u534a\u9189",
+      "stock_\u4e00\u9e23\u98df\u54c1",
+      "stock_\u4e9a\u4e16\u5149\u7535",
+      "stock_\u4ebf\u9053\u4fe1\u606f",
+      "stock_\u60e0\u53d1\u98df\u54c1",
+      "stock_\u6c38\u8fbe\u80a1\u4efd",
+      "stock_\u826f\u54c1\u94fa\u5b50",
+      "stock_\u897f\u90e8\u7267\u4e1a",
+      "stock_\u94f6\u5b9d\u5c71\u65b0",
+      "stock_\u9f99\u7248\u4f20\u5a92",
+      "trader_\u4e0a\u5858\u8def",
+      "trader_\u4f5b\u5c71\u5927\u4f6c",
+      "trader_\u53a6\u79be\u8def_\u8d75\u8001\u54e5\u540c\u671f",
+      "trader_\u6210\u90fd\u5357\u5317\u73af_\u6821\u957f",
+      "trader_\u65b9\u65b0\u4fa0",
+      "trader_\u6851\u7530\u8def",
+      "trader_\u7092\u80a1\u517b\u5bb6",
+      "trader_\u8457\u540d\u523a\u5ba2",
+      "trader_\u9648\u5c0f\u7fa4"
+    ],
+    "6": [
+      "references_sources_articles_2023-09-05_193909_\u51b0\u51b0\u5c0f\u7f8e_\u5e38\u89c1\u7684\u4e8f\u94b1\u8ba4\u77e5_\u7b2c\u5341\u516d\u671f_\u673a\u6784\u7684\u4f5c\u7528_\u534e\u529b\u521b\u901a",
+      "references_sources_articles_2023-09-05_193909_\u51b0\u51b0\u5c0f\u7f8e_\u5e38\u89c1\u7684\u4e8f\u94b1\u8ba4\u77e5_\u7b2c\u5341\u516d\u671f_\u673a\u6784\u7684\u4f5c\u7528_\u5df4\u83f2\u7279",
+      "references_sources_articles_2023-09-05_193909_\u51b0\u51b0\u5c0f\u7f8e_\u5e38\u89c1\u7684\u4e8f\u94b1\u8ba4\u77e5_\u7b2c\u5341\u516d\u671f_\u673a\u6784\u7684\u4f5c\u7528_\u5e38\u89c1\u7684\u4e8f\u94b1\u8ba4\u77e5_\u7b2c\u5341\u516d\u671f_\u673a\u6784\u7684\u4f5c\u7528",
+      "references_sources_articles_2023-09-05_193909_\u51b0\u51b0\u5c0f\u7f8e_\u5e38\u89c1\u7684\u4e8f\u94b1\u8ba4\u77e5_\u7b2c\u5341\u516d\u671f_\u673a\u6784\u7684\u4f5c\u7528_\u65b0\u80fd\u6e90",
+      "references_sources_articles_2023-09-05_193909_\u51b0\u51b0\u5c0f\u7f8e_\u5e38\u89c1\u7684\u4e8f\u94b1\u8ba4\u77e5_\u7b2c\u5341\u516d\u671f_\u673a\u6784\u7684\u4f5c\u7528_\u673a\u6784_\u4f5c\u7528",
+      "references_sources_articles_2023-09-05_193909_\u51b0\u51b0\u5c0f\u7f8e_\u5e38\u89c1\u7684\u4e8f\u94b1\u8ba4\u77e5_\u7b2c\u5341\u516d\u671f_\u673a\u6784\u7684\u4f5c\u7528_\u6797\u56ed",
+      "references_sources_articles_2023-09-05_193909_\u51b0\u51b0\u5c0f\u7f8e_\u5e38\u89c1\u7684\u4e8f\u94b1\u8ba4\u77e5_\u7b2c\u5341\u516d\u671f_\u673a\u6784\u7684\u4f5c\u7528_\u845b\u5170",
+      "references_sources_articles_2023-09-05_193909_\u51b0\u51b0\u5c0f\u7f8e_\u5e38\u89c1\u7684\u4e8f\u94b1\u8ba4\u77e5_\u7b2c\u5341\u516d\u671f_\u673a\u6784\u7684\u4f5c\u7528_\u963f\u91cc\u5df4\u5df4",
+      "references_sources_articles_2023-09-09_220535_\u51b0\u51b0\u5c0f\u7f8e_\u60c5\u7eea\u4f53\u7cfb\u4ea4\u6613\u7bc7_\u7b2c\u516d\u671f_\u6027\u683c\u5339\u914d_\u4f53\u7cfb_\u4e09\u8981\u7d20",
+      "references_sources_articles_2023-09-09_220535_\u51b0\u51b0\u5c0f\u7f8e_\u60c5\u7eea\u4f53\u7cfb\u4ea4\u6613\u7bc7_\u7b2c\u516d\u671f_\u6027\u683c\u5339\u914d_\u5206\u4ed3",
+      "references_sources_articles_2023-09-09_220535_\u51b0\u51b0\u5c0f\u7f8e_\u60c5\u7eea\u4f53\u7cfb\u4ea4\u6613\u7bc7_\u7b2c\u516d\u671f_\u6027\u683c\u5339\u914d_\u6027\u683c\u5339\u914d",
+      "references_sources_articles_2023-09-09_220535_\u51b0\u51b0\u5c0f\u7f8e_\u60c5\u7eea\u4f53\u7cfb\u4ea4\u6613\u7bc7_\u7b2c\u516d\u671f_\u6027\u683c\u5339\u914d_\u60c5\u7eea\u4f53\u7cfb\u4ea4\u6613\u7bc7_\u7b2c\u516d\u671f_\u6027\u683c\u5339\u914d",
+      "references_sources_articles_2023-09-17_083434_\u51b0\u51b0\u5c0f\u7f8e_\u5e38\u89c1\u7684\u4e8f\u94b1\u8ba4\u77e5_\u7b2c\u5341\u4e03\u671f_\u8f6e\u52a8_\u4e8f\u94b1\u6548\u5e94",
+      "references_sources_articles_2023-09-17_083434_\u51b0\u51b0\u5c0f\u7f8e_\u5e38\u89c1\u7684\u4e8f\u94b1\u8ba4\u77e5_\u7b2c\u5341\u4e03\u671f_\u8f6e\u52a8_\u5149\u5e93\u79d1\u6280",
+      "references_sources_articles_2023-09-17_083434_\u51b0\u51b0\u5c0f\u7f8e_\u5e38\u89c1\u7684\u4e8f\u94b1\u8ba4\u77e5_\u7b2c\u5341\u4e03\u671f_\u8f6e\u52a8_\u5e38\u89c1\u7684\u4e8f\u94b1\u8ba4\u77e5_\u7b2c\u5341\u4e03\u671f_\u8f6e\u52a8",
+      "references_sources_articles_2023-09-17_083434_\u51b0\u51b0\u5c0f\u7f8e_\u5e38\u89c1\u7684\u4e8f\u94b1\u8ba4\u77e5_\u7b2c\u5341\u4e03\u671f_\u8f6e\u52a8_\u6d6a\u6f6e\u4fe1\u606f",
+      "references_sources_articles_2023-09-17_083434_\u51b0\u51b0\u5c0f\u7f8e_\u5e38\u89c1\u7684\u4e8f\u94b1\u8ba4\u77e5_\u7b2c\u5341\u4e03\u671f_\u8f6e\u52a8_\u6e38\u8d44",
+      "references_sources_articles_2023-09-17_083434_\u51b0\u51b0\u5c0f\u7f8e_\u5e38\u89c1\u7684\u4e8f\u94b1\u8ba4\u77e5_\u7b2c\u5341\u4e03\u671f_\u8f6e\u52a8_\u79d1\u5927\u8baf\u98de",
+      "references_sources_articles_2023-09-17_083434_\u51b0\u51b0\u5c0f\u7f8e_\u5e38\u89c1\u7684\u4e8f\u94b1\u8ba4\u77e5_\u7b2c\u5341\u4e03\u671f_\u8f6e\u52a8_\u83f2\u83f1\u79d1\u601d",
+      "references_sources_articles_2023-09-17_083434_\u51b0\u51b0\u5c0f\u7f8e_\u5e38\u89c1\u7684\u4e8f\u94b1\u8ba4\u77e5_\u7b2c\u5341\u4e03\u671f_\u8f6e\u52a8_\u8f6e\u52a8",
+      "references_sources_articles_2023-09-17_083434_\u51b0\u51b0\u5c0f\u7f8e_\u5e38\u89c1\u7684\u4e8f\u94b1\u8ba4\u77e5_\u7b2c\u5341\u4e03\u671f_\u8f6e\u52a8_\u91cf\u5316\u57fa\u91d1",
+      "references_sources_articles_2023-09-22_165202_\u51b0\u51b0\u5c0f\u7f8e_\u60c5\u7eea\u4f53\u7cfb\u4ea4\u6613\u7bc7_\u7b2c\u4e03\u671f_\u76f8\u4fe1_\u534e\u4e3a",
+      "references_sources_articles_2023-09-22_165202_\u51b0\u51b0\u5c0f\u7f8e_\u60c5\u7eea\u4f53\u7cfb\u4ea4\u6613\u7bc7_\u7b2c\u4e03\u671f_\u76f8\u4fe1_\u534e\u529b\u521b\u901a",
+      "references_sources_articles_2023-09-22_165202_\u51b0\u51b0\u5c0f\u7f8e_\u60c5\u7eea\u4f53\u7cfb\u4ea4\u6613\u7bc7_\u7b2c\u4e03\u671f_\u76f8\u4fe1_\u5fae\u8f6f",
+      "references_sources_articles_2023-09-22_165202_\u51b0\u51b0\u5c0f\u7f8e_\u60c5\u7eea\u4f53\u7cfb\u4ea4\u6613\u7bc7_\u7b2c\u4e03\u671f_\u76f8\u4fe1_\u60c5\u7eea\u4f53\u7cfb\u4ea4\u6613\u7bc7_\u7b2c\u4e03\u671f_\u76f8\u4fe1",
+      "references_sources_articles_2023-09-22_165202_\u51b0\u51b0\u5c0f\u7f8e_\u60c5\u7eea\u4f53\u7cfb\u4ea4\u6613\u7bc7_\u7b2c\u4e03\u671f_\u76f8\u4fe1_\u623f\u5730\u4ea7",
+      "references_sources_articles_2023-09-22_165202_\u51b0\u51b0\u5c0f\u7f8e_\u60c5\u7eea\u4f53\u7cfb\u4ea4\u6613\u7bc7_\u7b2c\u4e03\u671f_\u76f8\u4fe1_\u7279\u65af\u62c9",
+      "references_sources_articles_2023-09-22_165202_\u51b0\u51b0\u5c0f\u7f8e_\u60c5\u7eea\u4f53\u7cfb\u4ea4\u6613\u7bc7_\u7b2c\u4e03\u671f_\u76f8\u4fe1_\u76f8\u4fe1",
+      "references_sources_articles_2023-09-22_165202_\u51b0\u51b0\u5c0f\u7f8e_\u60c5\u7eea\u4f53\u7cfb\u4ea4\u6613\u7bc7_\u7b2c\u4e03\u671f_\u76f8\u4fe1_\u7eb3\u65af\u8fbe\u514b",
+      "references_sources_articles_2023-09-22_165202_\u51b0\u51b0\u5c0f\u7f8e_\u60c5\u7eea\u4f53\u7cfb\u4ea4\u6613\u7bc7_\u7b2c\u4e03\u671f_\u76f8\u4fe1_\u82f1\u4f1f\u8fbe",
+      "references_sources_articles_2023-09-22_165202_\u51b0\u51b0\u5c0f\u7f8e_\u60c5\u7eea\u4f53\u7cfb\u4ea4\u6613\u7bc7_\u7b2c\u4e03\u671f_\u76f8\u4fe1_\u8c37\u6b4c",
+      "references_sources_articles_2023-09-25_115800_\u51b0\u51b0\u5c0f\u7f8e_\u4f53\u7cfb\u4e09\u8981\u7d20_\u7ade\u4e89\u683c\u5c40\u7684\u6bd4\u8f83\u4f18\u52bf_\u4f53\u7cfb\u4e09\u8981\u7d20_\u7ade\u4e89\u683c\u5c40\u7684\u6bd4\u8f83\u4f18\u52bf",
+      "references_sources_articles_2023-09-25_115800_\u51b0\u51b0\u5c0f\u7f8e_\u4f53\u7cfb\u4e09\u8981\u7d20_\u7ade\u4e89\u683c\u5c40\u7684\u6bd4\u8f83\u4f18\u52bf_\u60c5\u7eea\u4f4d\u7f6e\u7684\u53d8\u5316",
+      "references_sources_articles_2023-09-25_115800_\u51b0\u51b0\u5c0f\u7f8e_\u4f53\u7cfb\u4e09\u8981\u7d20_\u7ade\u4e89\u683c\u5c40\u7684\u6bd4\u8f83\u4f18\u52bf_\u6d41\u52a8\u6027\u8fa9\u8bc1\u5206\u6790",
+      "references_sources_articles_2023-09-25_115800_\u51b0\u51b0\u5c0f\u7f8e_\u4f53\u7cfb\u4e09\u8981\u7d20_\u7ade\u4e89\u683c\u5c40\u7684\u6bd4\u8f83\u4f18\u52bf_\u7ade\u4e89\u683c\u5c40\u7684\u6bd4\u8f83\u4f18\u52bf",
+      "references_sources_articles_2023-09-25_230820_\u51b0\u51b0\u5c0f\u7f8e_\u4e70_\u4e00\u5b9a\u662f\u57fa\u4e8e\u4f53\u7cfb\u4e09\u8981\u7d20\u6709\u5229_\u4e70_\u4e00\u5b9a\u662f\u57fa\u4e8e\u4f53\u7cfb\u4e09\u8981\u7d20\u6709\u5229",
+      "references_sources_articles_2023-10-06_120819_\u51b0\u51b0\u5c0f\u7f8e_\u60c5\u7eea\u4f53\u7cfb\u4ea4\u6613\u7bc7_\u7b2c\u516b\u7bc7_\u6570\u5b66\u6a21\u578b\u4e0d\u8d25_\u60c5\u7eea\u4f53\u7cfb\u4ea4\u6613\u7bc7_\u7b2c\u516b\u7bc7_\u6570\u5b66\u6a21\u578b\u4e0d\u8d25",
+      "references_sources_articles_2023-10-06_120819_\u51b0\u51b0\u5c0f\u7f8e_\u60c5\u7eea\u4f53\u7cfb\u4ea4\u6613\u7bc7_\u7b2c\u516b\u7bc7_\u6570\u5b66\u6a21\u578b\u4e0d\u8d25_\u6570\u5b66\u6a21\u578b\u4e0d\u8d25",
+      "references_sources_articles_2023-10-06_120819_\u51b0\u51b0\u5c0f\u7f8e_\u60c5\u7eea\u4f53\u7cfb\u4ea4\u6613\u7bc7_\u7b2c\u516b\u7bc7_\u6570\u5b66\u6a21\u578b\u4e0d\u8d25_\u80dc\u7387",
+      "references_sources_articles_2023-10-06_120819_\u51b0\u51b0\u5c0f\u7f8e_\u60c5\u7eea\u4f53\u7cfb\u4ea4\u6613\u7bc7_\u7b2c\u516b\u7bc7_\u6570\u5b66\u6a21\u578b\u4e0d\u8d25_\u8d54\u7387",
+      "references_sources_articles_2023-10-09_123808_\u51b0\u51b0\u5c0f\u7f8e_\u60c5\u7eea\u4f53\u7cfb\u4ea4\u6613\u7bc7_\u7b2c\u4e5d\u671f_\u4e70\u5356_\u534e\u6620\u79d1\u6280",
+      "references_sources_articles_2023-10-09_123808_\u51b0\u51b0\u5c0f\u7f8e_\u60c5\u7eea\u4f53\u7cfb\u4ea4\u6613\u7bc7_\u7b2c\u4e5d\u671f_\u4e70\u5356_\u56fd\u8fd0",
+      "references_sources_articles_2023-10-09_123808_\u51b0\u51b0\u5c0f\u7f8e_\u60c5\u7eea\u4f53\u7cfb\u4ea4\u6613\u7bc7_\u7b2c\u4e5d\u671f_\u4e70\u5356_\u60c5\u7eea\u4f53\u7cfb\u4ea4\u6613\u7bc7_\u7b2c\u4e5d\u671f_\u4e70\u5356",
+      "references_sources_articles_2023-10-09_123808_\u51b0\u51b0\u5c0f\u7f8e_\u60c5\u7eea\u4f53\u7cfb\u4ea4\u6613\u7bc7_\u7b2c\u4e5d\u671f_\u4e70\u5356_\u60c5\u7eea\u6807",
+      "references_sources_articles_2023-10-09_123808_\u51b0\u51b0\u5c0f\u7f8e_\u60c5\u7eea\u4f53\u7cfb\u4ea4\u6613\u7bc7_\u7b2c\u4e5d\u671f_\u4e70\u5356_\u6323\u94b1\u6548\u5e94",
+      "references_sources_articles_2023-10-09_123808_\u51b0\u51b0\u5c0f\u7f8e_\u60c5\u7eea\u4f53\u7cfb\u4ea4\u6613\u7bc7_\u7b2c\u4e5d\u671f_\u4e70\u5356_\u6377\u8363\u6280\u672f"
+    ],
+    "7": [
+      "references_research_07-article-clusters",
+      "references_research_07_article-clusters_corpora_520",
+      "references_research_07_article-clusters_heuristic_cai_liao_ku_cun",
+      "references_research_07_article-clusters_heuristic_chi_chiang_ye_shi_mai",
+      "references_research_07_article-clusters_heuristic_feng_xian_xian_kong_cang",
+      "references_research_07_article-clusters_heuristic_ge_gu_gong_gao",
+      "references_research_07_article-clusters_heuristic_jiu_hong_li_lai_yuan",
+      "references_research_07_article-clusters_heuristic_kong_cang",
+      "references_research_07_article-clusters_heuristic_shi_dai_zhu_xian",
+      "references_research_07_article-clusters_heuristic_shu_wang_na_li_liu",
+      "references_research_07_article-clusters_heuristic_xiao_zuo_wen",
+      "references_research_07_article-clusters_heuristic_yang_ma_zhong_guan",
+      "references_research_07_article-clusters_heuristic_ying_ke_ji_ren_cai",
+      "references_research_07_article-clusters_model_ai_ji_jian",
+      "references_research_07_article-clusters_model_jiu_hong_li_tui_chu",
+      "references_research_07_article-clusters_model_liu_dong_xing_san_ceng",
+      "references_research_07_article-clusters_model_mai_ru_bu_bai",
+      "references_research_07_article-clusters_model_ti_xi_san_yao_su",
+      "references_research_07_article-clusters_model_wei_ji_yan_yi_lian",
+      "references_research_07_article-clusters_topic_ai_ying_ke_ji",
+      "references_research_07_article-clusters_topic_ge_gu_an_li",
+      "references_research_07_article-clusters_topic_jing_zheng_guo_yun",
+      "references_research_07_article-clusters_topic_jiu_hong_li",
+      "references_research_07_article-clusters_topic_liu_dong_xing",
+      "references_research_07_article-clusters_topic_ren_cai_chan_ye",
+      "references_research_07_article-clusters_topic_wei_ji_hong_guan",
+      "references_research_07_article-clusters_topic_xi_ti_jiao_yi",
+      "references_research_07_article-clusters_topic_xin_xi_xian_xue",
+      "references_sources_articles_2023-03-10_161631",
+      "references_sources_articles_2023-03-18_145015",
+      "references_sources_articles_2023-03-19_113043",
+      "references_sources_articles_2023-03-19_232929",
+      "references_sources_articles_2023-03-20_122713",
+      "references_sources_articles_2023-03-20_132506",
+      "references_sources_articles_2023-04-10_204031",
+      "references_sources_articles_2023-04-13_161113",
+      "references_sources_articles_2023-04-28_080747",
+      "references_sources_articles_2023-05-05_153744",
+      "references_sources_articles_2023-05-06_104149",
+      "references_sources_articles_2023-05-09_201754",
+      "references_sources_articles_2023-05-10_080020",
+      "references_sources_articles_2023-05-10_084108"
+    ],
+    "8": [
+      "concept_\u4e1a\u7ee9\u4e0e\u4f30\u503c\u91cd\u4f30\u7ea2\u8272\u56fd\u4e5d\u6761",
+      "concept_\u4e2d\u592e\u52a0\u6760\u6746\u4fe1\u7528\u903b\u8f91",
+      "concept_\u4e94\u7565\u6218\u7565\u5206\u6790",
+      "concept_\u5154\u7c73\u79d1\u6280\u4e0eAi\u535a\u5f08",
+      "concept_\u6d77\u6743\u519b\u4e8b\u601d\u7ef4",
+      "concept_\u7c73\u7684\u5ddd\u9a6c\u65b0\u653f\u6218\u7565\u610f\u56fe",
+      "concept_\u7f8e\u5143\u6f6e\u6c50\u4e0e\u6d41\u52a8\u6027\u56db\u5c42",
+      "concept_\u91d1\u878d\u4fe1\u606f\u7684\u5f52\u7eb3\u6846\u67b6",
+      "concept_\u9690\u5b66\u4e0e\u663e\u5b66",
+      "concept_\u975e\u91d1\u878d\u4fe1\u606f\u4e00\u56fd\u4e8c\u7b56\u4e09\u4e1a\u56db\u754c\u4e94\u7565",
+      "references_sources_articles_2025-03-02_105810_\u89c6\u89d2\u4e0e\u6218\u7565",
+      "references_sources_articles_2025-03-05_101202_\u7c73\u80a1\u7684\u5f71\u54cd",
+      "references_sources_articles_2025-03-05_225220_\u6d41\u52a8\u6027\u7684\u95ee\u9898",
+      "references_sources_articles_2025-03-11_165203_\u5982\u4f55\u7406\u89e3\u7ecf\u6d4e\u7684\u6b63\u5411\u5faa\u73af",
+      "references_sources_articles_2025-03-16_185442_\u5206\u4eab\u65b0\u95fb\u7acb\u9a6c\u5c31\u6709\u7559\u8a00\u5229\u597d\u4ec0\u4e48\u5229\u7a7a\u4ec0\u4e48",
+      "references_sources_articles_2025-04-04_100945_\u56f0\u5883\u4e0e\u6289\u62e9",
+      "references_sources_articles_2025-04-04_105644_\u672a\u6765\u7f8e\u5143\u7684\u6d41\u52a8",
+      "references_sources_articles_2025-04-04_144216_\u5173\u7a0e\u5bf9\u4e8e\u5927\u5b97\u5546\u54c1\u7684\u5f71\u54cd",
+      "references_sources_articles_2025-04-05_103226_\u56fd\u8fd0\u76f8\u4fe1\u76f8\u4fe1\u7684\u529b\u91cf",
+      "references_sources_articles_2025-04-14_081545_90\u5929\u7684\u53ef\u80fd\u6027\u8def\u5f84\u6f14\u7ece",
+      "references_sources_articles_2025-04-27_082843_\u7ade\u4e89\u683c\u5c40\u7684\u6f14\u7ece",
+      "references_sources_articles_2025-06-06_001546_\u4fe1\u606f\u7684\u91d1\u878d\u610f\u4e49\u4e00",
+      "references_sources_articles_2025-06-06_001546_\u4fe1\u606f\u7684\u91d1\u878d\u610f\u4e49\u4e00_dup",
+      "references_sources_articles_2025-06-08_131633_\u4fe1\u606f\u7684\u91d1\u878d\u610f\u4e49\u4e8c",
+      "references_sources_articles_2025-06-09_170544_\u4fe1\u606f\u7684\u91d1\u878d\u610f\u4e49\u4e09",
+      "references_sources_articles_2025-06-09_221729_\u4fe1\u606f\u7684\u91d1\u878d\u610f\u4e49\u56db",
+      "references_sources_articles_2025-06-15_181653_\u5f53\u98ce\u9669\u7a81\u7136\u964d\u4e34\u7684\u65f6\u5019\u5982\u4f55\u5e94\u5bf9",
+      "references_sources_articles_2025-06-15_205400_\u76ee\u524d\u6709\u4ec0\u4e48\u6709\u5229\u652f\u6491\u6211\u7684\u5224\u65ad",
+      "references_sources_articles_2025-06-23_162231_\u4fe1\u606f\u7684\u91d1\u878d\u610f\u4e49\u4e94",
+      "references_sources_articles_2025-06-23_164801_\u4fe1\u606f\u7684\u91d1\u878d\u610f\u4e49\u516d",
+      "references_sources_articles_2025-06-23_233810_\u4fe1\u606f\u7684\u91d1\u878d\u610f\u4e49\u4e03",
+      "references_sources_articles_2025-06-24_120944_\u4fe1\u606f\u7684\u91d1\u878d\u610f\u4e49\u516b",
+      "references_sources_articles_2025-06-29_151507_\u4fe1\u606f\u7684\u91d1\u878d\u610f\u4e49\u4e5d",
+      "references_sources_articles_2025-07-02_131714_\u96ea\u7403\u5927v\u524d\u8457\u540d\u57fa\u91d1\u7ecf\u7406\u8096\u5fd7\u521a\u6295\u8d44\u6709\u89c4\u5f8b",
+      "references_sources_articles_2025-07-17_152720_\u4fe1\u606f\u7684\u91d1\u878d\u610f\u4e49\u5341",
+      "references_sources_articles_2025-07-22_152806_\u5982\u679c\u8fd9\u662f\u725b\u5e02\u4e5f\u662f\u4ef7\u503c\u89c2\u6b63\u786e\u7684\u725b\u5e02",
+      "references_sources_articles_2025-07-25_184001_\u4ea4\u6613\u7406\u5ff5\u4e4b\u4e89",
+      "references_sources_articles_2025-07-26_115139_\u4ea4\u6613\u5fc3\u7406\u5206\u6790\u7684\u91cd\u8981\u6027",
+      "references_sources_articles_2025-08-16_151943_\u4fe1\u606f\u7684\u91d1\u878d\u610f\u4e49\u5341\u4e00",
+      "references_sources_articles_2025-08-17_164534_\u5b9a\u4f4d\u4e0e\u7acb\u573a\u7f8e\u5e1d\u7684\u82b1\u62db\u4e0e\u90e8\u5206\u5154\u7684\u4e0d\u81ea\u4fe1"
+    ],
+    "9": [
+      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_china_us_acceleration",
+      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_civilization_500yr",
+      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_claude_self_analysis",
+      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_future_seven_sisters",
+      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_greenspan_death",
+      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_material_to_lithium",
+      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_new_national_standard",
+      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_theme_ai_tech",
+      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_theme_clustering",
+      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_theme_commercial_aerospace",
+      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_theme_consumer_old_guard",
+      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_theme_geopolitics",
+      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_theme_investment_philosophy",
+      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_theme_lithium_new_energy",
+      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_theme_macro_currency",
+      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_theme_materials_cycle",
+      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_theme_reflection_meta",
+      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_theme_trading_position",
+      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_tongguan_20x",
+      "references_heuristics_h14-industry-belief_case_jiangfeng",
+      "references_heuristics_h14-industry-belief_h14",
+      "references_heuristics_h15-leverage-cleanup_case_zijin",
+      "references_heuristics_h15-leverage-cleanup_h15",
+      "references_heuristics_h16-liquidity-vs-business_case_baijiu",
+      "references_heuristics_h16-liquidity-vs-business_case_xibu",
+      "references_heuristics_h16-liquidity-vs-business_h16",
+      "references_heuristics_h17-active-loss-boundary_case_sailisi",
+      "references_heuristics_h17-active-loss-boundary_case_tongguan",
+      "references_heuristics_h17-active-loss-boundary_h17",
+      "references_models_deep-1-three-elements_five_layer_arch",
+      "references_models_deep-1-three-elements_model1",
+      "references_models_deep-4-competition_bubble_redef",
+      "references_models_deep-4-competition_model4",
+      "references_models_deep-4-competition_new_old_money",
+      "references_models_deep-9-ai-distillation_info_arbitrage",
+      "references_models_deep-9-ai-distillation_model9"
+    ],
+    "10": [
+      "tests_test_article_corpus_preflight",
+      "tests_test_article_corpus_preflight_articlecorpuspreflighttests",
+      "tests_test_article_corpus_preflight_articlecorpuspreflighttests_call_main",
+      "tests_test_article_corpus_preflight_articlecorpuspreflighttests_test_build_index_plan_rules",
+      "tests_test_article_corpus_preflight_articlecorpuspreflighttests_test_cli_prepare_status_record_finalize",
+      "tests_test_article_corpus_preflight_articlecorpuspreflighttests_test_command_builders",
+      "tests_test_article_corpus_preflight_articlecorpuspreflighttests_test_default_paths_and_constants",
+      "tests_test_article_corpus_preflight_articlecorpuspreflighttests_test_final_status_allows_complete_no_content_change_receipt",
+      "tests_test_article_corpus_preflight_articlecorpuspreflighttests_test_final_status_and_pass_digest_update",
+      "tests_test_article_corpus_preflight_articlecorpuspreflighttests_test_final_status_invalid_receipts_do_not_pass",
+      "tests_test_article_corpus_preflight_articlecorpuspreflighttests_test_final_status_rejects_stale_no_content_change_receipt",
+      "tests_test_article_corpus_preflight_articlecorpuspreflighttests_test_final_status_required_fail_overrides_pending",
+      "tests_test_article_corpus_preflight_articlecorpuspreflighttests_test_path_helpers",
+      "tests_test_article_corpus_preflight_articlecorpuspreflighttests_test_preflight_lock_exclusive_and_stale",
+      "tests_test_article_corpus_preflight_articlecorpuspreflighttests_test_prepare_corpus_snapshot_blocks_target_only_markdown_in_real_articles",
+      "tests_test_article_corpus_preflight_articlecorpuspreflighttests_test_prepare_corpus_snapshot_blocks_when_source_changes_during_copy",
+      "tests_test_article_corpus_preflight_articlecorpuspreflighttests_test_prepare_corpus_snapshot_reparse_branch_uses_staging_replace_hook",
+      "tests_test_article_corpus_preflight_articlecorpuspreflighttests_test_prepare_resets_required_mcp_results_when_corpus_changes",
+      "tests_test_article_corpus_preflight_articlecorpuspreflighttests_test_prepare_syncs_real_articles_from_vault_and_writes_corpus",
+      "tests_test_article_corpus_preflight_articlecorpuspreflighttests_test_record_mcp_result_and_render_status",
+      "tests_test_article_corpus_preflight_articlecorpuspreflighttests_test_replace_reparse_with_staging_removes_reparse_itself_without_rmtree",
+      "tests_test_article_corpus_preflight_articlecorpuspreflighttests_test_scan_corpus_hashes_markdown_content_only",
+      "tests_test_article_corpus_preflight_articlecorpuspreflighttests_test_scan_corpus_skips_nested_reparse_points",
+      "tests_test_article_corpus_preflight_articlecorpuspreflighttests_test_state_round_trip_and_schema_validation",
+      "tests_test_article_corpus_preflight_articlecorpuspreflighttests_test_sync_rejects_reparse_target_and_copies_real_directory",
+      "tests_test_article_corpus_preflight_articlecorpuspreflighttests_test_verify_graphify_graph"
+    ],
+    "11": [
+      "concept_china_central_leveraging_up",
+      "concept_china_shibor_pbx_bubble_pop",
+      "concept_china_us_white_hot_competition",
+      "concept_etf_market_regime",
+      "concept_fourth_industrial_revolution",
+      "concept_grover_cleveland_mckinley_parallel",
+      "concept_ma_yi_china_musk_trump_axis",
+      "concept_manufacturing_reshoring",
+      "concept_reagan_economics_legacy",
+      "concept_rossell_new_deal_central_leverage",
+      "concept_strong_dollar_104_axis",
+      "concept_taiwan_chip_supply_chain",
+      "concept_three_factor_framework",
+      "concept_trump_2024_victory",
+      "concept_us_rate_cut_qt",
+      "references_sources_articles_2024-11-07_090236_\u51b0\u51b0\u5c0f\u7f8e_\u5371\u673a\u9738\u6743\u4e0e\u518d\u6b21\u4f1f\u5927\u7684\u7f8e\u56fd_article",
+      "references_sources_articles_2024-11-08_183336_\u51b0\u51b0\u5c0f\u7f8e_\u4e2d\u592e\u52a0\u6760\u6746_article",
+      "references_sources_articles_2024-11-09_105442_\u51b0\u51b0\u5c0f\u7f8e_2024\u5927\u4e8b\u4ef6\u843d\u5730\u672a\u6765\u884c\u60c5\u6f14\u7ece_article",
+      "references_sources_articles_2024-11-10_200315_\u51b0\u51b0\u5c0f\u7f8e_\u7ade\u4e89\u767d\u70ed\u5316_article",
+      "references_sources_articles_2024-11-12_083344_\u51b0\u51b0\u5c0f\u7f8e_ETF\u57fa\u91d1\u4e0e\u884c\u60c5\u7279\u5f81_article",
+      "references_sources_articles_2024-11-12_231642_\u51b0\u51b0\u5c0f\u7f8e_\u98ce\u9669\u4e0e\u673a\u9047\u7684\u65f6\u4ee3\u98ce\u4e91_article",
+      "references_sources_articles_2024-11-16_113624_\u51b0\u51b0\u5c0f\u7f8e_\u7ad9\u5728\u5386\u53f2\u8f6c\u6298\u7684\u8282\u70b9\u770b\u91d1\u878d_article",
+      "references_sources_articles_2024-11-16_181843_\u51b0\u51b0\u5c0f\u7f8e_\u5386\u53f2\u4e0e\u653f\u6cbb\u4e0e\u7ecf\u6d4e\u5b66_article",
+      "references_sources_articles_2024-12-21_174901_\u51b0\u51b0\u5c0f\u7f8e_\u7c73_article",
+      "references_sources_articles_2024-12-25_165007_\u51b0\u51b0\u5c0f\u7f8e_\u7f8e\u8054\u50a8\u7684\u8fd9\u56db\u5e74_article"
+    ],
+    "12": [
+      "evals_full_test_outputs_v1_5_case_13_h14_agent_5079e81b_txt_case13",
+      "evals_full_test_outputs_v1_5_case_13_h14_agent_5079e81b_txt_h14",
+      "evals_full_test_outputs_v1_5_case_13_h14_agent_5079e81b_txt_jiangfeng",
+      "evals_full_test_outputs_v1_5_case_13_h14_agent_5079e81b_txt_r5_quote",
+      "evals_full_test_outputs_v1_5_case_13_h14_agent_5079e81b_txt_target",
+      "evals_full_test_outputs_v1_5_case_13_h14_agent_5079e81b_txt_tongguan",
+      "evals_full_test_outputs_v1_5_case_13_h14_agent_5079e81b_txt_tsmc",
+      "evals_full_test_outputs_v1_5_case_13_h14_agent_5079e81b_txt_xibu",
+      "evals_full_test_outputs_v1_5_case_14_h15h16_agent_b41b3f58_txt_3principles",
+      "evals_full_test_outputs_v1_5_case_14_h15h16_agent_b41b3f58_txt_case14",
+      "evals_full_test_outputs_v1_5_case_14_h15h16_agent_b41b3f58_txt_h15",
+      "evals_full_test_outputs_v1_5_case_14_h15h16_agent_b41b3f58_txt_h16",
+      "evals_full_test_outputs_v1_5_case_14_h15h16_agent_b41b3f58_txt_r5_rotation",
+      "evals_full_test_outputs_v1_5_case_14_h15h16_agent_b41b3f58_txt_youse",
+      "evals_full_test_outputs_v1_5_case_14_h15h16_agent_b41b3f58_txt_zijin",
+      "evals_full_test_outputs_v1_5_case_19_framework_agent_66e4d3c7_txt_3factors",
+      "evals_full_test_outputs_v1_5_case_19_framework_agent_66e4d3c7_txt_buy_invincible",
+      "evals_full_test_outputs_v1_5_case_19_framework_agent_66e4d3c7_txt_case19",
+      "evals_full_test_outputs_v1_5_case_19_framework_agent_66e4d3c7_txt_ladder_buy",
+      "evals_full_test_outputs_v1_5_case_19_framework_agent_66e4d3c7_txt_liancheng",
+      "evals_full_test_outputs_v1_5_case_5_emotion_agent_a8ff6859_txt_3donots",
+      "evals_full_test_outputs_v1_5_case_5_emotion_agent_a8ff6859_txt_admit_emotion",
+      "evals_full_test_outputs_v1_5_case_5_emotion_agent_a8ff6859_txt_case5"
+    ],
+    "13": [
+      "concept_ai_competition_space_race",
+      "concept_intel_god_making_plan",
+      "concept_intel_nvda_taipei_cooperation",
+      "references_sources_articles_2026_05_08_\u51b0\u51b0\u5c0f\u7f8e_\u4e0b\u5468\u4e2d\u7c73\u5927\u4e8b\u4ef6\u7c73\u8054\u50a8\u6362\u5c4a",
+      "references_sources_articles_2026_05_08_\u51b0\u51b0\u5c0f\u7f8e_\u4e3a\u4f55_\u82f1\u7279\u5c14_\u5982\u6b64\u4e0d\u8bb2\u9053\u7406",
+      "references_sources_articles_2026_05_08_\u51b0\u51b0\u5c0f\u7f8e_\u53bb\u5e74\u9ec4\u91d1\u7f8e\u503a\u53d9\u4e8b\u6838\u5fc3\u5728\u4e8e\u51b2\u7a81",
+      "references_sources_articles_2026_05_08_\u51b0\u51b0\u5c0f\u7f8e_\u53ef\u4ee5\u6536\u76d8\u603b\u7ed3\u4e86\u7ed3\u6784\u5206\u5316\u884c\u60c5",
+      "references_sources_articles_2026_05_08_\u51b0\u51b0\u5c0f\u7f8e_\u6210\u957f\u5206\u5316\u4ef7\u503c\u5d1b\u8d77\u4e1a\u7ee9\u63a8\u52a8",
+      "references_sources_articles_2026_05_08_\u51b0\u51b0\u5c0f\u7f8e_\u6211\u600e\u4e48\u770b\u5f85\u6211\u7684\u65f6\u95f4\u8868\u662f514",
+      "references_sources_articles_2026_05_08_\u51b0\u51b0\u5c0f\u7f8e_\u6700\u8fd1_\u65b0\u80fd\u6e90_\u4e0b\u8dcc\u660e\u663e",
+      "references_sources_articles_2026_05_08_\u51b0\u51b0\u5c0f\u7f8e_\u67d0\u79cd\u610f\u4e49\u4e0a\u770b\u4e2d\u7c73\u79d1\u6280\u4e0a\u6da8",
+      "references_sources_articles_2026_05_08_\u51b0\u51b0\u5c0f\u7f8e_\u76ee\u524dai\u7684\u8282\u70b9\uff0c\u53ef\u80fd\u96c6\u4e2d\u4e8e61\uff0c62_65_\u82f1\u4f1f\u8fbe_\u82f1\u7279\u5c14_\u90fd\u4f1a\u53c2\u52a0\u53f0\u5317\u6f14\u8bb2",
+      "references_sources_articles_2026_05_08_\u51b0\u51b0\u5c0f\u7f8e_\u7761\u89c9\u7761\u89c907\u5e74\u662f\u5927\u5b97\u725b\u5e02",
+      "references_sources_articles_2026_05_08_\u51b0\u51b0\u5c0f\u7f8e_\u8fd9\u79cd\u7ade\u8d5b\u8bc9\u6c42\u5c31\u4f1a\u5f62\u6210\u4ea7\u4e1a\u5b89\u5168\u8981\u6c42",
+      "references_sources_articles_2026_05_08_\u51b0\u51b0\u5c0f\u7f8e_\u90a3\u4e48\u610f\u8bc6\u5230\u8fd9\u79cd\u7ade\u4e89\u4f60\u5c31\u4f1a\u9009\u62e9\u771f\u6b63\u786c\u6838\u79d1\u6280\u7684\u4f01\u4e1a",
+      "references_sources_articles_2026_05_08_\u51b0\u51b0\u5c0f\u7f8e_\u90a3\u4e48\u65f6\u4ee3\u80cc\u666f\u662f\u7ade\u4e89",
+      "references_sources_articles_2026_05_09_\u51b0\u51b0\u5c0f\u7f8e_ai\u4e0e\u91d1\u878d",
+      "references_sources_articles_2026_05_09_\u51b0\u51b0\u5c0f\u7f8e_\u91d1\u878d\u9020\u795e\u56fd\u5bb6\u610f\u5fd7\u5b9e\u529b\u8d22\u5bcc",
+      "references_sources_articles_2026_05_10_\u51b0\u51b0\u5c0f\u7f8e_\u5386\u53f2\u5371\u673a\u7684\u7ecf\u9a8c\u4e0e\u8b66\u793a",
+      "references_sources_articles_2026_05_11_\u51b0\u51b0\u5c0f\u7f8e_\u8bf4\u70b9\u6709\u7684\u6ca1\u7684\u5982\u4f55\u53d1\u73b0\u786c\u6838\u79d1\u6280"
+    ],
+    "14": [
+      "concept_\u5206\u4ed3\u4e0e\u4ed3\u4f4d\u7ba1\u7406",
+      "concept_\u5206\u6b67\u8f6c\u4e00\u81f4",
+      "concept_\u60c5\u7eea\u4f4d\u7f6e\u53d8\u5316",
+      "concept_\u60c5\u7eea\u4f53\u7cfb\u4e09\u8981\u7d20",
+      "concept_\u653e\u6c34\u6536\u6c34\u77e9\u9635",
+      "concept_\u6d41\u52a8\u6027\u6ea2\u4ef7\u5047\u8c61\u5f15\u5bfc",
+      "concept_\u6d41\u52a8\u6027\u8fa9\u8bc1\u5206\u6790",
+      "concept_\u7ade\u4e89\u683c\u5c40\u7684\u6bd4\u8f83\u4f18\u52bf",
+      "references_sources_articles_2023_06_27_110135_\u51b0\u51b0\u5c0f\u7f8e_\u4e3a\u4ec0\u4e48\u4eca\u65e5\u4f1a\u7a7a\u4ed3_\u4e3a\u4ec0\u4e48\u4eca\u65e5\u4f1a\u7a7a\u4ed3",
+      "references_sources_articles_2023_07_21_111501_\u51b0\u51b0\u5c0f\u7f8e_\u4f53\u7cfb\u4e09\u8981\u7d20\u7ade\u4e89\u683c\u5c40\u7684\u6bd4\u8f83\u4f18\u52bf_\u4f53\u7cfb\u4e09\u8981\u7d20\u7ade\u4e89\u683c\u5c40\u7684\u6bd4\u8f83\u4f18\u52bf",
+      "references_sources_articles_2023_07_26_110817_\u51b0\u51b0\u5c0f\u7f8e_\u6e38\u8d44\u6c5f\u6e56\u624b\u6cd5\u7b2c\u56db\u671f\u5206\u6b67\u8f6c\u4e00\u81f4_\u6e38\u8d44\u6c5f\u6e56\u624b\u6cd5\u7b2c\u56db\u671f\u5206\u6b67\u8f6c\u4e00\u81f4",
+      "references_sources_articles_2023_07_27_150400_\u51b0\u51b0\u5c0f\u7f8e_\u60c5\u7eea\u9ad8\u4f4d\u8f6c\u6298\u6d41\u52a8\u6027\u5206\u5316\u4e0d\u5229\u4f7f\u5f97\u4ea4\u6613\u7684\u8270\u96be\u500d\u589e_\u60c5\u7eea\u9ad8\u4f4d\u8f6c\u6298\u6d41\u52a8\u6027\u5206\u5316\u4e0d\u5229\u4f7f\u5f97\u4ea4\u6613\u7684\u8270\u96be\u500d\u589e",
+      "references_sources_articles_2023_07_28_111010_\u51b0\u51b0\u5c0f\u7f8e_\u6e38\u8d44\u6c5f\u6e56\u624b\u6cd5\u7b2c\u4e94\u671f\u6d41\u52a8\u6027\u6ea2\u4ef7\u5047\u8c61\u5f15\u5bfc_\u6e38\u8d44\u6c5f\u6e56\u624b\u6cd5\u7b2c\u4e94\u671f\u6d41\u52a8\u6027\u6ea2\u4ef7\u5047\u8c61\u5f15\u5bfc",
+      "references_sources_articles_2023_08_14_222825_\u51b0\u51b0\u5c0f\u7f8e_\u60c5\u7eea\u4f53\u7cfb\u4ea4\u6613\u7bc7\u7b2c\u4e00\u671f\u5206\u4ed3_\u60c5\u7eea\u4f53\u7cfb\u4ea4\u6613\u7bc7\u7b2c\u4e00\u671f\u5206\u4ed3",
+      "references_sources_articles_2024_09_25_111703_\u4f53\u7cfb\u4e09\u8981\u7d20",
+      "references_sources_articles_2024_10_06_090143_\u5927\u653e\u6c34\u964d\u606f\u6269\u8868",
+      "stock_sh600280_\u4e2d\u592e\u5546\u573a",
+      "stock_sz399606_\u521b\u4e1a\u677f"
+    ],
+    "15": [
+      "concept_\u4eba\u6c14\u4e3a\u738b\u4f17\u795e\u63a5\u529b",
+      "concept_\u65b0\u9ad8\u7a81\u7834\u677f",
+      "concept_\u9f99\u5934\u6218\u6cd5",
+      "person_\u4e0a\u5858\u8def",
+      "person_\u53e4\u5317\u8def\u4e1c\u5317\u731b\u7537",
+      "person_\u6ea7\u9633\u8def\u5b59\u54e5",
+      "person_\u7092\u80a1\u517b\u5bb6",
+      "person_\u7ae0\u76df\u4e3b",
+      "references_sources_articles_2023_06_30_083405_\u51b0\u51b0\u5c0f\u7f8e_\u6e38\u8d44\u6c5f\u6e56\u624b\u6cd5\u7b2c\u4e00\u671f\u65b0\u9ad8\u7a81\u7834\u677f_\u6e38\u8d44\u6c5f\u6e56\u624b\u6cd5\u7b2c\u4e00\u671f\u65b0\u9ad8\u7a81\u7834\u677f",
+      "references_sources_articles_2023_07_08_143557_\u51b0\u51b0\u5c0f\u7f8e_\u6e38\u8d44\u6c5f\u6e56\u624b\u6cd5\u7b2c\u4e8c\u671f\u4eba\u6c14\u4e3a\u738b\u4f17\u795e\u63a5\u529b_\u6e38\u8d44\u6c5f\u6e56\u624b\u6cd5\u7b2c\u4e8c\u671f\u4eba\u6c14\u4e3a\u738b\u4f17\u795e\u63a5\u529b",
+      "references_sources_articles_2023_07_20_111528_\u51b0\u51b0\u5c0f\u7f8e_\u6e38\u8d44\u7ecf\u5178\u624b\u6cd5\u7b2c\u4e09\u671f\u9f99\u5934\u6218\u6cd5_\u6e38\u8d44\u7ecf\u5178\u624b\u6cd5\u7b2c\u4e09\u671f\u9f99\u5934\u6218\u6cd5",
+      "stock_sh600352_\u6d59\u6c5f\u9f99\u76db",
+      "stock_sh600415_\u5c0f\u5546\u54c1\u57ce",
+      "stock_sz000735_\u7f57\u725b\u5c71",
+      "stock_sz002315_\u7126\u70b9\u79d1\u6280",
+      "stock_sz002428_\u4e91\u5357\u9517\u4e1a"
+    ],
+    "16": [
+      "scripts_classify_articles",
+      "scripts_classify_articles_check_promotion",
+      "scripts_classify_articles_classify_article",
+      "scripts_classify_articles_load_articles",
+      "scripts_classify_articles_main",
+      "scripts_classify_articles_output_json",
+      "scripts_classify_articles_output_summary",
+      "scripts_classify_articles_rationale_130",
+      "scripts_classify_articles_rationale_174",
+      "scripts_classify_articles_rationale_189",
+      "scripts_classify_articles_rationale_255",
+      "scripts_classify_articles_rationale_283",
+      "scripts_classify_articles_rationale_308",
+      "scripts_classify_articles_rationale_343",
+      "scripts_classify_articles_score_keywords",
+      "scripts_classify_articles_track_themes"
+    ],
+    "17": [
+      "references_sources_articles_2026-06-17_221911_concept_central_leverage",
+      "references_sources_articles_2026-06-17_221911_doc_2024_central_leverage_origin_post",
+      "references_sources_articles_2026-06-18_054042_concept_fed_dot_plot_un",
+      "references_sources_articles_2026-06-20_102347_concept_g2_ai_dual_pole",
+      "references_sources_articles_2026-06-22_094553_concept_intel_value_chain",
+      "references_sources_articles_2026-06-22_154144_stock_sh600584",
+      "references_sources_articles_2026-06-23_224102_concept_ten_macro_anchors",
+      "references_sources_articles_2026-06-24_194547_concept_cd_lingang_expansion",
+      "references_sources_articles_2026-06-24_225644_concept_pressed_oil_equity_rescue",
+      "references_sources_articles_2026-06-25_083519_concept_consumer_electronics_etf_as_industrial_chain",
+      "references_sources_articles_2026-06-25_083519_doc_consumer_electronics_etf_159732",
+      "references_sources_articles_2026-06-27_132312_concept_global_payment_collection",
+      "references_sources_articles_2026-06-30_085720_concept_fluorine_chemical_three_cycles",
+      "references_sources_articles_2026-07-03_083933_concept_national_fortune_dividend"
+    ],
+    "18": [
+      "concept_\u4e8f\u94b1\u6548\u5e94",
+      "concept_\u5361\u4f4d\u7a7f\u8d8a",
+      "concept_\u56f4\u9b4f\u6551\u8d75\u4e8f\u94b1\u6548\u5e94",
+      "concept_\u60c5\u7eea\u51b0\u70b9",
+      "concept_\u60c5\u7eea\u6807",
+      "concept_\u60c5\u7eea\u9000\u6f6e",
+      "concept_\u6323\u94b1\u6548\u5e94",
+      "references_sources_articles_2023_06_28_102129_\u51b0\u51b0\u5c0f\u7f8e_\u600e\u4e48\u5224\u65ad\u60c5\u7eea\u51b0\u70b9\u6211\u4eec\u9700\u8981\u89c2\u5bdf\u4e8f\u94b1\u6548\u5e94_\u600e\u4e48\u5224\u65ad\u60c5\u7eea\u51b0\u70b9\u6211\u4eec\u9700\u8981\u89c2\u5bdf\u4e8f\u94b1\u6548\u5e94",
+      "references_sources_articles_2023_07_05_221150_\u51b0\u51b0\u5c0f\u7f8e_\u5e38\u89c1\u7684\u4e8f\u94b1\u8ba4\u77e5\u7b2c\u5341\u4e8c\u671f\u5361\u4f4d\u7a7f\u8d8a_\u5e38\u89c1\u7684\u4e8f\u94b1\u8ba4\u77e5\u7b2c\u5341\u4e8c\u671f\u5361\u4f4d\u7a7f\u8d8a",
+      "references_sources_articles_2023_08_14_112740_\u51b0\u51b0\u5c0f\u7f8e_\u5e38\u89c1\u7684\u4e8f\u94b1\u8ba4\u77e5\u7b2c\u5341\u4e09\u671f\u60c5\u7eea\u9000\u6f6e_\u5e38\u89c1\u7684\u4e8f\u94b1\u8ba4\u77e5\u7b2c\u5341\u4e09\u671f\u60c5\u7eea\u9000\u6f6e",
+      "stock_sz002921_\u8054\u8bda\u7cbe\u5bc6",
+      "stock_sz300418_\u6606\u4ed1\u4e07\u7ef4",
+      "stock_sz300570_\u592a\u8fb0\u5149"
+    ],
+    "19": [
+      "baseline_case_12_ai_distillation",
+      "baseline_case_19_risk",
+      "case_12_model9_ai_meta",
+      "evals_probe_freq_phrase_counts",
+      "evals_probe_report_concept_ai_distillation",
+      "evals_probe_report_concept_ai_investment_meta",
+      "evals_probe_report_concept_icu_ktv",
+      "evals_probe_report_concept_liquidity_squeeze",
+      "evals_probe_report_concept_new_old_money",
+      "probe_report_article_56",
+      "probe_report_article_65",
+      "probe_report_article_71"
+    ],
+    "20": [
+      "evals_full_test_outputs_case-13-h14-agent-82c330c9_case13_h14_industry_belief_activation",
+      "evals_full_test_outputs_case-13-h14-agent-82c330c9_h14_industry_belief_over_technicals",
+      "evals_full_test_outputs_case-13-h14-agent-82c330c9_h17_three_boundaries_link",
+      "evals_full_test_outputs_case-13-h14-agent-82c330c9_jiangfeng_electronics_case",
+      "evals_full_test_outputs_case-16-h17-agent-f4a76aa3_case16_h17_buy_loss_boundaries",
+      "evals_full_test_outputs_case-16-h17-agent-f4a76aa3_h17_three_boundaries",
+      "evals_full_test_outputs_case-16-h17-agent-f4a76aa3_liancheng_jingmi_2018_lesson",
+      "evals_full_test_outputs_case-16-h17-agent-f4a76aa3_sailis_counterexample",
+      "evals_full_test_outputs_case-16-h17-agent-f4a76aa3_supply_chain_breakthrough_type",
+      "evals_full_test_outputs_case-16-h17-agent-f4a76aa3_technology_position_type",
+      "evals_full_test_outputs_v1.4-case-13-h14-agent-50e3d5c3_case13_h14_v14_jiangfeng",
+      "evals_full_test_outputs_v1.4-case-16-h17-agent-7dbf3c6f_case16_h17_v14_boundaries"
+    ],
+    "21": [
+      "evals_full_test_outputs_case-14-h15h16-agent-3adccb88_case14_h15h16_joint",
+      "evals_full_test_outputs_case-14-h15h16-agent-3adccb88_h15_leverage_clearance_line_28",
+      "evals_full_test_outputs_case-14-h15h16-agent-3adccb88_h16_liquidity_vs_logic",
+      "evals_full_test_outputs_case-14-h15h16-agent-3adccb88_model8_dual_track",
+      "evals_full_test_outputs_case-14-h15h16-agent-3adccb88_zijin_mining_45_to_27",
+      "evals_full_test_outputs_case-15-h16-agent-b8644eff_baijiu_industry_collapse",
+      "evals_full_test_outputs_case-15-h16-agent-b8644eff_buffett_liquor_framework",
+      "evals_full_test_outputs_case-15-h16-agent-b8644eff_case15_h16_killing_logic",
+      "evals_full_test_outputs_case-15-h16-agent-b8644eff_maotai_vs_zhongjixuchuang",
+      "evals_full_test_outputs_case-15-h16-agent-b8644eff_old_guard_no_growth_bubble",
+      "evals_full_test_outputs_v1.4-case-14-h15h16-agent-6fa1cde7_case14_h15h16_v14_zijin",
+      "evals_full_test_outputs_v1.4-case-15-h16-agent-2ea43e66_case15_h16_v14_baijiu"
+    ],
+    "22": [
+      "references_research_01-writings_\u4e70\u5165\u4e0d\u8d25",
+      "references_research_01-writings_\u4ece\u5929\u800c\u964d\u7684\u638c\u6cd5",
+      "references_research_01-writings_\u63a8\u5230\u91cd\u6765",
+      "references_research_02-conversations_\u4ea4\u6613\u5fc3\u6001",
+      "references_research_03-expression-dna_\u786e\u5b9a\u6027\u8868\u8fbe",
+      "references_research_03-expression-dna_\u7981\u5fcc\u8bcd",
+      "references_research_03-expression-dna_\u7ed3\u8bba\u5148\u884c",
+      "references_research_04-external-views_\u5979\u6279\u8bc4\u7684\u667a\u6167\u51b2\u7a81",
+      "references_research_04-external-views_\u6328\u9a82\u7ecf\u5386",
+      "references_research_05-decisions_\u6c5f\u4e30\u7535\u5b50",
+      "references_research_05-decisions_\u8054\u8bda\u7cbe\u5bc6\u6559\u8bad",
+      "references_research_05-decisions_\u957f\u7535\u79d1\u6280"
+    ],
+    "23": [
+      "references_research_01-writings_\u4f53\u7cfb\u4e09\u8981\u7d20",
+      "references_research_01-writings_\u516b\u70b9\u6846\u67b6",
+      "references_research_01-writings_\u5b59\u5b50\u5175\u6cd5",
+      "references_research_01-writings_\u5b8f\u89c2\u4e2d\u89c2\u5fae\u89c2\u4e09\u5c42\u6d41\u52a8\u6027",
+      "references_research_01-writings_\u6d41\u52a8\u6027\u6324\u538b",
+      "references_research_03-expression-dna_\u9ad8\u9891\u8bcd",
+      "references_research_05-decisions_52615\u9636\u6bb5",
+      "references_research_05-decisions_924\u7cbe\u51c6\u63d0\u793a",
+      "references_research_05-decisions_\u6bd4\u4e9a\u8fea\u5272\u8089",
+      "references_research_05-decisions_\u897f\u90e8\u77ff\u4e1a",
+      "references_research_06-timeline_\u4f53\u7cfb\u4e09\u8981\u7d20\u63d0\u51fa",
+      "references_research_06-timeline_\u6d41\u52a8\u6027\u6324\u538b"
+    ],
+    "24": [
+      "references_tools_finance_data_skills_neodata_financial_search_scripts_query_ensure_requests",
+      "references_tools_finance_data_skills_neodata_financial_search_scripts_query_main",
+      "references_tools_finance_data_skills_neodata_financial_search_scripts_query_migrate_legacy_token",
+      "references_tools_finance_data_skills_neodata_financial_search_scripts_query_py_references_tools_finance_data_skills_neodata_financial_search_scripts_query",
+      "references_tools_finance_data_skills_neodata_financial_search_scripts_query_query_neodata",
+      "references_tools_finance_data_skills_neodata_financial_search_scripts_query_rationale_115",
+      "references_tools_finance_data_skills_neodata_financial_search_scripts_query_rationale_170",
+      "references_tools_finance_data_skills_neodata_financial_search_scripts_query_rationale_40",
+      "references_tools_finance_data_skills_neodata_financial_search_scripts_query_rationale_82",
+      "references_tools_finance_data_skills_neodata_financial_search_scripts_query_read_token_file",
+      "references_tools_finance_data_skills_neodata_financial_search_scripts_query_save_token_file",
+      "references_tools_finance_data_skills_neodata_financial_search_scripts_query_urllib_post"
+    ],
+    "25": [
+      "concept_\u4e2d\u7279\u4f30",
+      "concept_\u4e2d\u7c73\u535a\u5f08\u91d1\u878d\u6218",
+      "concept_\u4ef7\u503c\u4ef7\u683c\u949f\u6446",
+      "concept_\u80a1\u7968\u4f9b\u7ed9\u4fa7\u6539\u9769",
+      "references_sources_articles_2024_05_27_104755_\u4f53\u7cfb\u4e09\u8981\u7d20\u53ca\u6848\u4f8b\u5e94\u7528\uff0c\u7b2c\u4e00\u671f\uff0c\u7ade\u4e89\u683c\u5c40\u7684\u6bd4\u8f83\u4f18\u52bf",
+      "references_sources_articles_2024_05_27_125549_\u4f53\u7cfb\u4e09\u8981\u7d20\u53ca\u6848\u4f8b\u5e94\u7528\uff0c\u7b2c\u4e8c\u671f\uff0c\u6d41\u52a8\u6027\u8fa9\u8bc1\u5206\u6790",
+      "references_sources_articles_2024_05_27_133838_\u4f53\u7cfb\u4e09\u8981\u7d20\u53ca\u6848\u4f8b\u5e94\u7528\uff0c\u7b2c\u4e09\u671f\uff0c\u60c5\u7eea\u4f4d\u7f6e\u7684\u53d8\u5316",
+      "references_sources_articles_2024_10_30_153625_\u4ea4\u6613\u672c\u5c31\u662f\u5404\u51ed\u672c\u4e8b",
+      "stock_\u6b63\u4e39\u80a1\u4efd_sz300641",
+      "stock_\u82f1\u4f1f\u8fbe_nvda"
+    ],
+    "26": [
+      "references_sources_articles_2024-04-02_091756_____aiai_jinggong",
+      "references_sources_articles_2024-04-02_091756_____article",
+      "references_sources_articles_2024-04-02_091756_____jianqiao_keji",
+      "references_sources_articles_2024-04-02_091756_____jierong_jishu",
+      "references_sources_articles_2024-04-02_091756_____meidi",
+      "references_sources_articles_2024-04-02_091756_____nantian_xinxi",
+      "references_sources_articles_2024-04-02_091756_____puxutong",
+      "references_sources_articles_2024-04-02_091756_____shenglong_gufen",
+      "references_sources_articles_2024-04-02_091756_____short_line_aesthetic",
+      "references_sources_articles_2024-04-02_091756_____zhongguo_weixing"
+    ],
+    "27": [
+      "2026-06-22_233243_\u51b0\u51b0\u5c0f\u7f8e_\u683c\u6797\u65af\u6f58",
+      "concept_guarantee_panluo",
+      "references_tools_finance-data_skills_neodata-financial-search_reference",
+      "references_tools_finance-data_skills_westock-data_references_ai_usage_guide",
+      "references_tools_finance-data_skills_westock-data_references_commands",
+      "references_tools_finance-data_skills_westock-data_references_macro-fields",
+      "references_tools_finance-data_skills_westock-data_references_routing-guide",
+      "references_tools_finance-data_skills_westock-data_references_scenarios-guide",
+      "references_tools_finance-data_skills_westock-data_skill"
+    ],
+    "28": [
+      "references_research_02-conversations_\u4eba\u8bbe\u6784\u5efa",
+      "references_research_02-conversations_\u56de\u5e94\u8d28\u7591\u6a21\u5f0f",
+      "references_research_02-conversations_\u5e08\u5c0a\u8bad\u5f92",
+      "references_research_02-conversations_\u5e7d\u9ed8\u65b9\u5f0f",
+      "references_research_02-conversations_\u62d2\u7edd\u8ba8\u8bba\u8bdd\u9898",
+      "references_research_02-conversations_\u7c89\u4e1d\u4e92\u52a8",
+      "references_research_03-expression-dna_\u77ed\u53e5\u98ce\u683c",
+      "references_research_03-expression-dna_\u7b2c\u4e00\u4e8c\u4eba\u79f0\u6f14\u53d8",
+      "references_research_04-external-views_\u7c89\u4e1d\u753b\u50cf"
+    ],
+    "29": [
+      "references_research_01-writings_500\u5e74\u6587\u660e\u5468\u671f",
+      "references_research_01-writings_AI\u84b8\u998f",
+      "references_research_01-writings_\u4e2d\u7c73\u7ade\u4e89\u4e09\u9636\u6bb5",
+      "references_research_01-writings_\u4e94\u5c42\u67b6\u6784",
+      "references_research_01-writings_\u672a\u6765\u4e03\u59d0\u59b9",
+      "references_research_01-writings_\u7fdf\u4e1c\u5347",
+      "references_research_01-writings_\u9020\u795e\u8ba1\u5212",
+      "references_research_06-timeline_500\u5e74\u6587\u660e\u53f2"
+    ],
+    "30": [
+      "references_research_01-writings_\u4e24\u4e2a\u7eaa\u5143",
+      "references_research_01-writings_\u5b89\u5168\u4e0e\u53d1\u5c55",
+      "references_research_01-writings_\u5c0f\u56fd\u51fa\u5c40",
+      "references_research_01-writings_\u6709\u5e8f\u7ade\u4e89",
+      "references_research_01-writings_\u8001\u767b\u65b0\u767b",
+      "references_research_01-writings_\u9171\u9999\u79d1\u6280\u9876",
+      "references_research_04-external-views_\u540c\u884c\u6279\u8bc4",
+      "references_research_05-decisions_\u5546\u4e1a\u822a\u5929\u5c01\u795e"
+    ],
+    "31": [
+      "references_sources_articles_2024-03-31_201022_____article",
+      "references_sources_articles_2024-03-31_201022_____commodities_index",
+      "references_sources_articles_2024-03-31_201022_____copper_cycle",
+      "references_sources_articles_2024-03-31_201022_____new_energy_index",
+      "references_sources_articles_2024-03-31_201022_____new_energy_index_sh000941",
+      "references_sources_articles_2024-03-31_201022_____real_estate_index",
+      "references_sources_articles_2024-03-31_201022_____xibu_kuangye",
+      "references_sources_articles_2024-03-31_201022_____zijin_kuangye"
+    ],
+    "32": [
+      "references_sources_articles_2024-04-02_002236_____article",
+      "references_sources_articles_2024-04-02_002236_____hudian_gufen",
+      "references_sources_articles_2024-04-02_002236_____ningke_shengwu",
+      "references_sources_articles_2024-04-02_002236_____tolerance",
+      "references_sources_articles_2024-04-02_154325_____article",
+      "references_sources_articles_2024-04-02_154325_____guiguzi",
+      "references_sources_articles_2024-04-02_154325_____sunzi_bingfa",
+      "references_sources_articles_2024-04-02_154325_____unbeatable_system"
+    ],
+    "33": [
+      "references_research_01-writings_\u4e8f\u94b1\u6323\u94b1\u6548\u5e94",
+      "references_research_01-writings_\u5047\u8c61",
+      "references_research_01-writings_\u56f4\u9b4f\u6551\u8d75",
+      "references_research_01-writings_\u6743\u91cd\u9898\u6750\u6a21\u5f0f",
+      "references_research_01-writings_\u6e38\u8d44\u5927\u4f6c\u7fa4",
+      "references_research_01-writings_\u87ba\u65cb\u4e0a\u5347\u4e0b\u964d",
+      "references_research_05-decisions_\u9686\u57fa\u7eff\u80fd\u9003\u9876"
+    ],
+    "34": [
+      "references_sources_articles_2026_05_10_\u51b0\u51b0\u5c0f\u7f8e_\u4e86\u89e3\u62a5\u56e2\u57fa\u91d1\u7136\u540e\u4e86\u89e3etf\u57fa\u91d1",
+      "references_sources_articles_2026_05_10_\u51b0\u51b0\u5c0f\u7f8e_\u6709\u4e00\u4e9b\u4e3b\u52a8\u57fa\u91d1\u96c6\u4e2d\u884c\u4e1a\u6301\u4ed3",
+      "references_sources_articles_2026_05_10_\u51b0\u51b0\u5c0f\u7f8e_\u8fd1\u65e5\u8bc1\u76d1\u4f1a\u5bf9\u82cf\u5dde\u6e05\u8d8a\u5149\u7535\u79d1\u6280",
+      "references_sources_articles_2026_05_11_\u51b0\u51b0\u5c0f\u7f8e_23\u5e74\u63d0\u793a\u718a\u5e02\u7ed3\u675f\u4f53\u7cfb\u4e09\u8981\u7d20\u79d1\u666e",
+      "references_sources_articles_2026_05_11_\u51b0\u51b0\u5c0f\u7f8e_\u4ee5\u540e\u8fd8\u53d1\u5e16\u4e0d",
+      "references_sources_articles_2026_05_11_\u51b0\u51b0\u5c0f\u7f8e_\u5e16\u5b50\u53ef\u4ee5\u6309\u5173\u952e\u8bcd\u67e5\u8be2",
+      "references_sources_articles_2026_05_11_\u51b0\u51b0\u5c0f\u7f8e_\u957f\u7535\u79d1\u6280_\u5386\u53f2\u65b0\u9ad8\u67f3\u5de5_\u4e5f\u7a81\u783410"
+    ],
+    "35": [
+      "2026-06-22_101011_\u51b0\u51b0\u5c0f\u7f8e_\u51fa\u6d77\u65b9\u5411\u7ea0\u504f",
+      "2026-06-22_102141_\u51b0\u51b0\u5c0f\u7f8e_\u5206\u4ed3\u5747\u8861\u914d\u7f6e",
+      "concept_chuhai_zhuanyi",
+      "concept_fencang_junheng",
+      "concept_sanan_ganhuaga",
+      "concept_youyanxincai_sicl4"
+    ],
+    "36": [
+      "concept_\u5408\u6210\u751f\u7269\u9898\u6750",
+      "concept_\u6295\u673a\u8fc7\u7a0b\u4e2d\u7684\u4f20\u64ad\u5b66",
+      "concept_\u6321\u5200\u5957\u5229\u624b\u6cd5",
+      "references_sources_articles_2024_05_11_115340_\u60c5\u7eea\u4f53\u7cfb\u8ba4\u77e5\u7bc7\uff0c\u6295\u673a\u8fc7\u7a0b\u4e2d\u7684\u4f20\u64ad\u5b66",
+      "references_sources_articles_2024_10_28_095708_\u60c5\u7eea\u4f53\u7cfb\u4ea4\u6613\u7bc7\uff0c\u6e38\u8d44\u4ea4\u6613\u624b\u6cd5\uff0c\u7b2c\u5341\u516d\u671f\uff0c\u6321\u5200",
+      "stock_\u5ddd\u5b81\u751f\u7269_sz301301"
+    ],
+    "37": [
+      "evals_probe-2026-06-13_to_2026-06-22_probe-keyword_concept_frameworks",
+      "evals_probe-2026-06-13_to_2026-06-22_probe-keyword_individual_stocks",
+      "evals_probe-2026-06-13_to_2026-06-22_probe-keyword_industry_directions",
+      "evals_probe-2026-06-13_to_2026-06-22_probe-keyword_keyword_frequency",
+      "evals_probe-2026-06-13_to_2026-06-22_probe-keyword_market_terms",
+      "evals_probe-2026-06-13_to_2026-06-22_probe-keyword_people_references"
+    ],
+    "38": [
+      "references_research_01-writings_\u683c\u6797\u65af\u6f58",
+      "references_research_01-writings_\u6ce1\u6cab\u65b0\u5b9a\u4e49",
+      "references_research_01-writings_\u7f57\u4f2f\u7279\u5e0c\u52d2",
+      "references_research_05-decisions_\u4e1c\u6750\u79d1\u6280",
+      "references_research_06-timeline_\u683c\u6797\u65af\u6f58\u60bc\u6587",
+      "references_research_06-timeline_\u6ce1\u6cab\u65b0\u5b9a\u4e49"
+    ],
+    "39": [
+      "2026-06-22_183938_\u51b0\u51b0\u5c0f\u7f8e_\u957f\u5ddd\u534a\u5bfc\u4f53\u8bbe\u5907",
+      "concept_jingong_fangyu",
+      "concept_longchuan_zhongchang",
+      "concept_zhong_mei_shuangda",
+      "concept_zijing_kuangye"
+    ],
+    "40": [
+      "concept_\u5e02\u573a\u552f\u4e00\u89e3",
+      "concept_\u8f6e\u52a8\u5957\u5229",
+      "references_sources_articles_2023_07_03_235843_\u51b0\u51b0\u5c0f\u7f8e_\u60c5\u7eea\u4f53\u7cfb\u662f\u4ea4\u6613\u7684\u4f53\u7cfb\u4e0d\u662f\u8ba4\u77e5\u7684\u4f53\u7cfb_\u60c5\u7eea\u4f53\u7cfb\u662f\u4ea4\u6613\u7684\u4f53\u7cfb\u4e0d\u662f\u8ba4\u77e5\u7684\u4f53\u7cfb",
+      "references_sources_articles_2023_07_18_101830_\u51b0\u51b0\u5c0f\u7f8e_\u5982\u679c\u662f\u8f6e\u52a8\u5957\u5229\u4e00\u5b9a\u8981\u5feb\u51c6\u72e0\u8fdf\u4e00\u6b65\u7684\u90fd\u522b\u4e70\u4e86_\u5982\u679c\u662f\u8f6e\u52a8\u5957\u5229\u4e00\u5b9a\u8981\u5feb\u51c6\u72e0\u8fdf\u4e00\u6b65\u7684\u90fd\u522b\u4e70\u4e86",
+      "references_sources_articles_2023_07_20_151712_\u51b0\u51b0\u5c0f\u7f8e_t_1\u7684\u601d\u8003_t_1\u7684\u601d\u8003"
+    ],
+    "41": [
+      "references_sources_articles_2024-03-20_090029_____article",
+      "references_sources_articles_2024-03-20_090029_____changing_world_order",
+      "references_sources_articles_2024-03-20_090029_____debt_crisis",
+      "references_sources_articles_2024-03-20_090029_____principles_2",
+      "references_sources_articles_2024-03-20_090029_____ray_dalio"
+    ],
+    "42": [
+      "references_sources_articles_2026-06-21_115607_concept_baijiu_cycle_assessment",
+      "references_sources_articles_2026-06-22_110303_concept_three_pillar_allocation",
+      "references_sources_articles_2026-06-22_135134_concept_material_to_resource_rotation",
+      "references_sources_articles_2026-06-22_154144_concept_strategic_resource_rebalance",
+      "references_sources_articles_2026-06-24_180040_concept_ev_industry_downcycle"
+    ],
+    "43": [
+      "references_sources_articles_2026_05_08_\u51b0\u51b0\u5c0f\u7f8e_\u4ea4\u6613\u5766\u5766\u8361\u8361\u547d\u8fd0\u660e\u660e\u767d\u767d",
+      "references_sources_articles_2026_05_08_\u51b0\u51b0\u5c0f\u7f8e_\u54fc_\u96ea\u7403",
+      "references_sources_articles_2026_05_08_\u51b0\u51b0\u5c0f\u7f8e_\u6709\u8272\u5d1b\u8d77\u4e0a\u8bc1\u7ffb\u7ea2",
+      "references_sources_articles_2026_05_08_\u51b0\u51b0\u5c0f\u7f8e_\u81f3\u6b643\u6708\u4e2d\u957f\u4ed3\u4f4d\u914d\u7f6e\u51cf\u4ed3\u5356\u94dc\u5356\u5316\u5de5",
+      "references_sources_articles_2026_05_08_\u51b0\u51b0\u5c0f\u7f8e_\u897f\u90e8\u77ff\u4e1a_\u8fd9\u4e2a\u80a1\u4ece\u5efa\u4ed3\u5230\u575a\u5b88\u5230\u5356\u51fa"
+    ],
+    "44": [
+      "book_\u503a\u52a1\u4e0e\u9b54\u9b3c_\u7279\u7eb3",
+      "book_\u503a\u52a1\u5371\u673a_\u8fbe\u5229\u6b27",
+      "book_\u539f\u5219_\u8fbe\u5229\u6b27",
+      "references_sources_articles_2024_07_01_184738_\u6709\u4eba\u95ee\u56fd\u503a\u7684\u95ee\u9898"
+    ],
+    "45": [
+      "concept_\u96c5\u4e0b\u6c34\u7535\u5de5\u7a0b\u4e0e\u6478\u7740\u9e70\u9171\u8fc7\u6cb3",
+      "concept_\u987a\u5468\u671f\u4e0e\u53cd\u5185\u5377\u4f9b\u7ed9\u4fa7",
+      "references_sources_articles_2025-07-20_075536_\u5386\u53f2\u7684\u771f\u5b9e\u5199\u7167",
+      "references_sources_articles_2025-07-24_190304_\u987a\u5468\u671f\u4e0e\u56fd\u60c5"
+    ],
+    "46": [
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u4ea7\u4e1a\u547d\u95e8\u6295\u8d44\u6cd5",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u767d\u6bdb\u6218\u6cd5",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u767d\u6bdb\u80a1\u795e",
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u7f8e\u7c4d\u53f0\u6e7e\u4eba"
+    ],
+    "47": [
+      "references_templates_deep_stock_report",
+      "references_templates_standard_stock_report",
+      "references_tools_finance_data_rules",
+      "references_tools_finance_data_skills_neodata_financial_search_skill"
+    ],
+    "48": [
+      "concept_new_national_goods_movement",
+      "references_sources_articles_2025-01-03_112122_\u51b0\u51b0\u5c0f\u7f8e_\u4ea4\u6613\u7684\u98ce\u63a7_article",
+      "references_sources_articles_2025-01-04_115434_\u51b0\u51b0\u5c0f\u7f8e_\u673a\u9047\u518d\u540e\u6765\u6e90\u8ba4\u77e5_article"
+    ],
+    "49": [
+      "evals_full_test_outputs_v1.4-case-12-model9-agent-002766d3_ai_distillation_three_layers",
+      "evals_full_test_outputs_v1.4-case-12-model9-agent-002766d3_case12_model9_ai_distillation",
+      "evals_full_test_outputs_v1.4-case-12-model9-agent-002766d3_model9_ai_modifying_investing"
+    ],
+    "50": [
+      "references_sources_articles_2024_06_21_214500_\u60c5\u7eea\u4f53\u7cfb\u8ba4\u77e5\u7bc7\uff0c\u6a21\u5f0f\u7684\u5931\u6548",
+      "stock_\u4e2d\u8fdc\u6d77\u63a7_sh601919",
+      "stock_\u51e4\u51f0\u822a\u8fd0_sz000520"
+    ],
+    "51": [
+      "references_sources_articles_2026-06-21_085651_concept_tongguan_copper_foil",
+      "references_sources_articles_2026-06-21_085651_stock_sz301511",
+      "references_sources_articles_2026-06-22_154144_stock_sz301217"
+    ],
+    "52": [
+      "references_sources_articles_2026-06-22_115852_concept_laddered_left_buying",
+      "references_sources_articles_2026-06-22_155501_concept_active_etf_method",
+      "references_sources_articles_2026-06-22_161752_concept_active_fund_selection"
+    ],
+    "53": [
+      "references_sources_articles_2026_05_08_\u51b0\u51b0\u5c0f\u7f8e_\u536b\u661fetf\u7b49\u4e8e_\u822a\u5929\u7535\u5b50_\u8d70\u52bf",
+      "references_sources_articles_2026_05_11_\u51b0\u51b0\u5c0f\u7f8e_\u4fe1\u7ef4\u901a\u4fe1_\u4e0e_\u5b81\u5fb7\u65f6\u4ee3_\u7b2c\u4e00\u8f6e\u4e0a\u6da8",
+      "references_sources_articles_2026_05_11_\u51b0\u51b0\u5c0f\u7f8e_\u5546\u4e1a\u822a\u5929\u4ea4\u6613\u662f\u5c01\u795e\u8fc7\u7684"
+    ],
+    "54": [
+      "references_tools_finance_data_skills_neodata_financial_search_scripts_query_detect_python",
+      "references_tools_finance_data_skills_neodata_financial_search_scripts_query_sh__entry",
+      "references_tools_finance_data_skills_neodata_financial_search_scripts_query_sh_references_tools_finance_data_skills_neodata_financial_search_scripts_query"
+    ],
+    "55": [
+      "2026-06-23_105730_\u51b0\u51b0\u5c0f\u7f8e_\u8001\u767b\u8df7\u8df7\u677f",
+      "concept_macroshijian_taizhan"
+    ],
+    "56": [
+      "2026-06-23_154341_\u51b0\u51b0\u5c0f\u7f8e_\u4ea4\u6613\u7406\u89e3",
+      "2026-06-24_190321_\u51b0\u51b0\u5c0f\u7f8e_\u6050\u614c\u5e94\u5bf9\u5bf9\u8bdd"
+    ],
+    "57": [
+      "baseline_case_13_jiangfeng",
+      "probe_report_article_94"
+    ],
+    "58": [
+      "book_\u6d77\u6743\u6c89\u6d6e_\u5218\u6021",
+      "references_sources_articles_2024_06_09_155547_\u63a8\u8350\u4e66\u7c4d\uff0c\u300a\u6d77\u6743\u6c89\u6d6e\u300b\uff0c\u5218\u6021"
+    ],
+    "59": [
+      "concept_\u732a\u5468\u671f\u4e0ecpi",
+      "references_sources_articles_2025-04-19_202213_\u732a\u5468\u671f\u5206\u6790\u6846\u67b6"
+    ],
+    "60": [
+      "evals_full_test_outputs_v1_5_case_13_h14_agent_5079e81b_txt_changdian",
+      "evals_full_test_outputs_v1_5_case_13_h14_agent_5079e81b_txt_xinjieneng"
+    ],
+    "61": [
+      "evals_probe_2026_06_13_to_2026_06_22_probe_freq_txt_anomaly",
+      "evals_probe_2026_06_13_to_2026_06_22_probe_freq_txt_probe"
+    ],
+    "62": [
+      "references_research_01-writings_\u9f99\u7a7a\u9f99",
+      "references_research_05-decisions_HW\u4ea7\u4e1a\u94fe"
+    ],
+    "63": [
+      "references_research_02-conversations_\u627f\u8ba4\u9519\u8bef",
+      "references_research_05-decisions_\u8d5b\u529b\u65af"
+    ],
+    "64": [
+      "references_research_05-decisions_4200flag",
+      "references_research_06-timeline_4200flag\u8fbe\u6210"
+    ],
+    "65": [
+      "references_sources_articles_2024-04-05_090020_____article",
+      "references_sources_articles_2024-04-05_090020_____q1_summary_image"
+    ],
+    "66": [
+      "references_sources_articles_2026-06-23_234335_concept_ytd_rankings_structural_rotation",
+      "references_sources_articles_2026-06-27_191523_concept_k_shape_extreme_june"
+    ],
+    "67": [
+      "references_tools_finance_data_hooks_session_start_sh__entry",
+      "references_tools_finance_data_hooks_session_start_sh_references_tools_finance_data_hooks_session_start"
+    ],
+    "68": [
+      "2026-06-22_131120_\u51b0\u51b0\u5c0f\u7f8e_\u4e1c\u6750\u79d1\u6280\u6e05\u4ed3"
+    ],
+    "69": [
+      "2026-06-22_164407_\u51b0\u51b0\u5c0f\u7f8e_\u5e74\u5316\u590d\u5229"
+    ],
+    "70": [
+      "2026-06-22_180417_\u51b0\u51b0\u5c0f\u7f8e_\u957f\u671f\u4e3b\u4e49\u7814\u7a76"
+    ],
+    "71": [
+      "2026-06-22_190633_\u51b0\u51b0\u5c0f\u7f8e_\u5b8f\u89c2\u56de\u8c03"
+    ],
+    "72": [
+      "2026-06-22_193227_\u51b0\u51b0\u5c0f\u7f8e_\u9502\u7535\u65b0\u56fd\u6807"
+    ],
+    "73": [
+      "2026-06-23_102418_\u51b0\u51b0\u5c0f\u7f8e_pcb\u5206\u6b67"
+    ],
+    "74": [
+      "2026-06-23_104700_\u51b0\u51b0\u5c0f\u7f8e_\u7814\u7a76\u6d45\u8584"
+    ],
+    "75": [
+      "2026-06-23_105155_\u51b0\u51b0\u5c0f\u7f8e_\u7f8e\u5149\u50a8\u5b58\u5206\u5316"
+    ],
+    "76": [
+      "2026-06-23_164001_\u51b0\u51b0\u5c0f\u7f8e_\u6e2f\u80a1\u521b\u4e1a\u677f"
+    ],
+    "77": [
+      "2026-06-23_165824_\u51b0\u51b0\u5c0f\u7f8e_\u6e2f\u80a125500"
+    ],
+    "78": [
+      "2026-06-24_115445_\u51b0\u51b0\u5c0f\u7f8e_\u4e09\u5b89\u4e0d\u754f\u6311\u6218"
+    ],
+    "79": [
+      "2026-06-24_153144_\u51b0\u51b0\u5c0f\u7f8e_\u666e\u901a\u4ebaetf"
+    ],
+    "80": [
+      "2026-06-24_154915_\u51b0\u51b0\u5c0f\u7f8e_\u4ea4\u6613\u4f53\u7cfb"
+    ],
+    "81": [
+      "2026-06-24_160010_\u51b0\u51b0\u5c0f\u7f8e_\u56de\u987e\u5e16\u5b50"
+    ],
+    "82": [
+      "2026-06-24_182657_\u51b0\u51b0\u5c0f\u7f8e_\u4f4e\u8c37\u884c\u4e1a\u7814\u7a76"
+    ],
+    "83": [
+      "2026-06-24_184154_\u51b0\u51b0\u5c0f\u7f8e_\u6709\u8272\u9093\u6653\u5cf0"
+    ],
+    "84": [
+      "2026-06-24_212356_\u51b0\u51b0\u5c0f\u7f8e_\u72ec\u7acb\u601d\u8003"
+    ],
+    "85": [
+      "2026-06-24_213623_\u51b0\u51b0\u5c0f\u7f8e_\u671f\u8d27\u8d35\u91d1\u5c5e\u539f\u6cb9"
+    ],
+    "86": [
+      "baseline_case_14_zijin"
+    ],
+    "87": [
+      "baseline_case_17_tencent"
+    ],
+    "88": [
+      "concept_etf_fangxiang"
+    ],
+    "89": [
+      "concept_g_in_m_tui"
+    ],
+    "90": [
+      "evals_probe_2026_06_13_to_2026_06_22_run_probe"
+    ],
+    "91": [
+      "probe_report_article_101"
+    ],
+    "92": [
+      "probe_report_article_123"
+    ],
+    "93": [
+      "references_research_01-writings_514\u9b54\u5492"
+    ],
+    "94": [
+      "references_research_01-writings_\u5927\u4f5c\u624b\u56de\u5fc6\u5f55"
+    ],
+    "95": [
+      "references_research_01-writings_\u5b9a\u4f4d\u7406\u8bba"
+    ],
+    "96": [
+      "references_research_01-writings_\u5df4\u83f2\u7279"
+    ],
+    "97": [
+      "references_research_01-writings_\u60c5\u7eea\u6807"
+    ],
+    "98": [
+      "references_research_01-writings_\u663e\u5b66\u9690\u5b66"
+    ],
+    "99": [
+      "references_research_01-writings_\u6bdb\u6cfd\u4e1c"
+    ],
+    "100": [
+      "references_research_01-writings_\u725b\u987f\u5206\u5f62"
+    ],
+    "101": [
+      "references_research_01-writings_\u9093\u5c0f\u5e73"
+    ],
+    "102": [
+      "references_research_01-writings_\u9a6c\u514b\u601d"
+    ],
+    "103": [
+      "references_research_01-writings_\u9a6c\u65af\u514b"
+    ],
+    "104": [
+      "references_sources_articles_2026-01-23_\u51b0\u51b0\u5c0f\u7f8e_\u4f55\u4e3a\u56fd\u8fd0\u7ea2\u5229\u7684\u5206\u914d_article"
+    ],
+    "105": [
+      "references_sources_articles_2026-06-21_100953_concept_oil_crisis_three_layers"
+    ],
+    "106": [
+      "references_sources_articles_2026-06-22_113149_stock_sh601208"
+    ],
+    "107": [
+      "references_sources_articles_2026-06-22_154144_entity_trader_zhang"
+    ],
+    "108": [
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u4e09\u5b89\u5149\u7535"
+    ],
+    "109": [
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u4e0a\u6d77\u701a\u8baf"
+    ],
+    "110": [
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u4e1c\u65b9\u94bd\u4e1a"
+    ],
+    "111": [
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u4e2d\u56fd\u536b\u901a"
+    ],
+    "112": [
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u4e2d\u6750\u79d1\u6280"
+    ],
+    "113": [
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u4e91\u5357\u9517\u4e1a"
+    ],
+    "114": [
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u4ea8\u901a\u5149\u7535"
+    ],
+    "115": [
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u4eac\u4e1c\u65b9"
+    ],
+    "116": [
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u4ebf\u7eac\u9502\u80fd"
+    ],
+    "117": [
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u5148\u5bfc\u667a\u80fd"
+    ],
+    "118": [
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u53cc\u73af\u4f20\u52a8"
+    ],
+    "119": [
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u5546\u7edc\u7535\u5b50"
+    ],
+    "120": [
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u56fd\u8f69\u9ad8\u79d1"
+    ],
+    "121": [
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u592a\u6781\u5b9e\u4e1a"
+    ],
+    "122": [
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u5c0f\u7c73\u6c7d\u8f66_\u5c0f\u7c73"
+    ],
+    "123": [
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u5fb7\u798f\u79d1\u6280"
+    ],
+    "124": [
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u62d3\u65af\u8fbe"
+    ],
+    "125": [
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u65b0\u6d01\u80fd"
+    ],
+    "126": [
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u661f\u6e90\u6750\u8d28"
+    ],
+    "127": [
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u6709\u7814\u65b0\u6750"
+    ],
+    "128": [
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u67f3\u5de5"
+    ],
+    "129": [
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u6c5f\u4e30\u7535\u5b50_\u6d77\u529b\u58eb"
+    ],
+    "130": [
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u6c5f\u6ce2\u9f99_\u6c5f\u4e30\u7535\u5b50"
+    ],
+    "131": [
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u6c5f\u6dee\u6c7d\u8f66"
+    ],
+    "132": [
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u6d1b\u9633\u94bc\u4e1a"
+    ],
+    "133": [
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u6d69\u8fb0\u8f6f\u4ef6"
+    ],
+    "134": [
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u6e56\u5317\u5b9c\u5316"
+    ],
+    "135": [
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u76db\u9f99\u80a1\u4efd"
+    ],
+    "136": [
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u79fb\u52a8\u4e92\u8054\u7f51"
+    ],
+    "137": [
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u81ea\u7531\u73b0\u91d1\u6d41"
+    ],
+    "138": [
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u94dc\u9675\u6709\u8272"
+    ],
+    "139": [
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u957f\u98de\u5149\u7ea4"
+    ],
+    "140": [
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u963f\u77f3\u521b"
+    ],
+    "141": [
+      "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u98de\u51ef\u6750\u6599"
+    ],
+    "142": [
+      "references_tools_finance_data_hooks_session_start_ps1_references_tools_finance_data_hooks_session_start"
+    ],
+    "143": [
+      "scripts_analyze_classification"
+    ],
+    "144": [
+      "ticker_sz300482"
+    ]
+  },
+  "cohesion": {
+    "0": 0.05536723163841808,
+    "1": 0.06352087114337568,
+    "2": 0.05450733752620545,
+    "3": 0.08106219426974144,
+    "4": 0.03773584905660377,
+    "5": 0.05365402405180388,
+    "6": 0.06376811594202898,
+    "7": 0.07317073170731707,
+    "8": 0.05641025641025641,
+    "9": 0.09206349206349207,
+    "10": 0.08615384615384615,
+    "11": 0.11333333333333333,
+    "12": 0.09486166007905138,
+    "13": 0.11052631578947368,
+    "14": 0.1830065359477124,
+    "15": 0.20833333333333334,
+    "16": 0.2,
+    "17": 0.15384615384615385,
+    "18": 0.28205128205128205,
+    "19": 0.18181818181818182,
+    "20": 0.2727272727272727,
+    "21": 0.24242424242424243,
+    "22": 0.16666666666666666,
+    "23": 0.19696969696969696,
+    "24": 0.25757575757575757,
+    "25": 0.24444444444444444,
+    "26": 0.3333333333333333,
+    "27": 0.2222222222222222,
+    "28": 0.2222222222222222,
+    "29": 0.25,
+    "30": 0.25,
+    "31": 0.2857142857142857,
+    "32": 0.39285714285714285,
+    "33": 0.2857142857142857,
+    "34": 0.2857142857142857,
+    "35": 0.3333333333333333,
+    "36": 0.4,
+    "37": 0.3333333333333333,
+    "38": 0.3333333333333333,
+    "39": 0.4,
+    "40": 0.4,
+    "41": 0.7,
+    "42": 0.4,
+    "43": 0.4,
+    "44": 0.5,
+    "45": 0.6666666666666666,
+    "46": 0.5,
+    "47": 0.6666666666666666,
+    "48": 0.6666666666666666,
+    "49": 0.6666666666666666,
+    "50": 1.0,
+    "51": 0.6666666666666666,
+    "52": 0.6666666666666666,
+    "53": 0.6666666666666666,
+    "54": 0.6666666666666666,
+    "55": 1.0,
+    "56": 1.0,
+    "57": 1.0,
+    "58": 1.0,
+    "59": 1.0,
+    "60": 1.0,
+    "61": 1.0,
+    "62": 1.0,
+    "63": 1.0,
+    "64": 1.0,
+    "65": 1.0,
+    "66": 1.0,
+    "67": 1.0,
+    "68": 1.0,
+    "69": 1.0,
+    "70": 1.0,
+    "71": 1.0,
+    "72": 1.0,
+    "73": 1.0,
+    "74": 1.0,
+    "75": 1.0,
+    "76": 1.0,
+    "77": 1.0,
+    "78": 1.0,
+    "79": 1.0,
+    "80": 1.0,
+    "81": 1.0,
+    "82": 1.0,
+    "83": 1.0,
+    "84": 1.0,
+    "85": 1.0,
+    "86": 1.0,
+    "87": 1.0,
+    "88": 1.0,
+    "89": 1.0,
+    "90": 1.0,
+    "91": 1.0,
+    "92": 1.0,
+    "93": 1.0,
+    "94": 1.0,
+    "95": 1.0,
+    "96": 1.0,
+    "97": 1.0,
+    "98": 1.0,
+    "99": 1.0,
+    "100": 1.0,
+    "101": 1.0,
+    "102": 1.0,
+    "103": 1.0,
+    "104": 1.0,
+    "105": 1.0,
+    "106": 1.0,
+    "107": 1.0,
+    "108": 1.0,
+    "109": 1.0,
+    "110": 1.0,
+    "111": 1.0,
+    "112": 1.0,
+    "113": 1.0,
+    "114": 1.0,
+    "115": 1.0,
+    "116": 1.0,
+    "117": 1.0,
+    "118": 1.0,
+    "119": 1.0,
+    "120": 1.0,
+    "121": 1.0,
+    "122": 1.0,
+    "123": 1.0,
+    "124": 1.0,
+    "125": 1.0,
+    "126": 1.0,
+    "127": 1.0,
+    "128": 1.0,
+    "129": 1.0,
+    "130": 1.0,
+    "131": 1.0,
+    "132": 1.0,
+    "133": 1.0,
+    "134": 1.0,
+    "135": 1.0,
+    "136": 1.0,
+    "137": 1.0,
+    "138": 1.0,
+    "139": 1.0,
+    "140": 1.0,
+    "141": 1.0,
+    "142": 1.0,
+    "143": 1.0,
+    "144": 1.0
+  },
+  "gods": [
+    {
+      "id": "references_sources_articles_2026_06_08_221849_\u51b0\u51b0\u5c0f\u7f8e_\u767d\u6bdb\u80a1\u795e_\u51b0\u51b0\u5c0f\u7f8e",
+      "label": "\u51b0\u51b0\u5c0f\u7f8e\uff08\u4f5c\u8005\uff09",
+      "degree": 54
+    },
+    {
+      "id": "skill_md_skill",
+      "label": "Skill Main Document (768 lines)",
+      "degree": 36
+    },
+    {
+      "id": "references_research_07-article-clusters",
+      "label": "\u6587\u7ae0\u4e3b\u9898\u805a\u7c7b\u4e0e\u8bc1\u636e\u5730\u56fe",
+      "degree": 27
+    },
+    {
+      "id": "references_sources_articles_2023-09-03_152451_\u60c5\u7eea\u4f53\u7cfb\u4ea4\u6613\u7bc7\u7b2c\u56db\u671f\u8fc2\u76f4",
+      "label": "\u60c5\u7eea\u4f53\u7cfb\u4ea4\u6613\u7bc7\uff0c\u7b2c\u56db\u671f\uff0c\u8fc2\u76f4",
+      "degree": 26
+    },
+    {
+      "id": "tests_test_article_corpus_preflight_articlecorpuspreflighttests",
+      "label": "ArticleCorpusPreflightTests",
+      "degree": 25
+    },
+    {
+      "id": "evals_probe-2026-06-13_to_2026-06-22_probe-themes_theme_clustering",
+      "label": "\u4e3b\u9898\u805a\u7c7b\u5206\u6790 2026-06-13~22",
+      "degree": 18
+    },
+    {
+      "id": "references_sources_articles_2023-08-15_104616_\u60c5\u7eea\u4f53\u7cfb\u4ea4\u6613\u7bc7\u7b2c\u4e8c\u671f\u501f\u52bf",
+      "label": "\u60c5\u7eea\u4f53\u7cfb\u4ea4\u6613\u7bc7\uff0c\u7b2c\u4e8c\u671f\uff0c\u501f\u52bf",
+      "degree": 16
+    },
+    {
+      "id": "skill_core_md_skill_core",
+      "label": "Skill Core Version (Agent Prompt Injection, ~200 lines)",
+      "degree": 12
+    },
+    {
+      "id": "references_research_07_article-clusters_topic_xi_ti_jiao_yi",
+      "label": "\u4e3b\u9898\u7c07:\u4f53\u7cfb\u60c5\u7eea\u4ea4\u6613",
+      "degree": 12
+    },
+    {
+      "id": "references_sources_articles_2023-08-15_205331_\u5e38\u89c1\u7684\u4e8f\u94b1\u8ba4\u77e5\u7b2c\u5341\u56db\u671f\u5047\u8c61\u4e0e\u53cd\u4eba\u6027\u7684\u6298\u78e8",
+      "label": "\u5e38\u89c1\u7684\u4e8f\u94b1\u8ba4\u77e5\uff0c\u7b2c\u5341\u56db\u671f\uff0c\u5047\u8c61\u4e0e\u53cd\u4eba\u6027\u7684\u6298\u78e8",
+      "degree": 12
+    }
+  ],
+  "surprises": [
+    {
+      "source": "\u4e3b\u9898\uff1a\u4ea4\u6613/\u4ed3\u4f4d",
+      "target": "\u542f\u53d1\u5f0f17\uff1a\u4e3b\u52a8\u4e70\u4e8f\u7684\u8fb9\u754c",
+      "source_files": [
+        "evals/probe-2026-06-13_to_2026-06-22/probe-themes.txt",
+        "references/heuristics/h17-active-loss-boundary.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; peripheral node `\u4e3b\u9898\uff1a\u4ea4\u6613/\u4ed3\u4f4d` unexpectedly reaches hub `\u542f\u53d1\u5f0f17\uff1a\u4e3b\u52a8\u4e70\u4e8f\u7684\u8fb9\u754c`"
+    },
+    {
+      "source": "v1.4 R3 SKILL.md Layering (Core/Main)",
+      "target": "Skill Core Version (Agent Prompt Injection, ~200 lines)",
+      "source_files": [
+        "docs/v1.4-pr-description.md",
+        "SKILL.core.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; peripheral node `v1.4 R3 SKILL.md Layering (Core/Main)` unexpectedly reaches hub `Skill Core Version (Agent Prompt Injection, ~200 lines)`"
+    },
+    {
+      "source": "Promotion Rules (New Model/Heuristic)",
+      "target": "Model 9: AI Transforming Investment Itself",
+      "source_files": [
+        "docs/maintenance.md",
+        "SKILL.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; peripheral node `Promotion Rules (New Model/Heuristic)` unexpectedly reaches hub `Model 9: AI Transforming Investment Itself`"
+    },
+    {
+      "source": "Version v1.3",
+      "target": "Heuristic 14: Industry Belief Over Technicals",
+      "source_files": [
+        "CHANGELOG.md",
+        "SKILL.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; peripheral node `Heuristic 14: Industry Belief Over Technicals` unexpectedly reaches hub `Version v1.3`"
+    },
+    {
+      "source": "Seven-Step Update Process",
+      "target": "Evaluation Methodology (evals/METHODOLOGY.md)",
+      "source_files": [
+        "docs/maintenance.md",
+        "SKILL.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; peripheral node `Evaluation Methodology (evals/METHODOLOGY.md)` unexpectedly reaches hub `Seven-Step Update Process`"
+    }
+  ],
+  "tokens": {
+    "input": 598971,
+    "output": 250213
+  }
+}
