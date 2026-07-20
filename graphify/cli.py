@@ -444,11 +444,18 @@ def _run_hook_guard(kind: str, strict: bool = False) -> None:
     try:
         if kind == "search":
             cmd_str = str(t.get("command", "") or "")
-            # Same set the old `case` matched: *grep*, *ripgrep*, and rg/find/fd/
+            # Two input shapes reach this guard (matcher "Bash|Grep", #1986):
+            # the Bash tool carries `command`, while Claude Code's dedicated
+            # Grep tool carries `pattern` (plus optional path/glob) and no
+            # command — a Grep call IS a content search by definition, so it
+            # nudges whenever a graph exists. For Bash, keep matching the same
+            # set the old `case` matched: *grep*, *ripgrep*, and rg/find/fd/
             # ack/ag as a token (name followed by a space). Nudge-only, even in
             # strict mode — see the docstring.
-            if any(tok in cmd_str for tok in ("grep", "ripgrep", "rg ", "find ", "fd ", "ack ", "ag ")) \
-                    and out_path("graph.json").is_file():
+            is_grep_tool = not cmd_str and bool(t.get("pattern"))
+            is_bash_search = any(tok in cmd_str for tok in (
+                "grep", "ripgrep", "rg ", "find ", "fd ", "ack ", "ag "))
+            if (is_grep_tool or is_bash_search) and out_path("graph.json").is_file():
                 sys.stdout.write(_SEARCH_NUDGE)
         elif kind == "read":
             vals = [str(t.get("file_path") or ""), str(t.get("pattern") or ""), str(t.get("path") or "")]
@@ -2503,6 +2510,7 @@ def dispatch_command(cmd: str) -> None:
         # use the same file set as the initial extraction (#1886).
         from graphify.watch import (
             _write_build_config as _write_build_cfg,
+            _read_build_excludes as _read_build_ex,
             _read_build_gitignore as _read_build_gi,
         )
         # #1971 persistence: an explicit --no-gitignore persists False; a later
@@ -2513,6 +2521,8 @@ def dispatch_command(cmd: str) -> None:
         # when the flag is set — None leaves the setting as-is, mirroring how
         # #1886 persists --exclude.
         _effective_gitignore = False if no_gitignore else _read_build_gi(graphify_out)
+        # An explicit list replaces the persisted one; omission reuses it.
+        _effective_excludes = cli_excludes or _read_build_ex(graphify_out)
         _write_build_cfg(
             graphify_out,
             excludes=cli_excludes or None,
@@ -2550,6 +2560,7 @@ def dispatch_command(cmd: str) -> None:
             )
 
         if not has_path:
+            detection = {}
             code_files = []
             doc_files = []
             paper_files = []
@@ -2565,7 +2576,7 @@ def dispatch_command(cmd: str) -> None:
                 target,
                 manifest_path=str(manifest_path),
                 google_workspace=google_workspace or None,
-                extra_excludes=cli_excludes or None,
+                extra_excludes=_effective_excludes or None,
                 gitignore=_effective_gitignore,
             )
             files_by_type = detection.get("files", {})
@@ -2592,7 +2603,7 @@ def dispatch_command(cmd: str) -> None:
             detection = _detect(
                 target,
                 google_workspace=google_workspace or None,
-                extra_excludes=cli_excludes or None,
+                extra_excludes=_effective_excludes or None,
                 cache_root=out_root,
                 gitignore=_effective_gitignore,
             )
@@ -2836,8 +2847,8 @@ def dispatch_command(cmd: str) -> None:
                 uncached_paths = list(sem_paths_str)
             else:
                 cached_nodes, cached_edges, cached_hyperedges, uncached_paths = (
-                    _check_semantic_cache(sem_paths_str, root=out_root, mode=sem_cache_mode,
-                                          prompt=sem_prompt)
+                    _check_semantic_cache(sem_paths_str, root=target, cache_root=out_root,
+                                          mode=sem_cache_mode, prompt=sem_prompt)
                 )
             sem_cache_hits = len(semantic_files) - len(uncached_paths)
             sem_cache_misses = len(uncached_paths)
@@ -2853,6 +2864,7 @@ def dispatch_command(cmd: str) -> None:
                     "backend": backend,
                     "model": model,
                     "root": target,
+                    "cache_root": out_root,
                 }
                 if deep_mode:
                     corpus_kwargs["deep_mode"] = True
@@ -2923,7 +2935,8 @@ def dispatch_command(cmd: str) -> None:
                         fresh.get("nodes", []),
                         fresh.get("edges", []),
                         fresh.get("hyperedges", []),
-                        root=out_root,
+                        root=target,
+                        cache_root=out_root,
                         allowed_source_files=uncached_paths,
                         mode=sem_cache_mode,
                         prompt=sem_prompt,
@@ -2948,6 +2961,11 @@ def dispatch_command(cmd: str) -> None:
         # incremental and full branches), NOT the incremental ``semantic_files``
         # changed-subset, which would delete every unchanged doc's valid entry.
         # Best-effort: a prune failure must never break extraction.
+        # Hash keys are anchored to the corpus (``target``) — the same anchor
+        # the cache read/write above use — while the stat-index artifact
+        # follows the cache location (``out_root``). Anchoring these hashes to
+        # ``out_root`` instead would mismatch every key under ``--out`` and
+        # sweep the entire fresh cache as orphaned (#1990/#1991).
         try:
             from graphify.cache import file_hash as _file_hash
             _live_hashes: set[str] = set()
@@ -2955,14 +2973,16 @@ def dispatch_command(cmd: str) -> None:
                 for _fp in files_by_type.get(_kind, []):
                     _abs = Path(_fp)
                     if not _abs.is_absolute():
-                        _abs = Path(out_root) / _abs
+                        _abs = Path(target) / _abs
                     if not _abs.is_file():
                         continue  # deleted/missing — leave out so its entry is pruned
                     try:
-                        _live_hashes.add(_file_hash(_abs, out_root))
+                        _live_hashes.add(_file_hash(_abs, target, cache_root=out_root))
                     except OSError:
                         pass
-            _prune_semantic_cache(out_root, _live_hashes)
+            # A pathless database extraction has no filesystem corpus to sweep.
+            if has_path:
+                _prune_semantic_cache(out_root, _live_hashes)
         except Exception as exc:
             print(f"[graphify extract] warning: could not prune semantic cache: {exc}", file=sys.stderr)
         stages.mark("semantic extract")
@@ -3041,6 +3061,15 @@ def dispatch_command(cmd: str) -> None:
             {f for _fl in files_by_type.values() for f in _fl}
             if has_path else None
         )
+
+        def _invalidate_file_manifest_for_db_graph() -> None:
+            if has_path:
+                return
+            try:
+                manifest_path.unlink(missing_ok=True)
+            except OSError as exc:
+                print(f"error: could not invalidate file manifest: {exc}", file=sys.stderr)
+                sys.exit(1)
 
         if no_cluster:
             # --no-cluster: dump the raw merged extraction as graph.json.
@@ -3126,8 +3155,19 @@ def dispatch_command(cmd: str) -> None:
                     )
                     sys.exit(1)
             _backup(graphify_out)
+            _invalidate_file_manifest_for_db_graph()
             from graphify.paths import write_json_atomic as _write_json_atomic
             _write_json_atomic(graph_json_path, merged, indent=2)
+            try:
+                # Record the scan root so a later build_merge / update runbook can
+                # relativize deleted-file paths correctly even for a custom --out
+                # (its grandparent-of-graph.json fallback points at the wrong dir
+                # otherwise, and deleted files never prune — #2012/#1571).
+                (graphify_out / ".graphify_root").write_text(
+                    str(Path(target).resolve()), encoding="utf-8"
+                )
+            except OSError:
+                pass
             stages.mark("write")
             cost = _estimate_cost(
                 backend, merged["input_tokens"], merged["output_tokens"]
@@ -3145,7 +3185,8 @@ def dispatch_command(cmd: str) -> None:
                     f"est. cost: ${cost:.4f}"
                 )
             try:
-                _save_manifest(_manifest_files, manifest_path=str(manifest_path), kind="both", root=target, scan_corpus=_scan_corpus, clear_semantic=_cleared_semantic)
+                if has_path:
+                    _save_manifest(_manifest_files, manifest_path=str(manifest_path), kind="both", root=target, scan_corpus=_scan_corpus, clear_semantic=_cleared_semantic)
             except Exception as exc:
                 print(f"[graphify extract] warning: could not write manifest: {exc}", file=sys.stderr)
             if global_merge:
@@ -3217,6 +3258,7 @@ def dispatch_command(cmd: str) -> None:
 
         from graphify.export import backup_if_protected as _backup
         _backup(graphify_out)
+        _invalidate_file_manifest_for_db_graph()
         # force=True bypasses the #479 shrink guard entirely. A full build
         # legitimately shrinks (fuzzy dedup collapse, deleted code) so it keeps
         # force=True — EXCEPT when this run's extraction was incomplete (an
@@ -3252,6 +3294,14 @@ def dispatch_command(cmd: str) -> None:
                 file=sys.stderr,
             )
             sys.exit(1)
+        try:
+            # See the --no-cluster path above: persist the scan root so build_merge
+            # can relativize deleted-file paths under a custom --out (#2012/#1571).
+            (graphify_out / ".graphify_root").write_text(
+                str(Path(target).resolve()), encoding="utf-8"
+            )
+        except OSError:
+            pass
         stages.mark("export")
         if merged.get("output_tokens", 0) > 0:
             (graphify_out / ".graphify_semantic_marker").write_text(
@@ -3282,7 +3332,8 @@ def dispatch_command(cmd: str) -> None:
         from graphify.paths import write_json_atomic as _wja
         _wja(analysis_path, analysis, indent=2)
         try:
-            _save_manifest(_manifest_files, manifest_path=str(manifest_path), kind="both", root=target, scan_corpus=_scan_corpus, clear_semantic=_cleared_semantic)
+            if has_path:
+                _save_manifest(_manifest_files, manifest_path=str(manifest_path), kind="both", root=target, scan_corpus=_scan_corpus, clear_semantic=_cleared_semantic)
         except Exception as exc:
             print(f"[graphify extract] warning: could not write manifest: {exc}", file=sys.stderr)
 

@@ -2607,8 +2607,6 @@
     "reparse_skipped": [],
     "total_bytes": 1743500
   },
-  "final_status": "blocked",
-  "finalized_at": "2026-07-14T18:42:22Z",
   "index_plan": {
     "action": "index_required",
     "corpus_digest": "aa562d951deba34430f5ce9a7f7615c9aed9050d8355167e5d77d95d26696fcf",
@@ -2619,36 +2617,45 @@
         "required": true
       },
       "codegraph": {
-        "reason": "script unchanged or no prior script digest",
-        "required": false
+        "reason": "preflight script changed",
+        "required": true
       },
       "graphify": {
         "reason": "article corpus digest changed",
         "required": true
       }
     },
-    "script_digest": "ee86152c91289d89901a8df30bb2c2ecebf20cad43705ffabaa6a611b1554228"
+    "script_digest": "6fcb337e306da3dd656a83c224dcb9c5856620d6fcad989f85ed772867938a41"
   },
   "mcp": {
     "codebase_memory": {
-      "details": {},
-      "recorded_at": "2026-07-14T18:37:19Z",
-      "status": "fail"
+      "details": {
+        "reset_reason": "required_by_current_plan"
+      },
+      "recorded_at": "2026-07-19T14:39:58Z",
+      "status": "pending"
+    },
+    "codegraph": {
+      "details": {
+        "reset_reason": "required_by_current_plan"
+      },
+      "recorded_at": "2026-07-19T14:39:58Z",
+      "status": "pending"
     },
     "graphify": {
       "details": {
         "reset_reason": "required_by_current_plan"
       },
-      "recorded_at": "2026-07-14T18:34:16Z",
+      "recorded_at": "2026-07-19T14:39:58Z",
       "status": "pending"
     }
   },
   "preflight_target": "D:\\Temp\\create_skills\\bingbingxiaomei-perspective",
-  "prepared_at": "2026-07-14T18:34:16Z",
+  "prepared_at": "2026-07-19T14:39:58Z",
   "reparse_skipped": [],
   "schema_version": 1,
-  "script_digest": "ee86152c91289d89901a8df30bb2c2ecebf20cad43705ffabaa6a611b1554228",
-  "snapshot_status": "migrated_reparse",
+  "script_digest": "6fcb337e306da3dd656a83c224dcb9c5856620d6fcad989f85ed772867938a41",
+  "snapshot_status": "synced",
   "source_after_digest": "aa562d951deba34430f5ce9a7f7615c9aed9050d8355167e5d77d95d26696fcf",
   "source_before_digest": "aa562d951deba34430f5ce9a7f7615c9aed9050d8355167e5d77d95d26696fcf",
   "target": "D:\\Temp\\create_skills\\bingbingxiaomei-perspective",
