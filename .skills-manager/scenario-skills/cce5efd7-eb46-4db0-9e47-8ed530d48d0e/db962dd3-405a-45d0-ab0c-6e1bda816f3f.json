@@ -9,6 +9,7 @@
     "codex": true,
     "github_copilot": true,
     "opencode": true,
+    "pi": true,
     "workbuddy": true
   }
 }
