@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "ece24289-39d5-4a61-8ba8-8582650fbd0d",
+  "path": "通达信TQ-Python",
+  "path_key": "通达信tq-python",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "local",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}
