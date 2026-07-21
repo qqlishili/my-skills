@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "97188acc-0887-43b6-999c-41225932b3ed",
+  "path": "tdxquant",
+  "path_key": "tdxquant",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/Alervery/TdxQuant_skill",
+    "subpath": null,
+    "branch": null
+  }
+}
