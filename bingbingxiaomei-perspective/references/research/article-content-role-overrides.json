@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "overrides": [
+    {
+      "article_path": "references/sources/articles/2026-06-20 102347_冰冰小美_中美战略实施加速的转折点.md",
+      "start_line": 69,
+      "end_line": 150,
+      "role": "secondary_analysis",
+      "reason": "第三方用户“今天就到这”发布的系统性文章解读"
+    },
+    {
+      "article_path": "references/sources/articles/2026-06-18 054042_冰冰小美_美联储动向与我的解读。1，本次议息会议利率不变。2，只有Good day。3，通胀目标2%。但是不在乎是2%还是3%，会.md",
+      "start_line": 39,
+      "end_line": 125,
+      "role": "secondary_analysis",
+      "reason": "第三方用户“今天就到这”发布的体系三要素系统性解读"
+    },
+    {
+      "article_path": "references/sources/articles/2026-06-17 221911_冰冰小美_刚才有人点赞网页链接。重温一下。1932至1936年间，美国联邦政府财政支出规模由42.7亿美元大幅增加至91.7亿美元.md",
+      "start_line": 26,
+      "end_line": 111,
+      "role": "secondary_analysis",
+      "reason": "第三方用户“今天就到这”发布的中央加杠杆深度解读"
+    },
+    {
+      "article_path": "references/sources/articles/2026-06-21 100953_冰冰小美_周末石油危机的反复性。很显然这一点如果摆脱石油危机本身去看待，则只有一句话。即风险与机遇是投资的永恒命题。《二次全球大危.md",
+      "start_line": 43,
+      "end_line": 106,
+      "role": "secondary_analysis",
+      "reason": "第三方用户“嘻嘻嘻嘻我来了”发布的分层系统性解读"
+    },
+    {
+      "article_path": "references/sources/articles/2026-06-21 115607_冰冰小美_关于消费，巴菲特买过烈性酒吗？酒精度数＞40以上。答案是没有。 可口可乐 ，啤酒买过。烈性酒的大涨是如何发生的？国外是并.md",
+      "start_line": 45,
+      "end_line": 107,
+      "role": "secondary_analysis",
+      "reason": "第三方用户“嘻嘻嘻嘻我来了”发布的白酒推理链系统性解读"
+    }
+  ]
+}

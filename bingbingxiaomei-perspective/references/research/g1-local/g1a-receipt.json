@@ -1,0 +1,181 @@
+{
+  "schema_version": 1,
+  "gate": "G1a",
+  "generated_at_utc": "2026-07-23T07:29:09.3241199Z",
+  "source_g1_receipt": "references/research/g1-local/g1-receipt.json",
+  "source_g1_status": "passed_for_G1_only",
+  "corpus_digest": "aa562d951deba34430f5ce9a7f7615c9aed9050d8355167e5d77d95d26696fcf",
+  "article_count": 520,
+  "role_manifest": {
+    "path": "references/research/article-content-roles.jsonl",
+    "sha256": "9b3daa4a11deca3e686d44cb2e241417e453c915d88704b4824ce1fd9d4a9402",
+    "segment_count": 722,
+    "role_counts": {
+      "author_post": 520,
+      "author_reply": 93,
+      "third_party_comment": 104,
+      "secondary_analysis": 5,
+      "unknown": 0
+    },
+    "eligibility_counts": {
+      "author_primary": 613,
+      "context_only": 104,
+      "excluded": 5
+    },
+    "non_author_file_count": 28,
+    "non_author_segment_count": 109,
+    "distinct_non_author_uid_count": 72,
+    "overlap_count": 0,
+    "uncovered_nonempty_line_count": 0
+  },
+  "overrides": {
+    "path": "references/research/article-content-role-overrides.json",
+    "sha256": "6233d5bc66737f1d3a7c56403586b081d1618e90ec84b348b0d82aeaf85d8e38",
+    "reviewed_override_count": 5
+  },
+  "manual_review": {
+    "unknown_reviewed": "0/0",
+    "author_post_sampled": 10,
+    "author_reply_sampled": 10,
+    "third_party_comment_sampled": 10,
+    "secondary_analysis_reviewed": "5/5",
+    "long_third_party_segments_reviewed": 5,
+    "systematic_misclassification_found": true,
+    "corrective_action": "识别引用块中的作者回复，并将 4 个额外系统性第三方解读加入 reviewed overrides"
+  },
+  "author_primary_audit": {
+    "path": "references/research/g1-local/g1a-author-primary-audit.json",
+    "sha256": "176651db04a6c73474346a04c8dcb2b9f261bf7009894154cb6197088f3fa310",
+    "audited_source_file_count": 6,
+    "evidence_reference_count": 139,
+    "status_counts": {
+      "exact": 118,
+      "paraphrase_supported": 20,
+      "non_author": 1
+    },
+    "unresolved_reference_count": 0,
+    "required_author_primary_non_author_count": 0,
+    "contextual_non_author_reference_count": 1
+  },
+  "revalidated_candidates": {
+    "path": "references/research/g1-local/g1a-phase-2-candidates.md",
+    "sha256": "eb9e8f3553afdabeb3dfc902bad92e188bb76119d8b00359f531ab5d3021c5fb",
+    "quantity_status": "candidate_only_not_final_before_G2",
+    "candidate_models": [
+      {
+        "id": "M1",
+        "name": "三要素同向筛选模型",
+        "author_primary_evidence_count": 3,
+        "has_failure_boundary": true
+      },
+      {
+        "id": "M2",
+        "name": "风险先行与时间窗口模型",
+        "author_primary_evidence_count": 4,
+        "has_failure_boundary": true
+      },
+      {
+        "id": "M3",
+        "name": "国家目标到产业与公司的层级映射模型",
+        "author_primary_evidence_count": 4,
+        "has_failure_boundary": true
+      },
+      {
+        "id": "M4",
+        "name": "真实产业能力与传导时间差模型",
+        "author_primary_evidence_count": 4,
+        "has_failure_boundary": true
+      },
+      {
+        "id": "M5",
+        "name": "信息层级、事件落地与交叉印证模型",
+        "author_primary_evidence_count": 4,
+        "has_failure_boundary": true
+      },
+      {
+        "id": "M6",
+        "name": "风险预算与交易者自我约束模型",
+        "author_primary_evidence_count": 4,
+        "has_failure_boundary": true
+      },
+      {
+        "id": "M7",
+        "name": "长期方向锚定与战术纠偏模型",
+        "author_primary_evidence_count": 4,
+        "has_failure_boundary": true
+      }
+    ],
+    "candidate_heuristics": [
+      {
+        "id": "H1",
+        "name": "买前先写清理由与退出条件",
+        "author_primary_evidence_count": 2,
+        "has_failure_boundary": true
+      },
+      {
+        "id": "H2",
+        "name": "三要素不共振则降仓或空仓",
+        "author_primary_evidence_count": 2,
+        "has_failure_boundary": true
+      },
+      {
+        "id": "H3",
+        "name": "重大不确定事件未落地时，用仓位控制代替预测",
+        "author_primary_evidence_count": 2,
+        "has_failure_boundary": true
+      },
+      {
+        "id": "H4",
+        "name": "新闻先查原文，再补时间、周期与产业传导",
+        "author_primary_evidence_count": 3,
+        "has_failure_boundary": true
+      },
+      {
+        "id": "H5",
+        "name": "概念必须落到技术壁垒、订单与盈利验证",
+        "author_primary_evidence_count": 2,
+        "has_failure_boundary": true
+      },
+      {
+        "id": "H6",
+        "name": "低谷研究，高位重估是否透支",
+        "author_primary_evidence_count": 2,
+        "has_failure_boundary": true
+      },
+      {
+        "id": "H7",
+        "name": "仓位不匹配心理承受力时，先减到能正常生活",
+        "author_primary_evidence_count": 2,
+        "has_failure_boundary": true
+      },
+      {
+        "id": "H8",
+        "name": "个股研究能力不足时降级为 ETF",
+        "author_primary_evidence_count": 2,
+        "has_failure_boundary": true
+      },
+      {
+        "id": "H9",
+        "name": "方向未变但载体或估值变化时，允许纠偏",
+        "author_primary_evidence_count": 2,
+        "has_failure_boundary": true
+      }
+    ],
+    "unresolved_conflict_count": 8
+  },
+  "validation": {
+    "role_tests_passed": true,
+    "audit_tests_passed": true,
+    "all_articles_in_manifest": true,
+    "unknown_segments_empty": true,
+    "all_required_evidence_author_primary": true,
+    "candidate_counts_inherited_without_review": false
+  },
+  "status": "passed_for_G1a_only",
+  "next_gate": "G1b",
+  "prohibitions": [
+    "不得在 G1b 通过前进入 G2",
+    "不得在 G2 用户确认前定稿模型或启发式数量",
+    "不得把第三方评论或系统性解读升级为作者一手证据"
+  ]
+}

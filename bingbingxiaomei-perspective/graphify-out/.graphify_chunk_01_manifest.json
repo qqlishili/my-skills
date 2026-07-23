@@ -1,0 +1,29 @@
+{
+  "chunk_num": 1,
+  "total_chunks": 16,
+  "deep_mode": false,
+  "files": [
+    "D:\\Temp\\create_skills\\bingbingxiaomei-perspective\\evals\\07-blind-baseline-comparison.md",
+    "D:\\Temp\\create_skills\\bingbingxiaomei-perspective\\evals\\09-promotion-deep-analysis.md",
+    "D:\\Temp\\create_skills\\bingbingxiaomei-perspective\\evals\\agent-input-01-writings.txt",
+    "D:\\Temp\\create_skills\\bingbingxiaomei-perspective\\evals\\agent-input-05-decisions.txt",
+    "D:\\Temp\\create_skills\\bingbingxiaomei-perspective\\evals\\agent-input-06-timeline.txt",
+    "D:\\Temp\\create_skills\\bingbingxiaomei-perspective\\evals\\agent-prompts.md",
+    "D:\\Temp\\create_skills\\bingbingxiaomei-perspective\\evals\\METHODOLOGY.md",
+    "D:\\Temp\\create_skills\\bingbingxiaomei-perspective\\evals\\probe-keyword-samples.txt",
+    "D:\\Temp\\create_skills\\bingbingxiaomei-perspective\\evals\\probe-themes.txt",
+    "D:\\Temp\\create_skills\\bingbingxiaomei-perspective\\evals\\full_test_outputs\\v1.4-case-17-hk-silent-agent-c14c87b5.txt",
+    "D:\\Temp\\create_skills\\bingbingxiaomei-perspective\\evals\\full_test_outputs\\v1.4-case-18-smic-buying-agent-e6cf57d6.txt",
+    "D:\\Temp\\create_skills\\bingbingxiaomei-perspective\\evals\\full_test_outputs\\v1.4-case-19-framework-agent-b9336304.txt",
+    "D:\\Temp\\create_skills\\bingbingxiaomei-perspective\\evals\\full_test_outputs\\v1.4-case-20-cognitive-fallback-agent-a20619f2.txt",
+    "D:\\Temp\\create_skills\\bingbingxiaomei-perspective\\evals\\full_test_outputs\\v1.5-case-12-model9-agent-488811b5.txt",
+    "D:\\Temp\\create_skills\\bingbingxiaomei-perspective\\references\\research\\g1-local\\01-writings.md",
+    "D:\\Temp\\create_skills\\bingbingxiaomei-perspective\\references\\research\\g1-local\\02-conversations.md",
+    "D:\\Temp\\create_skills\\bingbingxiaomei-perspective\\references\\research\\g1-local\\03-expression-dna.md",
+    "D:\\Temp\\create_skills\\bingbingxiaomei-perspective\\references\\research\\g1-local\\04-external-views.md",
+    "D:\\Temp\\create_skills\\bingbingxiaomei-perspective\\references\\research\\g1-local\\05-decisions.md",
+    "D:\\Temp\\create_skills\\bingbingxiaomei-perspective\\references\\research\\g1-local\\06-timeline.md",
+    "D:\\Temp\\create_skills\\bingbingxiaomei-perspective\\references\\research\\g1-local\\batch-01.md",
+    "D:\\Temp\\create_skills\\bingbingxiaomei-perspective\\references\\research\\g1-local\\batch-02.md"
+  ]
+}
