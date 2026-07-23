@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "3f20132c-98f1-4300-b87a-e480a40d59ba",
+  "path": "goutoujunshi",
+  "path_key": "goutoujunshi",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/powerycy/goutoujunshi",
+    "subpath": null,
+    "branch": null
+  }
+}
