@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "gate": "G1b",
+  "component": "codebase-memory",
+  "status": "pass",
+  "generated_at": "2026-07-23T09:19:31.230633+00:00",
+  "project": "bingbingxiaomei-perspective-full",
+  "index_root": "D:/Temp/create_skills/bingbingxiaomei-perspective",
+  "index_counts": {
+    "nodes": 3643,
+    "edges": 4668,
+    "article_files": 520
+  },
+  "tool": {
+    "executable": "C:\\Users\\LiN\\.local\\bin\\codebase-memory-mcp.exe",
+    "version_output": "codebase-memory-mcp 0.9.0",
+    "compatibility_shim": "D:\\Temp\\create_skills\\bingbingxiaomei-perspective\\scripts\\tool-shims\\powershell.cmd",
+    "compatibility_reason": "Official 0.9.0 invokes Windows PowerShell 5.1 without an explicit UTF-8 input encoding. The project-local shim routes that command to PowerShell 7, whose default file decoding preserves UTF-8 article paths.",
+    "known_limitation": "The 0.9.0 JSON serializer replaces non-ASCII filename characters with '?'. The indexed result's preserved ASCII date-time prefix is therefore cross-checked against one unique local author_primary path."
+  },
+  "role_manifest": {
+    "path": "references/research/article-content-roles.jsonl",
+    "sha256": "9b3daa4a11deca3e686d44cb2e241417e453c915d88704b4824ce1fd9d4a9402"
+  },
+  "queries": [
+    {
+      "year": 2023,
+      "query_phrase": "黄金细分可能非常复杂",
+      "expected_path": "references/sources/articles/2023-03-10 161631_冰冰小美_本周操作记录混乱的竞争格局，导致混乱的择股操作，左手顺周期黄金，右手逆周期投资驱动军民融合，通信设备。持仓体验，黄金细.md",
+      "actual_path": "references/sources/articles/2023-03-10 161631_冰冰小美_本周操作记录混乱的竞争格局，导致混乱的择股操作，左手顺周期黄金，右手逆周期投资驱动军民融合，通信设备。持仓体验，黄金细.md",
+      "segment_id": "a6b400612857a05dc81b794aa9c45561c6597a22605c33073208a01db7518a05",
+      "expected_role": "author_primary",
+      "actual_role": "author_primary",
+      "source_role": "author_post",
+      "line_number": 20,
+      "codebase_memory": {
+        "total_grep_matches": 2,
+        "total_results": 1,
+        "raw_match_count": 0,
+        "returned_file_sanitized": "references/sources/articles/2023-03-10 161631_????????????_?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????.md",
+        "returned_label": "Module",
+        "match_lines": [
+          8,
+          20
+        ],
+        "elapsed_ms": 1098
+      },
+      "verified": true
+    },
+    {
+      "year": 2023,
+      "query_phrase": "找到三者同时有利的节点",
+      "expected_path": "references/sources/articles/2023-10-18 072901_冰冰小美_买入不败的必要性与需要克服的人性问题——体系三要素适用范围与推演过程——流动性溢价是赚钱的真正原因。.md",
+      "actual_path": "references/sources/articles/2023-10-18 072901_冰冰小美_买入不败的必要性与需要克服的人性问题——体系三要素适用范围与推演过程——流动性溢价是赚钱的真正原因。.md",
+      "segment_id": "1791fa74c6fd6d9c7dba00dfd421e91bbad17dc432558cdc137dec90b3ebdb23",
+      "expected_role": "author_primary",
+      "actual_role": "author_primary",
+      "source_role": "author_post",
+      "line_number": 14,
+      "codebase_memory": {
+        "total_grep_matches": 1,
+        "total_results": 1,
+        "raw_match_count": 0,
+        "returned_file_sanitized": "references/sources/articles/2023-10-18 072901_????????????_??????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????.md",
+        "returned_label": "Module",
+        "match_lines": [
+          14
+        ],
+        "elapsed_ms": 1075
+      },
+      "verified": true
+    },
+    {
+      "year": 2024,
+      "query_phrase": "6万亿 ， 2024-2026一致性置换地方隐性债务",
+      "expected_path": "references/sources/articles/2024-11-08 183336_冰冰小美_中央加杠杆.md",
+      "actual_path": "references/sources/articles/2024-11-08 183336_冰冰小美_中央加杠杆.md",
+      "segment_id": "dd1089ada3e51917755fc2ce1596081c0e88acbf6a02f2e54a1d1d72b777bc37",
+      "expected_role": "author_primary",
+      "actual_role": "author_primary",
+      "source_role": "author_post",
+      "line_number": 19,
+      "codebase_memory": {
+        "total_grep_matches": 2,
+        "total_results": 1,
+        "raw_match_count": 0,
+        "returned_file_sanitized": "references/sources/articles/2024-11-08 183336_????????????_???????????????.md",
+        "returned_label": "Module",
+        "match_lines": [
+          8,
+          19
+        ],
+        "elapsed_ms": 1051
+      },
+      "verified": true
+    },
+    {
+      "year": 2025,
+      "query_phrase": "基于原始信息的分析 ， 则为次级信息",
+      "expected_path": "references/sources/articles/2025-08-16 151943_冰冰小美_信息的金融意义（十一）.md",
+      "actual_path": "references/sources/articles/2025-08-16 151943_冰冰小美_信息的金融意义（十一）.md",
+      "segment_id": "64840d7a6090be57347c5d126b9c940438d42f38ae701658cdfbead4228ae982",
+      "expected_role": "author_primary",
+      "actual_role": "author_primary",
+      "source_role": "author_post",
+      "line_number": 24,
+      "codebase_memory": {
+        "total_grep_matches": 1,
+        "total_results": 1,
+        "raw_match_count": 0,
+        "returned_file_sanitized": "references/sources/articles/2025-08-16 151943_????????????_?????????????????????????????????.md",
+        "returned_label": "Module",
+        "match_lines": [
+          24
+        ],
+        "elapsed_ms": 1056
+      },
+      "verified": true
+    },
+    {
+      "year": 2026,
+      "query_phrase": "信心我买的那一天就有了",
+      "expected_path": "references/sources/articles/2026-05-21 224111_冰冰小美_很多人忘记初心。 长电科技 为啥买，并不是储存吧，Hbm，Cpo封装呀。其实是更早的关于第一进口商品芯片超大规模。国产替.md",
+      "actual_path": "references/sources/articles/2026-05-21 224111_冰冰小美_很多人忘记初心。 长电科技 为啥买，并不是储存吧，Hbm，Cpo封装呀。其实是更早的关于第一进口商品芯片超大规模。国产替.md",
+      "segment_id": "c760b11df32deedb732ca1512df1b15ec8729fb99e66f97806c2a66c575664f3",
+      "expected_role": "author_primary",
+      "actual_role": "author_primary",
+      "source_role": "author_post",
+      "line_number": 14,
+      "codebase_memory": {
+        "total_grep_matches": 1,
+        "total_results": 1,
+        "raw_match_count": 0,
+        "returned_file_sanitized": "references/sources/articles/2026-05-21 224111_????????????_???????????????????????? ???????????? ?????????????????????????????????Hbm???Cpo????????????????????????????????????????????????????????????????????????????????????.md",
+        "returned_label": "Module",
+        "match_lines": [
+          14
+        ],
+        "elapsed_ms": 1121
+      },
+      "verified": true
+    }
+  ],
+  "assertions": {
+    "query_count": 5,
+    "years_covered": [
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "all_local_matches_unique": true,
+    "all_matches_author_primary": true,
+    "all_index_results_enriched": true,
+    "all_returned_prefixes_match_expected": true,
+    "article_path_filter": "^references/sources/articles/"
+  }
+}

@@ -1,0 +1,8 @@
+# Generated indexes and reports are outputs, not source inputs.
+graphify-out/
+
+# Historical generated classification payloads are rebuilt from the corpus.
+scripts/classification_output/
+
+# Emergency database backup from the codebase-memory updater incident.
+references/research/g1-local/codebase-memory-backup-before-update/

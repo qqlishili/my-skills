@@ -1,0 +1,202 @@
+{
+  "nodes": [
+    {
+      "id": "bingbingxiaomei_perspective_references_sources_articles_2026_06_23_104700_document",
+      "label": "Research Depth Article",
+      "file_type": "document",
+      "source_file": "D:\\Temp\\create_skills\\bingbingxiaomei-perspective\\references\\sources\\articles\\2026-06-23 104700_冰冰小美_其实就说明一件事，之所以普通。就是研究太浅薄了。.md",
+      "source_location": null,
+      "source_url": "https://xueqiu.com/7143769715/396108728",
+      "captured_at": "2026-06-25 08:48:27",
+      "author": "冰冰小美",
+      "contributor": null
+    },
+    {
+      "id": "bingbingxiaomei_perspective_references_sources_articles_2026_06_23_104700_shallow_research",
+      "label": "Shallow Research",
+      "file_type": "rationale",
+      "source_file": "D:\\Temp\\create_skills\\bingbingxiaomei-perspective\\references\\sources\\articles\\2026-06-23 104700_冰冰小美_其实就说明一件事，之所以普通。就是研究太浅薄了。.md",
+      "source_location": null,
+      "source_url": "https://xueqiu.com/7143769715/396108728",
+      "captured_at": "2026-06-25 08:48:27",
+      "author": "冰冰小美",
+      "contributor": null,
+      "rationale": "The article attributes ordinary outcomes to shallow research."
+    },
+    {
+      "id": "bingbingxiaomei_perspective_references_sources_articles_2026_06_24_213623_document",
+      "label": "Futures Market Volatility Article",
+      "file_type": "document",
+      "source_file": "D:\\Temp\\create_skills\\bingbingxiaomei-perspective\\references\\sources\\articles\\2026-06-24 213623_冰冰小美_今天期货市场巨大波动。核心是贵金属与原油。贝森特言论一，通胀目标与原油价格。已经发帖过。原油对通胀远期影响。二，强势美.md",
+      "source_location": null,
+      "source_url": "https://xueqiu.com/7143769715/396505220",
+      "captured_at": "2026-06-25 09:16:20",
+      "author": "冰冰小美",
+      "contributor": null
+    },
+    {
+      "id": "bingbingxiaomei_perspective_references_sources_articles_2026_06_24_213623_crude_oil",
+      "label": "Crude Oil",
+      "file_type": "concept",
+      "source_file": "D:\\Temp\\create_skills\\bingbingxiaomei-perspective\\references\\sources\\articles\\2026-06-24 213623_冰冰小美_今天期货市场巨大波动。核心是贵金属与原油。贝森特言论一，通胀目标与原油价格。已经发帖过。原油对通胀远期影响。二，强势美.md",
+      "source_location": null,
+      "source_url": "https://xueqiu.com/7143769715/396505220",
+      "captured_at": "2026-06-25 09:16:20",
+      "author": "冰冰小美",
+      "contributor": null
+    },
+    {
+      "id": "bingbingxiaomei_perspective_references_sources_articles_2026_06_24_213623_inflation",
+      "label": "Inflation",
+      "file_type": "concept",
+      "source_file": "D:\\Temp\\create_skills\\bingbingxiaomei-perspective\\references\\sources\\articles\\2026-06-24 213623_冰冰小美_今天期货市场巨大波动。核心是贵金属与原油。贝森特言论一，通胀目标与原油价格。已经发帖过。原油对通胀远期影响。二，强势美.md",
+      "source_location": null,
+      "source_url": "https://xueqiu.com/7143769715/396505220",
+      "captured_at": "2026-06-25 09:16:20",
+      "author": "冰冰小美",
+      "contributor": null
+    },
+    {
+      "id": "bingbingxiaomei_perspective_references_sources_articles_2026_06_24_213623_strong_us_dollar",
+      "label": "Strong US Dollar",
+      "file_type": "concept",
+      "source_file": "D:\\Temp\\create_skills\\bingbingxiaomei-perspective\\references\\sources\\articles\\2026-06-24 213623_冰冰小美_今天期货市场巨大波动。核心是贵金属与原油。贝森特言论一，通胀目标与原油价格。已经发帖过。原油对通胀远期影响。二，强势美.md",
+      "source_location": null,
+      "source_url": "https://xueqiu.com/7143769715/396505220",
+      "captured_at": "2026-06-25 09:16:20",
+      "author": "冰冰小美",
+      "contributor": null
+    },
+    {
+      "id": "bingbingxiaomei_perspective_references_sources_articles_2026_06_24_213623_gold_safe_haven_narrative",
+      "label": "Gold Safe-Haven Narrative",
+      "file_type": "rationale",
+      "source_file": "D:\\Temp\\create_skills\\bingbingxiaomei-perspective\\references\\sources\\articles\\2026-06-24 213623_冰冰小美_今天期货市场巨大波动。核心是贵金属与原油。贝森特言论一，通胀目标与原油价格。已经发帖过。原油对通胀远期影响。二，强势美.md",
+      "source_location": null,
+      "source_url": "https://xueqiu.com/7143769715/396505220",
+      "captured_at": "2026-06-25 09:16:20",
+      "author": "冰冰小美",
+      "contributor": null,
+      "rationale": "The article says a strong dollar and lower global war risk weaken the narrative supporting gold's safe-haven value."
+    },
+    {
+      "id": "bingbingxiaomei_perspective_references_sources_articles_2026_06_24_213623_gold_below_4000",
+      "label": "Gold Below 4000",
+      "file_type": "concept",
+      "source_file": "D:\\Temp\\create_skills\\bingbingxiaomei-perspective\\references\\sources\\articles\\2026-06-24 213623_冰冰小美_今天期货市场巨大波动。核心是贵金属与原油。贝森特言论一，通胀目标与原油价格。已经发帖过。原油对通胀远期影响。二，强势美.md",
+      "source_location": null,
+      "source_url": "https://xueqiu.com/7143769715/396505220",
+      "captured_at": "2026-06-25 09:16:20",
+      "author": "冰冰小美",
+      "contributor": null
+    },
+    {
+      "id": "bingbingxiaomei_perspective_references_sources_articles_2026_06_24_213623_stop_loss_selling",
+      "label": "Gold Stop-Loss Selling",
+      "file_type": "concept",
+      "source_file": "D:\\Temp\\create_skills\\bingbingxiaomei-perspective\\references\\sources\\articles\\2026-06-24 213623_冰冰小美_今天期货市场巨大波动。核心是贵金属与原油。贝森特言论一，通胀目标与原油价格。已经发帖过。原油对通胀远期影响。二，强势美.md",
+      "source_location": null,
+      "source_url": "https://xueqiu.com/7143769715/396505220",
+      "captured_at": "2026-06-25 09:16:20",
+      "author": "冰冰小美",
+      "contributor": null
+    },
+    {
+      "id": "bingbingxiaomei_perspective_references_sources_articles_2026_06_24_213623_high_interest_rates",
+      "label": "High Interest Rates",
+      "file_type": "concept",
+      "source_file": "D:\\Temp\\create_skills\\bingbingxiaomei-perspective\\references\\sources\\articles\\2026-06-24 213623_冰冰小美_今天期货市场巨大波动。核心是贵金属与原油。贝森特言论一，通胀目标与原油价格。已经发帖过。原油对通胀远期影响。二，强势美.md",
+      "source_location": null,
+      "source_url": "https://xueqiu.com/7143769715/396505220",
+      "captured_at": "2026-06-25 09:16:20",
+      "author": "冰冰小美",
+      "contributor": null
+    },
+    {
+      "id": "bingbingxiaomei_perspective_references_sources_articles_2026_06_24_213623_rate_cut_expectations",
+      "label": "Rate-Cut Expectations",
+      "file_type": "concept",
+      "source_file": "D:\\Temp\\create_skills\\bingbingxiaomei-perspective\\references\\sources\\articles\\2026-06-24 213623_冰冰小美_今天期货市场巨大波动。核心是贵金属与原油。贝森特言论一，通胀目标与原油价格。已经发帖过。原油对通胀远期影响。二，强势美.md",
+      "source_location": null,
+      "source_url": "https://xueqiu.com/7143769715/396505220",
+      "captured_at": "2026-06-25 09:16:20",
+      "author": "冰冰小美",
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "bingbingxiaomei_perspective_references_sources_articles_2026_06_23_104700_document",
+      "target": "bingbingxiaomei_perspective_references_sources_articles_2026_06_23_104700_shallow_research",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\Temp\\create_skills\\bingbingxiaomei-perspective\\references\\sources\\articles\\2026-06-23 104700_冰冰小美_其实就说明一件事，之所以普通。就是研究太浅薄了。.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "bingbingxiaomei_perspective_references_sources_articles_2026_06_24_213623_document",
+      "target": "bingbingxiaomei_perspective_references_sources_articles_2026_06_24_213623_crude_oil",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\Temp\\create_skills\\bingbingxiaomei-perspective\\references\\sources\\articles\\2026-06-24 213623_冰冰小美_今天期货市场巨大波动。核心是贵金属与原油。贝森特言论一，通胀目标与原油价格。已经发帖过。原油对通胀远期影响。二，强势美.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "bingbingxiaomei_perspective_references_sources_articles_2026_06_24_213623_crude_oil",
+      "target": "bingbingxiaomei_perspective_references_sources_articles_2026_06_24_213623_inflation",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\Temp\\create_skills\\bingbingxiaomei-perspective\\references\\sources\\articles\\2026-06-24 213623_冰冰小美_今天期货市场巨大波动。核心是贵金属与原油。贝森特言论一，通胀目标与原油价格。已经发帖过。原油对通胀远期影响。二，强势美.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "bingbingxiaomei_perspective_references_sources_articles_2026_06_24_213623_strong_us_dollar",
+      "target": "bingbingxiaomei_perspective_references_sources_articles_2026_06_24_213623_gold_safe_haven_narrative",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\Temp\\create_skills\\bingbingxiaomei-perspective\\references\\sources\\articles\\2026-06-24 213623_冰冰小美_今天期货市场巨大波动。核心是贵金属与原油。贝森特言论一，通胀目标与原油价格。已经发帖过。原油对通胀远期影响。二，强势美.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "bingbingxiaomei_perspective_references_sources_articles_2026_06_24_213623_gold_safe_haven_narrative",
+      "target": "bingbingxiaomei_perspective_references_sources_articles_2026_06_24_213623_gold_below_4000",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\Temp\\create_skills\\bingbingxiaomei-perspective\\references\\sources\\articles\\2026-06-24 213623_冰冰小美_今天期货市场巨大波动。核心是贵金属与原油。贝森特言论一，通胀目标与原油价格。已经发帖过。原油对通胀远期影响。二，强势美.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "bingbingxiaomei_perspective_references_sources_articles_2026_06_24_213623_gold_below_4000",
+      "target": "bingbingxiaomei_perspective_references_sources_articles_2026_06_24_213623_stop_loss_selling",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\Temp\\create_skills\\bingbingxiaomei-perspective\\references\\sources\\articles\\2026-06-24 213623_冰冰小美_今天期货市场巨大波动。核心是贵金属与原油。贝森特言论一，通胀目标与原油价格。已经发帖过。原油对通胀远期影响。二，强势美.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "bingbingxiaomei_perspective_references_sources_articles_2026_06_24_213623_high_interest_rates",
+      "target": "bingbingxiaomei_perspective_references_sources_articles_2026_06_24_213623_rate_cut_expectations",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\Temp\\create_skills\\bingbingxiaomei-perspective\\references\\sources\\articles\\2026-06-24 213623_冰冰小美_今天期货市场巨大波动。核心是贵金属与原油。贝森特言论一，通胀目标与原油价格。已经发帖过。原油对通胀远期影响。二，强势美.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

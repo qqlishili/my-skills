@@ -1,0 +1,807 @@
+{
+  "batch": 2,
+  "communities": [
+    {
+      "community_id": 100,
+      "node_labels": [
+        "Portfolio Allocation Retrospective",
+        "Balanced Allocation",
+        "Industrial Thinking"
+      ],
+      "node_count": 3
+    },
+    {
+      "community_id": 101,
+      "node_labels": [
+        "detect_python()",
+        "query.sh script",
+        "query.sh"
+      ],
+      "node_count": 3
+    },
+    {
+      "community_id": 102,
+      "node_labels": [
+        "老登新登跷跷板量化",
+        "宏观事件与板块跷跷板"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 103,
+      "node_labels": [
+        "交易理解与恐慌应对",
+        "恐慌应对对话与过程"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 104,
+      "node_labels": [
+        "转型期g进m退撕裂",
+        "转型期g进m退撕裂"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 105,
+      "node_labels": [
+        "ETF方向长期视角",
+        "ETF方向长期视角"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 106,
+      "node_labels": [
+        "Baseline: Jiangfeng Top Divergence Generic",
+        "Article 94: Jiangfeng Top Divergence Buy"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 107,
+      "node_labels": [
+        "Direction and Timing Model",
+        "G1 Local Corpus Reread Batch 03"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 108,
+      "node_labels": [
+        "G1 Local Corpus Reread Batch 04",
+        "Risk Control and Independent Research"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 109,
+      "node_labels": [
+        "Candidate Taxonomy",
+        "G1 Local Corpus Reread Batch 05"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 110,
+      "node_labels": [
+        "G1a Phase 2 Candidate Revalidation",
+        "Evidence Revalidation"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 111,
+      "node_labels": [
+        "G1 Phase 2 Candidate Extraction",
+        "Three-Element Alignment"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 112,
+      "node_labels": [
+        "G1 Local Evidence README",
+        "Local Evidence Scope"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 113,
+      "node_labels": [
+        "Cyclical and Countercyclical Allocation",
+        "Weekly Operations Record"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 114,
+      "node_labels": [
+        "Trading and Personality",
+        "Personality-Constrained Trading"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 115,
+      "node_labels": [
+        "Read Market Context Rather Than Copy Trades",
+        "Market Context Interpretation"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 116,
+      "node_labels": [
+        "Profit Cushion",
+        "Profit Cushion"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 117,
+      "node_labels": [
+        "Excavator News",
+        "News Interpretation"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 118,
+      "node_labels": [
+        "Limit-Up Board",
+        "Limit-Up as Observation Anchor"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 119,
+      "node_labels": [
+        "Contextual Definition of Chasing",
+        "Do Not Chase Rises"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 120,
+      "node_labels": [
+        "游资江湖手法，第三期，龙头战法",
+        "Leader Strategy"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 121,
+      "node_labels": [
+        "常见的亏钱认知，第十八期，高度板压制作用",
+        "Height Board Suppression"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 122,
+      "node_labels": [
+        "A50 as Sentiment Indicator",
+        "常见的亏钱认知，第十九期，新加坡富时A50指数"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 123,
+      "node_labels": [
+        "情绪体系交易篇，第十期，交割单的认知",
+        "Trade Record Review"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 124,
+      "node_labels": [
+        "买入不败的必要性与体系三要素",
+        "Three-Factor Buying"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 125,
+      "node_labels": [
+        "情绪体系交易篇，第十一期，空仓",
+        "Strategic Cash Position"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 126,
+      "node_labels": [
+        "情绪体系交易篇，第十三期，冰点的冰点发展美，转势",
+        "Ice Point Reversal"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 127,
+      "node_labels": [
+        "Counter-Emotion Arbitrage",
+        "情绪体系交易篇，第十四期，反人性与反情绪的套利行情"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 128,
+      "node_labels": [
+        "情绪体系交易篇，第十五期，定位与立场",
+        "Positioning and Stance"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 129,
+      "node_labels": [
+        "读书与经济理论体系",
+        "Genealogical Reading"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 130,
+      "node_labels": [
+        "情绪体系认知篇，风险转弱的节点",
+        "Risk Weakening Node"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 131,
+      "node_labels": [
+        "读书时间，左传",
+        "Timing and Preparation"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 132,
+      "node_labels": [
+        "推荐书籍，海权沉浮",
+        "Maritime Power History"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 133,
+      "node_labels": [
+        "Debt Cycle Study",
+        "国债与债务危机阅读建议"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 134,
+      "node_labels": [
+        "体系三要素，指数型交易流动性辩证分析",
+        "Liquidity Source Analysis"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 135,
+      "node_labels": [
+        "Balance Sheet Liquidity",
+        "货币政策与真实流动性"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 136,
+      "node_labels": [
+        "价值价格钟摆与金融战",
+        "Value Price Pendulum"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 137,
+      "node_labels": [
+        "心智夺取与交易决策",
+        "Mind Capture in Trading"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 138,
+      "node_labels": [
+        "Crisis and Change Framework",
+        "危机与变革阅读脉络"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 139,
+      "node_labels": [
+        "世纪华通与A股生态",
+        "Institutional Herding"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 140,
+      "node_labels": [
+        "风险变化如何观察",
+        "Time-Sequential Risk Observation"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 141,
+      "node_labels": [
+        "行路难，多歧路",
+        "National Transformation Investment"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 142,
+      "node_labels": [
+        "长期主义与变通",
+        "周期路径投资"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 143,
+      "node_labels": [
+        "国家资本与金融中心重塑",
+        "金融国际化"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 144,
+      "node_labels": [
+        "错综复杂的局面",
+        "供应链碎片化"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 145,
+      "node_labels": [
+        "论锚定美股炒作A股的内核研究",
+        "锚定美股炒作 A 股"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 146,
+      "node_labels": [
+        "重大事件重要节点",
+        "全球通胀转折"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 147,
+      "node_labels": [
+        "比特币暴跌与白银逼空的内核研究",
+        "资产重定价"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 148,
+      "node_labels": [
+        "宏观，中观，微观，A股市场的诸多巧合背后的资金引导",
+        "ETF 市场结构"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 149,
+      "node_labels": [
+        "收益率与平常心",
+        "本金保护"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 150,
+      "node_labels": [
+        "华为五界",
+        "汽车竞争与择时"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 151,
+      "node_labels": [
+        "2025年总结",
+        "2025 市场周期复盘"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 152,
+      "node_labels": [
+        "铜与铝的不同",
+        "制造业供需逻辑"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 153,
+      "node_labels": [
+        "信息的金融意义（十二）",
+        "金融信息过滤"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 154,
+      "node_labels": [
+        "AI Capital Rotation",
+        "AI capital rotation article"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 155,
+      "node_labels": [
+        "Evidence before investment article",
+        "Evidence-Based Positioning"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 156,
+      "node_labels": [
+        "Growth and bubble article",
+        "Growth-Based Valuation"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 157,
+      "node_labels": [
+        "Liquid cooling assessment article",
+        "Liquid Cooling Is Not a Bottleneck"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 158,
+      "node_labels": [
+        "AI Materials Swing Trading",
+        "AI materials trading article"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 159,
+      "node_labels": [
+        "Volatility and exit risk article",
+        "Exit Risk Under Volatility"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 160,
+      "node_labels": [
+        "Lithium inventory cycle article",
+        "Inventory Cycle and Valuation"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 161,
+      "node_labels": [
+        "Sripetch v SEC article",
+        "Position Cost Discipline"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 162,
+      "node_labels": [
+        "Volatility and trust article",
+        "Long-Short Asymmetry"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 163,
+      "node_labels": [
+        "Cycles article",
+        "Recurring Market Cycles"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 164,
+      "node_labels": [
+        "Timing hierarchy article",
+        "Timing Hierarchy"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 165,
+      "node_labels": [
+        "Nonferrous leverage article",
+        "Leverage-Driven Selloff"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 166,
+      "node_labels": [
+        "Adversity-Aware Investing",
+        "Mining investment risk article"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 167,
+      "node_labels": [
+        "Industrial chain resilience article",
+        "Trade Conflict and Industrial Support"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 168,
+      "node_labels": [
+        "Cost reduction through trading article",
+        "Knowledge-Based Cost Reduction"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 169,
+      "node_labels": [
+        "Short-Term Liquidity Premium",
+        "short term liquidity premium"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 170,
+      "node_labels": [
+        "Business Change over High-Price Entry",
+        "low point growth investing"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 171,
+      "node_labels": [
+        "Unpredictable Market without Valuation Anchor",
+        "valuation anchor absence"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 172,
+      "node_labels": [
+        "Chip material price increase",
+        "Market breadth and chip-material price increases"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 173,
+      "node_labels": [
+        "Crowding and valuation bubble",
+        "Investment to popularity to speculation"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 174,
+      "node_labels": [
+        "Semiconductor capacity expansion and materials",
+        "Semiconductor capacity expansion"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 175,
+      "node_labels": [
+        "Liquidity risk and position control",
+        "Position control under liquidity pressure"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 176,
+      "node_labels": [
+        "China Korea semiconductor supply-chain cooperation",
+        "South Korea semiconductor supply-chain cooperation"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 177,
+      "node_labels": [
+        "New battery safety standard",
+        "Electric vehicle safety standards"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 178,
+      "node_labels": [
+        "Buy unpopular sell crowded",
+        "Contrarian long-term investing"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 179,
+      "node_labels": [
+        "Independent monetary easing",
+        "Domestic monetary easing"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 180,
+      "node_labels": [
+        "Long-term investing through volatility",
+        "Long-term investing"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 181,
+      "node_labels": [
+        "Risk timing and valuation discipline",
+        "Valuation mean reversion"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 182,
+      "node_labels": [
+        "Enterprise responsibility and investor selection",
+        "Enterprise responsibility"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 183,
+      "node_labels": [
+        "A-share value discovery and bubble formation",
+        "A-share value discovery"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 184,
+      "node_labels": [
+        "Risk control and available capital",
+        "Risk control preserves buying capacity"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 185,
+      "node_labels": [
+        "Investment Analysis Hierarchy",
+        "Retail Investor Decision Ruler"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 186,
+      "node_labels": [
+        "Long-Term Industry Research",
+        "Three-Year Investment Horizon"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 187,
+      "node_labels": [
+        "Macro Timing for Position Allocation",
+        "Liquidity Risk Timeline"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 188,
+      "node_labels": [
+        "SpaceX Business Model",
+        "Commercial Space Valuation"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 189,
+      "node_labels": [
+        "AI Resource Dual Track",
+        "Materials Supply Chain"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 190,
+      "node_labels": [
+        "Research Depth Article",
+        "Shallow Research"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 191,
+      "node_labels": [
+        "High Interest Rates",
+        "Rate-Cut Expectations"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 192,
+      "node_labels": [
+        "流动性溢价假象引导",
+        "游资江湖手法，第五期，流动性溢价假象引导"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 193,
+      "node_labels": [
+        "猪周期与CPI传导",
+        "猪周期分析框架"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 194,
+      "node_labels": [
+        "长电科技",
+        "新洁能"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 195,
+      "node_labels": [
+        "Agent Spawn Evaluation",
+        "Darwin Evaluation Methodology"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 196,
+      "node_labels": [
+        "高密度日异常 (06-17, 06-22)",
+        "发帖频率分析 2026-06-13~06-22"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 197,
+      "node_labels": [
+        "Information Uselessness",
+        "Information Financial Meaning Fifteen"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 198,
+      "node_labels": [
+        "龙空龙",
+        "HW产业链完整序列交易"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 199,
+      "node_labels": [
+        "承认错误/卖飞/踏空/认知局限",
+        "赛力斯110→68公开承认预测失败"
+      ],
+      "node_count": 2
+    }
+  ]
+}

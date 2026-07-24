@@ -1,0 +1,670 @@
+{
+  "batch": 4,
+  "communities": [
+    {
+      "community_id": 300,
+      "node_labels": [
+        "Named battery and semiconductor material stocks"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 301,
+      "node_labels": [
+        "Conviction through market volatility"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 302,
+      "node_labels": [
+        "Investment thesis as buy rationale"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 303,
+      "node_labels": [
+        "Expected liquidity event and declining panic"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 304,
+      "node_labels": [
+        "Electric vehicle safety standards and demand"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 305,
+      "node_labels": [
+        "Battery Standard Supply Reform"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 306,
+      "node_labels": [
+        "Risk Narrative and National Demand"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 307,
+      "node_labels": [
+        "Fundamental Investing Over Market Narratives"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 308,
+      "node_labels": [
+        "IPO Liquidity Pressure"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 309,
+      "node_labels": [
+        "Intraday Liquidity Divergence"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 310,
+      "node_labels": [
+        "Risk-Aware Trade Switching"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 311,
+      "node_labels": [
+        "A-Share Liquidity Structure"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 312,
+      "node_labels": [
+        "Information Financial Meaning"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 313,
+      "node_labels": [
+        "Earnings Signal Research"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 314,
+      "node_labels": [
+        "SpaceX IPO Liquidity Effect"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 315,
+      "node_labels": [
+        "Trade Record"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 316,
+      "node_labels": [
+        "Risk Reduction Rally"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 317,
+      "node_labels": [
+        "Cognitive Fallback Test"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 318,
+      "node_labels": [
+        "run_probe.py"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 319,
+      "node_labels": [
+        "Keyword Probe Samples"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 320,
+      "node_labels": [
+        "Theme Probe Results"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 321,
+      "node_labels": [
+        "Article 101: Sailisi 110->68 Miss"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 322,
+      "node_labels": [
+        "Article 123: PBOC Independent of Fed"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 323,
+      "node_labels": [
+        "514魔咒"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 324,
+      "node_labels": [
+        "Jesse Livermore 大作手回忆录"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 325,
+      "node_labels": [
+        "定位理论（Ries & Trout）"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 326,
+      "node_labels": [
+        "巴菲特投资理念"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 327,
+      "node_labels": [
+        "情绪标"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 328,
+      "node_labels": [
+        "显学/隐学"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 329,
+      "node_labels": [
+        "毛泽东著作引用"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 330,
+      "node_labels": [
+        "牛顿分形"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 331,
+      "node_labels": [
+        "邓小平教育三面向"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 332,
+      "node_labels": [
+        "马克思主义哲学引用"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 333,
+      "node_labels": [
+        "马斯克第一性原理"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 334,
+      "node_labels": [
+        "G1 Evidence Batch 02"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 335,
+      "node_labels": [
+        "何为国运红利的分配"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 336,
+      "node_labels": [
+        "Oil Crisis Three-Layer Analysis (US Domestic / Major Economy Crisis / National Strategy)"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 337,
+      "node_labels": [
+        "Dongcai Technology (SH601208)"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 338,
+      "node_labels": [
+        "Zhang Mengzhu (章盟主) Institutional Trader"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 339,
+      "node_labels": [
+        "Romance of Long-Termism"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 340,
+      "node_labels": [
+        "Financial Deception"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 341,
+      "node_labels": [
+        "US Strategy and Competition With China"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 342,
+      "node_labels": [
+        "Jiangfeng Electronics and TSMC"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 343,
+      "node_labels": [
+        "April 2026 Monthly Report One"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 344,
+      "node_labels": [
+        "April 2026 Monthly Report Two"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 345,
+      "node_labels": [
+        "AI Competition World Order"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 346,
+      "node_labels": [
+        "Optics PCB and Advanced Materials"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 347,
+      "node_labels": [
+        "Copper Foil During Optical Substitution"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 348,
+      "node_labels": [
+        "Satellite ETF vs Aerospace Electronics"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 349,
+      "node_labels": [
+        "Non-Ferrous Metals Surge"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 350,
+      "node_labels": [
+        "Sunwoda CATL Industrial Pattern Match"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 351,
+      "node_labels": [
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_三安光电"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 352,
+      "node_labels": [
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_上海瀚讯"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 353,
+      "node_labels": [
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_东方钽业"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 354,
+      "node_labels": [
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_中国卫通"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 355,
+      "node_labels": [
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_中材科技"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 356,
+      "node_labels": [
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_云南锗业"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 357,
+      "node_labels": [
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_亨通光电"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 358,
+      "node_labels": [
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_京东方"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 359,
+      "node_labels": [
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_亿纬锂能"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 360,
+      "node_labels": [
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_先导智能"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 361,
+      "node_labels": [
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_双环传动"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 362,
+      "node_labels": [
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_商络电子"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 363,
+      "node_labels": [
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_国轩高科"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 364,
+      "node_labels": [
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_太极实业"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 365,
+      "node_labels": [
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_小米汽车_小米"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 366,
+      "node_labels": [
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_德福科技"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 367,
+      "node_labels": [
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_拓斯达"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 368,
+      "node_labels": [
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_新洁能"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 369,
+      "node_labels": [
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_星源材质"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 370,
+      "node_labels": [
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_有研新材"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 371,
+      "node_labels": [
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_柳工"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 372,
+      "node_labels": [
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_江丰电子_海力士"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 373,
+      "node_labels": [
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_江波龙_江丰电子"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 374,
+      "node_labels": [
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_江淮汽车"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 375,
+      "node_labels": [
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_洛阳钼业"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 376,
+      "node_labels": [
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_浩辰软件"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 377,
+      "node_labels": [
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_湖北宜化"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 378,
+      "node_labels": [
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_盛龙股份"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 379,
+      "node_labels": [
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_移动互联网"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 380,
+      "node_labels": [
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_自由现金流"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 381,
+      "node_labels": [
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_铜陵有色"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 382,
+      "node_labels": [
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_长飞光纤"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 383,
+      "node_labels": [
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_阿石创"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 384,
+      "node_labels": [
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_飞凯材料"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 385,
+      "node_labels": [
+        "Drivers of Weak Consumption"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 386,
+      "node_labels": [
+        "Causes of Losses in a Rising Market"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 387,
+      "node_labels": [
+        "Active ETF Transparency and Fund Manager Selection"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 388,
+      "node_labels": [
+        "Learning From Active Fund Rebalancing"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 389,
+      "node_labels": [
+        "Future Seven Sisters"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 390,
+      "node_labels": [
+        "Industry Credit and Supply-Demand Resonance"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 391,
+      "node_labels": [
+        "Industry Upgrade Versus High-Price Speculation"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 392,
+      "node_labels": [
+        "Reallocation From Legacy Holdings to Technology"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 393,
+      "node_labels": [
+        "session-start.ps1"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 394,
+      "node_labels": [
+        "analyze_classification.py"
+      ],
+      "node_count": 1
+    }
+  ]
+}

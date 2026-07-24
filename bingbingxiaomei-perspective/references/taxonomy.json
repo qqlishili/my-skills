@@ -1,0 +1,379 @@
+{
+  "schema_version": 1,
+  "decision_gate": "G2",
+  "decision_status": "approved",
+  "corpus_digest": "aa562d951deba34430f5ce9a7f7615c9aed9050d8355167e5d77d95d26696fcf",
+  "article_count": 520,
+  "ontology_rule": {
+    "models": "描述问题结构、输入状态与输出判断，不直接规定交易动作。",
+    "heuristics": "约束研究或决策动作，必须引用相关模型，不替代模型解释。",
+    "precedence": [
+      "m05 先判断证据状态",
+      "m04 的公司质地、兑现能力和估值可以否决 m03 的战略方向映射",
+      "m02 判断时间窗口",
+      "m06 决定风险预算和仓位承受力",
+      "m01 汇总竞争格局、流动性与情绪状态"
+    ]
+  },
+  "models": [
+    {
+      "id": "m01",
+      "name": "三要素状态模型",
+      "slug": "three-elements-state",
+      "status": "confirmed",
+      "routing_terms": ["三要素", "竞争格局", "宏观流动性", "中观流动性", "微观流动性", "情绪位置", "共振"],
+      "definition": "用竞争格局、流动性和情绪位置三个状态变量描述市场环境，并识别三者是否形成同向条件。",
+      "inputs": ["竞争格局", "宏观/中观/微观流动性", "市场情绪位置"],
+      "state_variables": ["direction_state", "liquidity_state", "sentiment_state"],
+      "outputs": ["three_elements_alignment", "dominant_constraint"],
+      "applicable_questions": ["当前环境的主要优势与约束是什么", "方向、时点和价格是否同时有利"],
+      "failure_boundary": "三要素没有统一量化权重；任何单一要素有利都不能自动推出整体有利。",
+      "source_paths": [
+        "references/sources/articles/2023-05-20 082356_冰冰小美_情绪体系的最后总结篇，情绪体系三要素，竞争格局的比较优势，流动性辩证分析，情绪位置的变化.md",
+        "references/sources/articles/2023-10-18 072901_冰冰小美_买入不败的必要性与需要克服的人性问题——体系三要素适用范围与推演过程——流动性溢价是赚钱的真正原因。.md",
+        "references/sources/articles/2026-06-11 164632_冰冰小美_明天是流动性挤压最大的一天了。巨大Ipo落地。从某些意义看，明天恐慌可能是一个好的买点。616是一种确认。体系三要素，.md"
+      ],
+      "supporting_evidence": [
+        {"path": "references/sources/articles/2023-05-20 082356_冰冰小美_情绪体系的最后总结篇，情绪体系三要素，竞争格局的比较优势，流动性辩证分析，情绪位置的变化.md", "line": 17, "quote": "根据三要素的不同特点"},
+        {"path": "references/sources/articles/2023-10-18 072901_冰冰小美_买入不败的必要性与需要克服的人性问题——体系三要素适用范围与推演过程——流动性溢价是赚钱的真正原因。.md", "line": 14, "quote": "找到三者同时有利的节点"},
+        {"path": "references/sources/articles/2026-06-11 164632_冰冰小美_明天是流动性挤压最大的一天了。巨大Ipo落地。从某些意义看，明天恐慌可能是一个好的买点。616是一种确认。体系三要素，.md", "line": 19, "quote": "竞争格局的比较优势"}
+      ],
+      "counterexample": {
+        "path": "references/sources/articles/2023-08-15 205331_冰冰小美_常见的亏钱认知，第十四期，假象与反人性的折磨.md",
+        "line": 39,
+        "quote": "叠加库存供需周期减弱，需求不足，戴维斯双杀不可避免",
+        "meaning": "产业方向或新技术标签有利时，需求和供需周期仍可否决整体判断。"
+      }
+    },
+    {
+      "id": "m02",
+      "name": "风险与时间窗口模型",
+      "slug": "risk-time-window",
+      "status": "confirmed",
+      "routing_terms": ["风险演绎", "风险减弱", "时间窗口", "关键节点", "事件落地", "靴子落地", "择时", "观望"],
+      "definition": "描述风险从出现、强化、减弱到落地的状态变化，以及这些变化形成的观察和介入窗口。",
+      "inputs": ["风险来源", "事件状态", "市场定价程度", "风险减弱信号"],
+      "state_variables": ["risk_state", "event_resolution", "window_state"],
+      "outputs": ["risk_trend", "window_open_or_closed"],
+      "applicable_questions": ["风险是否正在减弱", "当前是事件前等待期还是事件后验证期"],
+      "failure_boundary": "时间窗口不是日期预测；事件可能提前定价、延后或改变路径。",
+      "source_paths": [
+        "references/sources/articles/2025-01-03 112122_冰冰小美_交易的风控.md",
+        "references/sources/articles/2025-01-25 130322_冰冰小美_行情不等于风险.md",
+        "references/sources/articles/2026-03-20 085600_冰冰小美_如何理解时间窗口.md"
+      ],
+      "supporting_evidence": [
+        {"path": "references/sources/articles/2025-01-03 112122_冰冰小美_交易的风控.md", "line": 34, "quote": "风险在前，机遇在后"},
+        {"path": "references/sources/articles/2025-01-25 130322_冰冰小美_行情不等于风险.md", "line": 36, "quote": "以风险减弱的节点入手"},
+        {"path": "references/sources/articles/2026-03-20 085600_冰冰小美_如何理解时间窗口.md", "line": 28, "quote": "时间窗口到来"}
+      ],
+      "counterexample": {
+        "path": "references/sources/articles/2023-09-22 165202_冰冰小美_情绪体系交易篇，第七期，相信.md",
+        "line": 29,
+        "quote": "场内的恐慌，情绪所致，但是场外却已经是星火燎原",
+        "meaning": "表面风险强化时，产业状态可能已经改善；不能仅按事件时间线判断。"
+      }
+    },
+    {
+      "id": "m03",
+      "name": "国家目标到产业映射模型",
+      "slug": "strategic-industry-mapping",
+      "status": "confirmed",
+      "routing_terms": ["国家竞争", "竞争前线", "新质生产力", "产业安全", "国策", "独立自主", "全产业链", "产业集群", "人才"],
+      "definition": "描述国家竞争目标、政策约束和产业安全要求如何形成研究方向与产业候选集合。",
+      "inputs": ["国家竞争目标", "产业安全要求", "政策持续性", "人才与产业集群"],
+      "state_variables": ["strategic_priority", "industry_security", "policy_persistence"],
+      "outputs": ["research_universe", "strategic_industry_candidates"],
+      "applicable_questions": ["哪些产业位于竞争前线", "国家目标如何映射到研究范围"],
+      "failure_boundary": "国家战略只形成研究方向，不保证具体公司盈利、估值合理或股价上涨。",
+      "source_paths": [
+        "references/sources/articles/2024-11-09 105442_冰冰小美_2024大事件落地，未来行情演绎.md",
+        "references/sources/articles/2025-04-27 082843_冰冰小美_竞争格局的演绎.md",
+        "references/sources/articles/2026-05-08 223324_冰冰小美_这种竞赛诉求，就会形成产业安全要求。这也是中米在，未来产业，做独立自主的全产业链。米重建稀土产业链，芯片制造业回流。中完.md"
+      ],
+      "supporting_evidence": [
+        {"path": "references/sources/articles/2024-11-09 105442_冰冰小美_2024大事件落地，未来行情演绎.md", "line": 52, "quote": "都处于竞争的前线"},
+        {"path": "references/sources/articles/2025-04-27 082843_冰冰小美_竞争格局的演绎.md", "line": 32, "quote": "依托于新质生产力的变革，慢慢进入国策高度"},
+        {"path": "references/sources/articles/2026-05-08 223324_冰冰小美_这种竞赛诉求，就会形成产业安全要求。这也是中米在，未来产业，做独立自主的全产业链。米重建稀土产业链，芯片制造业回流。中完.md", "line": 13, "quote": "形成产业安全要求"}
+      ],
+      "counterexample": {
+        "path": "references/sources/articles/2024-05-11 115340_冰冰小美_情绪体系认知篇，投机过程中的传播学.md",
+        "line": 36,
+        "quote": "上升到国家规划，甚至院士站台",
+        "meaning": "国家规划标签可被传播用于题材炒作，必须由 m04 验证公司兑现。"
+      }
+    },
+    {
+      "id": "m04",
+      "name": "产业兑现链模型",
+      "slug": "industry-realization-chain",
+      "status": "confirmed",
+      "routing_terms": ["技术壁垒", "订单", "需求", "产能", "利润", "商业模式", "供需", "产业链地位", "盈利兑现", "业绩"],
+      "definition": "描述技术壁垒、订单与需求、产能和盈利如何沿产业链先后兑现，并形成公司层面的验证链。",
+      "inputs": ["技术壁垒", "订单与需求", "产能", "毛利和利润", "上下游位置"],
+      "state_variables": ["capability_state", "demand_state", "capacity_state", "profit_state", "transmission_stage"],
+      "outputs": ["realization_strength", "transmission_stage", "company_validation"],
+      "applicable_questions": ["战略方向中的哪家公司真正兑现", "产业投资何时传导到订单和利润"],
+      "failure_boundary": "技术路线、需求、供需关系或估值变化都可能中断兑现链；早期创新没有利润时只能保留为研究对象。",
+      "source_paths": [
+        "references/sources/articles/2023-08-15 205331_冰冰小美_常见的亏钱认知，第十四期，假象与反人性的折磨.md",
+        "references/sources/articles/2023-09-22 165202_冰冰小美_情绪体系交易篇，第七期，相信.md",
+        "references/sources/articles/2025-04-04 105644_冰冰小美_未来美元的流动.md",
+        "references/sources/articles/2026-05-19 160707_冰冰小美_为什么很多个股，之前不强势，现在很强势。并不是这个股，短短一年就翻天覆地的变化。这是因为产业投资后，受益传导有先后顺序。.md"
+      ],
+      "supporting_evidence": [
+        {"path": "references/sources/articles/2023-08-15 205331_冰冰小美_常见的亏钱认知，第十四期，假象与反人性的折磨.md", "line": 29, "quote": "盈利的商业模式与技术壁垒"},
+        {"path": "references/sources/articles/2023-09-22 165202_冰冰小美_情绪体系交易篇，第七期，相信.md", "line": 29, "quote": "订单的变化，加班时间的变化"},
+        {"path": "references/sources/articles/2025-04-04 105644_冰冰小美_未来美元的流动.md", "line": 40, "quote": "企业要生存，并不是你死我活，是订单与利润"},
+        {"path": "references/sources/articles/2026-05-19 160707_冰冰小美_为什么很多个股，之前不强势，现在很强势。并不是这个股，短短一年就翻天覆地的变化。这是因为产业投资后，受益传导有先后顺序。.md", "line": 14, "quote": "受益传导有先后顺序"}
+      ],
+      "counterexample": {
+        "path": "references/sources/articles/2023-08-15 205331_冰冰小美_常见的亏钱认知，第十四期，假象与反人性的折磨.md",
+        "line": 40,
+        "quote": "即使新技术，也无法避免经济周期",
+        "meaning": "技术成立不等于兑现链完整，需求和价格战可以截断利润传导。"
+      }
+    },
+    {
+      "id": "m05",
+      "name": "证据状态模型",
+      "slug": "evidence-state",
+      "status": "confirmed",
+      "routing_terms": ["原始信息", "原始来源", "官方原文", "财报", "研报", "印证", "事件落地", "预期管理", "公开信息", "信息来源"],
+      "definition": "描述信息来源等级、事件是否落地及交叉印证强度，从而区分线索、待验证判断和已验证证据。",
+      "inputs": ["原始来源", "事件落地状态", "财报/研报/执行证据", "反方证据"],
+      "state_variables": ["source_quality", "event_status", "corroboration_strength"],
+      "outputs": ["evidence_state", "confidence_band"],
+      "applicable_questions": ["一条消息目前能支持多强的结论", "来源真实是否等于内容真实"],
+      "failure_boundary": "官方来源和研报也可能承担预期管理；来源权威不能替代内容和执行验证。",
+      "source_paths": [
+        "references/sources/articles/2025-06-23 162231_冰冰小美_信息的金融意义（五）.md",
+        "references/sources/articles/2025-08-16 151943_冰冰小美_信息的金融意义（十一）.md",
+        "references/sources/articles/2026-06-11 203202_冰冰小美_网页链接巧合吗。今天发。但是，一年前的信息，现在牢牢记住。并且作为交易指引。这就是笔记呀。这是财富密码。新国标增加三大领.md"
+      ],
+      "supporting_evidence": [
+        {"path": "references/sources/articles/2025-06-23 162231_冰冰小美_信息的金融意义（五）.md", "line": 22, "quote": "事件落地"},
+        {"path": "references/sources/articles/2025-08-16 151943_冰冰小美_信息的金融意义（十一）.md", "line": 24, "quote": "基于原始信息的分析"},
+        {"path": "references/sources/articles/2026-06-11 203202_冰冰小美_网页链接巧合吗。今天发。但是，一年前的信息，现在牢牢记住。并且作为交易指引。这就是笔记呀。这是财富密码。新国标增加三大领.md", "line": 26, "quote": "读财报，研报，去印证"}
+      ],
+      "counterexample": {
+        "path": "references/sources/articles/2025-12-29 082643_冰冰小美_信息的金融意义（十二）.md",
+        "line": 30,
+        "quote": "信息背后都有着明确预期管理",
+        "meaning": "真实来源仍可能服务于预期管理，不能直接升级为事实结论。"
+      }
+    },
+    {
+      "id": "m06",
+      "name": "风险预算与自我约束模型",
+      "slug": "risk-budget",
+      "status": "confirmed",
+      "routing_terms": ["风险预算", "仓位", "空仓", "减仓", "控仓", "睡眠", "杠杆", "承受力", "现金余量"],
+      "definition": "描述组合风险、现金余量和心理承受力之间的约束关系，识别暴露是否超过可持续范围。",
+      "inputs": ["仓位与集中度", "潜在回撤", "现金余量", "收入负债", "心理和生活影响"],
+      "state_variables": ["exposure_state", "liquidity_reserve", "tolerance_state"],
+      "outputs": ["risk_budget_state", "exposure_constraint"],
+      "applicable_questions": ["当前仓位是否可持续", "风险来临时是否仍有行动能力"],
+      "failure_boundary": "睡眠和情绪只是个人承受力信号，不是市场方向指标；固定仓位比例不能跨用户套用。",
+      "source_paths": [
+        "references/sources/articles/2023-11-11 091236_冰冰小美_情绪体系交易篇，第十一期，空仓.md",
+        "references/sources/articles/2025-07-26 115139_冰冰小美_交易心理分析的重要性.md",
+        "references/sources/articles/2026-06-17 112131_冰冰小美_如果被套的怎么办。1，股票波动在所难免。被套第一件事，审问内心，睡眠如何。如果睡眠下降，则是仓位与心态不匹配。你买之前就.md"
+      ],
+      "supporting_evidence": [
+        {"path": "references/sources/articles/2023-11-11 091236_冰冰小美_情绪体系交易篇，第十一期，空仓.md", "line": 26, "quote": "体系不利时的空仓"},
+        {"path": "references/sources/articles/2025-07-26 115139_冰冰小美_交易心理分析的重要性.md", "line": 26, "quote": "仓位过重，心态立马就会根据盈亏而失衡"},
+        {"path": "references/sources/articles/2026-06-17 112131_冰冰小美_如果被套的怎么办。1，股票波动在所难免。被套第一件事，审问内心，睡眠如何。如果睡眠下降，则是仓位与心态不匹配。你买之前就.md", "line": 13, "quote": "减仓到睡得着"}
+      ],
+      "counterexample": {
+        "path": "references/sources/articles/2023-09-22 165202_冰冰小美_情绪体系交易篇，第七期，相信.md",
+        "line": 29,
+        "quote": "场外却已经是星火燎原",
+        "meaning": "过度收缩风险预算可能在恐慌中错过已经改善的产业状态。"
+      }
+    }
+  ],
+  "orchestration_rules": [
+    {
+      "id": "o01",
+      "name": "长期方向与战术载体分离",
+      "legacy_candidate": "M7",
+      "definition": "长期方向是否成立、当前载体是否兑现、估值是否透支和短期风险是否可承受必须分别判断。",
+      "model_order": ["m03", "m04", "m02", "m06", "m01"],
+      "action_heuristic_ids": ["h09"],
+      "reason": "G2 审查认定原 M7 缺少独立解释变量，更适合作为模型编排规则。"
+    }
+  ],
+  "heuristics": [
+    {
+      "id": "h01",
+      "name": "买入前说明理由并评估退出可行性",
+      "status": "confirmed",
+      "routing_terms": ["买入理由", "T+1", "卖出", "退出", "流动性", "顺利卖出"],
+      "definition": "买入前必须能说明可验证的买入理由，并评估次日或风险发生时的退出与流动性可行性。",
+      "applicable_scenarios": ["短线或交易性买入前", "流动性较弱的标的"],
+      "disabled_conditions": ["仅能讲故事而无法列出可验证事实时", "退出路径依赖无法成交的假设时"],
+      "related_model_ids": ["m02", "m06"],
+      "supporting_evidence": [
+        {"path": "references/sources/articles/2023-07-20 151712_冰冰小美_T+1的思考.md", "line": 14, "quote": "明天能不能顺利卖出去"},
+        {"path": "references/sources/articles/2026-05-21 205540_冰冰小美_还有啥疑问？？？？.md", "line": 154, "quote": "为什么买，你要有理有据"}
+      ],
+      "failure_boundary": "能说明理由不代表理由正确；理由必须能被新事实推翻。"
+    },
+    {
+      "id": "h02",
+      "name": "已确认三要素不利时降低风险暴露",
+      "status": "confirmed",
+      "routing_terms": ["三要素不利", "空仓", "降低仓位", "减少交易", "风险暴露", "少做"],
+      "definition": "当三要素状态已经确认不利或无法形成共振时，降低仓位、减少交易或空仓。",
+      "applicable_scenarios": ["m01 已识别明确不利状态", "风险预算不足以承受当前环境"],
+      "disabled_conditions": ["状态仍未确定而只是等待重大事件时", "机械地把任一轻微不利视为清仓信号时"],
+      "related_model_ids": ["m01", "m02", "m06"],
+      "supporting_evidence": [
+        {"path": "references/sources/articles/2023-10-18 072901_冰冰小美_买入不败的必要性与需要克服的人性问题——体系三要素适用范围与推演过程——流动性溢价是赚钱的真正原因。.md", "line": 14, "quote": "找到三者同时有利的节点"},
+        {"path": "references/sources/articles/2023-11-11 091236_冰冰小美_情绪体系交易篇，第十一期，空仓.md", "line": 26, "quote": "体系不利时的空仓"}
+      ],
+      "failure_boundary": "三要素没有机械阈值，过严执行会错失左侧或结构性机会。"
+    },
+    {
+      "id": "h03",
+      "name": "重大事件未落地时用仓位控制代替预测",
+      "status": "provisional",
+      "routing_terms": ["等靴子落地", "控仓", "重大事件", "风险释放", "观望", "事件窗口"],
+      "definition": "当重大事件可能改变风险状态但结果尚未确定时，先控制仓位并等待可验证结果，不预设点位和日期。",
+      "applicable_scenarios": ["利率、IPO、政策或地缘事件窗口", "m02 状态为 unresolved"],
+      "disabled_conditions": ["事件已充分定价或已落地时", "把普通新闻泛化为重大事件时"],
+      "related_model_ids": ["m02", "m06"],
+      "supporting_evidence": [
+        {"path": "references/sources/articles/2026-06-10 125213_冰冰小美_君子不立危墙之下嘛。加息最不利有色，那么加不加，实事求是呀。等靴子落地。结果米联储不加。然后一看，跌这么多。即使加息，都.md", "line": 15, "quote": "等靴子落地"},
+        {"path": "references/sources/articles/2026-06-08 233850_冰冰小美_聊天完毕。我也很迷茫。经验为零的阶段。从传统风险演绎，我要控仓静待风险释放。从Ai对投资的改造，我要买入Ai指引的方向。.md", "line": 15, "quote": "控仓静待风险释放"}
+      ],
+      "failure_boundary": "市场可能提前定价，等待本身也有机会成本；当前证据集中在 2026。"
+    },
+    {
+      "id": "h04",
+      "name": "新闻先回读原文并交叉印证",
+      "status": "confirmed",
+      "routing_terms": ["原文", "财报", "研报", "印证", "官方", "新闻", "原始来源"],
+      "definition": "面对政策、产业或公司新闻，先回读原始来源，再用财报、研报、执行进度和反方证据交叉印证。",
+      "applicable_scenarios": ["新闻驱动的研究判断", "来源层级复杂或存在二次传播时"],
+      "disabled_conditions": ["只有标题没有原文时", "把官方来源权威等同于内容必然正确时"],
+      "related_model_ids": ["m05", "m03", "m04"],
+      "supporting_evidence": [
+        {"path": "references/sources/articles/2025-03-16 185442_冰冰小美_分享新闻，立马就有留言，利好什么利空什么。说实在的，大概率拉黑对象。股市如果只是二元博弈，那太简单了。人人都可以依据这种.md", "line": 15, "quote": "股市如果只是二元博弈"},
+        {"path": "references/sources/articles/2025-08-16 151943_冰冰小美_信息的金融意义（十一）.md", "line": 28, "quote": "官方查看相关原文"},
+        {"path": "references/sources/articles/2026-06-11 203202_冰冰小美_网页链接巧合吗。今天发。但是，一年前的信息，现在牢牢记住。并且作为交易指引。这就是笔记呀。这是财富密码。新国标增加三大领.md", "line": 26, "quote": "读财报，研报，去印证"}
+      ],
+      "failure_boundary": "原文、财报和研报仍可能不完整或带有预期管理，必须保留未决状态。"
+    },
+    {
+      "id": "h05",
+      "name": "概念必须落到壁垒、订单与盈利验证",
+      "status": "confirmed",
+      "routing_terms": ["技术壁垒", "订单", "利润", "产能", "盈利", "概念", "公司证据"],
+      "definition": "产业概念只有在技术壁垒、订单或需求、产能和盈利质量形成证据链时，才能升级为公司层面的判断。",
+      "applicable_scenarios": ["硬科技、材料和产业链公司研究", "国家战略映射到个股时"],
+      "disabled_conditions": ["只有概念标签没有公司证据时", "早期技术尚未形成订单和盈利时"],
+      "related_model_ids": ["m03", "m04", "m05"],
+      "supporting_evidence": [
+        {"path": "references/sources/articles/2023-09-22 165202_冰冰小美_情绪体系交易篇，第七期，相信.md", "line": 29, "quote": "订单的变化，加班时间的变化"},
+        {"path": "references/sources/articles/2025-04-04 105644_冰冰小美_未来美元的流动.md", "line": 40, "quote": "企业要生存，并不是你死我活，是订单与利润"},
+        {"path": "references/sources/articles/2026-05-08 095736_冰冰小美_基本不受外围影响，材料端的强势是供需周期推动既视感。供需核心是材料端的先进，要有技术壁垒，是下一代技术迭代的材料需求。.md", "line": 14, "quote": "要有技术壁垒"}
+      ],
+      "failure_boundary": "没有利润不等于没有长期价值，但只能保留为研究对象，不能直接升级为买入结论。"
+    },
+    {
+      "id": "h06",
+      "name": "低谷研究并在高位复核兑现",
+      "status": "provisional",
+      "routing_terms": ["低谷", "研究", "市值先到", "高位", "兑现", "周期底部"],
+      "definition": "行业低谷时开展研究，高位时重新检查盈利兑现是否跟上市值和预期。",
+      "applicable_scenarios": ["周期低谷研究", "估值或市值先于业绩上涨时"],
+      "disabled_conditions": ["把低谷自动当作买点时", "忽略永久衰退或结构性替代时"],
+      "related_model_ids": ["m02", "m04"],
+      "supporting_evidence": [
+        {"path": "references/sources/articles/2026-06-24 182657_冰冰小美_我向来不贬低低谷中的行业。因为低谷，才会把不为人知的风险暴露，这对于我完善风险认知，只有好处，没有坏处。风险体系建立，是.md", "line": 19, "quote": "低谷正当时，做研究"},
+        {"path": "references/sources/articles/2026-06-22 131120_冰冰小美_东材科技 ，800亿市值目标达到。清仓。扩张还没有投产，按投产的盈利，市值先到了。树脂占比pcb成本多少？pcb增长多少.md", "line": 15, "quote": "市值先到了"}
+      ],
+      "failure_boundary": "低谷可能是永久衰退，高估也可能随后被业绩消化；当前直接证据集中在 2026。"
+    },
+    {
+      "id": "h07",
+      "name": "仓位超过承受力时先降到可持续水平",
+      "status": "confirmed",
+      "routing_terms": ["仓位过重", "睡眠", "减仓", "承受力", "杠杆", "生活影响"],
+      "definition": "持仓波动已经破坏睡眠、生活或理性判断时，先把风险暴露降到能够正常决策的水平。",
+      "applicable_scenarios": ["亏损或高波动影响正常生活时", "仓位和心理承受力明显不匹配时"],
+      "disabled_conditions": ["把睡眠当作市场方向指标时", "不考虑家庭财务和负债时"],
+      "related_model_ids": ["m06", "m02"],
+      "supporting_evidence": [
+        {"path": "references/sources/articles/2025-07-26 115139_冰冰小美_交易心理分析的重要性.md", "line": 26, "quote": "仓位过重，心态立马就会根据盈亏而失衡"},
+        {"path": "references/sources/articles/2026-06-17 112131_冰冰小美_如果被套的怎么办。1，股票波动在所难免。被套第一件事，审问内心，睡眠如何。如果睡眠下降，则是仓位与心态不匹配。你买之前就.md", "line": 13, "quote": "减仓到睡得着"}
+      ],
+      "failure_boundary": "个人承受力只约束仓位，不能证明标的方向正确或错误。"
+    },
+    {
+      "id": "h08",
+      "name": "无法独立验证个股时使用被动 ETF",
+      "status": "provisional",
+      "routing_terms": ["ETF", "不会选股", "不知道选股", "一篮子", "平均收益", "被动指数"],
+      "definition": "无法独立验证公司产业位置、订单和风险时，用被动 ETF 降低个股选择要求。",
+      "applicable_scenarios": ["缺乏公司研究能力但能判断行业方向时"],
+      "disabled_conditions": ["把 ETF 当作无风险资产时", "主动基金或高集中主题 ETF 被误作被动分散工具时"],
+      "related_model_ids": ["m03", "m04", "m06"],
+      "supporting_evidence": [
+        {"path": "references/sources/articles/2026-05-10 112131_冰冰小美_了解报团基金，然后了解ETF基金。那么重合的权重个股，就是基金重仓股。基金行业过热，或者又开始新发行基金，这一类权重个股.md", "line": 33, "quote": "抛弃个股选择，选择ETF"},
+        {"path": "references/sources/articles/2026-06-25 084517_冰冰小美_ETF并不是个股，只是方向。你选择你认为对的方向，但是不知道选股，就买ETF，错的概率极小。ETF一篮子股票，肯定有不涨.md", "line": 13, "quote": "不知道选股，就买ETF"}
+      ],
+      "failure_boundary": "ETF 仍有方向、估值、集中度和流动性风险；当前直接证据集中在 2026。"
+    },
+    {
+      "id": "h09",
+      "name": "方向未变但载体失效时允许纠偏",
+      "status": "provisional",
+      "routing_terms": ["纠偏", "重新分配仓位", "初心", "换股", "更换载体", "退出", "逻辑失效"],
+      "definition": "长期方向仍成立，但原标的兑现能力、估值或产业位置发生变化时，记录失效假设并更换载体或退出。",
+      "applicable_scenarios": ["产业方向延续但公司证据变化时", "估值已透支而其他载体更匹配时"],
+      "disabled_conditions": ["用长期方向逃避原始逻辑被证伪时", "无法说明替换标的为何更匹配时"],
+      "related_model_ids": ["m03", "m04", "m02", "m06"],
+      "supporting_evidence": [
+        {"path": "references/sources/articles/2024-10-06 090143_冰冰小美_提供一个常识性视角，具体内容变化还需要自己多查阅或者跟踪实际情况。大放水降息扩表。可能放水降息缩表。可能收水加息扩.md", "line": 33, "quote": "交易战略上，警惕大疯牛的路径炒作依赖"},
+        {"path": "references/sources/articles/2025-12-18 195607_冰冰小美_2025年总结.md", "line": 24, "quote": "重新分配了仓位"},
+        {"path": "references/sources/articles/2026-06-22 101011_冰冰小美_亏的时候肯定存在的，核心是纠偏呀。我买那么多个股，有亏有赚的。因为观察我国困境，出海是历史经验。买入的节点就是观察出海利.md", "line": 22, "quote": "初心没变，承载的个股变了"}
+      ],
+      "failure_boundary": "必须区分长期方向仍成立与方向本身已经被证伪；当前作为编排动作仍需更多反例验证。"
+    }
+  ],
+  "legacy_heuristic_mapping": [
+    {"legacy_id": "h01", "disposition": "merged", "current_ids": ["h02", "h03"], "reason": "央行与国运信念不再作为独立行动规则；风险状态和事件窗口分别由 h02、h03 约束。"},
+    {"legacy_id": "h02", "disposition": "merged", "current_ids": ["h02"], "reason": "行情好坏对应风险暴露调整，纳入已确认状态下的 h02。"},
+    {"legacy_id": "h03", "disposition": "merged", "current_ids": ["h02"], "reason": "保留其规避亏钱方向的风险结果；诊断仍由 m01 完成。"},
+    {"legacy_id": "h04", "disposition": "merged", "current_ids": ["h03"], "reason": "重大事件前控仓、落地后再行动由 h03 承接。"},
+    {"legacy_id": "h05", "disposition": "merged", "current_ids": ["h01"], "reason": "买入质量、T+1 流动性与退出可行性纳入 h01。"},
+    {"legacy_id": "h06", "disposition": "retired", "current_ids": [], "reason": "传播拥挤度仍有价值，但本轮没有达到当前启发式的证据与边界要求。"},
+    {"legacy_id": "h07", "disposition": "merged", "current_ids": ["h02"], "reason": "减少出手次数作为不利状态下降低风险暴露的一种表现。"},
+    {"legacy_id": "h08", "disposition": "merged", "current_ids": ["h02"], "reason": "空仓作为风险暴露最低状态纳入 h02。"},
+    {"legacy_id": "h09", "disposition": "retired", "current_ids": [], "reason": "理解速度与交易速度的区分未形成满足当前契约的独立规则。"},
+    {"legacy_id": "h10", "disposition": "merged", "current_ids": ["h09"], "reason": "方向锚定保留，但必须允许载体和估值变化时纠偏。"},
+    {"legacy_id": "h11", "disposition": "split", "current_ids": ["h03", "h07"], "reason": "流动性风险窗口由 h03 处理，仓位承受力由 h07 处理。"},
+    {"legacy_id": "h12", "disposition": "merged", "current_ids": ["h06"], "reason": "增长与估值是否透支纳入低谷研究和高位复核。"},
+    {"legacy_id": "h13", "disposition": "retired", "current_ids": [], "reason": "央行独立性是宏观判断前提，不是可普遍执行的动作规则。"},
+    {"legacy_id": "h14", "disposition": "split", "current_ids": ["h05", "h09"], "reason": "产业证据由 h05 验证，技术或载体变化后的纠偏由 h09 处理；不保留信念覆盖证据的表述。"},
+    {"legacy_id": "h15", "disposition": "retired", "current_ids": [], "reason": "启动点等于杠杆出清线来自单一案例，不能作为通用量化规则。"},
+    {"legacy_id": "h16", "disposition": "split", "current_ids": ["h03", "h05", "h09"], "reason": "风险窗口、经营验证和载体纠偏分别处理，避免把杀流动性机械等同于买点。"},
+    {"legacy_id": "h17", "disposition": "split", "current_ids": ["h05", "h07", "h09"], "reason": "产业证据、仓位承受和退出纠偏分开；旧价格止损线及量化评分明确不是作者原文。"}
+  ],
+  "legacy_assets": {
+    "models": [
+      "references/models/legacy/deep-1-three-elements.md",
+      "references/models/legacy/deep-4-competition.md",
+      "references/models/legacy/deep-9-ai-distillation.md"
+    ],
+    "heuristics": [
+      "references/heuristics/legacy/h14-industry-belief.md",
+      "references/heuristics/legacy/h15-leverage-cleanup.md",
+      "references/heuristics/legacy/h16-liquidity-vs-business.md",
+      "references/heuristics/legacy/h17-active-loss-boundary.md"
+    ]
+  }
+}

@@ -1,0 +1,1640 @@
+{
+  "batch": 1,
+  "communities": [
+    {
+      "community_id": 0,
+      "node_labels": [
+        "冰冰小美（作者）",
+        "反人性的折磨",
+        "套利的危害",
+        "借势（马太效应/顺势）",
+        "妖股（情绪标的）",
+        "竞争格局的比较优势",
+        "情绪位置的变化",
+        "有利vs不利（情绪与流动性共振）",
+        "羊群效应",
+        "假象（制造假象/识破假象）",
+        "迂直之计（以迂为直）",
+        "涨停板制度",
+        "流动性的辩证分析",
+        "流动性溢价",
+        "买入不败（先手/先胜后战）",
+        "马太效应",
+        "亏钱效应",
+        "挣钱效应",
+        "分仓（仓位管理）",
+        "减量博弈",
+        "围魏救赵（掩护出货）",
+        "情绪体系交易篇系列（1-5期）",
+        "游资江湖手法系列",
+        "常见亏钱认知系列（1-15期）",
+        "三要素情绪体系",
+        "交易意愿",
+        "等待（善猎者必善等待）",
+        "情绪体系交易篇，第二期，借势",
+        "常见的亏钱认知，第十四期，假象与反人性的折磨",
+        "情绪体系交易篇，第三期，等",
+        "游资江湖手法，第六期，制造假象",
+        "常见的亏钱认知，第十五期，套利的危害",
+        "情绪体系交易篇，第四期，迂直",
+        "什么有利，什么不利",
+        "情绪体系交易篇，第五期，意愿",
+        "宝明科技 (SZ002992)",
+        "伯特利 (SH603596)",
+        "长青科技 (SZ001324)",
+        "剑桥科技 (SH603083)",
+        "中国移动 (SH600941)"
+      ],
+      "node_count": 60
+    },
+    {
+      "community_id": 1,
+      "node_labels": [
+        "Changelog",
+        "Version v1.1",
+        "Version v1.2",
+        "Version v1.3",
+        "Version v1.4",
+        "Version v1.5",
+        "Version v1.7",
+        "Skill Maintenance Manual",
+        "Probe Pipeline (run_probe.py)",
+        "Promotion Rules (New Model/Heuristic)",
+        "Seven-Step Update Process",
+        "Update Trigger Conditions",
+        "v1.4 PR Description",
+        "v1.4 dim3 Fault Tolerance Changes (3.1+3.2+3.3)",
+        "v1.4 dim5 Clarity Changes (M1+M2)",
+        "v1.4 R1 Blind Baseline",
+        "v1.4 R3 SKILL.md Layering (Core/Main)",
+        "Skill Core Version (Agent Prompt Injection, ~200 lines)",
+        "Bingbingxiaomei Character",
+        "Visual Checkpoints (CHECKPOINT markers)",
+        "Cognitive/Behavioral Failure Handling (Table B)",
+        "Expression DNA Drift Detection (In-Role Soft Rules)",
+        "Expression DNA",
+        "Heuristic 11: Liquidity Squeeze Position Control",
+        "Heuristic 12: New Deng High Valuation != Bubble",
+        "Heuristic 13: Central Bank Independent of Fed",
+        "Heuristic 14: Industry Belief Over Technicals",
+        "Heuristic 15: Leverage Cleanup Line",
+        "Heuristic 16: Liquidity Expectation != Business Operations",
+        "Heuristic 17: Active Loss Buying Boundary",
+        "Honesty Boundary",
+        "Hong Mao (中央银行/Central Bank) Worship Anchor",
+        "Identity Card",
+        "Intellectual Genealogy",
+        "Evaluation Methodology (evals/METHODOLOGY.md)",
+        "Model 1: Three Elements System (Competition/Liquidity/Sentiment)",
+        "Model 2: Illusion Cognition",
+        "Model 3: Buy Without Defeat (Risk-first)",
+        "Model 4: Competition Landscape Determinism",
+        "Model 5: Explicit Knowledge > Implicit Knowledge"
+      ],
+      "node_count": 58
+    },
+    {
+      "community_id": 2,
+      "node_labels": [
+        "RuntimeError",
+        "article_corpus_preflight.py",
+        "apply_final_status()",
+        "articles_dir()",
+        "build_index_plan()",
+        "build_parser()",
+        "codegraph_command()",
+        "copy_to_staging()",
+        "_copy_update_real_directory()",
+        "ensure_real_directory_target()",
+        "exit_code_for_status()",
+        "file_sha256()",
+        "final_status()",
+        "get_file_attributes()",
+        "graphify_command()",
+        "graphify_env()",
+        "has_reparse_flag()",
+        "_has_valid_receipts()",
+        "_is_external_source()",
+        "is_reparse_point()",
+        "_load_previous_state()",
+        "lock_path()",
+        "LockHeldError",
+        "main()",
+        "_mcp_for_plan()",
+        "parse_utc()",
+        "PreflightLock",
+        ".__enter__()",
+        ".__exit__()",
+        ".__init__()",
+        "._is_stale()",
+        "prepare()",
+        "prepare_corpus_snapshot()",
+        "read_state()",
+        "record_mcp_result()",
+        "_relative_files()",
+        "_relative_posix()",
+        "render_status()",
+        "_replace_reparse_with_staging()",
+        "_required_mcp_keys()"
+      ],
+      "node_count": 54
+    },
+    {
+      "community_id": 3,
+      "node_labels": [
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_ai基建",
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_k型经济",
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_spacex",
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_三环集团",
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_东材科技",
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_中国卫星",
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_中望软件",
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_中船特气",
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_买比卖重要",
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_亚马逊",
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_体系三要素",
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_信维通信",
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_兴发集团",
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_冰冰小美",
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_创业板",
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_博通",
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_卫星通信指数",
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_台积电",
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_圣泉集团",
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_多氟多",
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_宁德时代",
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_小米",
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_康强电子",
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_微软",
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_意法半导体",
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_房地产指数",
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_新登老登",
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_新能源指数",
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_有色金属指数",
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_比亚迪",
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_江丰电子",
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_江波龙",
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_沪硅产业",
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_湖南裕能",
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_物理ai",
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_特斯拉",
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_生益科技",
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_紫金矿业",
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_绿的谐波",
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_航天电子"
+      ],
+      "node_count": 53
+    },
+    {
+      "community_id": 4,
+      "node_labels": [
+        "《繁荣与衰退》格林斯潘",
+        "体系三要素（竞争格局/流动性/情绪位置）",
+        "修身：静（定生慧）",
+        "创造性破坏（格林斯潘/熊彼特）",
+        "套利与抄底风险（高低切即畏惧高度）",
+        "存量减量博弈（一冰/二冰）",
+        "情绪标切换与高度打开",
+        "情绪标的寻找（封建史/乱世纷争/项羽刘邦模型）",
+        "情绪贪婪与恐惧的利用",
+        "A股投资者困境：报团/量化/游资/散户分化",
+        "熊市多长阳（骗炮/空头为所欲为）",
+        "险资+高股息分红：保守稳健型资产荒",
+        "行情≠风险（风险减弱节点交易论）",
+        "造势手法（游资最小资金造最大势）",
+        "龙虎榜解读（游资席位与意图）",
+        "宗泽（宋代抗金名将）",
+        "情绪体系第八期：造势",
+        "情绪体系修身情绪篇第一期：静（早发·宗泽）",
+        "为什么套利与抄底，我都不建议做",
+        "专场：银宝山新，上塘路代表作",
+        "情绪标转化过程中高度如何打开",
+        "推荐《繁荣与衰退》",
+        "行情不等于风险",
+        "近年来更新的总结",
+        "股市投资者的困境",
+        "情绪体系短线交易篇，行情的持续性来自让利",
+        "短线如何寻找情绪标",
+        "个股情绪与整体情绪",
+        "留一半清醒，一半醉",
+        "一鸣食品 (SH605179)",
+        "亚世光电 (SZ002952)",
+        "亿道信息 (SZ001314)",
+        "惠发食品 (SH603536)",
+        "永达股份 (SZ001239)",
+        "良品铺子 (SH603719)",
+        "西部牧业 (SZ300106)",
+        "银宝山新 (SZ002786)",
+        "龙版传媒 (SH605577)",
+        "上塘路（游资）",
+        "佛山大佬（国泰君安三亚迎宾路）"
+      ],
+      "node_count": 47
+    },
+    {
+      "community_id": 5,
+      "node_labels": [
+        "华力创通",
+        "巴菲特",
+        "亏钱认知第十六期：机构的作用",
+        "新能源指数",
+        "机构作用概念",
+        "林园",
+        "葛兰",
+        "阿里巴巴",
+        "体系三要素",
+        "分仓",
+        "性格匹配概念",
+        "情绪体系第六期：性格匹配",
+        "亏钱效应",
+        "光库科技",
+        "亏钱认知第十七期：轮动",
+        "浪潮信息",
+        "游资",
+        "科大讯飞",
+        "菲菱科思",
+        "轮动概念",
+        "量化基金",
+        "华为",
+        "华力创通",
+        "微软",
+        "情绪体系第七期：相信",
+        "房地产指数",
+        "特斯拉",
+        "相信",
+        "纳斯达克",
+        "英伟达",
+        "谷歌",
+        "体系三要素：竞争格局的比较优势",
+        "情绪位置的变化",
+        "流动性辩证分析",
+        "竞争格局的比较优势",
+        "买入比卖出更重要",
+        "情绪体系第八篇：数学模型不败",
+        "数学模型不败",
+        "胜率",
+        "赔率"
+      ],
+      "node_count": 46
+    },
+    {
+      "community_id": 6,
+      "node_labels": [
+        "文章主题聚类与证据地图",
+        "语料快照:520 篇文章 (2023-2026)",
+        "候选启发式:材料库存周期与供需周期",
+        "候选启发式:持仓也是买",
+        "候选启发式:风险来临时先控仓",
+        "候选启发式:个股公告先看供需/产能",
+        "候选启发式:旧红利跌多不等于便宜",
+        "候选启发式:看不清主导市场行为时空仓",
+        "候选启发式:先看时代主线",
+        "候选启发式:水往哪里流才是结论",
+        "候选启发式:小作文先判断谁获利",
+        "候选启发式:A 股优先看央妈中观",
+        "候选启发式:硬科技先查人才",
+        "候选模型:AI 基建材料端",
+        "候选模型:旧红利退出",
+        "候选模型:流动性三层",
+        "候选模型:买入不败 / 市场行为空仓",
+        "候选模型:体系三要素",
+        "候选模型:危机演绎链",
+        "主题簇:AI 硬科技材料",
+        "主题簇:个股行业案例",
+        "主题簇:竞争国运政策",
+        "主题簇:旧红利与消费",
+        "主题簇:流动性央妈",
+        "主题簇:产业人才集群",
+        "主题簇:危机宏观传导",
+        "主题簇:体系情绪交易",
+        "主题簇:信息显学传播",
+        "常见的亏钱认知，第一期，预期差",
+        "常见的亏钱认知，第二期，止损",
+        "常见的亏钱认知，第三期，懂的都懂",
+        "常见的亏钱认知，第四期，概念逻辑",
+        "常见的亏钱认知，第五期大盘",
+        "体系复盘: 竞争格局的比较优势:安全与发展",
+        "流动性的辩证分析",
+        "短线情绪大周期",
+        "竞争格局:2023年投资最大的竞争格局:安全与发展",
+        "情绪对自身的影响与人生豁达",
+        "什么情况容易情绪一致",
+        "核心情绪标，套利标，和市场行为的假象"
+      ],
+      "node_count": 41
+    },
+    {
+      "community_id": 7,
+      "node_labels": [
+        "国九条+中特估+投融平衡驱动长牛",
+        "中央加杠杆推动信用（中国版宏观叙事）",
+        "五略（战略/方略/策略/计略/谋略）",
+        "兔米Ai与第四次工业革命博弈",
+        "海权军事思维（马汉）",
+        "川马新政战略意图（筹钱/资产荒/科技话语权）",
+        "宏观/中观/微观流动性分层",
+        "金融信息归纳框架（与钱直接相关：保证金融信息归纳框架金、印花税、准备金率、基准利率、国债收益率、汇率等）",
+        "隐学与显学（非金融信息核心分类）",
+        "非金融信息归纳框架（一国/二策/三业/四界/五略）",
+        "视角与战略",
+        "米股的影响",
+        "流动性的问题",
+        "如何理解经济的正向循环",
+        "分享新闻，立马就有留言，利好什么利空什么",
+        "困境与抉择",
+        "未来美元的流动",
+        "关税对于大宗商品的影响",
+        "国运，相信相信的力量",
+        "90天的可能性路径演绎",
+        "竞争格局的演绎",
+        "信息的金融意义（一）",
+        "信息的金融意义（一） duplicate",
+        "信息的金融意义（二）",
+        "信息的金融意义（三）",
+        "信息的金融意义（四）",
+        "当风险突然降临的时候，如何应对",
+        "目前有什么有利，支撑我的判断",
+        "信息的金融意义（五）",
+        "信息的金融意义（六）",
+        "信息的金融意义（七）",
+        "信息的金融意义（八）",
+        "信息的金融意义（九）",
+        "雪球大V，前著名基金经理，肖志刚，《投资有规律》",
+        "信息的金融意义（十）",
+        "如果这是牛市，也是价值观正确的牛市",
+        "交易理念之争",
+        "交易心理分析的重要性",
+        "信息的金融意义（十一）",
+        "定位与立场--美帝的花招与部分兔的不自信"
+      ],
+      "node_count": 40
+    },
+    {
+      "community_id": 8,
+      "node_labels": [
+        "新概念：中美战略实施加速转折点",
+        "新概念：文明史视角500年轮回",
+        "新概念：Claude解读自我=AI蒸馏实证",
+        "新概念：未来七姐妹",
+        "新概念：格林斯潘去世",
+        "新概念：材料端→锂电有色切换",
+        "新概念：新国标锂电产业",
+        "主题：AI/科技产业",
+        "主题聚类分析 2026-06-13~22",
+        "主题：商业航天",
+        "主题：消费/老登",
+        "主题：地缘/战略",
+        "主题：投资理念",
+        "主题：锂电/新能源",
+        "主题：宏观/货币",
+        "主题：材料/周期",
+        "主题：反思/元层",
+        "主题：交易/仓位",
+        "新概念：铜冠铜箔20倍方法论",
+        "江丰电子案例 (136→240)",
+        "启发式14：产业信念优先于技术信号",
+        "紫金矿业案例 (28元杠杆出清线)",
+        "启发式15：杠杆出清线判断法",
+        "白酒杀逻辑案例",
+        "西部矿业回归战略资源案例",
+        "启发式16：流动性预期≠企业经营",
+        "赛力斯买亏失败案例",
+        "铜冠铜箔买亏案例",
+        "启发式17：主动买亏的边界",
+        "AI产业链五层架构",
+        "模型1：体系三要素",
+        "泡沫重定义：老登=泡沫",
+        "模型4：竞争格局决定论",
+        "新钱/旧钱分流",
+        "AI蒸馏抹平信息差",
+        "模型9：AI改造投资本身"
+      ],
+      "node_count": 36
+    },
+    {
+      "community_id": 9,
+      "node_labels": [
+        "test_article_corpus_preflight.py",
+        "ArticleCorpusPreflightTests",
+        ".call_main()",
+        ".test_build_index_plan_rules()",
+        ".test_cli_prepare_status_record_finalize()",
+        ".test_command_builders()",
+        ".test_default_paths_and_constants()",
+        ".test_final_status_allows_complete_no_content_change_receipt()",
+        ".test_final_status_and_pass_digest_update()",
+        ".test_final_status_invalid_receipts_do_not_pass()",
+        ".test_final_status_rejects_stale_no_content_change_receipt()",
+        ".test_final_status_required_fail_overrides_pending()",
+        ".test_path_helpers()",
+        ".test_preflight_lock_exclusive_and_stale()",
+        ".test_prepare_corpus_snapshot_blocks_target_only_markdown_in_real_articles()",
+        ".test_prepare_corpus_snapshot_blocks_when_source_changes_during_copy()",
+        ".test_prepare_corpus_snapshot_reparse_branch_uses_staging_replace_hook()",
+        ".test_prepare_resets_required_mcp_results_when_corpus_changes()",
+        ".test_prepare_syncs_real_articles_from_vault_and_writes_corpus()",
+        ".test_record_mcp_result_and_render_status()",
+        ".test_replace_reparse_with_staging_removes_reparse_itself_without_rmtree()",
+        ".test_scan_corpus_hashes_markdown_content_only()",
+        ".test_scan_corpus_skips_nested_reparse_points()",
+        ".test_state_round_trip_and_schema_validation()",
+        ".test_sync_rejects_reparse_target_and_copies_real_directory()",
+        ".test_verify_graphify_graph()"
+      ],
+      "node_count": 26
+    },
+    {
+      "community_id": 10,
+      "node_labels": [
+        "Rate Expectations and Liquidity",
+        "liquidity expectations drive prices",
+        "Chronological Market Node Analysis",
+        "chronological cross asset analysis",
+        "Cyclical Metals Risk",
+        "cyclical sector risk awareness",
+        "Leverage Amplifies Volatility",
+        "leverage causes forced liquidation",
+        "Liquidity Spiral and Price Bottoms",
+        "liquidity spiral prevents bottom prediction",
+        "Auto Demand and Intelligent Driving",
+        "auto industry demand and intelligence",
+        "Market Structure and Liquidity Squeeze",
+        "index divergence from liquidity",
+        "ai profitability supports capex",
+        "AI Profitability and Capital Expenditure",
+        "Gold Reserves and Dollar Strength",
+        "gold reserves distinct from gold equities",
+        "Bitcoin and Dollar Liquidity Cycle",
+        "bitcoin dollar liquidity cycle",
+        "Bitcoin as Dollar Liquidity Reservoir",
+        "bitcoin as dollar reservoir",
+        "Bear Market Concentration",
+        "bear market unique solution"
+      ],
+      "node_count": 24
+    },
+    {
+      "community_id": 11,
+      "node_labels": [
+        "Case 13: 江丰电子顶背离分析",
+        "h14: 产业信念优先于技术面",
+        "江丰电子",
+        "R5: 材料你怕高回头看就是一座矿山",
+        "溅射靶材",
+        "铜冠铜箔 (R5方法论参照)",
+        "台积电 3nm 靶材导入",
+        "西部矿业",
+        "被套三原则",
+        "Case 14: 紫金矿业抄底分析",
+        "h15: 杠杆出清线",
+        "h16: 流动性预期≠企业经营",
+        "R5新增: 材料→锂电有色切换逻辑",
+        "有色板块",
+        "紫金矿业",
+        "体系三要素",
+        "买入不败",
+        "Case 19: 风险控制原则",
+        "左侧阶梯建仓",
+        "联诚精密 (2018年教训案例)",
+        "情绪控制不做三件事",
+        "承认情绪三层论",
+        "Case 5: 交易情绪控制"
+      ],
+      "node_count": 23
+    },
+    {
+      "community_id": 12,
+      "node_labels": [
+        "Storage Industry Trend and Liquidity Premium",
+        "Long-Term Semiconductor Tracking",
+        "Industry Trend Beyond Index Decline",
+        "Investing in Chinese Hard Technology",
+        "Computing Power Centers and Hongxin Electronics",
+        "AI and Fiscal Revenue Transformation",
+        "Sector Contributions to GDP Growth",
+        "Real Estate Bottoming Outlook",
+        "Position Management During Acceleration",
+        "National Confidence and Investment Outlook",
+        "Belief and Trading System Compatibility",
+        "Bull Market Outlook Through 2028",
+        "Industry Investment Transmission Timing",
+        "Nonferrous Metals and Federal Reserve Policy",
+        "Market Selloff Review",
+        "Fraud Risk for Long-Term Investors",
+        "Liquidity Debate Around Major Listings",
+        "Defensive Strategy Before Policy Guidance",
+        "Equity Finance and Industrial Policy",
+        "CPU GPU Convergence Risk",
+        "Position Sizing Discussion",
+        "Investor Self-Assessment"
+      ],
+      "node_count": 22
+    },
+    {
+      "community_id": 13,
+      "node_labels": [
+        "AI Race vs Space Race Era Thesis",
+        "Intel God-Making Plan Valuation Targets",
+        "Intel-Nvidia Taipei CPU/GPU Cooperation",
+        "Fed Chair Transition Uncertainty",
+        "Intel God-Making Plan",
+        "Gold US Debt Narrative Shift to AI",
+        "Market Closing Summary Structural Divergence",
+        "Growth Differentiation Value Rise",
+        "New Energy Decline EU Industrial Acceleration Act",
+        "China-US Tech Competition Race",
+        "AI Tech Event Taipei June 1-5",
+        "Historical Bull Markets Analogy Space Race",
+        "Industrial Security Self-Sufficiency",
+        "Hardcore Tech Stock Selection",
+        "Era Background Competition",
+        "AI and Finance Essay",
+        "Finance-State-Power Wealth",
+        "Lessons from Historical Crises",
+        "Hardcore Tech Discovery Talent Industry Clusters"
+      ],
+      "node_count": 19
+    },
+    {
+      "community_id": 14,
+      "node_labels": [
+        "build_article_role_manifest.py",
+        "apply_override()",
+        "apply_overrides()",
+        "build_manifest()",
+        "build_rule_segments()",
+        "find_body_start()",
+        "is_meaningful()",
+        "load_overrides()",
+        "main()",
+        "make_segment()",
+        "manifest_stats()",
+        "parse_args()",
+        "parse_article()",
+        "parse_frontmatter()",
+        "sha256_text()",
+        "trim_range()",
+        "validate_segments()",
+        "write_jsonl()"
+      ],
+      "node_count": 18
+    },
+    {
+      "community_id": 15,
+      "node_labels": [
+        "classify-articles.py",
+        "check_promotion()",
+        "classify_article()",
+        "load_articles()",
+        "main()",
+        "output_json()",
+        "output_summary()",
+        "Load articles from VAULT within date range.          File naming: 'YYYY-MM-DD",
+        "Score text against keyword list. Returns raw match count weighted by unique matc",
+        "Classify one article against all models and heuristics.",
+        "Check if any model meets promotion criteria: ≥N articles × ≥M domains.",
+        "Track emerging themes from top model/heuristic matches.",
+        "Write classification results and promotion candidates to JSON.",
+        "Print human-readable summary to stdout.",
+        "score_keywords()",
+        "track_themes()"
+      ],
+      "node_count": 16
+    },
+    {
+      "community_id": 16,
+      "node_labels": [
+        "分仓与仓位管理",
+        "分歧转一致",
+        "情绪位置变化",
+        "情绪体系三要素",
+        "流动性辩证分析",
+        "竞争格局的比较优势",
+        "为什么今日会空仓",
+        "体系三要素，竞争格局的比较优势",
+        "游资江湖手法，第四期，分歧转一致",
+        "情绪高位转折，流动性分化不利，使得交易的艰难倍增",
+        "情绪体系交易篇，第一期，分仓",
+        "体系三要素：如何做好指数型交易——流动性辩证分析",
+        "中央商场 (SH600280)",
+        "创业板 (SZ399606)"
+      ],
+      "node_count": 14
+    },
+    {
+      "community_id": 17,
+      "node_labels": [
+        "Central Leverage Doctrine (Roosevelt New Deal Parallels)",
+        "2024-11-08 Central Leverage Origin Post",
+        "Fed Dot Plot Uncertainty (Warsh Forward Guidance Cancellation)",
+        "G2 AI Duopoly (Trump Monroe Doctrine 2.0)",
+        "Intel Ecosystem Value Chain (Advanced Packaging → Key Materials)",
+        "JCET (SH600584)",
+        "Ten Macro Anchor Indicators (DXY/US10Y/Brent/Copper/Silver/BTC/Semi/Individual/FCF/Micron)",
+        "JCET Lingang 78B Advanced Packaging Expansion",
+        "Pressed Crude Oil as US Equity Rescue",
+        "Consumer Electronics ETF as Full Industrial Chain",
+        "Consumer Electronics ETF 159732 Holdings",
+        "Global Payment Collection (US Dollar Tide Dollar-ization / Petro-Financial System)",
+        "Fluorine Chemical Three Demand Cycles (Lithium Battery / AI Liquid Cooling / Semiconductor)",
+        "National Fortune Dividend (Real Estate Era to High Quality Development)"
+      ],
+      "node_count": 14
+    },
+    {
+      "community_id": 18,
+      "node_labels": [
+        "亏钱效应",
+        "卡位穿越",
+        "围魏救赵亏钱效应",
+        "情绪冰点",
+        "情绪标",
+        "情绪退潮",
+        "挣钱效应",
+        "怎么判断情绪冰点，我们需要观察亏钱效应",
+        "常见的亏钱认知，第十二期，卡位穿越",
+        "常见的亏钱认知，第十三期，情绪退潮",
+        "联诚精密 (SZ002921)",
+        "昆仑万维 (SZ300418)",
+        "太辰光 (SZ300570)"
+      ],
+      "node_count": 13
+    },
+    {
+      "community_id": 19,
+      "node_labels": [
+        "2026年二月月报",
+        "2026年二月月报（二）",
+        "2026年二月月报（三）",
+        "长兴材料→ 飞凯材料",
+        "美团 03690",
+        "阿里巴巴 BABA",
+        "中国巨石 SH600176",
+        "江淮汽车 SH600418",
+        "长飞光纤 SH601869",
+        "柳工 SZ000528",
+        "飞凯材料 SZ300398",
+        "江丰电子 SZ300666",
+        "铜冠铜箔 SZ301217"
+      ],
+      "node_count": 13
+    },
+    {
+      "community_id": 20,
+      "node_labels": [
+        "Baseline: AI Distillation Generic Analysis",
+        "Baseline: Risk Control Generic",
+        "Model 9 Activated: AI Transforming Investment",
+        "evals_probe_freq_phrase_counts",
+        "evals_probe_report_concept_ai_distillation",
+        "evals_probe_report_concept_ai_investment_meta",
+        "evals_probe_report_concept_icu_ktv",
+        "evals_probe_report_concept_liquidity_squeeze",
+        "evals_probe_report_concept_new_old_money",
+        "Article 56: Experience Equals Zero",
+        "Article 65: AI Distillation Erases Info Edge",
+        "Article 71: New vs Old Stock Bubble Paradigm"
+      ],
+      "node_count": 12
+    },
+    {
+      "community_id": 21,
+      "node_labels": [
+        "Blind Baseline Comparison Report",
+        "A Share Domain Silence Rule",
+        "Three Elements Framework",
+        "Buy Without Defeat",
+        "Competition Structure Determinism",
+        "Crisis Deduction Chain",
+        "AI Reforming Investment",
+        "Promotion Deep Analysis Report",
+        "Hong Kong Silence Rule Test",
+        "SMIC Decision Test",
+        "Risk Control Framework Test",
+        "AI Reform Test"
+      ],
+      "node_count": 12
+    },
+    {
+      "community_id": 22,
+      "node_labels": [
+        "Case 13: h14 产业信念激活测试",
+        "h14: 产业信念优先于技术面",
+        "h17 三重边界联动检查",
+        "江丰电子 136→240 产业标的案例",
+        "Case 16: h17 主动买亏边界测试",
+        "h17 三重边界：产业逻辑+杀流动性+止损线",
+        "2018 联诚精密天地板教训",
+        "赛力斯三重边界反例",
+        "供应链突破型买亏逻辑",
+        "技术卡位型买亏逻辑",
+        "Case 13 v1.4: h14 江丰顶背离",
+        "Case 16 v1.4: h17 主动买亏边界"
+      ],
+      "node_count": 12
+    },
+    {
+      "community_id": 23,
+      "node_labels": [
+        "Case 14: h15 + h16 联动测试",
+        "h15: 28元杠杆出清线",
+        "h16: 杀流动性 ≠ 杀逻辑",
+        "模型8 择时双轨模型",
+        "紫金矿业 45→27 编年体",
+        "白酒行业三重收缩与杀逻辑",
+        "巴菲特烈性酒框架",
+        "Case 15: h16 杀逻辑侧激活",
+        "茅台市值被中际旭创超越",
+        "无增长老登 = 泡沫",
+        "Case 14 v1.4: h15+h16 紫金抄底",
+        "Case 15 v1.4: h16 白酒杀逻辑"
+      ],
+      "node_count": 12
+    },
+    {
+      "community_id": 24,
+      "node_labels": [
+        "买入不败",
+        "从天而降的掌法",
+        "推到重来（左侧阶梯建仓）",
+        "交易心态（恐惧/贪婪/信心/煎熬）",
+        "强确定性表达（注定/一定/本质）",
+        "禁忌词（预期差/止损/向心坍塌等）",
+        "结论先行结构",
+        "与传统投资智慧的冲突（止损/预期差/技术分析）",
+        "她报告的挨骂经历与抗压姿态",
+        "江丰电子顶背离主动买亏",
+        "联诚精密2018天地板教训",
+        "长电科技长期持仓（2018建仓至2026新高）"
+      ],
+      "node_count": 12
+    },
+    {
+      "community_id": 25,
+      "node_labels": [
+        "体系三要素（竞争格局+流动性+情绪位置）",
+        "八点框架（体系三要素扩展版）",
+        "孙子兵法引用",
+        "宏观-中观-微观三层流动性分析",
+        "流动性挤压风险",
+        "高频实词（情绪/体系/风险等）",
+        "5/27→6/12→6/15宏观择时三阶段",
+        "2024-09-23 924行情前夜精准提示",
+        "比亚迪108卖出+柳工认输割肉",
+        "西部矿业完整周期股操作",
+        "2023-05-20体系三要素首次系统提出",
+        "2026-05-26 流动性挤压概念首次提出"
+      ],
+      "node_count": 12
+    },
+    {
+      "community_id": 26,
+      "node_labels": [
+        "_ensure_requests()",
+        "main()",
+        "_migrate_legacy_token()",
+        "query.py",
+        "query_neodata()",
+        "将 token 和时间戳写入缓存文件（权限 600）",
+        "标准库实现的 POST JSON，作为 requests 缺失时的退化方案。",
+        "缺失 requests 时尝试自动安装到当前解释器（自动环境修复）。      - 仅在真正需要发起网络请求时调用，--save-token 等离线操作不触发。",
+        "从缓存文件读取 token，超过 12 小时返回 None",
+        "_read_token_file()",
+        "_save_token_file()",
+        "_urllib_post()"
+      ],
+      "node_count": 12
+    },
+    {
+      "community_id": 27,
+      "node_labels": [
+        "Writings Agent Input Corpus",
+        "Decisions Agent Input Corpus",
+        "Timeline Agent Input Corpus",
+        "Agent Research Tasks",
+        "Systematic Claims Research Summary",
+        "Interaction Research Summary",
+        "Expression DNA Research Summary",
+        "External Views Research Summary",
+        "Decision Research Summary",
+        "Timeline Research Summary",
+        "G1 Evidence Batch 01"
+      ],
+      "node_count": 11
+    },
+    {
+      "community_id": 28,
+      "node_labels": [
+        "audit_g1_author_primary.py",
+        "build_audit_report()",
+        "extract_references()",
+        "load_manifest()",
+        "main()",
+        "match_quote()",
+        "normalize_path_key()",
+        "normalize_text()",
+        "parse_args()",
+        "quote_parts()",
+        "resolve_article_path()"
+      ],
+      "node_count": 11
+    },
+    {
+      "community_id": 29,
+      "node_labels": [
+        "test_article_role_manifest.py",
+        "ArticleRoleManifestTests",
+        ".segment_for_line()",
+        ".setUp()",
+        ".test_blockquoted_author_reply_is_not_kept_in_third_party_segment()",
+        ".test_full_corpus_has_complete_non_overlapping_body_coverage()",
+        ".test_only_author_roles_are_primary_evidence()",
+        ".test_real_article_separates_author_and_third_party_content()",
+        ".test_segment_ids_and_text_digests_are_stable()",
+        ".test_segments_do_not_overlap()",
+        "load_role_manifest_module()"
+      ],
+      "node_count": 11
+    },
+    {
+      "community_id": 30,
+      "node_labels": [
+        "Three Elements of the Emotion System",
+        "Emotion System Three Elements",
+        "Core Views of the Emotion System",
+        "Systemic Liquidity Analysis",
+        "Buying Precedes Selling",
+        "Buying Before Selling",
+        "Buy Without Defeat",
+        "Buy Without Defeat",
+        "Intraday Chart Analysis",
+        "Limits of Intraday Chart Analysis"
+      ],
+      "node_count": 10
+    },
+    {
+      "community_id": 31,
+      "node_labels": [
+        "Stock: 艾艾精工 (SH603580)",
+        "冰冰小美: 如何提高自己短线的审美度",
+        "Stock: 剑桥科技 (SH603083)",
+        "Stock: 捷荣技术 (SZ002855)",
+        "Stock: 美的 (SZ000333)",
+        "Stock: 南天信息 (SZ000948)",
+        "Stock: 普路通 (SZ002769)",
+        "Stock: 圣龙股份 (SH603178)",
+        "Concept: 短线审美度 (师出有名/接力/龙头)",
+        "Stock: 中国卫通 (SH601698)"
+      ],
+      "node_count": 10
+    },
+    {
+      "community_id": 32,
+      "node_labels": [
+        "Article: Crisis, Hegemony, and a Greater America (Trump as 22nd/24th-pres parallel)",
+        "Article: Central Government Leveraging Up (12T+ debt swap)",
+        "Article: 2024 Major Events Settled, Future Market Evolution",
+        "Article: White-Hot Competition (China-US tech/industry rivalry)",
+        "Article: ETF Funds and Market Characteristics",
+        "Article: Risks and Opportunities in the Era's Storms",
+        "Article: Standing at the Historical Turning Point Looking at Finance",
+        "Article: History, Politics and Economics (Reaganomics, shock therapy, Lincoln)",
+        "Article: 'Mi' (Trump-Musk new deal, Tesla as the core)",
+        "Article: The Fed's Four Years (2019-2024)"
+      ],
+      "node_count": 10
+    },
+    {
+      "community_id": 33,
+      "node_labels": [
+        "格林斯潘非理性繁荣与央行",
+        "非理性繁荣与次贷反思",
+        "NeoData 数据查询服务参考",
+        "WeStock Data AI 用法指南",
+        "WeStock Data 命令用法",
+        "WeStock Data 宏观指标字段说明",
+        "WeStock Data 路由速查指南",
+        "WeStock Data 常见分析场景",
+        "WeStock Data SKILL 主文档"
+      ],
+      "node_count": 9
+    },
+    {
+      "community_id": 34,
+      "node_labels": [
+        "人设的自觉构建（爱国者/打假者/普通人等）",
+        "回应质疑与批评的对话模式",
+        "师尊训徒式幽默（R5新增）",
+        "幽默方式（自嘲/嘚瑟/毒舌/冷幽默）",
+        "拒绝讨论的话题（个股/吹票/身份/变现）",
+        "粉丝互动与边界设定",
+        "极短句逗号密度风格",
+        "第一人称\"窝→我\"演变",
+        "粉丝画像（从唯一可读评论推断）"
+      ],
+      "node_count": 9
+    },
+    {
+      "community_id": 35,
+      "node_labels": [
+        "出海方向纠偏与困境突围",
+        "分仓均衡配置与方向押注",
+        "有研新材光纤四氯化锗",
+        "三安光电氮化镓材料",
+        "出海方向与产业链外迁",
+        "分仓均衡配置策略",
+        "三安光电氮化镓材料",
+        "有研新材光纤四氯化锗"
+      ],
+      "node_count": 8
+    },
+    {
+      "community_id": 36,
+      "node_labels": [
+        "长川科技Q2与半导体设备扩张",
+        "紫金矿业27元宏观考验",
+        "进攻防御体系与中美战略",
+        "中美战略夫妻双打",
+        "进攻防御体系与中美战略",
+        "长川科技半导体设备扩张",
+        "中美战略夫妻双打",
+        "紫金矿业27元宏观考验"
+      ],
+      "node_count": 8
+    },
+    {
+      "community_id": 37,
+      "node_labels": [
+        "Copying Investment Homework",
+        "position size matches knowledge",
+        "Long-Term Financial Statement Tracking",
+        "long term company tracking",
+        "Jiangfeng Electronics Long-Term Conviction",
+        "fundamental conviction over technical noise",
+        "Avoid Chasing Prior Entry Prices",
+        "entry price context"
+      ],
+      "node_count": 8
+    },
+    {
+      "community_id": 38,
+      "node_labels": [
+        "500年文明周期（资本主义轮回）",
+        "AI蒸馏抹平信息差",
+        "中米竞争三个阶段",
+        "AI五层架构（能源→芯片→算力→大模型→应用）",
+        "未来七姐妹",
+        "翟东升政治经济学",
+        "造神计划",
+        "2026-06-17 500年文明史视角首现"
+      ],
+      "node_count": 8
+    },
+    {
+      "community_id": 39,
+      "node_labels": [
+        "投机封建史→投资国运红利分配史",
+        "安全与发展（竞争格局表述）",
+        "小国出局（AI入场券只发给G2）",
+        "有序竞争（取代竞争白热化）",
+        "老登/新登",
+        "酱香科技顶",
+        "她对同行人物的批评（林园/抖音股神/孙哥）",
+        "中国卫星/卫通商业航天封神操作"
+      ],
+      "node_count": 8
+    },
+    {
+      "community_id": 40,
+      "node_labels": [
+        "冰冰小美: 情绪体系交易篇 第十二期 - 容忍度",
+        "Stock: 沪电股份 (SZ002463)",
+        "Stock: 宁科生物",
+        "Concept: 容忍度 (交易心态/盈亏承受)",
+        "冰冰小美: 鬼谷子与孙子兵法之不胜体系",
+        "Book: 鬼谷子",
+        "Book: 孙子兵法",
+        "Concept: 不胜体系 (重势不重利/不败思维)"
+      ],
+      "node_count": 8
+    },
+    {
+      "community_id": 41,
+      "node_labels": [
+        "Capital Efficiency Through SpaceX T Trading",
+        "K-Shaped Economy and Market Dispersion",
+        "Policy Support for Real Technology",
+        "Potential Sources of Incremental Equity Capital",
+        "Hard Technology Cycle Through 2028",
+        "Participating in the Technology Era",
+        "June 17 Investment Narrative Synthesis",
+        "Screening Pseudo-Technology Claims"
+      ],
+      "node_count": 8
+    },
+    {
+      "community_id": 42,
+      "node_labels": [
+        "中特估 / 中国特色估值体系",
+        "股票供给侧改革（IPO放缓、退市、分红、减持约束）",
+        "体系三要素及案例应用，第一期，竞争格局的比较优势",
+        "体系三要素及案例应用，第二期，流动性辩证分析",
+        "体系三要素及案例应用，第三期，情绪位置的变化",
+        "正丹股份 (SZ300641)",
+        "英伟达 (NVDA)"
+      ],
+      "node_count": 7
+    },
+    {
+      "community_id": 43,
+      "node_labels": [
+        "新高突破板手法",
+        "上塘路",
+        "炒股养家",
+        "章盟主",
+        "游资江湖手法，第一期，新高突破板",
+        "小商品城 (SH600415)",
+        "焦点科技 (SZ002315)"
+      ],
+      "node_count": 7
+    },
+    {
+      "community_id": 44,
+      "node_labels": [
+        "亏钱效应/挣钱效应",
+        "假象理论",
+        "围魏救赵",
+        "权重题材模式",
+        "游资大佬（孙哥/炒股养家/作手新一等）",
+        "螺旋上升/下降",
+        "隆基绿能103元次高点逃顶"
+      ],
+      "node_count": 7
+    },
+    {
+      "community_id": 45,
+      "node_labels": [
+        "冰冰小美: 西部矿业中长持仓逻辑 (10点归纳)",
+        "Index: 大宗商品 (SZ399979)",
+        "Index: 新能源车 (SZ399417)",
+        "Index: 新能源 (SH000941)",
+        "Index: 房地产 (CSI931775)",
+        "Stock: 西部矿业 (SH601168)",
+        "Stock: 紫金矿业 (SH601899)"
+      ],
+      "node_count": 7
+    },
+    {
+      "community_id": 46,
+      "node_labels": [
+        "留一半清醒，留一半醉",
+        "2026年3月（半月报）",
+        "如何理解时间窗口",
+        "宏观分析的框架，简化版本",
+        "美国财政政策的掣肘与战争经济",
+        "比亚迪 SZ002594",
+        "嘉实原油LOF SZ160723"
+      ],
+      "node_count": 7
+    },
+    {
+      "community_id": 47,
+      "node_labels": [
+        "Understanding ETF Fund Overlap",
+        "Sector Fund Holdings Reference",
+        "CSRC Crackdown Financial Fraud",
+        "Investment System Review 2023-2026",
+        "Future Posting Goals",
+        "Posting Methodology Final",
+        "Portfolio Milestones 4200 Achieved"
+      ],
+      "node_count": 7
+    },
+    {
+      "community_id": 48,
+      "node_labels": [
+        "Loss-Effect Defensive Trading System",
+        "defensive trading system",
+        "Risk Management through Position Adjustment",
+        "position adjustment before risk",
+        "Event Risk and Trading Restraint",
+        "avoid trading during event risk"
+      ],
+      "node_count": 6
+    },
+    {
+      "community_id": 49,
+      "node_labels": [
+        "涨停板+T+1只可做多三制度叠加下的投机生态",
+        "哀其不幸，怒其不争",
+        "哀其不幸，怒其不争，二",
+        "东方财富 SZ300059",
+        "上证50 SH000016",
+        "锋龙股份 SZ002931"
+      ],
+      "node_count": 6
+    },
+    {
+      "community_id": 50,
+      "node_labels": [
+        "人气为王众神接力",
+        "古北路（东北猛男）",
+        "游资江湖手法，第二期，人气为王众神接力",
+        "浙江龙盛 (SH600352)",
+        "罗牛山 (SZ000735)",
+        "云南锗业 (SZ002428)"
+      ],
+      "node_count": 6
+    },
+    {
+      "community_id": 51,
+      "node_labels": [
+        "合成生物题材（情绪标川宁生物驱动）",
+        "投机过程中的传播学（券商标签-自媒体-量化-游资链条）",
+        "挡刀套利手法（高切低、补涨、利用亏钱效应）",
+        "情绪体系认知篇，投机过程中的传播学",
+        "情绪体系交易篇，游资交易手法，第十六期，挡刀",
+        "川宁生物 (SZ301301)"
+      ],
+      "node_count": 6
+    },
+    {
+      "community_id": 52,
+      "node_labels": [
+        "市场唯一解",
+        "轮动套利",
+        "溧阳路孙哥",
+        "情绪体系是交易的体系，不是认知的体系",
+        "如果是轮动套利，一定要快准狠。迟一步的都别买了",
+        "T+1的思考"
+      ],
+      "node_count": 6
+    },
+    {
+      "community_id": 53,
+      "node_labels": [
+        "概念框架关键词集合",
+        "个股关键词集合",
+        "产业方向关键词集合",
+        "关键词频率分析 2026-06-13~22",
+        "市场术语关键词集合",
+        "人物引用关键词集合"
+      ],
+      "node_count": 6
+    },
+    {
+      "community_id": 54,
+      "node_labels": [
+        "格林斯潘危机理论",
+        "泡沫新定义（未来无希望=泡沫）",
+        "罗伯特·希勒《非理性繁荣》",
+        "东材科技800亿市值精准清仓",
+        "2026-06-22 格林斯潘100岁去世悼文",
+        "2026-06-09 泡沫新定义Mark级观点"
+      ],
+      "node_count": 6
+    },
+    {
+      "community_id": 55,
+      "node_labels": [
+        "test_g1_author_primary_audit.py",
+        "G1AuthorPrimaryAuditTests",
+        ".test_g1a_receipt_matches_generated_artifacts()",
+        ".test_phase_two_evidence_is_resolved_to_author_primary()",
+        ".test_quote_matching_distinguishes_exact_and_paraphrase()",
+        "load_audit_module()"
+      ],
+      "node_count": 6
+    },
+    {
+      "community_id": 56,
+      "node_labels": [
+        "冰冰小美: 债务处理书籍推荐 (原则2, 债务危机, 原则应对变化中的世界秩序)",
+        "Book: 原则·应对变化中的世界秩序",
+        "Book: 债务危机:我的应对原则",
+        "Book: 原则2 (Principles 2)",
+        "Ray Dalio (瑞·达利欧)"
+      ],
+      "node_count": 5
+    },
+    {
+      "community_id": 57,
+      "node_labels": [
+        "Baijiu Industry Cycle Assessment (Beyond Consumer Label)",
+        "Three Pillar Allocation (Pillar Industries + Strategic Resources + Emerging Industries)",
+        "Material Stock to Lithium/Non-Ferrous/Rare Earth Rotation",
+        "Strategic Resource Portfolio Rotation (Non-PCB Diversification)",
+        "EV Industry Downcycle & 400% Leverage Tragedy"
+      ],
+      "node_count": 5
+    },
+    {
+      "community_id": 58,
+      "node_labels": [
+        "Open Knowledge Investment Advice",
+        "Open Knowledge",
+        "Initial Position and Consensus",
+        "Information Equity",
+        "Initial Position"
+      ],
+      "node_count": 5
+    },
+    {
+      "community_id": 59,
+      "node_labels": [
+        "AI Five-Layer Architecture",
+        "AI Infrastructure Investment",
+        "May 2026 Monthly Report Part One",
+        "AI Investment Value",
+        "AI Reshapes Investment Value"
+      ],
+      "node_count": 5
+    },
+    {
+      "community_id": 60,
+      "node_labels": [
+        "ChiNext Index Crossover",
+        "Liquidity Squeeze",
+        "Liquidity Risk Retrospective",
+        "Liquidity Risk",
+        "Capital Preservation"
+      ],
+      "node_count": 5
+    },
+    {
+      "community_id": 61,
+      "node_labels": [
+        "Advanced Materials",
+        "AI Competition",
+        "AI Dollar Strategy",
+        "Advanced Materials Supply Demand Cycle"
+      ],
+      "node_count": 4
+    },
+    {
+      "community_id": 62,
+      "node_labels": [
+        "Frequent Rotation as Loss Effect",
+        "Liquidity-Driven Rotation",
+        "Liquidity Dialectical Analysis",
+        "Liquidity Dialectical Analysis"
+      ],
+      "node_count": 4
+    },
+    {
+      "community_id": 63,
+      "node_labels": [
+        "Emotion Targets and Arbitrage Targets",
+        "Emotion Target and Arbitrage Target",
+        "What an Emotion Cycle Is",
+        "Emotion Cycle Confirmation"
+      ],
+      "node_count": 4
+    },
+    {
+      "community_id": 64,
+      "node_labels": [
+        "陷阱与风波，制约与平衡",
+        "AI 泡沫风险",
+        "循环",
+        "AI 生态闭环"
+      ],
+      "node_count": 4
+    },
+    {
+      "community_id": 65,
+      "node_labels": [
+        "波动风险",
+        "波动风险 1",
+        "波动风险",
+        "波动风险"
+      ],
+      "node_count": 4
+    },
+    {
+      "community_id": 66,
+      "node_labels": [
+        "如何选择成长股",
+        "成长股选择",
+        "2026年一季度展望",
+        "利润驱动收益"
+      ],
+      "node_count": 4
+    },
+    {
+      "community_id": 67,
+      "node_labels": [
+        "自动化与设备周期",
+        "自动化设备周期",
+        "时代，时也命也",
+        "长周期资源供需"
+      ],
+      "node_count": 4
+    },
+    {
+      "community_id": 68,
+      "node_labels": [
+        "2025美国安全战略",
+        "新门罗主义",
+        "新门罗主义与G2",
+        "G2 区域秩序"
+      ],
+      "node_count": 4
+    },
+    {
+      "community_id": 69,
+      "node_labels": [
+        "Liquidity spillover article",
+        "Liquidity Spillover",
+        "Quantitative market timing article",
+        "Liquidity Squeeze Rebound"
+      ],
+      "node_count": 4
+    },
+    {
+      "community_id": 70,
+      "node_labels": [
+        "Independent thinking article",
+        "Independent Thinking",
+        "Capital protection article",
+        "Capital Protection and Independent Judgment"
+      ],
+      "node_count": 4
+    },
+    {
+      "community_id": 71,
+      "node_labels": [
+        "Monetary policy volatility article",
+        "Balance-Sheet-Driven Volatility",
+        "Fed balance sheet timeline article",
+        "Rate-Cut Quantitative-Tightening Regime"
+      ],
+      "node_count": 4
+    },
+    {
+      "community_id": 72,
+      "node_labels": [
+        "Inflation price increase value speculation",
+        "Liquidity contraction crowding",
+        "Liquidity squeeze confirmation framework",
+        "Liquidity squeeze confirmation"
+      ],
+      "node_count": 4
+    },
+    {
+      "community_id": 73,
+      "node_labels": [
+        "Gold Below 4000",
+        "Gold Safe-Haven Narrative",
+        "Gold Stop-Loss Selling",
+        "Strong US Dollar"
+      ],
+      "node_count": 4
+    },
+    {
+      "community_id": 74,
+      "node_labels": [
+        "Bubble History",
+        "Liquidity Risk",
+        "Growth and Bubbles Through History",
+        "Risk Hedging"
+      ],
+      "node_count": 4
+    },
+    {
+      "community_id": 75,
+      "node_labels": [
+        "Central Government Leverage",
+        "Industrial Investment",
+        "Success Defines Heroes",
+        "Chinese Government Investment and US Imitation"
+      ],
+      "node_count": 4
+    },
+    {
+      "community_id": 76,
+      "node_labels": [
+        "雅鲁藏布江水电工程对标胡佛水坝",
+        "反内卷供给侧改革2.0与顺周期",
+        "历史的真实写照",
+        "顺周期与国情"
+      ],
+      "node_count": 4
+    },
+    {
+      "community_id": 77,
+      "node_labels": [
+        "ETF Market Structure",
+        "After 4200 Points",
+        "2023 Bear Market End and Bull Market Start",
+        "Structural Market"
+      ],
+      "node_count": 4
+    },
+    {
+      "community_id": 78,
+      "node_labels": [
+        "Industry Cycle",
+        "Carbon Neutrality and Commercial Spaceflight",
+        "Dofluoro Performance and Share Price",
+        "Supply Demand Cycle"
+      ],
+      "node_count": 4
+    },
+    {
+      "community_id": 79,
+      "node_labels": [
+        "Information Rating",
+        "Information Timeliness",
+        "Information Financial Meaning Thirteen",
+        "Information Financial Meaning Fourteen"
+      ],
+      "node_count": 4
+    },
+    {
+      "community_id": 80,
+      "node_labels": [
+        "Trading Mindset Risk Cycles",
+        "Discussion Comments Portfolio Holdings",
+        "Portfolio Adjustment Q1 Summary",
+        "Western Mining Case Study"
+      ],
+      "node_count": 4
+    },
+    {
+      "community_id": 81,
+      "node_labels": [
+        "Fund Activity and Volume",
+        "Fund Activity",
+        "Fund Panic Liquidation",
+        "Fund Panic Liquidation"
+      ],
+      "node_count": 4
+    },
+    {
+      "community_id": 82,
+      "node_labels": [
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_产业命门投资法",
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_白毛战法",
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_白毛股神",
+        "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_美籍台湾人"
+      ],
+      "node_count": 4
+    },
+    {
+      "community_id": 83,
+      "node_labels": [
+        "Position Sizing and Investor Psychology",
+        "Disciplined Position Reduction and T Trading",
+        "Low-Volatility Portfolio Through Risk Reduction",
+        "Left-Side Staged Position Building"
+      ],
+      "node_count": 4
+    },
+    {
+      "community_id": 84,
+      "node_labels": [
+        "Deep Stock Report Template v3.0",
+        "Standard Stock Report Template v1.0",
+        "Finance Data Plugin Rules",
+        "neodata-financial-search Skill Spec"
+      ],
+      "node_count": 4
+    },
+    {
+      "community_id": 85,
+      "node_labels": [
+        "Crude Oil",
+        "Futures Market Volatility Article",
+        "Inflation"
+      ],
+      "node_count": 3
+    },
+    {
+      "community_id": 86,
+      "node_labels": [
+        "AI蒸馏三层分析：信息差抹平",
+        "Case 12: 模型9 AI蒸馏测试",
+        "模型9: AI改造投资范式"
+      ],
+      "node_count": 3
+    },
+    {
+      "community_id": 87,
+      "node_labels": [
+        "情绪体系认知篇，模式的失效",
+        "中远海控 (SH601919)",
+        "凤凰航运 (SZ000520)"
+      ],
+      "node_count": 3
+    },
+    {
+      "community_id": 88,
+      "node_labels": [
+        "2026年一月月报：白银资产历史性周期再现的资产波动研究",
+        "2026年1月月报（二）：货币体系变迁与全球资本热钱涌动的背后安全性的考量",
+        "2026年一月月报（二）：白银与经济危机以及日本野心"
+      ],
+      "node_count": 3
+    },
+    {
+      "community_id": 89,
+      "node_labels": [
+        "Tongguan Copper Foil 20x Stock Pattern Study",
+        "Defu Technology (SZ301511)",
+        "Tongguan Copper Foil (SZ301217)"
+      ],
+      "node_count": 3
+    },
+    {
+      "community_id": 90,
+      "node_labels": [
+        "Laddered Left-side Position Building (3-5-8% Staged Entry)",
+        "Active ETF Methodology (Hedged Growth with Drawdown Control)",
+        "Active Fund Selection (Tang Lao Ya Optical Fiber/Storage Bet)"
+      ],
+      "node_count": 3
+    },
+    {
+      "community_id": 91,
+      "node_labels": [
+        "New Stocks and Sector Sentiment",
+        "Memory Theme",
+        "PCB Theme"
+      ],
+      "node_count": 3
+    },
+    {
+      "community_id": 92,
+      "node_labels": [
+        "Compute-Power Coordination",
+        "Compute-Power Coordination",
+        "Low-Cost Power"
+      ],
+      "node_count": 3
+    },
+    {
+      "community_id": 93,
+      "node_labels": [
+        "Constructive China-US Strategic Stability",
+        "Constructive Strategic Stability",
+        "New Quality Productive Forces"
+      ],
+      "node_count": 3
+    },
+    {
+      "community_id": 94,
+      "node_labels": [
+        "Advanced Packaging",
+        "Market History and Turning Points",
+        "Liquidity Cycle"
+      ],
+      "node_count": 3
+    },
+    {
+      "community_id": 95,
+      "node_labels": [
+        "May 2026 Monthly Report Part Two",
+        "Fiscal-Led Economic Transition",
+        "G2 Industrial Competition"
+      ],
+      "node_count": 3
+    },
+    {
+      "community_id": 96,
+      "node_labels": [
+        "Sterling Crisis Historical Analysis",
+        "1992 Sterling Crisis",
+        "Strong Dollar Policy"
+      ],
+      "node_count": 3
+    },
+    {
+      "community_id": 97,
+      "node_labels": [
+        "Advanced Packaging Path",
+        "JCET Semiconductor Thesis",
+        "Domestic Semiconductor Supply Chain"
+      ],
+      "node_count": 3
+    },
+    {
+      "community_id": 98,
+      "node_labels": [
+        "Domestic Valuation Bubble Analysis",
+        "Free Cash Flow",
+        "Expectation Premium"
+      ],
+      "node_count": 3
+    },
+    {
+      "community_id": 99,
+      "node_labels": [
+        "Investment Philosophy",
+        "Bottom-Line Thinking",
+        "Trading Three Elements"
+      ],
+      "node_count": 3
+    }
+  ]
+}

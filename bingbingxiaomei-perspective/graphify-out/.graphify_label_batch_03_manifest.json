@@ -1,0 +1,782 @@
+{
+  "batch": 3,
+  "communities": [
+    {
+      "community_id": 200,
+      "node_labels": [
+        "4200点Flag（2023年立→2026-05达成）",
+        "2026-05-11 4200点Flag达成"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 201,
+      "node_labels": [
+        "冰冰小美: 2024一季度总结",
+        "Image: Q1 2024 Summary Chart"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 202,
+      "node_labels": [
+        "Article: Risk Control in Trading",
+        "Article: Opportunity Follows — Source is Cognition (New National Goods Movement)"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 203,
+      "node_labels": [
+        "传统产业与新兴产业",
+        "苹果 AAPL"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 204,
+      "node_labels": [
+        "YTD Index Rankings Revealing Structural Rotation",
+        "K-Shape Extreme Differentiation (June 2026 Monthly)"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 205,
+      "node_labels": [
+        "Macro Window Positioning",
+        "Macro Window"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 206,
+      "node_labels": [
+        "Trend Chart Interpretation",
+        "Trend Upper Band"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 207,
+      "node_labels": [
+        "May 14 Watch Position",
+        "Wait and See"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 208,
+      "node_labels": [
+        "Commercial Spaceflight Drivers",
+        "Commercial Spaceflight"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 209,
+      "node_labels": [
+        "Investment Psychology Advice",
+        "Emotional Equanimity"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 210,
+      "node_labels": [
+        "Portfolio Rotation Speculation",
+        "Six Layer Portfolio Rotation"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 211,
+      "node_labels": [
+        "Active Fund Rebalancing",
+        "Active Fund Evaluation"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 212,
+      "node_labels": [
+        "Anomaly Observation",
+        "Observation Rather Than Recommendation"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 213,
+      "node_labels": [
+        "Mid-May Event Window",
+        "Mid-May Event Window"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 214,
+      "node_labels": [
+        "May 14 Market Uncertainty",
+        "Inflation Turning Point"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 215,
+      "node_labels": [
+        "Macro Historical Market Analysis",
+        "Macro Historical Analysis"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 216,
+      "node_labels": [
+        "Oil and Inflation Outlook",
+        "Oil-Inflation Link"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 217,
+      "node_labels": [
+        "Limits of Single-Stock Advice",
+        "Single-Stock Uncertainty"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 218,
+      "node_labels": [
+        "SMIC Margin Analysis",
+        "Margin Quality"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 219,
+      "node_labels": [
+        "H200 Market Interpretation",
+        "Long-Term Industry View"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 220,
+      "node_labels": [
+        "Market Structure Article",
+        "Market Confidence"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 221,
+      "node_labels": [
+        "Asset Pricing Article",
+        "Monetary Policy and Inflation Chain"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 222,
+      "node_labels": [
+        "Renminbi Asset Article",
+        "Industrial Chain Position"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 223,
+      "node_labels": [
+        "Short Term Risk Article",
+        "Risk Reduction Before Broad Rally"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 224,
+      "node_labels": [
+        "Monetary Policy Article",
+        "Inflation Tolerance"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 225,
+      "node_labels": [
+        "Historical Turning Point Article",
+        "Crisis Preparedness"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 226,
+      "node_labels": [
+        "National Fortune Stock Article",
+        "Mature Process Packaging"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 227,
+      "node_labels": [
+        "Volatility Risk Article",
+        "Real Industrial Strength"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 228,
+      "node_labels": [
+        "NCEPower Article",
+        "Industrial Trend Tracking"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 229,
+      "node_labels": [
+        "Quarterly Implementation Report Article",
+        "Funds Circulation Risk"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 230,
+      "node_labels": [
+        "Financial Fraud Risk Article",
+        "Financial Transparency Enforcement"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 231,
+      "node_labels": [
+        "Short Term Trading Article",
+        "Hedging Strategy"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 232,
+      "node_labels": [
+        "Political Economy Article",
+        "Long Equities Long Gold"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 233,
+      "node_labels": [
+        "AI as National Threshold",
+        "AI and Nation Article"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 234,
+      "node_labels": [
+        "Market Peak Article",
+        "Generational Wealth Shift"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 235,
+      "node_labels": [
+        "ChangXin IPO Article",
+        "ChangXin IPO Valuation"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 236,
+      "node_labels": [
+        "Faraday Rotator Article",
+        "Equipment Bottleneck"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 237,
+      "node_labels": [
+        "Trading Confidence Article",
+        "Trading Confidence"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 238,
+      "node_labels": [
+        "Policy Calendar Article",
+        "June Sixteenth Inflection Point"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 239,
+      "node_labels": [
+        "Market Drawdown Article",
+        "Market Drawdown Causes"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 240,
+      "node_labels": [
+        "AI and Human Screening",
+        "AI Assisted Trading Article"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 241,
+      "node_labels": [
+        "Industrial Capital Reduction Article",
+        "Capital Recycling for Semiconductor Innovation"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 242,
+      "node_labels": [
+        "Value Investing and Cycles",
+        "Macro Investing"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 243,
+      "node_labels": [
+        "Long-Term Holding and Changdian Technology",
+        "Long-Term Holding"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 244,
+      "node_labels": [
+        "GDP Contribution and Market Structure",
+        "Stock Market as Economic Barometer"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 245,
+      "node_labels": [
+        "Bottom-Line Thinking in Difficult Markets",
+        "Bottom-Line Thinking"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 246,
+      "node_labels": [
+        "Changdian Technology Investment Thesis",
+        "Industrial Chain Value Share"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 247,
+      "node_labels": [
+        "Healthy Investment Philosophy",
+        "Healthy Investment Philosophy"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 248,
+      "node_labels": [
+        "PCB, Components, and Overseas Benchmarking",
+        "Overseas Benchmarking"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 249,
+      "node_labels": [
+        "Trading to Lower Cost",
+        "Trading Cost Reduction"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 250,
+      "node_labels": [
+        "Creative Destruction and Technology Leadership",
+        "Creative Destruction"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 251,
+      "node_labels": [
+        "Cost Reduction During Market Winter",
+        "Early Buying Enables Cost Reduction"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 252,
+      "node_labels": [
+        "Securities and Liquor Decline",
+        "Index Drag"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 253,
+      "node_labels": [
+        "Changed Securities Industry Dynamics",
+        "Securities Industry Dynamics"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 254,
+      "node_labels": [
+        "Power Semiconductor and Robotics Chain",
+        "Power Semiconductor and Robotics Chain"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 255,
+      "node_labels": [
+        "Manufacturing Foundation and AI Reshaping",
+        "Efficiency Changes Ecosystem"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 256,
+      "node_labels": [
+        "Hong Kong Information Technology ETF",
+        "T+0 Liquidity"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 257,
+      "node_labels": [
+        "ETF Long-Termism for Retail Investors",
+        "ETF Long-Termism"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 258,
+      "node_labels": [
+        "Dongyangguang Position Exit",
+        "Industrial Expansion Perspective"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 259,
+      "node_labels": [
+        "Speculation Exit and Trend Formation",
+        "Speculation Exit"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 260,
+      "node_labels": [
+        "Short-Selling Mentality and Defensive System",
+        "Short-Selling Mentality"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 261,
+      "node_labels": [
+        "National Competition and Enterprise Capability",
+        "Competitive Enterprises"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 262,
+      "node_labels": [
+        "Long-Term Industrial Cognition",
+        "Industrial Cognition"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 263,
+      "node_labels": [
+        "National Confidence in Crisis",
+        "National Confidence"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 264,
+      "node_labels": [
+        "专栏贴多读",
+        "Investment Conviction"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 265,
+      "node_labels": [
+        "Pinned Investment Framework",
+        "Investment Framework"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 266,
+      "node_labels": [
+        "Bubble Risk Warning",
+        "Valuation Bubble"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 267,
+      "node_labels": [
+        "Market Polarization",
+        "ETF Market Concentration"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 268,
+      "node_labels": [
+        "Intraday Market Battle",
+        "Market Battle Extreme"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 269,
+      "node_labels": [
+        "Investigation and Historical Change",
+        "Evidence-Based Investigation"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 270,
+      "node_labels": [
+        "Turkey Crisis Watch",
+        "Turkey Fiscal Crisis Risk"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 271,
+      "node_labels": [
+        "Investment Opportunities and Specialization",
+        "Investment Specialization"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 272,
+      "node_labels": [
+        "AI Information Distillation",
+        "AI and Investment Information"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 273,
+      "node_labels": [
+        "AI Industrial Transformation",
+        "AI Transformation of CAD"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 274,
+      "node_labels": [
+        "Dollar Strength and A-Share Timing",
+        "Market Timing"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 275,
+      "node_labels": [
+        "G2 Technology Competition and Productivity",
+        "Historical Cycle of Capital, War, and Competition"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 276,
+      "node_labels": [
+        "session-start.sh script",
+        "session-start.sh"
+      ],
+      "node_count": 2
+    },
+    {
+      "community_id": 277,
+      "node_labels": [
+        "东材科技清仓与pcb材料展望"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 278,
+      "node_labels": [
+        "年化复利与长期投资"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 279,
+      "node_labels": [
+        "长期主义与研究好企业"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 280,
+      "node_labels": [
+        "宏观风险回调与心理应对"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 281,
+      "node_labels": [
+        "新国标锂电产业作业贴"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 282,
+      "node_labels": [
+        "Pcb核按钮分歧与板块轮动"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 283,
+      "node_labels": [
+        "美光储存与谷歌分化"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 284,
+      "node_labels": [
+        "港股创业板SK海力士"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 285,
+      "node_labels": [
+        "港股25500阶段高点"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 286,
+      "node_labels": [
+        "三安光电不畏挑战"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 287,
+      "node_labels": [
+        "普通人ETF与央妈信仰"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 288,
+      "node_labels": [
+        "交易体系专栏贴"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 289,
+      "node_labels": [
+        "回顾帖子与价值发现"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 290,
+      "node_labels": [
+        "低谷行业研究风险认知"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 291,
+      "node_labels": [
+        "有色板块邓晓峰宏观"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 292,
+      "node_labels": [
+        "独立思考学我者生"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 293,
+      "node_labels": [
+        "Baseline: Zijin Mining Bottom-Fishing"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 294,
+      "node_labels": [
+        "Baseline: Tencent HK Catch Bottom"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 295,
+      "node_labels": [
+        "Duofuduo linked article"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 296,
+      "node_labels": [
+        "Domestic semiconductor market strength"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 297,
+      "node_labels": [
+        "Domestic semiconductor"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 298,
+      "node_labels": [
+        "Lithium futures and battery safety standard"
+      ],
+      "node_count": 1
+    },
+    {
+      "community_id": 299,
+      "node_labels": [
+        "Upstream material stock selection"
+      ],
+      "node_count": 1
+    }
+  ]
+}
