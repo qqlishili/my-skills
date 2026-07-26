@@ -1,0 +1,684 @@
+{
+  "schema_version": 1,
+  "batch_id": "01",
+  "unresolved_sorted_range": {
+    "start_inclusive": 0,
+    "end_exclusive": 56
+  },
+  "reviewer_mode": "agent_original_text_semantic_review",
+  "entries": [
+    {
+      "fname": "2023-03-18 145015_冰冰小美_常见的亏钱认知，第一期，预期差.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "全文将“预期差”解释为诱发贪婪的画饼，并劝诫勿求速利。",
+      "rationale": "行为与心态劝诫，没有任一模型的输入—状态—输出判断，也未表达现有启发式的完整动作规则。"
+    },
+    {
+      "fname": "2023-03-20 122713_冰冰小美_常见的亏钱认知，第四期，概念逻辑.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m01",
+        "m04"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "文章批评概念叙事和贪婪，并将冰点反弹描述为概念假象重启的时点。",
+      "rationale": "没有把概念落实到壁垒、订单、产能与盈利的证据链，亦未完整评估三要素状态。"
+    },
+    {
+      "fname": "2023-03-20 132506_冰冰小美_常见的亏钱认知，第五期大盘.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m01"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "讨论指数、流动性衰竭和恐惧/冰点共振对股价的影响。",
+      "rationale": "涉及流动性和情绪，但未给出竞争格局这一状态变量，不能作为完整三要素模型。"
+    },
+    {
+      "fname": "2023-04-28 080747_冰冰小美_短线情绪大周期.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m01",
+        "m02"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "列出恐慌至亢奋的情绪周期，并以指数、估值和流动性风险解释其开始与结束。",
+      "rationale": "是短线情绪周期说明，未形成既有模型所要求的完整三要素、事件窗口或风险预算判断。"
+    },
+    {
+      "fname": "2023-05-06 104149_冰冰小美_情绪对自身的影响与人生豁达.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m01"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "以错失个股后的心态调整为主，提到三要素确认和对亏钱效应的警惕。",
+      "rationale": "核心是交易心理与豁达，不含可复核的三要素状态或仓位承受力判断。"
+    },
+    {
+      "fname": "2023-05-09 201754_冰冰小美_什么情况容易情绪一致.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m01"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "说明卡位、涨停预期和贪婪如何形成集体情绪一致。",
+      "rationale": "仅刻画情绪机制，没有流动性与竞争格局的完整联合状态。"
+    },
+    {
+      "fname": "2023-05-10 084108_冰冰小美_套利存在的意义.md",
+      "model_verdict": "resolved_to_model",
+      "expected_primary_model_id": "m01",
+      "secondary_model_ids": [],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "以同类竞争格局、机构游资散户的流动性增量和由共识至亢奋的情绪螺旋解释套利如何扩大行情。",
+      "rationale": "竞争格局、流动性与情绪三项共同构成文章的解释框架，且明确说明其共振结果。"
+    },
+    {
+      "fname": "2023-05-10 084709_冰冰小美_买卖与性格.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m06"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "要求交易方式与性格匹配，并以亏钱效应约束冲动。",
+      "rationale": "是人格适配原则，未评估仓位、现金余量、回撤或可持续风险暴露。"
+    },
+    {
+      "fname": "2023-05-19 110604_冰冰小美_频繁轮动是A股最常见的亏钱效应.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m01"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "将频繁轮动归因于中观流动性不足，并描述由板块轮动至抱团妖股的演变。",
+      "rationale": "流动性是唯一完整变量；情绪与竞争格局未构成并列、可判定的三要素状态。"
+    },
+    {
+      "fname": "2023-05-22 122926_冰冰小美_这次看不懂，就可以告别情绪体系。没有悟性，就不要走这条路。真是手把手写的清清楚楚，实时记录.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "正文只要求读者结合配图体会当时市场环境、博弈结果和情绪氛围。",
+      "rationale": "无可读取的具体状态判断或行动规则，不能从标题或图片占位符推断模型。"
+    },
+    {
+      "fname": "2023-05-29 102110_冰冰小美_情绪标与套利标.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m01"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "按情绪转折、科技方向信心和流动性回流解释卖出与“三体系确认买点”。",
+      "rationale": "虽提到三体系，但正文没有展开竞争格局比较优势，未完整表达 m01。"
+    },
+    {
+      "fname": "2023-06-13 083932_冰冰小美_2023-3-20常见的亏钱认知，第七期，挖掘机消息.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m01",
+        "m05"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "批评消息诱发贪婪，区分官方公开信息与市场情绪、流动性抱团。",
+      "rationale": "没有建立来源等级、事件落地和交叉印证的完整证据状态，也未给出 h04 的原文回读加印证动作。"
+    },
+    {
+      "fname": "2023-06-15 173928_冰冰小美_流动性辩证分析.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m01"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "说明流动性不是成交额，而是情绪标承载意愿和赚/亏钱效应所显现的阻力。",
+      "rationale": "只深化 m01 的流动性变量，未同时评估竞争格局和情绪位置。"
+    },
+    {
+      "fname": "2023-06-20 115912_冰冰小美_常见的亏钱认知，第九期，切勿追涨.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m01"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "以贪婪、恐惧、情绪标和个股阻力解释何为真正追涨。",
+      "rationale": "文章是情绪交易辨析，缺少完整竞争格局与流动性状态的联合输出。"
+    },
+    {
+      "fname": "2023-06-20 155033_冰冰小美_常见的亏钱认知，第十期，会卖的是师傅，会买的是徒弟.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m01"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "将好卖点归于情绪有利和次日流动性有利，并强调先有有利买入。",
+      "rationale": "没有比较竞争格局；也未要求买前列出可验证理由，故不满足 h01 的完整规则。"
+    },
+    {
+      "fname": "2023-06-27 110135_冰冰小美_为什么今日会空仓.md",
+      "model_verdict": "resolved_to_model",
+      "expected_primary_model_id": "m01",
+      "secondary_model_ids": [
+        "m02"
+      ],
+      "supported_heuristic_ids": [
+        "h02"
+      ],
+      "confidence": "high",
+      "evidence_summary": "文章分三节审查情绪仍处下降螺旋、流动性极度分散、竞争格局从有序转无序，并据此空仓。",
+      "rationale": "完整依次评估三要素并输出不交易；“三要素确认不利→空仓”直接支持 h02。"
+    },
+    {
+      "fname": "2023-06-28 102129_冰冰小美_怎么判断情绪冰点，我们需要观察亏钱效应.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m01"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "用情绪标未止跌、恐慌持续和涨跌数量判断尚未到日内情绪底。",
+      "rationale": "仅给出情绪位置观察，不能单独构成 m01。"
+    },
+    {
+      "fname": "2023-07-03 235843_冰冰小美_情绪体系是交易的体系，不是认知的体系.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m01",
+        "m06"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "强调等待唯一解、三要素苛刻确认和防范大回撤。",
+      "rationale": "是交易纪律反思，未说明三要素实际状态，也没有基于承受力设定风险预算。"
+    },
+    {
+      "fname": "2023-07-05 221150_冰冰小美_常见的亏钱认知，第十二期，卡位穿越.md",
+      "model_verdict": "resolved_to_model",
+      "expected_primary_model_id": "m01",
+      "secondary_model_ids": [],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "通过高位竞争、流动性是否支持、情绪与信心是否共振，区分真情绪标与卡位假象并解释亏损。",
+      "rationale": "三项状态变量均被用于决定行情是否可持续，主旨与 m01 完整一致。"
+    },
+    {
+      "fname": "2023-07-08 143557_冰冰小美_游资江湖手法，第二期，人气为王众神接力.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m01"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "复盘罗牛山中游资、机构和散户接力，描述熊市恐慌、人气与流动性报团。",
+      "rationale": "主要是游资案例叙事，未将竞争格局作为可比较状态纳入完整三要素判断。"
+    },
+    {
+      "fname": "2023-07-18 101830_冰冰小美_如果是轮动套利，一定要快准狠。迟一步的都别买了.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m01"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "在减量博弈加速轮动时，建议未抢到先手则观察。",
+      "rationale": "局部交易原则仅基于流动性环境，不对应既有模型或完整启发式。"
+    },
+    {
+      "fname": "2023-07-20 111528_冰冰小美_游资江湖手法，第三期，龙头战法.md",
+      "model_verdict": "resolved_to_model",
+      "expected_primary_model_id": "m01",
+      "secondary_model_ids": [],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "以连板梯队的接力淘汰竞争、减量博弈下的流动性报团和贪婪/恐惧情绪解释龙头战法。",
+      "rationale": "三项状态变量共同解释龙头形成和市场引导，m01 明显占主导。"
+    },
+    {
+      "fname": "2023-07-20 151712_冰冰小美_T+1的思考.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m01",
+        "m06"
+      ],
+      "supported_heuristic_ids": [
+        "h01"
+      ],
+      "confidence": "high",
+      "evidence_summary": "要求今日买入前判断明日能否顺利卖出，并审查市场阻力、情绪、标的定位、先手和流动性。",
+      "rationale": "明确给出买前理由与 T+1 退出可行性审查，支持 h01；但未完整给出竞争格局状态，不能归为 m01。"
+    },
+    {
+      "fname": "2023-07-26 110817_冰冰小美_游资江湖手法，第四期，分歧转一致.md",
+      "model_verdict": "resolved_to_model",
+      "expected_primary_model_id": "m01",
+      "secondary_model_ids": [],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "将竞争格局比较优势、流动性报团溢价和由恐慌转贪婪的情绪引导串联为分歧转一致条件。",
+      "rationale": "文章直接以三要素相互作用说明行情阶段转换，m01 完整且唯一占主导。"
+    },
+    {
+      "fname": "2023-07-27 150400_冰冰小美_情绪高位转折，流动性分化不利，使得交易的艰难倍增.md",
+      "model_verdict": "resolved_to_model",
+      "expected_primary_model_id": "m01",
+      "secondary_model_ids": [],
+      "supported_heuristic_ids": [
+        "h02"
+      ],
+      "confidence": "high",
+      "evidence_summary": "确认情绪高位转弱、流动性分化，并明确“三要素缺失”时当日没有买点。",
+      "rationale": "三要素不利被直接作为交易否决条件，完整对应 m01，并以不交易落实 h02。"
+    },
+    {
+      "fname": "2023-07-28 111010_冰冰小美_游资江湖手法，第五期，流动性溢价假象引导.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m01"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "枚举 ETF 拉升、情绪标、题材扩散和指数共振制造流动性抢筹假象的方法。",
+      "rationale": "是单一流动性引导手法清单，未形成竞争格局—流动性—情绪的完整状态结论。"
+    },
+    {
+      "fname": "2023-08-14 112740_冰冰小美_常见的亏钱认知，第十三期，情绪退潮.md",
+      "model_verdict": "resolved_to_model",
+      "expected_primary_model_id": "m01",
+      "secondary_model_ids": [],
+      "supported_heuristic_ids": [
+        "h02"
+      ],
+      "confidence": "high",
+      "evidence_summary": "以高位竞争压制、减量下流动性分化和整体情绪退潮解释一字板跌停，并实际提前卖出规避。",
+      "rationale": "完整三要素共同说明行情不利，且“退潮/分化→规避与卖出”支持 h02。"
+    },
+    {
+      "fname": "2023-08-18 175526_冰冰小美_情绪体系交易篇，第三期，等.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m01",
+        "m02",
+        "m04"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "倡导等待情绪转折、研究产业机会，并在短线中辨别情绪标是否已变为套利标。",
+      "rationale": "横跨时机、产业和情绪的交易随笔，未有任一模型完整且明确占主导。"
+    },
+    {
+      "fname": "2023-08-21 113941_冰冰小美_常见的亏钱认知，第十五期，套利的危害内容列表.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m01"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "解释套利如何分散流动性、放大贪婪恐惧并造成情绪标和杂毛的负反馈。",
+      "rationale": "没有独立的竞争格局状态或三要素的联合判定；“远离套利”也非既有 h01-h09 的完整规则。"
+    },
+    {
+      "fname": "2023-09-09 220535_冰冰小美_情绪体系交易篇，第六期，性格匹配.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m01",
+        "m06"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "讨论以体系约束性格、分仓和避免情绪化交易。",
+      "rationale": "关注自我认知而非风险暴露与承受力的量化/状态关系，未完整落入 m06。"
+    },
+    {
+      "fname": "2023-10-06 120819_冰冰小美_情绪体系交易篇，第八篇，数学模型不败.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m06"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "以胜率、减少出手和新手小额试错讨论避免亏损。",
+      "rationale": "是通用交易概率建议，没有以仓位、现金余量、回撤及个人承受力形成 m06 的风险预算状态。"
+    },
+    {
+      "fname": "2023-10-09 123808_冰冰小美_情绪体系交易篇，第九期，买卖.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m01",
+        "m03",
+        "m04"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "文章同时讨论情绪标、流动性与分化风险、国运到产业方向、业绩证伪和买卖纪律。",
+      "rationale": "覆盖多个模型但无单一模型明显主导；也没有完整执行任一现有启发式。"
+    },
+    {
+      "fname": "2023-10-13 082238_冰冰小美_常见的亏钱认知，第十九期，新加坡 富时A50 指数.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m01"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "将富时 A50 视为恐慌情绪指标，主张观察其是否实际引发市场亏钱效应。",
+      "rationale": "只讨论一个情绪信号，明确其不在三要素之内，不能归为 m01。"
+    },
+    {
+      "fname": "2023-11-11 091236_冰冰小美_情绪体系交易篇，第十一期，空仓.md",
+      "model_verdict": "resolved_to_model",
+      "expected_primary_model_id": "m01",
+      "secondary_model_ids": [
+        "m02",
+        "m04"
+      ],
+      "supported_heuristic_ids": [
+        "h02",
+        "h03"
+      ],
+      "confidence": "high",
+      "evidence_summary": "按竞争格局、流动性枯竭/报团与情绪传导解释何时空仓；对未落地事件明确建议空仓等待结果。",
+      "rationale": "空仓判断的主轴是三要素状态，故 m01 主导；同时完整表达体系不利降暴露与重大事件未落地等待的 h02、h03。"
+    },
+    {
+      "fname": "2023-12-06 130551_冰冰小美_情绪体系，游资江湖手法，第八期，造势.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m01"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "讲游资利用虚假买盘和情绪标吸引流动性、制造假象并在破灭前退出。",
+      "rationale": "主要是游资造势叙事，未评估竞争格局，亦未形成完整模型状态。"
+    },
+    {
+      "fname": "2023-12-17 205516_冰冰小美_情绪体系修身情绪篇，第一期静。早发，宋，宗泽繖幄垂垂马踏沙，水长山远路多花。眼中形势胸中策，缓步徐行静不哗。宗泽是宋代.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "以诗歌解读和修身比喻强调冷静、基于客观事实思考并随机应变。",
+      "rationale": "没有市场模型、公司验证链或既有启发式的完整操作条件。"
+    },
+    {
+      "fname": "2024-02-28 115510_冰冰小美_推荐一本书，《繁荣与衰退，一部美国经济发展史》，艾伦，格林斯潘。学习下，创造性破坏，有利于理解Ai，学一下，大萧条后罗斯.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "仅推荐理解 AI 与中美关系的经济史书籍。",
+      "rationale": "书单不表达任何模型状态或行动规则。"
+    },
+    {
+      "fname": "2024-03-20 090029_冰冰小美_目前阶段，对于债务处理的事件非常多。基于债务的认识。推荐三本书《原则2》，《债务危机我的应对原则》，《原则，应对变化.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "仅说明债务事件较多并按顺序推荐三本书。",
+      "rationale": "没有模型所需的状态判断或启发式动作。"
+    },
+    {
+      "fname": "2024-04-02 002236_冰冰小美_情绪体系交易篇，第十二期，容忍度.md",
+      "model_verdict": "resolved_to_model",
+      "expected_primary_model_id": "m06",
+      "secondary_model_ids": [
+        "m02"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "围绕持有期限、回撤、仓位、闲钱与心理容忍度讨论盈利时卖出 60% 仓位以保护本金和保持行动能力。",
+      "rationale": "核心是风险暴露与可持续承受力的匹配，完整符合 m06；虽谈风险减弱，但时间窗口不是主旨。"
+    },
+    {
+      "fname": "2024-04-02 154325_冰冰小美_我那个读书年代，很多人鄙视四大名著。甚至出现厚黑学，狼文化，东游记，这种黑暗人性的书籍大行其道。后面回过头想想，能够写出.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "以历史和兵法说明“不败”、放弃小胜与等待战略态势。",
+      "rationale": "是人生/战略哲理，未对应现有市场模型的输入状态与输出判断。"
+    },
+    {
+      "fname": "2024-04-05 090020_冰冰小美_2024一季度总结.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "正文仅有一季度总结的民族反省感言和图片占位符。",
+      "rationale": "没有可归类的模型或启发式语义。"
+    },
+    {
+      "fname": "2024-05-05 161919_冰冰小美_时常看到有人问读书的问题，如果以一本好书或者经济理论体系作为根基，根据大师的研究路线去读书。更容易体会到大师遇见的经济与.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m03"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "建议沿经济学家研究路线广泛阅读政治、历史、工业与商业，以理解政治经济学。",
+      "rationale": "是研究方法和书单，不将国家目标映射为具体产业研究候选集。"
+    },
+    {
+      "fname": "2024-05-09 220952_冰冰小美_读书时间，《左传》，左丘明，春秋。君子务知大者、远者，小人务知小者、近者。此句说明，君子追求广博的知识和远大的目标，而小.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m01",
+        "m02"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "摘录《左传》有关时机、风险和顺势的语句，末尾列举竞争格局、流动性与情绪的重要性。",
+      "rationale": "没有对当前对象运行这些变量或输出判断，不能因列举术语而强归模型。"
+    },
+    {
+      "fname": "2024-05-27 125549_冰冰小美_体系三要素及案例应用，第二期，流动性辩证分析.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m01",
+        "m03",
+        "m04"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "深度分析 ETF、政策和市场生态如何改变流动性，并延伸至行业龙头、盈利和分红。",
+      "rationale": "流动性分析明显，但未把竞争格局与情绪位置共同纳入 m01；产业/盈利讨论亦未形成单一主模型。"
+    },
+    {
+      "fname": "2024-06-09 155547_冰冰小美_推荐书籍，《海权沉浮》，刘怡。先读此书，了解一下西方斗争到崛起的基本大概脉络，然后更深层次，向路权与海权，资源做贸易。学.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "仅推荐了解海权、路权和贸易史的书。",
+      "rationale": "无模型状态、产业候选映射或行动规则。"
+    },
+    {
+      "fname": "2024-06-21 214500_冰冰小美_情绪体系认知篇，模式的失效.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m01",
+        "m02",
+        "m04"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "通过航运个股差异讨论量化、题材热度和路径依赖导致短线套利模式失效。",
+      "rationale": "涉及不同风险审视角度，但没有给出方向成立而载体失效后的明确更换/退出规则，故不满足 h09。"
+    },
+    {
+      "fname": "2024-07-01 184738_冰冰小美_有人问国债的问题，说实在的我对债务也是半桶水。阅历有限。而关于债务的历史，中国历史的债务危机，很大程度纳入都高税政策中，.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "说明自身对债务了解有限，概述债务史并推荐相关书籍。",
+      "rationale": "没有将债务信息转化为现有模型状态或行动。"
+    },
+    {
+      "fname": "2024-10-06 090143_冰冰小美_提供一个常识性视角，具体内容变化还需要自己多查阅或者跟踪实际情况。大放水降息扩表。可能放水降息缩表。可能收水加息扩.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m01",
+        "m02"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "区分降息/扩表组合，分析中观流动性与美联储缩表风险，并建议关注真实收放水。",
+      "rationale": "是宏观流动性观点，未结合竞争格局和情绪完成 m01，也没有风险事件的观察—介入窗口输出。"
+    },
+    {
+      "fname": "2024-10-28 095708_冰冰小美_情绪体系交易篇，游资交易手法，第十六期，挡刀.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m01"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "解释高切低、流动性余温和贪婪—恐惧—贪婪循环如何形成“挡刀”套利。",
+      "rationale": "是情绪与流动性手法描述，没有竞争格局的完整比较状态。"
+    },
+    {
+      "fname": "2024-10-30 153625_冰冰小美_交易本就是各凭本事。但是你交易的个股，很多并不是没有价值。只不过价值与价格的钟摆过大，当被制裁，被经济环境影响，股价暴跌.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m01",
+        "m03"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "讨论价值与价格钟摆、美元流动性回流和政治经济学影响。",
+      "rationale": "宏观感慨没有形成任何现有模型的完整输入—状态—输出链。"
+    },
+    {
+      "fname": "2024-11-07 090236_冰冰小美_危机，霸权，与再次伟大的美国川普是第二个两次当选并且不连任的美国总统。上一次追溯到1883年-1889年，1893-18.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m03",
+        "m02"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "以麦金莱时代类比特朗普，讨论关税、工业化、债务与中美竞争的历史可能性。",
+      "rationale": "属于宏观历史推演，未把国家目标落为具体产业研究候选，也没有明确时间窗口行动。"
+    },
+    {
+      "fname": "2024-11-10 200315_冰冰小美_竞争白热化.md",
+      "model_verdict": "resolved_to_model",
+      "expected_primary_model_id": "m03",
+      "secondary_model_ids": [],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "从中美竞争、产业控制权和政策/资本投入，系统列出双方领先、激烈竞争和劣势产业。",
+      "rationale": "国家竞争目标与产业安全/技术控制直接生成产业关注集合，m03 明确主导。"
+    },
+    {
+      "fname": "2024-11-12 083344_冰冰小美_ETF基金与行情特征.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m01",
+        "m06"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "介绍 ETF 的交易特征、行业权重、流动性机制及其对普通投资者的分散作用。",
+      "rationale": "虽认为 ETF 可降低个股选择风险，但未以“无法独立验证产业位置、订单和风险”为条件使用被动 ETF，故不支持 h08。"
+    },
+    {
+      "fname": "2024-11-12 231642_冰冰小美_风险与机遇的时代风云.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m02",
+        "m01",
+        "m03"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "按时间列出战争、加息、缩表、美元和股指变化，并展开美国未来政策情景。",
+      "rationale": "是宏观事件时间线与预测，未产出风险减弱/落地后的观察或介入窗口。"
+    },
+    {
+      "fname": "2024-11-16 181843_冰冰小美_历史与政治与经济学.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m03",
+        "m04",
+        "m01"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "借美国历史讨论供需、产业、政策纠错和中美竞争合作，最后倡导理性客观看待历史。",
+      "rationale": "跨越多个宏观主题，未落到产业候选、公司兑现或可执行模型判断；新闻一词也不构成 h04。"
+    },
+    {
+      "fname": "2024-12-21 174901_冰冰小美_米.md",
+      "model_verdict": "resolved_to_model",
+      "expected_primary_model_id": "m03",
+      "secondary_model_ids": [],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "从美国高端制造、关税、效率和 AI 创新目标，直接映射到 A 股跨境、机器人、通信、军工和 AI 产业链。",
+      "rationale": "国家竞争目标与政策约束被明确转化为产业研究方向，完整符合 m03。"
+    }
+  ]
+}

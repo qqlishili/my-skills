@@ -1,0 +1,681 @@
+{
+  "schema_version": 1,
+  "batch_id": "06",
+  "unresolved_sorted_range": {
+    "start_inclusive": 280,
+    "end_exclusive": 334
+  },
+  "reviewer_mode": "agent_original_text_semantic_review",
+  "entries": [
+    {
+      "fname": "2026-06-17 105215_冰冰小美_这种消费增速，是什么原因导致的？科技与狠活食品添加剂问题，预制菜，动不动就曝光的食品安全问题，比如泡面梅菜，比如水果侵染.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "正文罗列食品安全、债务、地产、人口和补贴等消费下行原因。",
+      "rationale": "是宏观消费归因，未形成任一现有模型的状态—输出判断。"
+    },
+    {
+      "fname": "2026-06-17 120256_冰冰小美_按我的持仓配置，很大程度与ETF持仓配置差不多。超过20%都是超级重仓。同一个方向买入40%也是超级重仓。这一点当初科普.md",
+      "model_verdict": "resolved_to_model",
+      "expected_primary_model_id": "m06",
+      "secondary_model_ids": [
+        "m01",
+        "m02"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "明确以持仓上限、分次减仓、短线暂停和长期仓审慎处理风险。",
+      "rationale": "主旨是使暴露与自身能力、市场风险相匹配，m06 清晰主导；三要素仅用于做 T 条件。"
+    },
+    {
+      "fname": "2026-06-17 155013_冰冰小美_菜就多练。4-8到现在，如果你没买过一次科技股（非垃圾科技而是硬核科技），说明你一点都不关心国家发展。从4-8到现在，我.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m02",
+        "m03"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "讨论硬科技行情、泡沫须结合时间以及对 2028 前趋势的个人判断。",
+      "rationale": "既有国家发展叙事也有行情时长判断，但未完整描述战略映射或风险窗口。"
+    },
+    {
+      "fname": "2026-06-17 164015_冰冰小美_错过时代比选择正确更可怕。老登会是价值投资，未来一定能挣。新登也许是投机，但是时代的机会，错过的后悔，可能是一辈子。因此.md",
+      "model_verdict": "resolved_to_model",
+      "expected_primary_model_id": "m03",
+      "secondary_model_ids": [],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "要求在有限选择中押注代表国家实力的企业，并以时代发展解释方向。",
+      "rationale": "核心是国家实力与企业研究方向的映射，而非具体公司的兑现链。"
+    },
+    {
+      "fname": "2026-06-17 171113_冰冰小美_资本市场有100年魔咒，比如荷兰，西班牙，法国，英国，美国主导的都是100年就衰退。衰退的直接原因都是战争。越是强大的资.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m03"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "从历史霸权、战争和中美竞争/冲突讨论和平选择。",
+      "rationale": "是地缘历史评论，没有形成产业候选、市场状态或投资风险预算的完整模型输出。"
+    },
+    {
+      "fname": "2026-06-17 203321_冰冰小美_全部历史新高。基金买卖的实力都强的可怕。怎么选择到的。其实是问Ai。为什么突然晒支付宝基金？其实今天看到一个信息，要推出.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "仅说明主动 ETF 透明持仓使基金经理重要，并称将调研。",
+      "rationale": "没有给出当前模型所需的状态变量或完整行动规则。"
+    },
+    {
+      "fname": "2026-06-17 210949_冰冰小美_主动基金观察，主要是看调仓，调仓肯定有择时，也有仓位变化。比如，唐老鸭调仓后，今天储存芯片大涨，看原来持仓，应该5%，但.md",
+      "model_verdict": "resolved_to_model",
+      "expected_primary_model_id": "m06",
+      "secondary_model_ids": [],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "以基金在回撤段的仓位控制和调仓观察来评价其能力。",
+      "rationale": "评价中心是风险暴露控制，符合 m06；未展开产业兑现或时点模型。"
+    },
+    {
+      "fname": "2026-06-17 213822_冰冰小美_有人问，我什么时候右侧加仓。我建仓通常是左侧，核心是底线思维，思考极端风险，以及未来三年的变化。因此，建仓通常是阶梯式建.md",
+      "model_verdict": "resolved_to_model",
+      "expected_primary_model_id": "m06",
+      "secondary_model_ids": [
+        "m01",
+        "m04"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "以阶梯建仓、持仓比例、极端风险和拒绝右侧重仓来约束加仓。",
+      "rationale": "仓位可承受性是全文决策中心；三要素和供需仅为辅助条件。"
+    },
+    {
+      "fname": "2026-06-17 220242_冰冰小美_今日收盘，有一大堆个股发布澄清公告。因为要打击伪科技。这是提示与撇清关系。所以，审核自己的好企业好股票，是不是这种情况。.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m05"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "以澄清公告提示复核持股是否属伪科技，并区分短线投机。",
+      "rationale": "有证据警示但没有来源等级、交叉印证或完整兑现链，m05 不足以主导。"
+    },
+    {
+      "fname": "2026-06-18 214812_冰冰小美_未来七姐妹， 谷歌 ， 苹果 ，Space x， 英伟达 ， 英特尔 ，Anthropic， 博通 。.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "正文仅列出七家公司。",
+      "rationale": "没有可判定的模型语义或行动规则。"
+    },
+    {
+      "fname": "2026-06-20 102347_冰冰小美_中美战略实施加速的转折点.md",
+      "model_verdict": "resolved_to_model",
+      "expected_primary_model_id": "m03",
+      "secondary_model_ids": [
+        "m01",
+        "m02",
+        "m04"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "从中美竞争、产业安全和 AI 五层架构界定超级大国参与资格及芯片制造方向。",
+      "rationale": "国家竞争目标如何塑造产业研究范围贯穿全文，其他模型是该主线的市场或风险补充。"
+    },
+    {
+      "fname": "2026-06-21 092036_冰冰小美_虽说如此，但是基本没有平白无故的选择。过程的艰辛，时间的漫长，心态的波动，都是有的。一路凯歌，从始至终，是很难做到的，我.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m04",
+        "m02"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "low",
+      "evidence_summary": "以产业信贷扩张、供需周期和技术路线关键节点解释选股与等待。",
+      "rationale": "独立复核发现该批次同类条目未稳定满足完整模型边界，保守降回未决；原主模型仅保留为次级候选。原判定：产业传导和技术关键节点是主要判断结构，m04 明确强于泛泛的择时表述。"
+    },
+    {
+      "fname": "2026-06-21 100953_冰冰小美_周末石油危机的反复性。很显然这一点如果摆脱石油危机本身去看待，则只有一句话。即风险与机遇是投资的永恒命题。《二次全球大危.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m02",
+        "m03"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "从石油危机推至美国内政、重要经济体危机与国家战略。",
+      "rationale": "虽讨论风险传导，但目的为事件本质分析，未给出风险状态到观察/介入窗口的明确输出。"
+    },
+    {
+      "fname": "2026-06-22 094553_冰冰小美_英特尔 →先进封装与关键材料→技术路径关键材料→中日竞争上涨材料→磷化铟，氮化镓，碳化硅等中游材料→高速铜箔，高端树脂，.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m04",
+        "m03"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "low",
+      "evidence_summary": "将英特尔先进封装技术路径依次连接至关键材料、中游材料和下游 AI 集群。",
+      "rationale": "独立复核发现该批次同类条目未稳定满足完整模型边界，保守降回未决；原主模型仅保留为次级候选。原判定：正文直接呈现产业链传导结构，符合 m04。"
+    },
+    {
+      "fname": "2026-06-22 101011_冰冰小美_亏的时候肯定存在的，核心是纠偏呀。我买那么多个股，有亏有赚的。因为观察我国困境，出海是历史经验。买入的节点就是观察出海利.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m04",
+        "m03"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "low",
+      "evidence_summary": "以出海利润增长、国内内卷与不同产品增长速度解释从汽车载体转向芯片等载体。",
+      "rationale": "独立复核发现该批次同类条目未稳定满足完整模型边界，保守降回未决；原主模型仅保留为次级候选。原判定：公司/行业盈利兑现决定载体纠偏，m04 比方向叙事更直接。"
+    },
+    {
+      "fname": "2026-06-22 102141_冰冰小美_会分仓，哪怕亏30%，随便换个思路，分仓早挣30%，均衡配置呀。谁又能100%正确，出海是一个方向，不要一个方向全部押注.md",
+      "model_verdict": "resolved_to_model",
+      "expected_primary_model_id": "m06",
+      "secondary_model_ids": [
+        "m01",
+        "m02"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "明确要求分仓、均衡配置且不把单一方向押满，以应对极端宏观事件。",
+      "rationale": "风险暴露分散是唯一清晰主旨。"
+    },
+    {
+      "fname": "2026-06-22 110303_冰冰小美_当国家队退出ETF，市场的波动就加大了。指数也到达目标4200。我在2023年的判断就已经到了终点。那么2023年的判断.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m04",
+        "m02",
+        "m06",
+        "m03"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "low",
+      "evidence_summary": "以汽车销量、出海、国标、内卷和增长预期变化复盘比亚迪，并调整三类配置。",
+      "rationale": "独立复核发现该批次同类条目未稳定满足完整模型边界，保守降回未决；原主模型仅保留为次级候选。原判定：核心证据是行业需求和公司增长/估值兑现发生变化，属于 m04。"
+    },
+    {
+      "fname": "2026-06-22 115852_冰冰小美_左侧阶梯建仓。第三次预计新登与老登一起下跌。推到重来。重复2018情况。阶梯建仓，三次建仓分别是3%5%8%阶梯建仓。你.md",
+      "model_verdict": "resolved_to_model",
+      "expected_primary_model_id": "m06",
+      "secondary_model_ids": [
+        "m01",
+        "m03"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "规定三档建仓比例，并要求跟随者采用更低仓位。",
+      "rationale": "具体仓位风险约束主导全文。"
+    },
+    {
+      "fname": "2026-06-22 131120_冰冰小美_东材科技 ，800亿市值目标达到。清仓。扩张还没有投产，按投产的盈利，市值先到了。树脂占比pcb成本多少？pcb增长多少.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m04"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "low",
+      "evidence_summary": "因市值已先于尚未投产的扩张盈利兑现而清仓，并追问树脂需求空间。",
+      "rationale": "独立复核发现该批次同类条目未稳定满足完整模型边界，保守降回未决；原主模型仅保留为次级候选。原判定：围绕产能、需求和盈利兑现与估值关系，m04 清晰主导。"
+    },
+    {
+      "fname": "2026-06-22 154144_冰冰小美_云南锗业 ， 多氟多 ， 有研新材 ， 长电科技 ， 三安光电 ， 东方钽业 ， 洛阳钼业 ， 湖南裕能 。坑你了吗？最.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m06",
+        "m02"
+      ],
+      "supported_heuristic_ids": [
+        "h08"
+      ],
+      "confidence": "high",
+      "evidence_summary": "建议不会选股者关注被动 ETF，并把分仓比作主动 ETF；同时提到风险减弱节点。",
+      "rationale": "h08 的“能力不足则用 ETF”行动完整明确，但文章没有单一模型的主导解释。"
+    },
+    {
+      "fname": "2026-06-22 161752_冰冰小美_去年1229日，选择主动基金。在一堆基金中，选择相信唐老鸭。核心是，基金押注光纤与储存。在我看来，是少有的具备战略眼光.md",
+      "model_verdict": "resolved_to_model",
+      "expected_primary_model_id": "m06",
+      "secondary_model_ids": [
+        "m03"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "选择基金时强调其布局与调仓，并以避免单赛道押注、控制回撤评价基金经理。",
+      "rationale": "风险控制和组合集中度是其判断中心。"
+    },
+    {
+      "fname": "2026-06-22 164407_冰冰小美_唐总年化回报率，16%。巴菲特20%？进入 证券行业 16年。16%什么概念，相信唐总16年。即，16年10倍。即，20.md",
+      "model_verdict": "resolved_to_model",
+      "expected_primary_model_id": "m06",
+      "secondary_model_ids": [],
+      "supported_heuristic_ids": [
+        "h08"
+      ],
+      "confidence": "high",
+      "evidence_summary": "劝普通投资者降低回报预期、分仓控仓；无能力者以 ETF 为唯一出路。",
+      "rationale": "风险承受与可持续复利为主，且 h08 的能力不足转 ETF 规则明确表达。"
+    },
+    {
+      "fname": "2026-06-22 180417_冰冰小美_为什么会发这种帖子。我是给那些今天还在研究好企业的关注者打气。不要在乎别人的眼光。你只管研究，会有回报的。很多人没有长期.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m04"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "鼓励持续研究好企业，指出低谷研究机会更大、高峰研究需要勇气。",
+      "rationale": "没有高位复核兑现的完整 h06 行动，亦未形成公司兑现链判断。"
+    },
+    {
+      "fname": "2026-06-22 193227_冰冰小美_关于新国标，也就是锂电产业。我有任务作业贴。71等作业。到时候一起讨论。现在交流意义不大。因为最近最低点提过买入。已经.md",
+      "model_verdict": "resolved_to_model",
+      "expected_primary_model_id": "m02",
+      "secondary_model_ids": [
+        "m05"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "明确在 7 月 1 日国标事件落地前不展开判断，等待后续讨论。",
+      "rationale": "事件未落地与等待验证定义了文章的观察窗口，符合 m02；未说明仓位控制，故不支持 h03。"
+    },
+    {
+      "fname": "2026-06-22 233243_冰冰小美_格林斯潘100岁，去世。这是一位对我有深远影响的央行掌舵者。可以说，一半财富都来自他对于危机的定义。繁荣与衰退，非理性繁.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m01",
+        "m02"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "借格林斯潘讨论繁荣、衰退、危机和美国宏观理解。",
+      "rationale": "未给出当前模型所需的明确市场变量、状态变化或可执行输出。"
+    },
+    {
+      "fname": "2026-06-23 102418_冰冰小美_Pcb开盘直接核按钮，下跌，带动有色铜，铜箔，树脂大跌。原来冰冰小美昨天清仓了pcb材料。市场分歧过程，然后。功率半导体.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m04"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "low",
+      "evidence_summary": "区分 PCB 材料下跌和功率半导体、光纤、存储等不同技术/供应链方向，并列示供给进入和景气证据。",
+      "rationale": "独立复核发现该批次同类条目未稳定满足完整模型边界，保守降回未决；原主模型仅保留为次级候选。原判定：重点是产业链环节和细分兑现差异。"
+    },
+    {
+      "fname": "2026-06-23 104408_冰冰小美_三安光电 。我是化工专业毕业的。材料端基本属于化工新材料行业。这就是我的优势了，我不懂，我可以摇人问。所以，这都是知识改.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m04",
+        "m03"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "low",
+      "evidence_summary": "将三安的氮化镓材料连接至数据中心电源、功率半导体和太空应用。",
+      "rationale": "独立复核发现该批次同类条目未稳定满足完整模型边界，保守降回未决；原主模型仅保留为次级候选。原判定：材料能力与下游应用的产业传导明确，m04 主导。"
+    },
+    {
+      "fname": "2026-06-23 104700_冰冰小美_其实就说明一件事，之所以普通。就是研究太浅薄了。.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "正文仅评价研究浅薄。",
+      "rationale": "不含模型状态、判断或行动规则。"
+    },
+    {
+      "fname": "2026-06-23 105155_冰冰小美_美国的分化， 谷歌 出走二个科学家下跌。而 美光 的指引继续上涨。储存今天扛大旗。同步，我国Ai也分化，这意味着啥，依旧.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m04"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "以谷歌和美光表现说明中美 AI 中不同技术路线强弱分化。",
+      "rationale": "只有路线强弱观察，未说明需求、产能或盈利传导，m04 不足以单独解决。"
+    },
+    {
+      "fname": "2026-06-23 105730_冰冰小美_今天这里的问题，如果Pcb阻力，明天会不会光的阻力，后面会不会其他阻力，形成一轮老登与新登的跷跷板行情。毕竟今天医药大涨.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m01"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "提出 PCB、光和医药轮动、量化策略及情绪激发的开放问题。",
+      "rationale": "纯假设性盘面观察，未完成三要素状态判断。"
+    },
+    {
+      "fname": "2026-06-23 152721_冰冰小美_收盘总结，27元 紫金矿业 的意义，宏观风险减弱的节点，快速反弹，今日，下跌再次考验27元。这种考验，我原本以为618.md",
+      "model_verdict": "resolved_to_model",
+      "expected_primary_model_id": "m02",
+      "secondary_model_ids": [
+        "m04",
+        "m01"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "围绕宏观风险减弱、联储会议后延的二次探底和恐慌是否短暂继续观察。",
+      "rationale": "风险事件状态与窗口的判断贯穿全文；业绩兑现仅解释 AI 分化。"
+    },
+    {
+      "fname": "2026-06-23 154341_冰冰小美_我的交易理解。很明显，这种波动对我来说，影响有限。因为上午几乎都是红盘存在。 新洁能 ， 鼎龙股份 ， 多氟多 ， 湖南.md",
+      "model_verdict": "resolved_to_model",
+      "expected_primary_model_id": "m06",
+      "secondary_model_ids": [
+        "m02",
+        "m04"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "在韩国市场恐慌加剧时减仓观察，并要求审视持仓质地和海外传导风险。",
+      "rationale": "实际行动是降低暴露以保持决策能力，m06 强于作为背景的风险窗口和质地检查。"
+    },
+    {
+      "fname": "2026-06-23 164001_冰冰小美_话说，今天我还是大挣。我为啥要问你们感受。言归正传，聊点其他。我刚才看到一条信息，原来sk海力士市值超过 三星电子 ，荣.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m01",
+        "m06"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "讨论韩国杠杆 ETF、熔断、创业板下跌及指数震荡而个股分化。",
+      "rationale": "多项市场现象并列，未形成单一模型的完整状态—输出。"
+    },
+    {
+      "fname": "2026-06-23 165824_冰冰小美_关于港股，25500，这是我预测港股的阶段高点。有发帖。自己去查如何判断的。港股有自己独特性的一面。如今港股市场并没有突.md",
+      "model_verdict": "resolved_to_model",
+      "expected_primary_model_id": "m05",
+      "secondary_model_ids": [
+        "m04"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "认为新上市 AI 公司缺少时间验证，当前无法判断定价贵贱。",
+      "rationale": "文章核心是证据/验证不足限制判断强度，符合 m05。"
+    },
+    {
+      "fname": "2026-06-23 224102_冰冰小美_几个重要点，1，美元指数104才是核心变量，100并不是。不过100-104过程，还是对贵金属有影响。这里的问题，黄金4.md",
+      "model_verdict": "resolved_to_model",
+      "expected_primary_model_id": "m02",
+      "secondary_model_ids": [
+        "m01"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "列示美元、利率、原油、铜、比特币和半导体等阈值，反复指出需警惕和跟踪。",
+      "rationale": "以风险触发阈值及其演变为中心，m02 明确主导。"
+    },
+    {
+      "fname": "2026-06-23 234335_冰冰小美_今年涨幅排行榜，韩国120%＞费城100%＞科创57%＞ 创业板 30%＞深成17%＞ 纳指 10%＞标普7%＞上证3%.md",
+      "model_verdict": "resolved_to_model",
+      "expected_primary_model_id": "m01",
+      "secondary_model_ids": [
+        "m02"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "以科技集中上涨、传统板块下跌和证券化率解释市场结构与安全边际。",
+      "rationale": "竞争/资金结构及市场状态的描述明显属于 m01。"
+    },
+    {
+      "fname": "2026-06-24 002029_冰冰小美_本来就是转型期间嘛，转型必然有人哭有人笑。三十年河东三十年河西嘛。两害相权取其轻。科技虽然普通人难以享受成果，但是 房地.md",
+      "model_verdict": "resolved_to_model",
+      "expected_primary_model_id": "m03",
+      "secondary_model_ids": [],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "以房地产转型、高端制造增长贡献和人才扩招说明国家持续推动科技投资。",
+      "rationale": "国家目标与产业方向的映射是全文主线。"
+    },
+    {
+      "fname": "2026-06-24 115445_冰冰小美_起床吃饭，当时他们的嘲讽声，真的好大呀。哎哟喂，躺着都能挣钱。还有谁。话说，坑你了吗。 三安光电 ，如何从一个问题股看到.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m04"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "以三安从问题股到不可阻挡产业趋势回应质疑。",
+      "rationale": "只断言趋势，没有技术、需求、产能或盈利证据链。"
+    },
+    {
+      "fname": "2026-06-24 143725_冰冰小美_吃瓜群众请问冰冰小美，最近一直展示你的进攻能力，与体系防御思维，是不是冲突的。冰冰小美进攻能力的核心在于审美，而美不.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m03",
+        "m04",
+        "m02",
+        "m06"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "同时讨论中美竞争下的硬科技质地、风险减弱买点、仓位控制与国际视野。",
+      "rationale": "是多模型方法总述，任何一个模型都不能明确压倒其他模型。"
+    },
+    {
+      "fname": "2026-06-24 153144_冰冰小美_普通人跑不赢ETF，应该退而其次买ETF。如果你和我一样，市场大跌我大涨，市场大涨我还大涨，这已经不是一个层次的东西，你.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m06"
+      ],
+      "supported_heuristic_ids": [
+        "h08"
+      ],
+      "confidence": "high",
+      "evidence_summary": "直接建议普通人跑不赢 ETF 时购买 ETF，而非模仿个人交易。",
+      "rationale": "h08 行动规则明确；文本没有展开单一模型的状态或解释变量。"
+    },
+    {
+      "fname": "2026-06-24 154915_冰冰小美_我的交易体系，专栏贴更新完毕的。今年更新的内容，更多的是如何实践，多就一些案例，过程结果都有帖子记录。买的节点，卖的节点.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "说明专栏记录了买卖节点和实践案例。",
+      "rationale": "元叙述，没有本篇可归属的模型判断。"
+    },
+    {
+      "fname": "2026-06-24 160010_冰冰小美_别以为我吹票。我只是让你回顾下，以前的发的文。你当时不懂，现在不懂，将来也不会懂。懂了就不会问了。也不会涨了才觉得好。.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "要求读者回看以前文章，未提供实质判断。",
+      "rationale": "无模型变量或行动规则。"
+    },
+    {
+      "fname": "2026-06-24 180040_冰冰小美_说一个悲痛的故事。刚才在 赛力斯 个股下的贴子，看到一个以前，同长期持有 万华化学 的老面孔。原来是加杠杆近400%，并.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m04",
+        "m06"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "low",
+      "evidence_summary": "以新能源车销量下滑、同质化价格战、研发资本开支和利润率损耗解释整车板块下跌。",
+      "rationale": "独立复核发现该批次同类条目未稳定满足完整模型边界，保守降回未决；原主模型仅保留为次级候选。原判定：行业需求—竞争—利润传导是主线；杠杆只是开篇风险案例。"
+    },
+    {
+      "fname": "2026-06-24 182657_冰冰小美_我向来不贬低低谷中的行业。因为低谷，才会把不为人知的风险暴露，这对于我完善风险认知，只有好处，没有坏处。风险体系建立，是.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m04",
+        "m02"
+      ],
+      "supported_heuristic_ids": [
+        "h06"
+      ],
+      "confidence": "low",
+      "evidence_summary": "用存储低谷研究、供需过剩、后续价值认可和收益案例说明低谷研究。",
+      "rationale": "独立复核发现该批次同类条目未稳定满足完整模型边界，保守降回未决；原主模型仅保留为次级候选。原判定：完整表达在低谷研究并等待兑现/市场认可的规则，h06 受支持；兑现链属于 m04。"
+    },
+    {
+      "fname": "2026-06-24 184154_冰冰小美_有色相关，有色从买到卖都有完整版帖子。有色没亏过一分钱。如果黄金5000，白银120， 紫金矿业 一万亿，你买的有色。我.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m01",
+        "m03"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "强调有色与全球宏观相关，并在评论中以美国铜产线扩张和关税说明背景。",
+      "rationale": "没有一篇内完整的市场三要素或战略到产业候选推导。"
+    },
+    {
+      "fname": "2026-06-24 190321_冰冰小美_昨日的一些对话。恐慌过程的应对。很多人问交易，问个股审慎，真没法教。教了当时你也不会这么想。意义不大。不过一些简单过程给.md",
+      "model_verdict": "resolved_to_model",
+      "expected_primary_model_id": "m02",
+      "secondary_model_ids": [
+        "m06",
+        "m04"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "面对 PCB 恐慌及可能的外围传导，反复根据下一日情形准备退出、减仓或低吸。",
+      "rationale": "风险状态变化与短线观察窗口是主要结构，仓位动作从属其下。"
+    },
+    {
+      "fname": "2026-06-24 212356_冰冰小美_没有谁会无缘无故的发财的。别人的知识终究不是自己的。方法，路径，思维都发了一堆帖子，学我者生，似我者死。模仿抄袭没有出路.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "强调独立思考，反对直接询问个股交易。",
+      "rationale": "方法论态度而非现有模型或具体启发式。"
+    },
+    {
+      "fname": "2026-06-24 213623_冰冰小美_今天期货市场巨大波动。核心是贵金属与原油。贝森特言论一，通胀目标与原油价格。已经发帖过。原油对通胀远期影响。二，强势美.md",
+      "model_verdict": "resolved_to_model",
+      "expected_primary_model_id": "m02",
+      "secondary_model_ids": [
+        "m01"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "从原油、美元、战争风险、黄金止损盘和利率政策描述风险变化及远期通胀传导。",
+      "rationale": "风险演绎及其事件影响清晰主导。"
+    },
+    {
+      "fname": "2026-06-24 215316_冰冰小美_为什么要如此快速行动的压制通胀预期。你不看看隔壁米股，，害怕从天而降的掌法而已。而我国很默契的突然加大半导体相关投资，维.md",
+      "model_verdict": "resolved_to_model",
+      "expected_primary_model_id": "m03",
+      "secondary_model_ids": [
+        "m01"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "将压低石油成本与中国增加半导体投资并列为中美高端制造竞争安排。",
+      "rationale": "国家战略如何导向半导体产业是核心解释。"
+    },
+    {
+      "fname": "2026-06-24 225644_冰冰小美_在我看来，压制原油就是美股救市。睡觉💤， 英特尔 奥利给。.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m02"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "仅提出压制原油等同美股救市的判断。",
+      "rationale": "过于简短，未表达风险状态或模型输出。"
+    },
+    {
+      "fname": "2026-06-25 083519_冰冰小美_立讯精密 光 胜宏科技 pcb 兆易创新 存储 东山精密 光 京东方A 玻璃基板 豪威集团 半导体设计 TC.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m04"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "low",
+      "evidence_summary": "将 ETF 成分逐一映射到光、PCB、存储、玻璃基板、芯片和封装等产业链环节。",
+      "rationale": "独立复核发现该批次同类条目未稳定满足完整模型边界，保守降回未决；原主模型仅保留为次级候选。原判定：其核心是全产业链景气赛道的组成与传导，而非 ETF 使用规则。"
+    },
+    {
+      "fname": "2026-06-25 084517_冰冰小美_ETF并不是个股，只是方向。你选择你认为对的方向，但是不知道选股，就买ETF，错的概率极小。ETF一篮子股票，肯定有不涨.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m06",
+        "m02",
+        "m04"
+      ],
+      "supported_heuristic_ids": [
+        "h08"
+      ],
+      "confidence": "high",
+      "evidence_summary": "明确说不知选股时买 ETF，并按宏观风险、流动性和产业景气的长期波动来理解 ETF。",
+      "rationale": "h08 完整成立，但正文将多个模型并列为 ETF 分析输入，无法判定单一主模型。"
+    },
+    {
+      "fname": "2026-06-27 132312_冰冰小美_2026年6月月报（一）问天.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m03",
+        "m01",
+        "m02",
+        "m04",
+        "m05"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "月报覆盖中美竞争、美元流动性、原油风险、日本债券、半导体投资和信息预期管理。",
+      "rationale": "是横跨多个模型的宏观综合，未有一项模型明显压倒其他项。"
+    },
+    {
+      "fname": "2026-07-03 083933_冰冰小美_如何理解国运红利.md",
+      "model_verdict": "resolved_to_model",
+      "expected_primary_model_id": "m03",
+      "secondary_model_ids": [
+        "m04",
+        "m02"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "以脱贫、房地产、乡村振兴和高质量发展等阶段目标解释产业与资本市场方向的切换。",
+      "rationale": "国家目标到研究方向/产业机会的映射构成主线；企业发展速度和风险警惕是辅助限制。"
+    }
+  ]
+}

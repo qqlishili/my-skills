@@ -1,0 +1,696 @@
+{
+  "schema_version": 1,
+  "batch_id": "02",
+  "unresolved_sorted_range": {
+    "start_inclusive": 56,
+    "end_exclusive": 112
+  },
+  "reviewer_mode": "agent_original_text_semantic_review",
+  "entries": [
+    {
+      "fname": "2024-12-25 165007_冰冰小美_美联储的这四年.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m01",
+        "m02"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "medium",
+      "evidence_summary": "复盘 QE、加息缩表与资产泡沫、出清的跨周期叙事。",
+      "rationale": "涉及流动性和风险，却未完整操作化三要素或风险窗口。"
+    },
+    {
+      "fname": "2025-01-03 112122_冰冰小美_交易的风控.md",
+      "model_verdict": "resolved_to_model",
+      "expected_primary_model_id": "m02",
+      "secondary_model_ids": [
+        "m03"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "明确以风险来源、风险减弱节点和风险在前机遇在后组织交易观察。",
+      "rationale": "风险状态变化及介入节点是全文主轴。"
+    },
+    {
+      "fname": "2025-03-02 105810_冰冰小美_视角与战略.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m03",
+        "m01"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "medium",
+      "evidence_summary": "从中美政策、资金与科技竞争解释宏观战略。",
+      "rationale": "是宏观战略评论，未形成国家目标到产业候选的明确研究路由。"
+    },
+    {
+      "fname": "2025-03-05 101202_冰冰小美_米股的影响.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m01",
+        "m02"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "medium",
+      "evidence_summary": "讨论美元、通胀、全球市场泡沫和地缘风险。",
+      "rationale": "多个宏观变量并列，未完成任一现有模型的全量判断。"
+    },
+    {
+      "fname": "2025-03-16 185442_冰冰小美_分享新闻，立马就有留言，利好什么利空什么。说实在的，大概率拉黑对象。股市如果只是二元博弈，那太简单了。人人都可以依据这种.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m02",
+        "m05"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "medium",
+      "evidence_summary": "反对将新闻二元化，并以海权和地缘风险说明需静观其变。",
+      "rationale": "没有给出来源核验与交叉印证的完整规则，也非完整风险窗口模型。"
+    },
+    {
+      "fname": "2025-04-14 081545_冰冰小美_90天的可能性路径演绎.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m03",
+        "m02"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "medium",
+      "evidence_summary": "以国际竞争、区域贸易和关税不确定性推演九十天路径。",
+      "rationale": "战略情景推演未落到现行模型的产业候选或风险窗口动作。"
+    },
+    {
+      "fname": "2025-04-27 082843_冰冰小美_竞争格局的演绎.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m03",
+        "m02"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "从国际经贸斗争、高质量发展到优秀产业的长期竞争力展开。",
+      "rationale": "虽强调国家战略和产业，但未形成模型要求的研究候选集合。"
+    },
+    {
+      "fname": "2025-05-17 185004_冰冰小美_股市投资者的困境.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m01",
+        "m06"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "medium",
+      "evidence_summary": "分析不同资金主体、量化、游资与流动性造成的市场生态。",
+      "rationale": "着重行为生态和策略评论，未完整评估三要素或个人风险预算。"
+    },
+    {
+      "fname": "2025-06-06 001546_冰冰小美_信息的金融意义（一） 1.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m01"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "medium",
+      "evidence_summary": "要求金融信息优先关注货币和资金环境，并结合实体理解。",
+      "rationale": "仅覆盖流动性维度，不足以构成三要素状态模型。"
+    },
+    {
+      "fname": "2025-06-06 001546_冰冰小美_信息的金融意义（一）.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m01"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "medium",
+      "evidence_summary": "正文与同名副本一致，讨论货币信息、风险偏好与实体经济。",
+      "rationale": "只聚焦资金环境，不能据此强归 m01。"
+    },
+    {
+      "fname": "2025-06-08 131633_冰冰小美_信息的金融意义（二）.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m02",
+        "m01"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "主张记录、归纳和长期跟踪金融信息以识别风险减弱节点。",
+      "rationale": "方法是信息归纳，未定义风险状态到窗口的完整转变规则。"
+    },
+    {
+      "fname": "2025-06-09 221729_冰冰小美_信息的金融意义（四）.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m05"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "medium",
+      "evidence_summary": "辨析隐学、内幕、包装叙事及其功利性和风险。",
+      "rationale": "讨论信息动机，未按来源、事件落地和交叉印证建立证据状态。"
+    },
+    {
+      "fname": "2025-06-15 205400_冰冰小美_目前有什么有利，支撑我的判断.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m01",
+        "m02"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "medium",
+      "evidence_summary": "列举财政杠杆、利差、外资和外部风险对行情的有利支撑。",
+      "rationale": "是多因素看多论证，未完成现有状态模型。"
+    },
+    {
+      "fname": "2025-06-23 233810_冰冰小美_信息的金融意义（七）.md",
+      "model_verdict": "resolved_to_model",
+      "expected_primary_model_id": "m03",
+      "secondary_model_ids": [],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "明确要求从国策到政策理解行业方向，并以长期战略解释产业机会。",
+      "rationale": "国家目标和政策约束如何界定研究方向是全文的支配目的。"
+    },
+    {
+      "fname": "2025-06-24 120944_冰冰小美_信息的金融意义（八）.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m04",
+        "m05"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "提出产业—行业—企业的自上而下理解，并警惕概念炒作。",
+      "rationale": "没有技术、订单、产能和利润组成的兑现验证链。"
+    },
+    {
+      "fname": "2025-06-29 151507_冰冰小美_信息的金融意义（九）.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m05",
+        "m01"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "medium",
+      "evidence_summary": "批评媒体、分析和吃瓜信息的动机与情绪影响。",
+      "rationale": "未按证据来源与事件状态形成可判定的 m05。"
+    },
+    {
+      "fname": "2025-07-02 131714_冰冰小美_雪球大V，前著名基金经理，肖志刚，《投资有规律》，这本书，其中提到钢铁板块，总是行情末端，最后一波拉升。有兴趣的可以买这.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "仅转述一本书对钢铁板块末端行情的观察。",
+      "rationale": "没有现行模型或启发式的完整语义。"
+    },
+    {
+      "fname": "2025-07-17 152720_冰冰小美_信息的金融意义（十）.md",
+      "model_verdict": "resolved_to_model",
+      "expected_primary_model_id": "m06",
+      "secondary_model_ids": [],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "以预备队、分仓和保留现金流应对不确定性，反对满仓 all-in。",
+      "rationale": "核心是维持可持续风险暴露和行动能力。"
+    },
+    {
+      "fname": "2025-07-25 184001_冰冰小美_交易理念之争.md",
+      "model_verdict": "resolved_to_model",
+      "expected_primary_model_id": "m06",
+      "secondary_model_ids": [
+        "m02"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "强调风险累积时预留资金、资产配置和不伤本金以保留下一次机会。",
+      "rationale": "持续讨论可承受暴露与现金余量，m06 明显主导。"
+    },
+    {
+      "fname": "2025-08-11 160337_冰冰小美_短线如何寻找情绪标.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m01"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "medium",
+      "evidence_summary": "以历史隐喻说明情绪标、题材和流动性争夺。",
+      "rationale": "只讨论情绪标的生态，未覆盖 m01 的三状态。"
+    },
+    {
+      "fname": "2025-08-13 162814_冰冰小美_个股情绪与整体情绪.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m01"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "medium",
+      "evidence_summary": "解释个股旗帜、板块轮动和整体情绪之间的关系。",
+      "rationale": "情绪维度突出，但缺少竞争格局与流动性状态的完整判断。"
+    },
+    {
+      "fname": "2025-08-13 213200_冰冰小美_留一半清醒，一半醉。清醒说的只是表象，比如Ai无法盈利。这可能是对。但是核心在于，长期印钞过剩，债务高启，这类超发货币需.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m01"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "将 AI 投资解释为超发货币的蓄水池。",
+      "rationale": "单点宏观判断，不构成完整模型。"
+    },
+    {
+      "fname": "2025-09-05 212057_冰冰小美_心智夺取与交易决策.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m01",
+        "m06"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "medium",
+      "evidence_summary": "分析价格刺激、牛熊氛围和投机如何塑造交易心理。",
+      "rationale": "是心理和市场制度讨论，未完成现有模型。"
+    },
+    {
+      "fname": "2025-09-08 112222_冰冰小美_最近主要重读，鬼谷子，与翟东升相关著作演讲。温故而知新。2006年，美联储主席格林斯潘卸任。随后出现金融危机。因此，从风.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "推荐风险、危机与变化相关书籍。",
+      "rationale": "没有提出可归类的模型规则。"
+    },
+    {
+      "fname": "2025-10-19 084358_冰冰小美_波动风险 1.md",
+      "model_verdict": "resolved_to_model",
+      "expected_primary_model_id": "m02",
+      "secondary_model_ids": [
+        "m01"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "定义事件累积到一致认同的波动风险，并说明风险敞口、减仓和改善条件。",
+      "rationale": "风险从前兆到扩散再到应对的状态演绎完整。"
+    },
+    {
+      "fname": "2025-10-19 084358_冰冰小美_波动风险.md",
+      "model_verdict": "resolved_to_model",
+      "expected_primary_model_id": "m02",
+      "secondary_model_ids": [
+        "m01"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "完整正文与评论均把波动风险的前兆、扩散、减仓和改善条件串联。",
+      "rationale": "明确而完整地体现风险—窗口状态模型。"
+    },
+    {
+      "fname": "2025-11-29 002757_冰冰小美_重大事件重要节点.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m02",
+        "m03"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "medium",
+      "evidence_summary": "罗列货币、外交和地缘重大节点及可能影响。",
+      "rationale": "节点清单并未给出完整风险状态或产业映射规则。"
+    },
+    {
+      "fname": "2025-12-29 082643_冰冰小美_信息的金融意义（十二）.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m05"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "按信息传播对象和发布动机辨析政策、自媒体及内幕信息。",
+      "rationale": "未包含来源质量、落地状态和交叉印证的完整 m05。"
+    },
+    {
+      "fname": "2026-01-04 120121_冰冰小美_新门罗主义与G2.md",
+      "model_verdict": "resolved_to_model",
+      "expected_primary_model_id": "m03",
+      "secondary_model_ids": [],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "将美国地区战略、资源控制和中美竞争映射至石油、矿产和制造业安全。",
+      "rationale": "国家竞争目标限定产业安全与研究方向，m03 主旨明确。"
+    },
+    {
+      "fname": "2026-01-06 144030_冰冰小美_信息的金融意义（十四）.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m05",
+        "m02"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "讨论公开与内幕信息在市场中被反映的时效及历史路径。",
+      "rationale": "关注时间性，不足以单独满足证据状态或风险窗口模型。"
+    },
+    {
+      "fname": "2026-01-11 114226_冰冰小美_中国政府投资理念与美国政府的模仿与实践.md",
+      "model_verdict": "resolved_to_model",
+      "expected_primary_model_id": "m03",
+      "secondary_model_ids": [
+        "m01"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "从中央投资、五年规划、产业安全到 AI 全产业链系统论证研究方向。",
+      "rationale": "国家目标和持续政策如何生成战略产业集合贯穿全文。"
+    },
+    {
+      "fname": "2026-01-12 173553_冰冰小美_4200点以后怎么办。4200点当时并非拍脑袋随便说的。是估算A股总市值与GDP达到1比1的重要节点。因此，4200以上.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m01"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "medium",
+      "evidence_summary": "讨论总市值/GDP、ETF 和量化对指数的影响。",
+      "rationale": "不满足任何现行模型的完整输入输出边界。"
+    },
+    {
+      "fname": "2026-01-16 125453_冰冰小美_长期主义的浪漫.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "以社会分层和长期理念进行价值观讨论。",
+      "rationale": "没有可映射的当前模型或启发式。"
+    },
+    {
+      "fname": "2026-01-17 094801_冰冰小美_从泡沫破灭的历史视角看成长与泡沫.md",
+      "model_verdict": "resolved_to_model",
+      "expected_primary_model_id": "m02",
+      "secondary_model_ids": [
+        "m01",
+        "m03"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "跨历史泡沫总结杠杆、流动性、制度和技术变革如何产生危机与应对信号。",
+      "rationale": "以风险累积、爆发和恢复条件为主线，m02 最强。"
+    },
+    {
+      "fname": "2026-01-20 230801_冰冰小美_哀其不幸，怒其不争.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m02"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "批评自媒体、游资和量化收割链条及市场制度问题。",
+      "rationale": "主要是制度诊断，不是现行风险状态模型。"
+    },
+    {
+      "fname": "2026-01-21 082349_冰冰小美_哀其不幸，怒其不争，二.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m02"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "讨论涨停、量化同质化、流动性收缩和监管纠偏的风险。",
+      "rationale": "风险评论未给出模型化的窗口识别与介入规则。"
+    },
+    {
+      "fname": "2026-01-23 175911_冰冰小美_何为国运红利的分配.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m03",
+        "m04"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "论述企业穿越困境、形成产业支柱并分享时代发展红利。",
+      "rationale": "缺少从战略到候选或兑现链的可操作完整结构。"
+    },
+    {
+      "fname": "2026-01-29 100438_冰冰小美_2026年一月月报（二），白银与经济危机以及日本野心.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m03",
+        "m02"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "medium",
+      "evidence_summary": "以白银、货币史和日本发展史解释资源、金融与安全竞争。",
+      "rationale": "宏观历史归纳跨越多个模型，没有单一主导模型。"
+    },
+    {
+      "fname": "2026-01-29 231338_冰冰小美_2026年1月月报（二），货币体系变迁与全球资本热钱涌动的背后安全性的考量.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m02",
+        "m03",
+        "m01"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "medium",
+      "evidence_summary": "并列分析地缘、美元信用、热钱、大宗商品和亚太安全。",
+      "rationale": "综合月报没有一项现行模型明显压倒其他。"
+    },
+    {
+      "fname": "2026-02-24 111405_冰冰小美_2026年二月月报.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m03",
+        "m04",
+        "m02"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "medium",
+      "evidence_summary": "月报连接美元风险、中国高质量发展、出海、半导体和石化交易。",
+      "rationale": "多条主线并列，不能强行选择单一模型。"
+    },
+    {
+      "fname": "2026-03-19 164930_冰冰小美_2026年3月（半月报）.md",
+      "model_verdict": "resolved_to_model",
+      "expected_primary_model_id": "m02",
+      "secondary_model_ids": [
+        "m06",
+        "m01"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "界定中东危机带来的宏观风险敞口、持续时长、资产波动和资金安全优先级。",
+      "rationale": "风险状态、观察期与应对窗口是全文明确核心。"
+    },
+    {
+      "fname": "2026-03-20 232511_冰冰小美_宏观分析的框架，简化版本.md",
+      "model_verdict": "resolved_to_model",
+      "expected_primary_model_id": "m02",
+      "secondary_model_ids": [
+        "m01"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "列出汇率、美元、通胀、流动性、债务等风险信号，并结论宏观风险敞口下交易困难。",
+      "rationale": "明示用风险信号判断当前窗口，m02 完整且居主导。"
+    },
+    {
+      "fname": "2026-03-21 100423_冰冰小美_美国财政政策的掣肘与战争经济.md",
+      "model_verdict": "resolved_to_model",
+      "expected_primary_model_id": "m02",
+      "secondary_model_ids": [
+        "m03"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "展开债务、利率、通胀、战争经济三种路径及其风险后果。",
+      "rationale": "以风险来源和演绎分支为主体，m02 明显优于其他模型。"
+    },
+    {
+      "fname": "2026-03-23 181328_冰冰小美_风险对冲.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m06",
+        "m02"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "说明风险资产、债市杠杆、保证金与金融连环传导，并警示对冲风险。",
+      "rationale": "没有以个人仓位、现金余量和承受力完成 m06 判断。"
+    },
+    {
+      "fname": "2026-03-31 161909_冰冰小美_金融诱骗.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m02",
+        "m05"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "指出对冲失效、谎言流言和不确定性累积会诱导交易者放松警惕。",
+      "rationale": "是风险警示，未形成完整事件状态或证据状态模型。"
+    },
+    {
+      "fname": "2026-04-27 101303_冰冰小美_江丰电子 的溅射靶材，进入 台积电 。那么技术端没问题。核心在于营收。江丰电子介入韩国存储产业链，计划在韩国建立生产线，.md",
+      "model_verdict": "resolved_to_model",
+      "expected_primary_model_id": "m04",
+      "secondary_model_ids": [
+        "m03"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "用技术进入客户、韩国生产计划、供需缺口和营收重点判断公司机会。",
+      "rationale": "技术—需求—产能/供应—营收的公司兑现链清晰。"
+    },
+    {
+      "fname": "2026-04-28 161205_冰冰小美_2026年4月月报（一）.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m02",
+        "m04",
+        "m01"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "medium",
+      "evidence_summary": "月报并列 AI 资本开支与盈利、地缘事件窗口和流动性风险。",
+      "rationale": "各模型都有部分依据，未出现唯一主导目的。"
+    },
+    {
+      "fname": "2026-04-30 165149_冰冰小美_2026年4月月报（二）.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m01",
+        "m04"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "以硅基/碳基隐喻描写 AI 资本与传统需求的市场两极分化。",
+      "rationale": "是市场叙事与估值评论，未构成完整现行模型。"
+    },
+    {
+      "fname": "2026-05-05 235529_冰冰小美_AI竞赛的世界格局演绎.md",
+      "model_verdict": "resolved_to_model",
+      "expected_primary_model_id": "m03",
+      "secondary_model_ids": [
+        "m02",
+        "m04"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "把债务、石油美元和国家安全竞争映射到稀土、半导体、AI 全产业链扶持。",
+      "rationale": "战略目标与产业安全如何确定产业范围是主要论证。"
+    },
+    {
+      "fname": "2026-05-08 095531_冰冰小美_分别代表，光，pcb，谐振，磷化铟，pcb，铌，陶瓷，树脂，磷化铟.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "仅列举光、PCB、材料等名称并附图。",
+      "rationale": "正文没有可判定的模型或行动规则。"
+    },
+    {
+      "fname": "2026-05-08 100733_冰冰小美_次新股二个，大普微是储存，海力士影射。 红板科技 是pcb，与 英特尔 有关。游资与机构推动这种情绪。.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m01"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "点名两只次新股的题材影射及游资、机构推动情绪。",
+      "rationale": "只有局部情绪描述，未覆盖 m01 的完整状态变量。"
+    },
+    {
+      "fname": "2026-05-08 101239_冰冰小美_趋势行情做趋势图看看。你会发展有一些卖点都是趋势上轨。技术面很多想看。我也是半桶水。仅供参考。关于技术图画线以及如何理解.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "仅提示趋势上轨可能是卖点并推荐技术分析书籍。",
+      "rationale": "技术图形规则不属于现行 taxonomy。"
+    },
+    {
+      "fname": "2026-05-08 102927_冰冰小美_目前AI的节点，可能集中于61，62-65。 英伟达 ， 英特尔 都会参加台北演讲。如果不确定性结束，这会刺激新一.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m02",
+        "m04"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "提出 AI 会议节点、不确定性结束和 CPU/GPU 路线可能影响受益者。",
+      "rationale": "事件与技术路线提示过短，未形成完整风险窗口或兑现链。"
+    },
+    {
+      "fname": "2026-05-08 111255_冰冰小美_下周中米大事件，米联储换届。本周五规避不确定性，获利盘抛售，观察事件，也是合情合理的。游资则利用热度的情绪延续，交易次新.md",
+      "model_verdict": "resolved_to_model",
+      "expected_primary_model_id": "m02",
+      "secondary_model_ids": [
+        "m01"
+      ],
+      "supported_heuristic_ids": [
+        "h03"
+      ],
+      "confidence": "high",
+      "evidence_summary": "重大事件结果未定时，明确提出规避不确定性、获利盘抛售并观察事件。",
+      "rationale": "同时满足风险窗口模型及 h03 的控仓等待可验证结果规则。"
+    },
+    {
+      "fname": "2026-05-08 111422_冰冰小美_我怎么看待。我的时间表是514。我要看牌。包括 英特尔 我也没卖。.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [
+        "m02"
+      ],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "表达等待 5/14 事件后再判断，且持有英特尔。",
+      "rationale": "个人时间表不足以单独证明完整风险与时间窗口模型。"
+    },
+    {
+      "fname": "2026-05-08 133429_冰冰小美_不能说一模一样，只能是一模一样。卫星Etf等于 航天电子 走势。.md",
+      "model_verdict": "remains_unresolved",
+      "expected_primary_model_id": null,
+      "secondary_model_ids": [],
+      "supported_heuristic_ids": [],
+      "confidence": "high",
+      "evidence_summary": "只陈述卫星 ETF 与航天电子走势相似并附图。",
+      "rationale": "没有 taxonomy 中的完整语义。"
+    }
+  ]
+}

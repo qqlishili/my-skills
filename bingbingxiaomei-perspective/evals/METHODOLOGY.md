@@ -2,6 +2,24 @@
 
 > 创建时间：2026-06-12 | 适用范围：bingbingxiaomei-perspective skill 全部 Darwin 评估
 
+## 当前 taxonomy 分类评估边界
+
+自 `references/taxonomy.json` 成为当前唯一 taxonomy 后，`01-baseline-pre-improvement.json` 至 `09-promotion-deep-analysis.md` 及 `scripts/classification_output/` 中旧 schema JSON 均为 **legacy baseline**。它们保留原文和原始统计，不回写当前模型 ID，也不与当前分类准确率直接比较。
+
+当前分类评估只使用：
+
+- `scripts/classification_output/current.json` 指向的不可变 schema v2 产物；
+- `evals/current-classification-review-2026-07-26.json` 的可复算待审查队列；
+- `evals/current-classification-manual-review-2026-07-26.json` 的人工原文复核结论。
+- `evals/review-batches/task9-unresolved-batch-01.json` 至 `-06.json` 的 334 篇逐篇原文复核结论；
+- `evals/current-classification-review-status-2026-07-26.json` 的当前完成度与 Gate 状态。
+
+分类器输出是候选路由，不是语义真值。`unresolved=true` 或置信度低于 `0.65` 的文章必须进入待审查队列；每个已解析模型另取至少 4 篇。队列中的 `pending` 只表示尚未人工复核，不能被计作通过。人工复核必须回读原文，并分别判断主模型和启发式候选。
+
+2026-07-26 首次当前 taxonomy 运行结果为 520 篇、334 篇 unresolved；队列共 358 篇。首批每模型 4 篇、共 24 篇人工复核得到 20 篇主模型正确、3 篇错误、1 篇有歧义。其余 334 篇已按稳定排序拆成 6 个批次并逐篇回读原文：107 篇获得主模型，227 篇保留未决。独立复核另发现 3 组过度归类模式，将其中 28 篇保守降回未决；加上首批样本中的 1 篇歧义条目，正式裁决产物最终保留 228 篇 unresolved。这里的 unresolved 是显式诚实边界，不是待审查遗漏；358/358 条队列均已复核，任务 9 的数据前提已完成。
+
+正式当前产物由 `current.json` 指向 `classification-adjudicated-*` 不可变文件；文件名使用微秒时间戳并以排他创建写入，已存在路径不得覆盖。裁决器只接受 raw 分类产物，禁止对已裁决产物再次覆盖，以免污染 `classifier_*` 原始值。`corpus_digest` 必须由本次实际加载的同一批文章字节计算；只有与 taxonomy 的 canonical digest 相等时才允许更新 current 指针。默认正式 current 还必须使用项目内 canonical taxonomy 与 articles 路径，自定义输入只能写入非默认输出目录。
+
 ## 评估器版本
 
 | 版本 | 关联文件 | 评分尺度 | 备注 |

@@ -2607,8 +2607,8 @@
     "reparse_skipped": [],
     "total_bytes": 1743500
   },
-  "final_status": "deferred",
-  "finalized_at": "2026-07-23T09:19:58Z",
+  "final_status": "pass",
+  "finalized_at": "2026-07-26T11:07:44Z",
   "index_plan": {
     "action": "index_required",
     "corpus_digest": "aa562d951deba34430f5ce9a7f7615c9aed9050d8355167e5d77d95d26696fcf",
@@ -2632,88 +2632,82 @@
   "mcp": {
     "codebase_memory": {
       "details": {
-        "all_author_primary": true,
-        "article_files": 520,
-        "compatibility_shim": "scripts/tool-shims/powershell.cmd",
-        "edges": 4668,
-        "index_root": "D:/Temp/create_skills/bingbingxiaomei-perspective",
-        "nodes": 3643,
-        "path_filter": "^references/sources/articles/",
+        "config_restart_required_for_current_codex_connection": true,
+        "filename_validation": "unique ASCII datetime prefix plus local author_primary path and line verification",
+        "launcher": "scripts/tool-shims/codebase-memory-mcp.cmd",
+        "live_mcp_query_count": 5,
+        "live_mcp_success_count": 5,
         "project": "bingbingxiaomei-perspective-full",
-        "query_count": 5,
-        "raw_fallback_count": 0,
-        "receipt_path": "references/research/g1-local/g1b-codebase-memory-receipt.json",
-        "receipt_sha256": "d2b0616fd11b3f31e6c9303a857192e10c6ef2d9d25a0a93ed253b0e91a74816",
-        "years": [
-          2023,
-          2024,
-          2025,
-          2026
-        ]
+        "protocol_version": "2025-06-18",
+        "receipt": "references/research/g1-local/g1b-codebase-memory-receipt.json",
+        "receipt_sha256": "b395638ddf0e2f630743808a4e585da569f473241d499bb4bb366863617e16fa",
+        "server_version": "0.9.0"
       },
-      "recorded_at": "2026-07-23T09:19:58Z",
+      "recorded_at": "2026-07-26T10:21:24Z",
       "status": "pass"
     },
     "codegraph": {
       "details": {
-        "reset_reason": "required_by_current_plan"
+        "added_files": 17,
+        "all_required_scripts_indexed": true,
+        "edges": 1067,
+        "full_rebuild_attempt": "blocked_by_live_mcp_database_lock",
+        "gate": "G4",
+        "indexed_files": 21,
+        "markdown_used_as_index": false,
+        "mode": "incremental_sync",
+        "modified_files": 2,
+        "nodes": 540,
+        "required_scripts": [
+          "scripts/classify-articles.py",
+          "scripts/analyze_classification.py",
+          "scripts/adjudicate_classification.py",
+          "scripts/validate_article_interpretation.py"
+        ],
+        "status": "up_to_date",
+        "sync_changed_files": 19
       },
-      "recorded_at": "2026-07-19T14:39:58Z",
-      "status": "pending"
+      "recorded_at": "2026-07-26T10:01:46Z",
+      "status": "pass"
     },
     "graphify": {
       "details": {
+        "article_source_file_paths": 520,
         "artifacts": {
-          "graph_sha256": "52A2B3F7864D0A4198FE472F8665ADD493D6CE622FA1E159A4A7325C8C98336E",
-          "manifest_sha256": "6C70137D27155E62DDFDC1B810C6F78ACE0220E42F179EB8931B3024186E52C7",
-          "report_sha256": "13447A07483597EAF10938F8CF4E4EB43A1159AC4E8865F8AD44C77585C99084"
+          "graph_sha256": "64e4419d5b117b6caf778dc99f47ed696d7f6931a93a21516a85d9544c2d4b8d",
+          "manifest_sha256": "fb297b748d64959d464723e75c5751e30f9c0caba8a78e5450df3db86d0ee8cd",
+          "report_sha256": "519361eb6b70106c9828f4b278a0f0dfaf9b7eba5ea95090493a5233f764ffa8"
         },
-        "backend": "codex-host-agents",
-        "completed_at": "2026-07-23T16:49:17.4226812+08:00",
-        "corpus": {
-          "cache_hits_after": 603,
-          "cache_hits_before": 271,
-          "code_files": 42,
-          "codex_extracted_files": 332,
-          "detected_files": 645,
-          "semantic_files": 603
+        "backend": "graphify-cli-update-0.8.13-task12-review",
+        "candidate_only": true,
+        "communities": 1211,
+        "edges": 5057,
+        "external_source_paths": 0,
+        "extra_articles": 0,
+        "final_graph_health": {
+          "dangling_endpoint_edges": 0,
+          "self_loop_edges": 0
         },
-        "extraction": {
-          "ast_edges": 324,
-          "ast_nodes": 162,
-          "semantic_edges": 1436,
-          "semantic_hyperedges": 71,
-          "semantic_unique_nodes": 1426
+        "gate": "G4",
+        "historical_topic_query_pass": true,
+        "missing_articles": 0,
+        "nodes": 5448,
+        "note": "Task 12 independent-review fixes applied. Graphify semantic cache refreshed, official CLI update completed, final graph has valid endpoints and 520/520 article coverage.",
+        "required_article_paths": 520,
+        "semantic_refresh": {
+          "ast_and_graph_rebuilt": true,
+          "timeline_cache_refreshed": true
         },
-        "gate": "G1b",
-        "graph": {
-          "absolute_source_paths": 0,
-          "article_source_file_paths": 520,
-          "communities": 395,
-          "edges": 1577,
-          "extra_articles": 0,
-          "missing_articles": 0,
-          "nodes": 1588,
-          "parent_escape_paths": 0,
-          "required_article_paths": 520,
-          "theme_query": "体系三要素 流动性 竞争格局 情绪位置",
-          "theme_query_nodes": 180
-        },
-        "health": {
-          "dangling_endpoint_edges": 170,
-          "missing_endpoint_edges": 1,
-          "note": "Most dangling edges are AST imports to standard-library/external modules; graphify build drops invalid endpoints. Warning retained per honesty rule.",
-          "self_loop_edges": 0,
-          "undirected_collapsed_edges": 12
-        },
-        "usage_note": "Subagent token usage was not exposed in receipts; no token count was fabricated."
+        "task12_timeline_query_pass": true,
+        "taxonomy_query_pass": true
       },
-      "recorded_at": "2026-07-23T08:49:17Z",
+      "recorded_at": "2026-07-26T11:07:44Z",
       "status": "pass"
     }
   },
   "preflight_target": "D:\\Temp\\create_skills\\bingbingxiaomei-perspective",
   "prepared_at": "2026-07-19T14:39:58Z",
+  "previous_pass_digest": "aa562d951deba34430f5ce9a7f7615c9aed9050d8355167e5d77d95d26696fcf",
   "reparse_skipped": [],
   "schema_version": 1,
   "script_digest": "6fcb337e306da3dd656a83c224dcb9c5856620d6fcad989f85ed772867938a41",

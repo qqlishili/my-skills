@@ -7,7 +7,7 @@ import hashlib
 import json
 import re
 from collections import Counter
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 
 
@@ -36,6 +36,64 @@ def load_taxonomy(path=TAXONOMY_PATH):
     if len(heuristic_ids) != len(set(heuristic_ids)):
         raise ValueError("taxonomy contains duplicate heuristic IDs")
     return taxonomy, hashlib.sha256(raw).hexdigest()
+
+
+def sha256_json(value):
+    data = json.dumps(
+        value,
+        ensure_ascii=False,
+        sort_keys=True,
+        separators=(",", ":"),
+    ).encode("utf-8")
+    return hashlib.sha256(data).hexdigest()
+
+
+def scan_loaded_corpus(articles_dir, articles):
+    """Build the digest from the exact bytes already loaded for classification."""
+    articles_dir = Path(articles_dir)
+    fnames = [article["fname"] for article in articles]
+    if len(fnames) != len(set(fnames)):
+        raise ValueError("loaded article filenames are not unique")
+
+    files = []
+    by_name = {article["fname"]: article for article in articles}
+    for fname in sorted(fnames):
+        record = by_name[fname].get("source_record")
+        if not record:
+            raise ValueError(f"loaded article lacks source bytes record: {fname}")
+        files.append(dict(record))
+    return {
+        "corpus_digest": sha256_json(files),
+        "file_count": len(files),
+        "total_bytes": sum(item["bytes"] for item in files),
+        "files": files,
+    }
+
+
+def require_canonical_corpus(actual_digest, taxonomy):
+    expected_digest = taxonomy["corpus_digest"]
+    if actual_digest != expected_digest:
+        raise ValueError(
+            "corpus digest mismatch: "
+            f"expected {expected_digest}, got {actual_digest}"
+        )
+
+
+def require_canonical_current_target(taxonomy_path, articles_dir, outdir):
+    """Reserve the project current pointer for canonical project inputs."""
+    if Path(outdir).resolve() != OUTDIR.resolve():
+        return
+    if Path(taxonomy_path).resolve() != TAXONOMY_PATH.resolve():
+        raise ValueError("default current requires the canonical taxonomy path")
+    if Path(articles_dir).resolve() != ARTICLES_DIR.resolve():
+        raise ValueError("default current requires the canonical articles path")
+
+
+def parse_date_range(start_text, end_text):
+    """Return a half-open range that includes the complete end date."""
+    start = datetime.strptime(start_text, "%Y-%m-%d")
+    end_exclusive = datetime.strptime(end_text, "%Y-%m-%d") + timedelta(days=1)
+    return start, end_exclusive
 
 
 def _term_parts(value):
@@ -100,9 +158,11 @@ def load_articles(
     end=None,
     articles_dir=ARTICLES_DIR,
 ):
-    """Load local Markdown articles within an inclusive date range."""
+    """Load local Markdown articles within a half-open datetime range."""
     start = start or datetime.strptime(DEFAULT_START, "%Y-%m-%d")
-    end = end or datetime.strptime(DEFAULT_END, "%Y-%m-%d")
+    end = end or (
+        datetime.strptime(DEFAULT_END, "%Y-%m-%d") + timedelta(days=1)
+    )
     articles = []
     pattern = re.compile(
         r"(\d{4}-\d{2}-\d{2}) (\d{6})_冰冰小美_(.+)\.md"
@@ -117,9 +177,10 @@ def load_articles(
             f"{date_text} {time_text}",
             "%Y-%m-%d %H%M%S",
         )
-        if not start <= published_at <= end:
+        if not start <= published_at < end:
             continue
-        body = path.read_text(encoding="utf-8")
+        data = path.read_bytes()
+        body = data.decode("utf-8")
         content = body.split("---", 2)[-1] if body.startswith("---") else body
         articles.append(
             {
@@ -130,6 +191,11 @@ def load_articles(
                 "fname": path.name,
                 "content": content,
                 "len": len(content),
+                "source_record": {
+                    "path": path.relative_to(Path(articles_dir)).as_posix(),
+                    "sha256": hashlib.sha256(data).hexdigest(),
+                    "bytes": len(data),
+                },
             }
         )
 
@@ -255,7 +321,8 @@ def build_output(
     """Build the current classification artifact contract."""
     return {
         "schema_version": 2,
-        "timestamp": timestamp or datetime.now().strftime("%Y-%m-%dT%H%M%S"),
+        "classification_stage": "raw",
+        "timestamp": timestamp or datetime.now().strftime("%Y-%m-%dT%H%M%S%f"),
         "corpus_digest": corpus_digest,
         "taxonomy_digest": taxonomy_digest,
         "taxonomy_schema_version": taxonomy["schema_version"],
@@ -276,11 +343,38 @@ def output_json(output, outdir=OUTDIR, prefix="classification"):
     outdir = Path(outdir)
     outdir.mkdir(parents=True, exist_ok=True)
     path = outdir / f"{prefix}-{output['timestamp']}.json"
-    path.write_text(
-        json.dumps(output, ensure_ascii=False, indent=2),
+    with path.open("x", encoding="utf-8") as stream:
+        json.dump(output, stream, ensure_ascii=False, indent=2)
+    return path
+
+
+def write_current_pointer(artifact_path, output, pointer_path=None):
+    """Atomically point to one immutable current classification artifact."""
+    artifact_path = Path(artifact_path)
+    pointer_path = Path(pointer_path or artifact_path.parent / "current.json")
+    pointer_path.parent.mkdir(parents=True, exist_ok=True)
+    target = (
+        artifact_path.name
+        if artifact_path.parent.resolve() == pointer_path.parent.resolve()
+        else str(artifact_path.resolve())
+    )
+    pointer = {
+        "schema_version": 1,
+        "path": target,
+        "sha256": hashlib.sha256(artifact_path.read_bytes()).hexdigest(),
+        "artifact_timestamp": output["timestamp"],
+        "total_articles": output["total_articles"],
+        "unresolved_count": output["unresolved_count"],
+        "corpus_digest": output["corpus_digest"],
+        "taxonomy_digest": output["taxonomy_digest"],
+    }
+    temporary = pointer_path.with_suffix(pointer_path.suffix + ".tmp")
+    temporary.write_text(
+        json.dumps(pointer, ensure_ascii=False, indent=2),
         encoding="utf-8",
     )
-    return path
+    temporary.replace(pointer_path)
+    return pointer_path
 
 
 def output_summary(output):
@@ -302,18 +396,29 @@ def parse_args(argv=None):
     parser.add_argument("--taxonomy", type=Path, default=TAXONOMY_PATH)
     parser.add_argument("--articles-dir", type=Path, default=ARTICLES_DIR)
     parser.add_argument("--outdir", type=Path, default=OUTDIR)
+    parser.add_argument(
+        "--update-current",
+        action="store_true",
+        help="atomically update outdir/current.json after writing the artifact",
+    )
     return parser.parse_args(argv)
 
 
 def main(argv=None):
     args = parse_args(argv)
+    if args.update_current:
+        require_canonical_current_target(
+            args.taxonomy,
+            args.articles_dir,
+            args.outdir,
+        )
     taxonomy, taxonomy_digest = load_taxonomy(args.taxonomy)
     model_routes, heuristic_routes = build_routing_index(taxonomy)
-    articles = load_articles(
-        datetime.strptime(args.start, "%Y-%m-%d"),
-        datetime.strptime(args.end, "%Y-%m-%d"),
-        args.articles_dir,
-    )
+    start, end_exclusive = parse_date_range(args.start, args.end)
+    articles = load_articles(start, end_exclusive, args.articles_dir)
+    corpus_snapshot = scan_loaded_corpus(args.articles_dir, articles)
+    if args.update_current:
+        require_canonical_corpus(corpus_snapshot["corpus_digest"], taxonomy)
     results = [
         classify_article(article, model_routes, heuristic_routes)
         for article in articles
@@ -322,10 +427,17 @@ def main(argv=None):
         results,
         taxonomy,
         taxonomy_digest,
-        taxonomy["corpus_digest"],
+        corpus_snapshot["corpus_digest"],
     )
     path = output_json(output, args.outdir)
     print(f"Classification results saved to {path}")
+    if args.update_current:
+        pointer_path = write_current_pointer(
+            path,
+            output,
+            args.outdir / "current.json",
+        )
+        print(f"Current classification pointer saved to {pointer_path}")
     output_summary(output)
     return path
 

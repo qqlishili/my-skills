@@ -1,0 +1,229 @@
+{
+  "schema_version": 1,
+  "source_artifact": "../scripts/classification_output/classification-2026-07-26T142953.json",
+  "review_method": "Read the original article text, compare its dominant purpose with the assigned model definition, and inspect every heuristic candidate as a candidate rather than a proven rule.",
+  "reviewed_count": 24,
+  "verdict_counts": {
+    "verified": 20,
+    "incorrect": 3,
+    "ambiguous": 1
+  },
+  "entries": [
+    {
+      "fname": "2023-05-20 082356_冰冰小美_情绪体系的最后总结篇，情绪体系三要素，竞争格局的比较优势，流动性辩证分析，情绪位置的变化.md",
+      "assigned_model_id": "m01",
+      "model_verdict": "verified",
+      "expected_model_id": "m01",
+      "supported_heuristic_ids": [],
+      "unsupported_heuristic_ids": ["h01", "h04", "h06"],
+      "notes": "原文主旨就是三要素及其共振；启发式命中来自通用词，未形成完整行动规则。"
+    },
+    {
+      "fname": "2023-07-21 111501_冰冰小美_体系三要素，竞争格局的比较优势.md",
+      "assigned_model_id": "m01",
+      "model_verdict": "verified",
+      "expected_model_id": "m01",
+      "supported_heuristic_ids": [],
+      "unsupported_heuristic_ids": ["h01"],
+      "notes": "原文用竞争格局、流动性与情绪解释市场环境；单独出现流动性不足以证明 h01。"
+    },
+    {
+      "fname": "2023-08-14 222825_冰冰小美_情绪体系交易篇，第一期，分仓.md",
+      "assigned_model_id": "m01",
+      "model_verdict": "verified",
+      "expected_model_id": "m01",
+      "supported_heuristic_ids": ["h02"],
+      "unsupported_heuristic_ids": ["h01", "h05", "h07"],
+      "notes": "文章以三要素共振决定多做或少做，支持状态不利时降低暴露；未讨论睡眠承受力。"
+    },
+    {
+      "fname": "2023-09-25 115800_冰冰小美_体系三要素，竞争格局的比较优势.md",
+      "assigned_model_id": "m01",
+      "model_verdict": "verified",
+      "expected_model_id": "m01",
+      "supported_heuristic_ids": [],
+      "unsupported_heuristic_ids": ["h01"],
+      "notes": "主旨为借国运、周期和行业变化理解三要素；没有形成 h01 的买入理由与退出检查。"
+    },
+    {
+      "fname": "2025-06-15 181653_冰冰小美_当风险突然降临的时候，如何应对.md",
+      "assigned_model_id": "m02",
+      "model_verdict": "verified",
+      "expected_model_id": "m02",
+      "supported_heuristic_ids": ["h03"],
+      "unsupported_heuristic_ids": ["h01", "h04", "h07", "h08"],
+      "notes": "全文围绕风险减弱后的交易窗口与突发事件应对，等待可验证结果的 h03 成立。"
+    },
+    {
+      "fname": "2025-09-20 091631_冰冰小美_风险变化如何观察.md",
+      "assigned_model_id": "m02",
+      "model_verdict": "verified",
+      "expected_model_id": "m02",
+      "supported_heuristic_ids": ["h04"],
+      "unsupported_heuristic_ids": ["h01", "h07"],
+      "notes": "文章明确区分风险观察、印证与应对，并以信息验证风险演绎。"
+    },
+    {
+      "fname": "2026-06-10 085832_冰冰小美_低端的择时，是情绪周期博弈的择时，对应，冰点的冰点发现美。高端的择时，是宏观风险演绎的择时。对应，风险减弱的节点。能够穿.md",
+      "assigned_model_id": "m02",
+      "model_verdict": "verified",
+      "expected_model_id": "m02",
+      "supported_heuristic_ids": [],
+      "unsupported_heuristic_ids": [],
+      "notes": "原文直接定义风险演绎和风险减弱节点形成的择时窗口。"
+    },
+    {
+      "fname": "2026-06-17 100920_冰冰小美_风险演绎不断增强的过程，交易很难，风险减弱的节点后，分歧中上涨。.md",
+      "assigned_model_id": "m02",
+      "model_verdict": "verified",
+      "expected_model_id": "m02",
+      "supported_heuristic_ids": [],
+      "unsupported_heuristic_ids": [],
+      "notes": "标题与正文均直接表达风险强化、减弱和介入节点。"
+    },
+    {
+      "fname": "2024-11-16 113624_冰冰小美_站在历史转折的节点看金融.md",
+      "assigned_model_id": "m03",
+      "model_verdict": "verified",
+      "expected_model_id": "m03",
+      "supported_heuristic_ids": [],
+      "unsupported_heuristic_ids": ["h01", "h05", "h07"],
+      "notes": "原文从国家战略、制造业复兴和新质生产力映射产业方向；启发式词只在局部出现。"
+    },
+    {
+      "fname": "2025-06-23 164801_冰冰小美_信息的金融意义（六）.md",
+      "assigned_model_id": "m03",
+      "model_verdict": "verified",
+      "expected_model_id": "m03",
+      "supported_heuristic_ids": ["h04"],
+      "unsupported_heuristic_ids": ["h05", "h07"],
+      "notes": "原文从国情、规划和发展目标推到高附加值产业，并强调官方规划作为信息源。"
+    },
+    {
+      "fname": "2026-05-08 223324_冰冰小美_这种竞赛诉求，就会形成产业安全要求。这也是中米在，未来产业，做独立自主的全产业链。米重建稀土产业链，芯片制造业回流。中完.md",
+      "assigned_model_id": "m03",
+      "model_verdict": "verified",
+      "expected_model_id": "m03",
+      "supported_heuristic_ids": [],
+      "unsupported_heuristic_ids": [],
+      "notes": "原文直接由国家竞赛诉求推出产业安全和独立自主全产业链。"
+    },
+    {
+      "fname": "2026-05-11 141200_冰冰小美_说点有的没的。问，是如何发现硬核科技的？答，我不是发现，而是发现人才。问，人才？大家都不熟呀。这是人脉吗？答，不是人脉。.md",
+      "assigned_model_id": "m03",
+      "model_verdict": "verified",
+      "expected_model_id": "m03",
+      "supported_heuristic_ids": [],
+      "unsupported_heuristic_ids": ["h05"],
+      "notes": "完整原文从国家人才计划、产业集群与全产业链推导硬科技候选，m03 明确成立。"
+    },
+    {
+      "fname": "2023-04-10 204031_冰冰小美_体系复盘竞争格局的比较优势安全与发展.md",
+      "assigned_model_id": "m04",
+      "model_verdict": "ambiguous",
+      "expected_model_id": "m01",
+      "supported_heuristic_ids": ["h05"],
+      "unsupported_heuristic_ids": ["h01", "h08"],
+      "notes": "全文同时包含三要素状态复盘和业绩兑现判断；标题与结构更偏 m01，m04 更适合作为次级模型。"
+    },
+    {
+      "fname": "2023-08-15 205331_冰冰小美_常见的亏钱认知，第十四期，假象与反人性的折磨.md",
+      "assigned_model_id": "m04",
+      "model_verdict": "verified",
+      "expected_model_id": "m04",
+      "supported_heuristic_ids": ["h05"],
+      "unsupported_heuristic_ids": ["h01", "h04"],
+      "notes": "原文以商业模式、技术壁垒、盈利能力和估值验证概念逻辑。"
+    },
+    {
+      "fname": "2025-03-11 165203_冰冰小美_如何理解经济的正向循环.md",
+      "assigned_model_id": "m04",
+      "model_verdict": "verified",
+      "expected_model_id": "m04",
+      "supported_heuristic_ids": ["h05"],
+      "unsupported_heuristic_ids": [],
+      "notes": "原文围绕需求、物价、供给侧改革和企业利润形成兑现链。"
+    },
+    {
+      "fname": "2025-04-05 103226_冰冰小美_国运，相信相信的力量.md",
+      "assigned_model_id": "m04",
+      "model_verdict": "incorrect",
+      "expected_model_id": "m03",
+      "supported_heuristic_ids": ["h05"],
+      "unsupported_heuristic_ids": ["h01", "h07", "h09"],
+      "notes": "完整原文主线是国家优势、科技规划、人才与制造业竞争，利润和技术壁垒仅是第四部分的局部论证。"
+    },
+    {
+      "fname": "2025-08-16 151943_冰冰小美_信息的金融意义（十一）.md",
+      "assigned_model_id": "m05",
+      "model_verdict": "verified",
+      "expected_model_id": "m05",
+      "supported_heuristic_ids": ["h04"],
+      "unsupported_heuristic_ids": ["h01", "h07"],
+      "notes": "原文直接定义第一手、次级信息及来源可信度，支持回读原始来源。"
+    },
+    {
+      "fname": "2026-01-05 150001_冰冰小美_信息的金融意义（十三）.md",
+      "assigned_model_id": "m05",
+      "model_verdict": "verified",
+      "expected_model_id": "m05",
+      "supported_heuristic_ids": ["h04"],
+      "unsupported_heuristic_ids": ["h05", "h09"],
+      "notes": "原文核心是按可信度组织信息并用高等级来源印证推演。"
+    },
+    {
+      "fname": "2026-05-19 103557_冰冰小美_简单版，210目标位达到。趋势到上轨，意味着流动性溢价报团。 同有科技 的印证，小心围魏救赵。储存尾巴，短线博弈剧烈。传.md",
+      "assigned_model_id": "m05",
+      "model_verdict": "incorrect",
+      "expected_model_id": "m04",
+      "supported_heuristic_ids": ["h05"],
+      "unsupported_heuristic_ids": ["h01", "h04"],
+      "notes": "原文主旨是上下游产业链、景气与利润传递；印证只出现一次，不能把文章归为证据状态模型。"
+    },
+    {
+      "fname": "2026-06-11 203202_冰冰小美_网页链接巧合吗。今天发。但是，一年前的信息，现在牢牢记住。并且作为交易指引。这就是笔记呀。这是财富密码。新国标增加三大领.md",
+      "assigned_model_id": "m05",
+      "model_verdict": "verified",
+      "expected_model_id": "m05",
+      "supported_heuristic_ids": ["h04"],
+      "unsupported_heuristic_ids": [],
+      "notes": "原文明确要求读财报和研报去印证产业信息。"
+    },
+    {
+      "fname": "2025-12-18 195607_冰冰小美_2025年总结.md",
+      "assigned_model_id": "m06",
+      "model_verdict": "incorrect",
+      "expected_model_id": "m01",
+      "supported_heuristic_ids": [],
+      "unsupported_heuristic_ids": ["h01", "h04", "h05", "h07", "h08"],
+      "notes": "完整原文按季度总结宏观流动性、竞争格局和市场状态；仓位词频高但只是操作记录，不是风险预算主旨。"
+    },
+    {
+      "fname": "2026-05-08 144915_冰冰小美_至此，3月中长仓位配置，减仓卖铜卖化工，高抛低吸，1000亿 江淮 的死守，以及调整配置加仓买科技， 长电科技 ， 江丰.md",
+      "assigned_model_id": "m06",
+      "model_verdict": "verified",
+      "expected_model_id": "m06",
+      "supported_heuristic_ids": [],
+      "unsupported_heuristic_ids": ["h07", "h09"],
+      "notes": "文章核心是中长仓位配置、减仓和调仓；未出现睡眠或承受力条件，h07 仍不足。"
+    },
+    {
+      "fname": "2026-06-17 112131_冰冰小美_如果被套的怎么办。1，股票波动在所难免。被套第一件事，审问内心，睡眠如何。如果睡眠下降，则是仓位与心态不匹配。你买之前就.md",
+      "assigned_model_id": "m06",
+      "model_verdict": "verified",
+      "expected_model_id": "m06",
+      "supported_heuristic_ids": ["h07"],
+      "unsupported_heuristic_ids": ["h05", "h09"],
+      "notes": "原文直接以睡眠、经济能力和心态约束仓位，h07 明确成立。"
+    },
+    {
+      "fname": "2026-06-22 100006_冰冰小美_如果仓位重没有救， 比亚迪 108卖，你没看， 柳工 因石油冲击，出海逻辑变化认输割肉，你没看。这种危机，都通过减仓调仓.md",
+      "assigned_model_id": "m06",
+      "model_verdict": "verified",
+      "expected_model_id": "m06",
+      "supported_heuristic_ids": ["h07"],
+      "unsupported_heuristic_ids": [],
+      "notes": "原文直接讨论重仓、减仓和心态不稳对应的承受力约束。"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": 2,
+  "source_artifact": "../scripts/classification_output/classification-2026-07-26T142953.json",
+  "adjudicated_artifact": "../scripts/classification_output/classification-adjudicated-2026-07-26T154025081805.json",
+  "review_queue": "current-classification-review-2026-07-26.json",
+  "manual_review": "current-classification-manual-review-2026-07-26.json",
+  "review_batches": [
+    "review-batches/task9-unresolved-batch-01.json",
+    "review-batches/task9-unresolved-batch-02.json",
+    "review-batches/task9-unresolved-batch-03.json",
+    "review-batches/task9-unresolved-batch-04.json",
+    "review-batches/task9-unresolved-batch-05.json",
+    "review-batches/task9-unresolved-batch-06.json"
+  ],
+  "queue_total": 358,
+  "reviewed_total": 358,
+  "pending_total": 0,
+  "resolved_model_sample_total": 24,
+  "originally_unresolved_reviewed_total": 334,
+  "model_sample_verdict_counts": {
+    "verified": 20,
+    "incorrect": 3,
+    "ambiguous": 1
+  },
+  "classification_transition": {
+    "raw_unresolved_total": 334,
+    "originally_unresolved_resolved_by_review": 107,
+    "originally_resolved_made_unresolved": 1,
+    "final_unresolved_total": 228,
+    "independent_audit_downgraded_to_unresolved": 28
+  },
+  "gate_status": "passed_task9_data_prerequisite",
+  "next_action": "Proceed to Task 10. Keep all 228 unresolved articles explicit; do not infer a primary model without new primary-text evidence."
+}

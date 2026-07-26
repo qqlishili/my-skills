@@ -63,122 +63,6 @@
       "stock_zhongyangshangchang"
     ],
     "1": [
-      "changelog_md_changelog",
-      "changelog_v1_1",
-      "changelog_v1_2",
-      "changelog_v1_3",
-      "changelog_v1_4",
-      "changelog_v1_5",
-      "changelog_v1_7",
-      "docs_maintenance_md_maintenance",
-      "docs_maintenance_probe_pipeline",
-      "docs_maintenance_promotion_rules",
-      "docs_maintenance_seven_step",
-      "docs_maintenance_trigger_conditions",
-      "docs_v1_4_pr_description_md_v1_4_pr",
-      "docs_v1_4_pr_dim3_changes",
-      "docs_v1_4_pr_dim5_changes",
-      "docs_v1_4_pr_r1_blind_baseline",
-      "docs_v1_4_pr_r3_layering",
-      "skill_core_md_skill_core",
-      "skill_md_bingbingxiaomei",
-      "skill_md_checkpoints",
-      "skill_md_cognitive_failure_handling",
-      "skill_md_dna_drift_detection",
-      "skill_md_expression_dna",
-      "skill_md_heuristic_11_liquidity_squeeze",
-      "skill_md_heuristic_12_new_old_deng",
-      "skill_md_heuristic_13_central_bank",
-      "skill_md_heuristic_14_industry_belief",
-      "skill_md_heuristic_15_leverage_cleanup",
-      "skill_md_heuristic_16_liquidity_vs_business",
-      "skill_md_heuristic_17_active_loss_boundary",
-      "skill_md_honesty_boundary",
-      "skill_md_hong_mao",
-      "skill_md_identity_card",
-      "skill_md_intellectual_genealogy",
-      "skill_md_methodology",
-      "skill_md_model_1_three_elements",
-      "skill_md_model_2_illusion",
-      "skill_md_model_3_buy_no_defeat",
-      "skill_md_model_4_competition_determinism",
-      "skill_md_model_5_explicit_knowledge",
-      "skill_md_model_6_talent_industry",
-      "skill_md_model_7_crisis_chain",
-      "skill_md_model_8_timing_dual_track",
-      "skill_md_model_9_ai_distillation",
-      "skill_md_neodata_financial",
-      "skill_md_prohibited_words",
-      "skill_md_research_dimensions",
-      "skill_md_research_references",
-      "skill_md_residual_detection",
-      "skill_md_routing_tree",
-      "skill_md_silence_rules",
-      "skill_md_skill",
-      "skill_md_stock_eight_step",
-      "skill_md_tool_failure_handling",
-      "skill_md_v1_7_runtime_layer",
-      "skill_md_westock_data",
-      "skill_md_workflow",
-      "skill_md_xiaomei_self_reference"
-    ],
-    "2": [
-      "runtimeerror",
-      "scripts_article_corpus_preflight",
-      "scripts_article_corpus_preflight_apply_final_status",
-      "scripts_article_corpus_preflight_articles_dir",
-      "scripts_article_corpus_preflight_build_index_plan",
-      "scripts_article_corpus_preflight_build_parser",
-      "scripts_article_corpus_preflight_codegraph_command",
-      "scripts_article_corpus_preflight_copy_to_staging",
-      "scripts_article_corpus_preflight_copy_update_real_directory",
-      "scripts_article_corpus_preflight_ensure_real_directory_target",
-      "scripts_article_corpus_preflight_exit_code_for_status",
-      "scripts_article_corpus_preflight_file_sha256",
-      "scripts_article_corpus_preflight_final_status",
-      "scripts_article_corpus_preflight_get_file_attributes",
-      "scripts_article_corpus_preflight_graphify_command",
-      "scripts_article_corpus_preflight_graphify_env",
-      "scripts_article_corpus_preflight_has_reparse_flag",
-      "scripts_article_corpus_preflight_has_valid_receipts",
-      "scripts_article_corpus_preflight_is_external_source",
-      "scripts_article_corpus_preflight_is_reparse_point",
-      "scripts_article_corpus_preflight_load_previous_state",
-      "scripts_article_corpus_preflight_lock_path",
-      "scripts_article_corpus_preflight_lockhelderror",
-      "scripts_article_corpus_preflight_main",
-      "scripts_article_corpus_preflight_mcp_for_plan",
-      "scripts_article_corpus_preflight_parse_utc",
-      "scripts_article_corpus_preflight_preflightlock",
-      "scripts_article_corpus_preflight_preflightlock_enter",
-      "scripts_article_corpus_preflight_preflightlock_exit",
-      "scripts_article_corpus_preflight_preflightlock_init",
-      "scripts_article_corpus_preflight_preflightlock_is_stale",
-      "scripts_article_corpus_preflight_prepare",
-      "scripts_article_corpus_preflight_prepare_corpus_snapshot",
-      "scripts_article_corpus_preflight_read_state",
-      "scripts_article_corpus_preflight_record_mcp_result",
-      "scripts_article_corpus_preflight_relative_files",
-      "scripts_article_corpus_preflight_relative_posix",
-      "scripts_article_corpus_preflight_render_status",
-      "scripts_article_corpus_preflight_replace_reparse_with_staging",
-      "scripts_article_corpus_preflight_required_mcp_keys",
-      "scripts_article_corpus_preflight_scan_corpus",
-      "scripts_article_corpus_preflight_scan_markdown_root",
-      "scripts_article_corpus_preflight_semantic_hits_value",
-      "scripts_article_corpus_preflight_sha256_bytes",
-      "scripts_article_corpus_preflight_sha256_json",
-      "scripts_article_corpus_preflight_snapshotblockederror",
-      "scripts_article_corpus_preflight_snapshotblockederror_init",
-      "scripts_article_corpus_preflight_state_path",
-      "scripts_article_corpus_preflight_sync_real_directory",
-      "scripts_article_corpus_preflight_unsafereparsetargeterror",
-      "scripts_article_corpus_preflight_utc_now",
-      "scripts_article_corpus_preflight_utc_now_iso",
-      "scripts_article_corpus_preflight_verify_graphify_graph",
-      "scripts_article_corpus_preflight_write_state"
-    ],
-    "3": [
       "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_ai基建",
       "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_k型经济",
       "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_spacex",
@@ -233,7 +117,59 @@
       "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_雅克科技",
       "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_鼎龙股份"
     ],
-    "4": [
+    "2": [
+      "references_models_m01_three_elements_state_boundary",
+      "references_models_m01_three_elements_state_document",
+      "references_models_m01_three_elements_state_framework",
+      "references_models_m01_three_elements_state_inputs",
+      "references_models_m01_three_elements_state_outputs",
+      "references_models_m01_three_elements_state_variables",
+      "references_models_m02_risk_time_window_boundary",
+      "references_models_m02_risk_time_window_document",
+      "references_models_m02_risk_time_window_framework",
+      "references_models_m02_risk_time_window_inputs",
+      "references_models_m02_risk_time_window_outputs",
+      "references_models_m02_risk_time_window_variables",
+      "references_models_m03_strategic_industry_mapping_boundary",
+      "references_models_m03_strategic_industry_mapping_document",
+      "references_models_m03_strategic_industry_mapping_framework",
+      "references_models_m03_strategic_industry_mapping_inputs",
+      "references_models_m03_strategic_industry_mapping_outputs",
+      "references_models_m03_strategic_industry_mapping_variables",
+      "references_models_m04_industry_realization_chain_boundary",
+      "references_models_m04_industry_realization_chain_document",
+      "references_models_m04_industry_realization_chain_framework",
+      "references_models_m04_industry_realization_chain_inputs",
+      "references_models_m04_industry_realization_chain_outputs",
+      "references_models_m04_industry_realization_chain_variables",
+      "references_models_m05_evidence_state_boundary",
+      "references_models_m05_evidence_state_document",
+      "references_models_m05_evidence_state_framework",
+      "references_models_m05_evidence_state_inputs",
+      "references_models_m05_evidence_state_outputs",
+      "references_models_m05_evidence_state_variables",
+      "references_models_m06_risk_budget_boundary",
+      "references_models_m06_risk_budget_document",
+      "references_models_m06_risk_budget_framework",
+      "references_models_m06_risk_budget_inputs",
+      "references_models_m06_risk_budget_outputs",
+      "references_models_m06_risk_budget_variables",
+      "references_templates_deep_stock_report_document",
+      "references_templates_deep_stock_report_evidence_source_constraint",
+      "references_templates_deep_stock_report_five_source_priority",
+      "references_templates_deep_stock_report_investment_conclusion",
+      "references_templates_deep_stock_report_model_routing",
+      "references_templates_deep_stock_report_recalibration",
+      "references_templates_deep_stock_report_risk_analysis",
+      "references_templates_deep_stock_report_risk_before_return",
+      "references_templates_deep_stock_report_strategy_not_company_conclusion",
+      "references_templates_standard_stock_report_document",
+      "references_templates_standard_stock_report_eight_step_framework",
+      "references_templates_standard_stock_report_investment_conclusion",
+      "references_templates_standard_stock_report_model_routing",
+      "references_templates_standard_stock_report_three_elements_risk_budget_constraint"
+    ],
+    "3": [
       "book_繁荣与衰退",
       "concept_体系三要素",
       "concept_修身静",
@@ -282,7 +218,7 @@
       "trader_著名刺客",
       "trader_陈小群"
     ],
-    "5": [
+    "4": [
       "references_sources_articles_2023-09-05_193909_冰冰小美_常见的亏钱认知_第十六期_机构的作用_华力创通",
       "references_sources_articles_2023-09-05_193909_冰冰小美_常见的亏钱认知_第十六期_机构的作用_巴菲特",
       "references_sources_articles_2023-09-05_193909_冰冰小美_常见的亏钱认知_第十六期_机构的作用_常见的亏钱认知_第十六期_机构的作用",
@@ -330,50 +266,7 @@
       "references_sources_articles_2023-10-09_123808_冰冰小美_情绪体系交易篇_第九期_买卖_挣钱效应",
       "references_sources_articles_2023-10-09_123808_冰冰小美_情绪体系交易篇_第九期_买卖_捷荣技术"
     ],
-    "6": [
-      "references_research_07-article-clusters",
-      "references_research_07_article-clusters_corpora_520",
-      "references_research_07_article-clusters_heuristic_cai_liao_ku_cun",
-      "references_research_07_article-clusters_heuristic_chi_chiang_ye_shi_mai",
-      "references_research_07_article-clusters_heuristic_feng_xian_xian_kong_cang",
-      "references_research_07_article-clusters_heuristic_ge_gu_gong_gao",
-      "references_research_07_article-clusters_heuristic_jiu_hong_li_lai_yuan",
-      "references_research_07_article-clusters_heuristic_kong_cang",
-      "references_research_07_article-clusters_heuristic_shi_dai_zhu_xian",
-      "references_research_07_article-clusters_heuristic_shu_wang_na_li_liu",
-      "references_research_07_article-clusters_heuristic_xiao_zuo_wen",
-      "references_research_07_article-clusters_heuristic_yang_ma_zhong_guan",
-      "references_research_07_article-clusters_heuristic_ying_ke_ji_ren_cai",
-      "references_research_07_article-clusters_model_ai_ji_jian",
-      "references_research_07_article-clusters_model_jiu_hong_li_tui_chu",
-      "references_research_07_article-clusters_model_liu_dong_xing_san_ceng",
-      "references_research_07_article-clusters_model_mai_ru_bu_bai",
-      "references_research_07_article-clusters_model_ti_xi_san_yao_su",
-      "references_research_07_article-clusters_model_wei_ji_yan_yi_lian",
-      "references_research_07_article-clusters_topic_ai_ying_ke_ji",
-      "references_research_07_article-clusters_topic_ge_gu_an_li",
-      "references_research_07_article-clusters_topic_jing_zheng_guo_yun",
-      "references_research_07_article-clusters_topic_jiu_hong_li",
-      "references_research_07_article-clusters_topic_liu_dong_xing",
-      "references_research_07_article-clusters_topic_ren_cai_chan_ye",
-      "references_research_07_article-clusters_topic_wei_ji_hong_guan",
-      "references_research_07_article-clusters_topic_xi_ti_jiao_yi",
-      "references_research_07_article-clusters_topic_xin_xi_xian_xue",
-      "references_sources_articles_2023-03-18_145015",
-      "references_sources_articles_2023-03-19_113043",
-      "references_sources_articles_2023-03-19_232929",
-      "references_sources_articles_2023-03-20_122713",
-      "references_sources_articles_2023-03-20_132506",
-      "references_sources_articles_2023-04-10_204031",
-      "references_sources_articles_2023-04-13_161113",
-      "references_sources_articles_2023-04-28_080747",
-      "references_sources_articles_2023-05-05_153744",
-      "references_sources_articles_2023-05-06_104149",
-      "references_sources_articles_2023-05-09_201754",
-      "references_sources_articles_2023-05-10_080020",
-      "references_sources_articles_2023-05-10_084108"
-    ],
-    "7": [
+    "5": [
       "concept_业绩与估值重估红色国九条",
       "concept_中央加杠杆信用逻辑",
       "concept_五略战略分析",
@@ -415,45 +308,146 @@
       "references_sources_articles_2025-08-16_151943_信息的金融意义十一",
       "references_sources_articles_2025-08-17_164534_定位与立场美帝的花招与部分兔的不自信"
     ],
+    "6": [
+      "concept_h01_buy_reason_exit_feasibility",
+      "concept_h02_reduce_exposure_when_three_elements_adverse",
+      "concept_h03_position_control_before_major_event_resolution",
+      "concept_h04_read_primary_news_cross_validate",
+      "concept_h05_concept_to_barrier_orders_profit",
+      "concept_h06_research_low_point_recheck_high_point_realization",
+      "concept_h07_reduce_position_to_sustainable_level",
+      "concept_h08_passive_etf_when_stock_unverifiable",
+      "concept_h09_correct_when_vehicle_fails",
+      "concept_m01_three_elements_state",
+      "concept_m02_risk_time_window",
+      "concept_m03_national_goal_industry_mapping",
+      "concept_m04_industry_realization_chain",
+      "concept_m05_evidence_state",
+      "concept_m06_risk_budget_self_constraint",
+      "concept_o01_direction_and_vehicle_separation",
+      "docs_maintenance_skill_maintenance_guide",
+      "rationale_article_and_stock_routes_are_mutually_exclusive",
+      "rationale_article_claim_requires_primary_verification",
+      "rationale_article_cluster_is_evidence_entry_not_classifier",
+      "rationale_author_primary_evidence_boundary",
+      "rationale_closed_relation_and_taxonomy_enumerations",
+      "rationale_ephemeral_article_input_boundary",
+      "rationale_graphify_must_be_regenerated",
+      "rationale_preserve_source_and_immutable_artifacts",
+      "rationale_role_simulation_disclosure",
+      "rationale_taxonomy_gate_and_derived_artifact_sync",
+      "references_heuristics_catalog_current_heuristics",
+      "references_research_07_article_clusters_evidence_map",
+      "references_templates_article_interpretation_brief",
+      "skill_bingbingxiaomei_operating_system",
+      "skill_core_bingbingxiaomei_core"
+    ],
+    "7": [
+      "references_heuristics_legacy_h14_adverse_technical_signal",
+      "references_heuristics_legacy_h14_external_verification",
+      "references_heuristics_legacy_h14_fundamental_competitiveness_change",
+      "references_heuristics_legacy_h14_fundamental_thesis_falsification",
+      "references_heuristics_legacy_h14_industry_belief",
+      "references_heuristics_legacy_h14_industry_belief_priority",
+      "references_heuristics_legacy_h14_layered_application",
+      "references_heuristics_legacy_h14_short_term_sentiment_target",
+      "references_heuristics_legacy_h15_business_operations_unchanged",
+      "references_heuristics_legacy_h15_cycle_stock",
+      "references_heuristics_legacy_h15_leverage_cleanup",
+      "references_heuristics_legacy_h15_leverage_cleanup_line",
+      "references_heuristics_legacy_h15_leverage_peak",
+      "references_heuristics_legacy_h15_leverage_start_point",
+      "references_heuristics_legacy_h15_staged_position_building",
+      "references_heuristics_legacy_h16_business_operations",
+      "references_heuristics_legacy_h16_cause_based_action_rule",
+      "references_heuristics_legacy_h16_industry_rotation",
+      "references_heuristics_legacy_h16_liquidity_driven_selloff",
+      "references_heuristics_legacy_h16_liquidity_vs_business",
+      "references_heuristics_legacy_h16_logic_driven_selloff",
+      "references_heuristics_legacy_h16_resolution_event",
+      "references_heuristics_legacy_h17_active_buying_at_loss",
+      "references_heuristics_legacy_h17_active_loss_boundary",
+      "references_heuristics_legacy_h17_all_three_boundaries",
+      "references_heuristics_legacy_h17_exit_triggers",
+      "references_heuristics_legacy_h17_industry_logic_unchanged",
+      "references_heuristics_legacy_h17_liquidity_not_logic",
+      "references_heuristics_legacy_h17_predefined_stop_loss",
+      "references_models_legacy_deep_4_directional_liquidity",
+      "references_models_legacy_deep_4_new_money",
+      "references_models_legacy_deep_4_old_money"
+    ],
     "8": [
-      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_china_us_acceleration",
-      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_civilization_500yr",
-      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_claude_self_analysis",
-      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_future_seven_sisters",
-      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_greenspan_death",
-      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_material_to_lithium",
-      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_new_national_standard",
-      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_theme_ai_tech",
-      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_theme_clustering",
-      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_theme_commercial_aerospace",
-      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_theme_consumer_old_guard",
-      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_theme_geopolitics",
-      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_theme_investment_philosophy",
-      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_theme_lithium_new_energy",
-      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_theme_macro_currency",
-      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_theme_materials_cycle",
-      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_theme_reflection_meta",
-      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_theme_trading_position",
-      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_tongguan_20x",
-      "references_heuristics_h14-industry-belief_case_jiangfeng",
-      "references_heuristics_h14-industry-belief_h14",
-      "references_heuristics_h15-leverage-cleanup_case_zijin",
-      "references_heuristics_h15-leverage-cleanup_h15",
-      "references_heuristics_h16-liquidity-vs-business_case_baijiu",
-      "references_heuristics_h16-liquidity-vs-business_case_xibu",
-      "references_heuristics_h16-liquidity-vs-business_h16",
-      "references_heuristics_h17-active-loss-boundary_case_sailisi",
-      "references_heuristics_h17-active-loss-boundary_case_tongguan",
-      "references_heuristics_h17-active-loss-boundary_h17",
-      "references_models_deep-1-three-elements_five_layer_arch",
-      "references_models_deep-1-three-elements_model1",
-      "references_models_deep-4-competition_bubble_redef",
-      "references_models_deep-4-competition_model4",
-      "references_models_deep-4-competition_new_old_money",
-      "references_models_deep-9-ai-distillation_info_arbitrage",
-      "references_models_deep-9-ai-distillation_model9"
+      "scripts_classify_articles",
+      "scripts_classify_articles_build_output",
+      "scripts_classify_articles_build_routing_index",
+      "scripts_classify_articles_candidate_list",
+      "scripts_classify_articles_classify_article",
+      "scripts_classify_articles_evidence_snippets",
+      "scripts_classify_articles_load_articles",
+      "scripts_classify_articles_load_taxonomy",
+      "scripts_classify_articles_main",
+      "scripts_classify_articles_matched_terms",
+      "scripts_classify_articles_output_json",
+      "scripts_classify_articles_output_summary",
+      "scripts_classify_articles_parse_args",
+      "scripts_classify_articles_parse_date_range",
+      "scripts_classify_articles_rationale_100",
+      "scripts_classify_articles_rationale_135",
+      "scripts_classify_articles_rationale_161",
+      "scripts_classify_articles_rationale_268",
+      "scripts_classify_articles_rationale_28",
+      "scripts_classify_articles_rationale_321",
+      "scripts_classify_articles_rationale_342",
+      "scripts_classify_articles_rationale_352",
+      "scripts_classify_articles_rationale_52",
+      "scripts_classify_articles_rationale_83",
+      "scripts_classify_articles_rationale_93",
+      "scripts_classify_articles_require_canonical_corpus",
+      "scripts_classify_articles_require_canonical_current_target",
+      "scripts_classify_articles_route_terms",
+      "scripts_classify_articles_scan_loaded_corpus",
+      "scripts_classify_articles_sha256_json",
+      "scripts_classify_articles_term_parts",
+      "scripts_classify_articles_write_current_pointer"
     ],
     "9": [
+      "scripts_article_corpus_preflight",
+      "scripts_article_corpus_preflight_apply_final_status",
+      "scripts_article_corpus_preflight_articles_dir",
+      "scripts_article_corpus_preflight_build_index_plan",
+      "scripts_article_corpus_preflight_build_parser",
+      "scripts_article_corpus_preflight_exit_code_for_status",
+      "scripts_article_corpus_preflight_file_sha256",
+      "scripts_article_corpus_preflight_final_status",
+      "scripts_article_corpus_preflight_graphify_command",
+      "scripts_article_corpus_preflight_graphify_env",
+      "scripts_article_corpus_preflight_has_valid_receipts",
+      "scripts_article_corpus_preflight_is_external_source",
+      "scripts_article_corpus_preflight_load_previous_state",
+      "scripts_article_corpus_preflight_main",
+      "scripts_article_corpus_preflight_mcp_for_plan",
+      "scripts_article_corpus_preflight_prepare",
+      "scripts_article_corpus_preflight_read_state",
+      "scripts_article_corpus_preflight_record_mcp_result",
+      "scripts_article_corpus_preflight_relative_posix",
+      "scripts_article_corpus_preflight_render_status",
+      "scripts_article_corpus_preflight_required_mcp_keys",
+      "scripts_article_corpus_preflight_scan_corpus",
+      "scripts_article_corpus_preflight_scan_markdown_root",
+      "scripts_article_corpus_preflight_semantic_hits_value",
+      "scripts_article_corpus_preflight_sha256_bytes",
+      "scripts_article_corpus_preflight_sha256_json",
+      "scripts_article_corpus_preflight_state_path",
+      "scripts_article_corpus_preflight_utc_now",
+      "scripts_article_corpus_preflight_utc_now_iso",
+      "scripts_article_corpus_preflight_verify_graphify_graph",
+      "scripts_article_corpus_preflight_write_state"
+    ],
+    "10": [
+      "path",
+      "scripts_article_corpus_preflight_codegraph_command",
+      "scripts_article_corpus_preflight_lock_path",
+      "scripts_article_corpus_preflight_replace_reparse_with_staging",
       "tests_test_article_corpus_preflight",
       "tests_test_article_corpus_preflight_articlecorpuspreflighttests",
       "tests_test_article_corpus_preflight_articlecorpuspreflighttests_call_main",
@@ -481,7 +475,93 @@
       "tests_test_article_corpus_preflight_articlecorpuspreflighttests_test_sync_rejects_reparse_target_and_copies_real_directory",
       "tests_test_article_corpus_preflight_articlecorpuspreflighttests_test_verify_graphify_graph"
     ],
-    "10": [
+    "11": [
+      "references_schemas_article_interpretation_schema_article_path_pattern",
+      "references_schemas_article_interpretation_schema_article_path_type",
+      "references_schemas_article_interpretation_schema_defs_input_segment",
+      "references_schemas_article_interpretation_schema_evidence_eligibility_const",
+      "references_schemas_article_interpretation_schema_historical_evidence_properties",
+      "references_schemas_article_interpretation_schema_input_segment_additionalproperties",
+      "references_schemas_article_interpretation_schema_input_segment_properties",
+      "references_schemas_article_interpretation_schema_input_segment_required",
+      "references_schemas_article_interpretation_schema_input_segment_type",
+      "references_schemas_article_interpretation_schema_line_span_ref",
+      "references_schemas_article_interpretation_schema_properties_article_path",
+      "references_schemas_article_interpretation_schema_properties_evidence_eligibility",
+      "references_schemas_article_interpretation_schema_properties_line_span",
+      "references_schemas_article_interpretation_schema_properties_quote",
+      "references_schemas_article_interpretation_schema_properties_retrieval_method",
+      "references_schemas_article_interpretation_schema_properties_role",
+      "references_schemas_article_interpretation_schema_properties_segment_id",
+      "references_schemas_article_interpretation_schema_properties_text",
+      "references_schemas_article_interpretation_schema_properties_verified_against_primary_text",
+      "references_schemas_article_interpretation_schema_quote_maxlength",
+      "references_schemas_article_interpretation_schema_quote_minlength",
+      "references_schemas_article_interpretation_schema_quote_type",
+      "references_schemas_article_interpretation_schema_retrieval_method_enum",
+      "references_schemas_article_interpretation_schema_role_enum",
+      "references_schemas_article_interpretation_schema_segment_id_minlength",
+      "references_schemas_article_interpretation_schema_segment_id_pattern",
+      "references_schemas_article_interpretation_schema_segment_id_type",
+      "references_schemas_article_interpretation_schema_text_minlength",
+      "references_schemas_article_interpretation_schema_text_type",
+      "references_schemas_article_interpretation_schema_verified_against_primary_text_const"
+    ],
+    "12": [
+      "scripts_validate_article_interpretation",
+      "scripts_validate_article_interpretation_rationale_1",
+      "scripts_validate_article_interpretation_rationale_56",
+      "scripts_validate_article_interpretation_require",
+      "scripts_validate_article_interpretation_validate_article_brief",
+      "scripts_validate_article_interpretation_validate_evidence",
+      "scripts_validate_article_interpretation_validate_span",
+      "tests_test_article_interpretation_contract",
+      "tests_test_article_interpretation_contract_articleinterpretationcontracttests",
+      "tests_test_article_interpretation_contract_articleinterpretationcontracttests_make_valid_brief",
+      "tests_test_article_interpretation_contract_articleinterpretationcontracttests_setupclass",
+      "tests_test_article_interpretation_contract_articleinterpretationcontracttests_test_active_entrypoints_remove_legacy_taxonomy_and_fix_boundaries",
+      "tests_test_article_interpretation_contract_articleinterpretationcontracttests_test_claim_and_relation_enums_are_closed",
+      "tests_test_article_interpretation_contract_articleinterpretationcontracttests_test_ephemeral_input_and_document_role_contract",
+      "tests_test_article_interpretation_contract_articleinterpretationcontracttests_test_every_claim_result_requires_a_relation_result",
+      "tests_test_article_interpretation_contract_articleinterpretationcontracttests_test_primary_evidence_contract_excludes_derived_sources",
+      "tests_test_article_interpretation_contract_articleinterpretationcontracttests_test_prompts_cover_new_article_and_boundary_routes",
+      "tests_test_article_interpretation_contract_articleinterpretationcontracttests_test_secondary_analysis_cannot_be_author_judgement",
+      "tests_test_article_interpretation_contract_articleinterpretationcontracttests_test_semantic_validator_checks_ids_spans_paths_and_unavailable_mapping",
+      "tests_test_article_interpretation_contract_articleinterpretationcontracttests_test_semantic_validator_rejects_duplicate_or_dangling_references",
+      "tests_test_article_interpretation_contract_articleinterpretationcontracttests_test_semantic_validator_rejects_non_primary_historical_evidence",
+      "tests_test_article_interpretation_contract_articleinterpretationcontracttests_test_stock_templates_read_current_taxonomy",
+      "tests_test_article_interpretation_contract_articleinterpretationcontracttests_test_taxonomy_mapping_uses_current_ids",
+      "tests_test_article_interpretation_contract_articleinterpretationcontracttests_test_template_routes_article_brief_away_from_stock_reports",
+      "tests_test_article_interpretation_contract_articleinterpretationcontracttests_test_valid_brief_passes_semantic_validation"
+    ],
+    "13": [
+      "tests_test_classification_pipeline",
+      "tests_test_classification_pipeline_classificationpipelinetests",
+      "tests_test_classification_pipeline_classificationpipelinetests_article",
+      "tests_test_classification_pipeline_classificationpipelinetests_setupclass",
+      "tests_test_classification_pipeline_classificationpipelinetests_test_analyzer_accepts_explicit_legacy_file_as_read_only_history",
+      "tests_test_classification_pipeline_classificationpipelinetests_test_analyzer_counts_verified_heuristics_for_adjudicated_output",
+      "tests_test_classification_pipeline_classificationpipelinetests_test_analyzer_keeps_plain_text_pointer_compatibility",
+      "tests_test_classification_pipeline_classificationpipelinetests_test_analyzer_reads_current_pointer_and_validates_current_ids",
+      "tests_test_classification_pipeline_classificationpipelinetests_test_analyzer_rejects_current_pointer_checksum_mismatch",
+      "tests_test_classification_pipeline_classificationpipelinetests_test_analyzer_rejects_legacy_ids_in_current_schema",
+      "tests_test_classification_pipeline_classificationpipelinetests_test_analyzer_rejects_stale_taxonomy_digest",
+      "tests_test_classification_pipeline_classificationpipelinetests_test_classification_artifact_refuses_same_timestamp_overwrite",
+      "tests_test_classification_pipeline_classificationpipelinetests_test_current_output_contains_required_contract_and_digests",
+      "tests_test_classification_pipeline_classificationpipelinetests_test_current_pointer_records_artifact_contract_and_checksum",
+      "tests_test_classification_pipeline_classificationpipelinetests_test_current_update_rejects_noncanonical_corpus_digest",
+      "tests_test_classification_pipeline_classificationpipelinetests_test_default_current_rejects_noncanonical_source_paths",
+      "tests_test_classification_pipeline_classificationpipelinetests_test_end_date_includes_articles_later_that_day",
+      "tests_test_classification_pipeline_classificationpipelinetests_test_explicit_routing_terms_cover_non_m01_models",
+      "tests_test_classification_pipeline_classificationpipelinetests_test_loaded_corpus_digest_is_derived_from_actual_article_bytes",
+      "tests_test_classification_pipeline_classificationpipelinetests_test_multiple_primary_text_hits_produce_traceable_model_candidate",
+      "tests_test_classification_pipeline_classificationpipelinetests_test_review_queue_covers_all_unresolved_and_four_per_model",
+      "tests_test_classification_pipeline_classificationpipelinetests_test_single_weak_hit_remains_unresolved",
+      "tests_test_classification_pipeline_classificationpipelinetests_test_taxonomy_drives_current_ids_without_legacy_model_ids",
+      "tests_test_classification_pipeline_classificationpipelinetests_test_tied_candidates_remain_low_confidence_and_unresolved",
+      "tests_test_classification_pipeline_load_module"
+    ],
+    "14": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_10_125213___________________________________________________________________article",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_10_125213___________________________________________________________________liquidity_expectations_drive_prices",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_10_134129_________________________________________1____________________10_8_article",
@@ -507,7 +587,7 @@
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_11_094217___________________article",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_11_094217___________________bear_market_unique_solution"
     ],
-    "11": [
+    "15": [
       "evals_full_test_outputs_v1_5_case_13_h14_agent_5079e81b_txt_case13",
       "evals_full_test_outputs_v1_5_case_13_h14_agent_5079e81b_txt_h14",
       "evals_full_test_outputs_v1_5_case_13_h14_agent_5079e81b_txt_jiangfeng",
@@ -532,7 +612,7 @@
       "evals_full_test_outputs_v1_5_case_5_emotion_agent_a8ff6859_txt_admit_emotion",
       "evals_full_test_outputs_v1_5_case_5_emotion_agent_a8ff6859_txt_case5"
     ],
-    "12": [
+    "16": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_05_19_103557__________210______________________________________________________article",
       "bingbingxiaomei_perspective_references_sources_articles_2026_05_19_105943_________________300___600____20222023____________________________article",
       "bingbingxiaomei_perspective_references_sources_articles_2026_05_19_110800___________________________________________________________________article",
@@ -556,7 +636,7 @@
       "bingbingxiaomei_perspective_references_sources_articles_2026_05_21_205540________________article",
       "bingbingxiaomei_perspective_references_sources_articles_2026_05_21_212249_______________________________________________a_______________article"
     ],
-    "13": [
+    "17": [
       "concept_ai_competition_space_race",
       "concept_intel_god_making_plan",
       "concept_intel_nvda_taipei_cooperation",
@@ -577,7 +657,69 @@
       "references_sources_articles_2026_05_10_冰冰小美_历史危机的经验与警示",
       "references_sources_articles_2026_05_11_冰冰小美_说点有的没的如何发现硬核科技"
     ],
-    "14": [
+    "18": [
+      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_china_us_acceleration",
+      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_civilization_500yr",
+      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_claude_self_analysis",
+      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_future_seven_sisters",
+      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_greenspan_death",
+      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_material_to_lithium",
+      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_new_national_standard",
+      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_theme_ai_tech",
+      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_theme_clustering",
+      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_theme_commercial_aerospace",
+      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_theme_consumer_old_guard",
+      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_theme_geopolitics",
+      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_theme_investment_philosophy",
+      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_theme_lithium_new_energy",
+      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_theme_macro_currency",
+      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_theme_materials_cycle",
+      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_theme_reflection_meta",
+      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_theme_trading_position",
+      "evals_probe-2026-06-13_to_2026-06-22_probe-themes_tongguan_20x"
+    ],
+    "19": [
+      "references_schemas_article_interpretation_schema_claim_id_pattern",
+      "references_schemas_article_interpretation_schema_claim_id_type",
+      "references_schemas_article_interpretation_schema_claim_properties",
+      "references_schemas_article_interpretation_schema_claim_type_enum",
+      "references_schemas_article_interpretation_schema_input_segment_id_pattern",
+      "references_schemas_article_interpretation_schema_input_segment_id_type",
+      "references_schemas_article_interpretation_schema_input_segment_role_enum",
+      "references_schemas_article_interpretation_schema_normalized_concept_minlength",
+      "references_schemas_article_interpretation_schema_normalized_concept_type",
+      "references_schemas_article_interpretation_schema_properties_claim_id",
+      "references_schemas_article_interpretation_schema_properties_claim_type",
+      "references_schemas_article_interpretation_schema_properties_input_segment_id",
+      "references_schemas_article_interpretation_schema_properties_input_segment_role",
+      "references_schemas_article_interpretation_schema_properties_normalized_concept",
+      "references_schemas_article_interpretation_schema_properties_source_span",
+      "references_schemas_article_interpretation_schema_properties_statement",
+      "references_schemas_article_interpretation_schema_source_span_ref",
+      "references_schemas_article_interpretation_schema_statement_minlength",
+      "references_schemas_article_interpretation_schema_statement_type"
+    ],
+    "20": [
+      "scripts_adjudicate_classification",
+      "scripts_adjudicate_classification_adjudicate_output",
+      "scripts_adjudicate_classification_decision_from_batch",
+      "scripts_adjudicate_classification_decision_from_manual",
+      "scripts_adjudicate_classification_load_json",
+      "scripts_adjudicate_classification_load_taxonomy",
+      "scripts_adjudicate_classification_main",
+      "scripts_adjudicate_classification_parse_args",
+      "scripts_adjudicate_classification_rationale_157",
+      "scripts_adjudicate_classification_rationale_28",
+      "scripts_adjudicate_classification_rationale_36",
+      "scripts_adjudicate_classification_rationale_54",
+      "scripts_adjudicate_classification_require_canonical_current_target",
+      "scripts_adjudicate_classification_validate_batch_metadata",
+      "scripts_adjudicate_classification_validate_ids",
+      "scripts_adjudicate_classification_validate_review_coverage",
+      "scripts_adjudicate_classification_write_artifact",
+      "scripts_adjudicate_classification_write_current_pointer"
+    ],
+    "21": [
       "scripts_build_article_role_manifest",
       "scripts_build_article_role_manifest_apply_override",
       "scripts_build_article_role_manifest_apply_overrides",
@@ -597,25 +739,25 @@
       "scripts_build_article_role_manifest_validate_segments",
       "scripts_build_article_role_manifest_write_jsonl"
     ],
-    "15": [
-      "scripts_classify_articles",
-      "scripts_classify_articles_check_promotion",
-      "scripts_classify_articles_classify_article",
-      "scripts_classify_articles_load_articles",
-      "scripts_classify_articles_main",
-      "scripts_classify_articles_output_json",
-      "scripts_classify_articles_output_summary",
-      "scripts_classify_articles_rationale_130",
-      "scripts_classify_articles_rationale_174",
-      "scripts_classify_articles_rationale_189",
-      "scripts_classify_articles_rationale_255",
-      "scripts_classify_articles_rationale_283",
-      "scripts_classify_articles_rationale_308",
-      "scripts_classify_articles_rationale_343",
-      "scripts_classify_articles_score_keywords",
-      "scripts_classify_articles_track_themes"
+    "22": [
+      "scripts_analyze_classification",
+      "scripts_analyze_classification_analyze_file",
+      "scripts_analyze_classification_build_review_queue",
+      "scripts_analyze_classification_current_summary",
+      "scripts_analyze_classification_legacy_summary",
+      "scripts_analyze_classification_load_json",
+      "scripts_analyze_classification_main",
+      "scripts_analyze_classification_parse_args",
+      "scripts_analyze_classification_print_summary",
+      "scripts_analyze_classification_rationale_154",
+      "scripts_analyze_classification_rationale_186",
+      "scripts_analyze_classification_rationale_20",
+      "scripts_analyze_classification_rationale_253",
+      "scripts_analyze_classification_resolve_input_path",
+      "scripts_analyze_classification_review_item",
+      "scripts_analyze_classification_write_review_queue"
     ],
-    "16": [
+    "23": [
       "concept_分仓与仓位管理",
       "concept_分歧转一致",
       "concept_情绪位置变化",
@@ -631,7 +773,7 @@
       "stock_sh600280_中央商场",
       "stock_sz399606_创业板"
     ],
-    "17": [
+    "24": [
       "references_sources_articles_2026-06-17_221911_concept_central_leverage",
       "references_sources_articles_2026-06-17_221911_doc_2024_central_leverage_origin_post",
       "references_sources_articles_2026-06-18_054042_concept_fed_dot_plot_un",
@@ -647,7 +789,23 @@
       "references_sources_articles_2026-06-30_085720_concept_fluorine_chemical_three_cycles",
       "references_sources_articles_2026-07-03_083933_concept_national_fortune_dividend"
     ],
-    "18": [
+    "25": [
+      "tests_test_classification_adjudication",
+      "tests_test_classification_adjudication_classificationadjudicationtests",
+      "tests_test_classification_adjudication_classificationadjudicationtests_raw_output",
+      "tests_test_classification_adjudication_classificationadjudicationtests_setupclass",
+      "tests_test_classification_adjudication_classificationadjudicationtests_test_adjudicated_artifact_refuses_same_timestamp_overwrite",
+      "tests_test_classification_adjudication_classificationadjudicationtests_test_adjudication_preserves_classifier_values_and_applies_decisions",
+      "tests_test_classification_adjudication_classificationadjudicationtests_test_adjudication_rejects_an_already_adjudicated_artifact",
+      "tests_test_classification_adjudication_classificationadjudicationtests_test_adjudication_rejects_duplicate_manual_reviews",
+      "tests_test_classification_adjudication_classificationadjudicationtests_test_adjudication_rejects_noncanonical_raw_digests",
+      "tests_test_classification_adjudication_classificationadjudicationtests_test_batch_metadata_requires_contiguous_exact_ranges",
+      "tests_test_classification_adjudication_classificationadjudicationtests_test_batch_validation_rejects_invalid_confidence",
+      "tests_test_classification_adjudication_classificationadjudicationtests_test_batch_validation_rejects_missing_or_duplicate_unresolved_files",
+      "tests_test_classification_adjudication_classificationadjudicationtests_test_default_current_rejects_noncanonical_taxonomy_path",
+      "tests_test_classification_adjudication_load_module"
+    ],
+    "26": [
       "concept_亏钱效应",
       "concept_卡位穿越",
       "concept_围魏救赵亏钱效应",
@@ -662,7 +820,37 @@
       "stock_sz300418_昆仑万维",
       "stock_sz300570_太辰光"
     ],
-    "19": [
+    "27": [
+      "references_schemas_article_interpretation_schema_article_text_minlength",
+      "references_schemas_article_interpretation_schema_article_text_type",
+      "references_schemas_article_interpretation_schema_declared_author_type",
+      "references_schemas_article_interpretation_schema_input_properties",
+      "references_schemas_article_interpretation_schema_properties_article_text",
+      "references_schemas_article_interpretation_schema_properties_declared_author",
+      "references_schemas_article_interpretation_schema_properties_published_at",
+      "references_schemas_article_interpretation_schema_properties_schema_version",
+      "references_schemas_article_interpretation_schema_properties_title",
+      "references_schemas_article_interpretation_schema_published_at_format",
+      "references_schemas_article_interpretation_schema_published_at_type",
+      "references_schemas_article_interpretation_schema_schema_version_const",
+      "references_schemas_article_interpretation_schema_title_type"
+    ],
+    "28": [
+      "references_schemas_article_interpretation_schema_defs_source_span",
+      "references_schemas_article_interpretation_schema_end_line_minimum",
+      "references_schemas_article_interpretation_schema_end_line_type",
+      "references_schemas_article_interpretation_schema_line_span_properties",
+      "references_schemas_article_interpretation_schema_properties_end_line",
+      "references_schemas_article_interpretation_schema_properties_start_line",
+      "references_schemas_article_interpretation_schema_source_span_additionalproperties",
+      "references_schemas_article_interpretation_schema_source_span_comment",
+      "references_schemas_article_interpretation_schema_source_span_properties",
+      "references_schemas_article_interpretation_schema_source_span_required",
+      "references_schemas_article_interpretation_schema_source_span_type",
+      "references_schemas_article_interpretation_schema_start_line_minimum",
+      "references_schemas_article_interpretation_schema_start_line_type"
+    ],
+    "29": [
       "references_sources_articles_2026-02-24_冰冰小美_2026年二月月报_article",
       "references_sources_articles_2026-02-24_冰冰小美_2026年二月月报（二）_article",
       "references_sources_articles_2026-02-26_冰冰小美_2026年二月月报（三）_article",
@@ -677,7 +865,22 @@
       "ticker_sz300666",
       "ticker_sz301217"
     ],
-    "20": [
+    "30": [
+      "tests_test_taxonomy_consistency",
+      "tests_test_taxonomy_consistency_catalog_ids",
+      "tests_test_taxonomy_consistency_frontmatter_value",
+      "tests_test_taxonomy_consistency_load_taxonomy",
+      "tests_test_taxonomy_consistency_normalized_text",
+      "tests_test_taxonomy_consistency_taxonomyconsistencytests",
+      "tests_test_taxonomy_consistency_taxonomyconsistencytests_test_evidence_paths_lines_and_quotes_are_traceable",
+      "tests_test_taxonomy_consistency_taxonomyconsistencytests_test_heuristic_catalog_matches_taxonomy",
+      "tests_test_taxonomy_consistency_taxonomyconsistencytests_test_legacy_assets_are_preserved",
+      "tests_test_taxonomy_consistency_taxonomyconsistencytests_test_legacy_heuristics_have_complete_dispositions",
+      "tests_test_taxonomy_consistency_taxonomyconsistencytests_test_model_documents_match_taxonomy",
+      "tests_test_taxonomy_consistency_taxonomyconsistencytests_test_models_are_descriptive_and_heuristics_reference_models",
+      "tests_test_taxonomy_consistency_taxonomyconsistencytests_test_taxonomy_uses_g2_approved_counts_and_unique_ids"
+    ],
+    "31": [
       "baseline_case_12_ai_distillation",
       "baseline_case_19_risk",
       "case_12_model9_ai_meta",
@@ -691,7 +894,7 @@
       "probe_report_article_65",
       "probe_report_article_71"
     ],
-    "21": [
+    "32": [
       "evals_07_blind_baseline_comparison_report",
       "evals_07_blind_baseline_comparison_silence_rule",
       "evals_09_promotion_deep_analysis_model_1_three_elements",
@@ -705,7 +908,7 @@
       "evals_full_test_outputs_v1_4_case_19_framework_agent_b9336304_risk_control_test",
       "evals_full_test_outputs_v1_5_case_12_model9_agent_488811b5_ai_reform_test"
     ],
-    "22": [
+    "33": [
       "evals_full_test_outputs_case-13-h14-agent-82c330c9_case13_h14_industry_belief_activation",
       "evals_full_test_outputs_case-13-h14-agent-82c330c9_h14_industry_belief_over_technicals",
       "evals_full_test_outputs_case-13-h14-agent-82c330c9_h17_three_boundaries_link",
@@ -719,7 +922,7 @@
       "evals_full_test_outputs_v1.4-case-13-h14-agent-50e3d5c3_case13_h14_v14_jiangfeng",
       "evals_full_test_outputs_v1.4-case-16-h17-agent-7dbf3c6f_case16_h17_v14_boundaries"
     ],
-    "23": [
+    "34": [
       "evals_full_test_outputs_case-14-h15h16-agent-3adccb88_case14_h15h16_joint",
       "evals_full_test_outputs_case-14-h15h16-agent-3adccb88_h15_leverage_clearance_line_28",
       "evals_full_test_outputs_case-14-h15h16-agent-3adccb88_h16_liquidity_vs_logic",
@@ -733,21 +936,7 @@
       "evals_full_test_outputs_v1.4-case-14-h15h16-agent-6fa1cde7_case14_h15h16_v14_zijin",
       "evals_full_test_outputs_v1.4-case-15-h16-agent-2ea43e66_case15_h16_v14_baijiu"
     ],
-    "24": [
-      "references_research_01-writings_买入不败",
-      "references_research_01-writings_从天而降的掌法",
-      "references_research_01-writings_推到重来",
-      "references_research_02-conversations_交易心态",
-      "references_research_03-expression-dna_确定性表达",
-      "references_research_03-expression-dna_禁忌词",
-      "references_research_03-expression-dna_结论先行",
-      "references_research_04-external-views_她批评的智慧冲突",
-      "references_research_04-external-views_挨骂经历",
-      "references_research_05-decisions_江丰电子",
-      "references_research_05-decisions_联诚精密教训",
-      "references_research_05-decisions_长电科技"
-    ],
-    "25": [
+    "35": [
       "references_research_01-writings_体系三要素",
       "references_research_01-writings_八点框架",
       "references_research_01-writings_孙子兵法",
@@ -761,7 +950,35 @@
       "references_research_06-timeline_体系三要素提出",
       "references_research_06-timeline_流动性挤压"
     ],
-    "26": [
+    "36": [
+      "references_schemas_article_interpretation_schema_claim_additionalproperties",
+      "references_schemas_article_interpretation_schema_claim_allof",
+      "references_schemas_article_interpretation_schema_claim_required",
+      "references_schemas_article_interpretation_schema_claim_type",
+      "references_schemas_article_interpretation_schema_defs",
+      "references_schemas_article_interpretation_schema_defs_claim",
+      "references_schemas_article_interpretation_schema_defs_historical_evidence",
+      "references_schemas_article_interpretation_schema_historical_evidence_additionalproperties",
+      "references_schemas_article_interpretation_schema_historical_evidence_items",
+      "references_schemas_article_interpretation_schema_historical_evidence_required",
+      "references_schemas_article_interpretation_schema_historical_evidence_type",
+      "references_schemas_article_interpretation_schema_properties_historical_evidence"
+    ],
+    "37": [
+      "references_schemas_article_interpretation_schema_confidence_maximum",
+      "references_schemas_article_interpretation_schema_confidence_minimum",
+      "references_schemas_article_interpretation_schema_confidence_type",
+      "references_schemas_article_interpretation_schema_defs_historical_relation",
+      "references_schemas_article_interpretation_schema_historical_relation_additionalproperties",
+      "references_schemas_article_interpretation_schema_historical_relation_allof",
+      "references_schemas_article_interpretation_schema_historical_relation_properties",
+      "references_schemas_article_interpretation_schema_historical_relation_required",
+      "references_schemas_article_interpretation_schema_historical_relation_type",
+      "references_schemas_article_interpretation_schema_properties_confidence",
+      "references_schemas_article_interpretation_schema_properties_relation",
+      "references_schemas_article_interpretation_schema_relation_enum"
+    ],
+    "38": [
       "references_tools_finance_data_skills_neodata_financial_search_scripts_query_ensure_requests",
       "references_tools_finance_data_skills_neodata_financial_search_scripts_query_main",
       "references_tools_finance_data_skills_neodata_financial_search_scripts_query_migrate_legacy_token",
@@ -775,7 +992,7 @@
       "references_tools_finance_data_skills_neodata_financial_search_scripts_query_save_token_file",
       "references_tools_finance_data_skills_neodata_financial_search_scripts_query_urllib_post"
     ],
-    "27": [
+    "39": [
       "evals_agent_input_01_writings_corpus",
       "evals_agent_input_05_decisions_corpus",
       "evals_agent_input_06_timeline_corpus",
@@ -788,7 +1005,20 @@
       "references_research_g1_local_06_timeline_timeline_summary",
       "references_research_g1_local_batch_01_evidence_batch"
     ],
-    "28": [
+    "40": [
+      "references_schemas_article_interpretation_schema_defs_taxonomy_mapping",
+      "references_schemas_article_interpretation_schema_properties_reasoning",
+      "references_schemas_article_interpretation_schema_properties_status",
+      "references_schemas_article_interpretation_schema_reasoning_minlength",
+      "references_schemas_article_interpretation_schema_reasoning_type",
+      "references_schemas_article_interpretation_schema_status_enum",
+      "references_schemas_article_interpretation_schema_taxonomy_mapping_additionalproperties",
+      "references_schemas_article_interpretation_schema_taxonomy_mapping_allof",
+      "references_schemas_article_interpretation_schema_taxonomy_mapping_properties",
+      "references_schemas_article_interpretation_schema_taxonomy_mapping_required",
+      "references_schemas_article_interpretation_schema_taxonomy_mapping_type"
+    ],
+    "41": [
       "scripts_audit_g1_author_primary",
       "scripts_audit_g1_author_primary_build_audit_report",
       "scripts_audit_g1_author_primary_extract_references",
@@ -801,7 +1031,7 @@
       "scripts_audit_g1_author_primary_quote_parts",
       "scripts_audit_g1_author_primary_resolve_article_path"
     ],
-    "29": [
+    "42": [
       "tests_test_article_role_manifest",
       "tests_test_article_role_manifest_articlerolemanifesttests",
       "tests_test_article_role_manifest_articlerolemanifesttests_segment_for_line",
@@ -814,7 +1044,7 @@
       "tests_test_article_role_manifest_articlerolemanifesttests_test_segments_do_not_overlap",
       "tests_test_article_role_manifest_load_role_manifest_module"
     ],
-    "30": [
+    "43": [
       "bingbingxiaomei_perspective_references_sources_articles_2023_05_20_082356_document",
       "bingbingxiaomei_perspective_references_sources_articles_2023_05_20_082356_emotion_system_three_elements",
       "bingbingxiaomei_perspective_references_sources_articles_2023_05_25_170507_document",
@@ -826,7 +1056,67 @@
       "bingbingxiaomei_perspective_references_sources_articles_2023_06_27_104227_document",
       "bingbingxiaomei_perspective_references_sources_articles_2023_06_27_104227_intraday_chart_limits"
     ],
-    "31": [
+    "44": [
+      "references_models_legacy_deep_1_application_layer",
+      "references_models_legacy_deep_1_chip_layer",
+      "references_models_legacy_deep_1_computing_power_layer",
+      "references_models_legacy_deep_1_energy_layer",
+      "references_models_legacy_deep_1_five_layer_ai_industry_framework",
+      "references_models_legacy_deep_1_large_model_layer",
+      "references_models_legacy_deep_1_three_elements",
+      "references_models_legacy_deep_1_three_elements_framework",
+      "references_models_legacy_deep_1_timing_selection_integration",
+      "references_models_legacy_deep_9_meta_level_supplement"
+    ],
+    "45": [
+      "references_research_01-writings_500年文明周期",
+      "references_research_01-writings_AI蒸馏",
+      "references_research_01-writings_中米竞争三阶段",
+      "references_research_01-writings_五层架构",
+      "references_research_01-writings_小国出局",
+      "references_research_01-writings_有序竞争",
+      "references_research_01-writings_未来七姐妹",
+      "references_research_01-writings_翟东升",
+      "references_research_01-writings_造神计划",
+      "references_research_06-timeline_500年文明史"
+    ],
+    "46": [
+      "references_schemas_article_interpretation_schema_brief_properties",
+      "references_schemas_article_interpretation_schema_document_type_enum",
+      "references_schemas_article_interpretation_schema_input_ref",
+      "references_schemas_article_interpretation_schema_input_summary_minlength",
+      "references_schemas_article_interpretation_schema_input_summary_type",
+      "references_schemas_article_interpretation_schema_properties_document_type",
+      "references_schemas_article_interpretation_schema_properties_input",
+      "references_schemas_article_interpretation_schema_properties_input_summary",
+      "references_schemas_article_interpretation_schema_properties_taxonomy_mapping",
+      "references_schemas_article_interpretation_schema_taxonomy_mapping_ref"
+    ],
+    "47": [
+      "references_schemas_article_interpretation_schema_claim_ref",
+      "references_schemas_article_interpretation_schema_claim_result_additionalproperties",
+      "references_schemas_article_interpretation_schema_claim_result_description",
+      "references_schemas_article_interpretation_schema_claim_result_properties",
+      "references_schemas_article_interpretation_schema_claim_result_required",
+      "references_schemas_article_interpretation_schema_claim_result_type",
+      "references_schemas_article_interpretation_schema_defs_claim_result",
+      "references_schemas_article_interpretation_schema_historical_relation_ref",
+      "references_schemas_article_interpretation_schema_properties_claim",
+      "references_schemas_article_interpretation_schema_properties_historical_relation"
+    ],
+    "48": [
+      "references_schemas_article_interpretation_schema_claim_results_items",
+      "references_schemas_article_interpretation_schema_claim_results_type",
+      "references_schemas_article_interpretation_schema_claim_results_uniqueitems",
+      "references_schemas_article_interpretation_schema_input_segments_items",
+      "references_schemas_article_interpretation_schema_items_ref",
+      "references_schemas_article_interpretation_schema_properties_claim_results",
+      "references_schemas_article_interpretation_schema_properties_supporting_evidence",
+      "references_schemas_article_interpretation_schema_supporting_evidence_items",
+      "references_schemas_article_interpretation_schema_supporting_evidence_type",
+      "references_schemas_article_interpretation_schema_supporting_evidence_uniqueitems"
+    ],
+    "49": [
       "references_sources_articles_2024-04-02_091756_____aiai_jinggong",
       "references_sources_articles_2024-04-02_091756_____article",
       "references_sources_articles_2024-04-02_091756_____jianqiao_keji",
@@ -838,7 +1128,7 @@
       "references_sources_articles_2024-04-02_091756_____short_line_aesthetic",
       "references_sources_articles_2024-04-02_091756_____zhongguo_weixing"
     ],
-    "32": [
+    "50": [
       "references_sources_articles_2024-11-07_090236_冰冰小美_危机霸权与再次伟大的美国_article",
       "references_sources_articles_2024-11-08_183336_冰冰小美_中央加杠杆_article",
       "references_sources_articles_2024-11-09_105442_冰冰小美_2024大事件落地未来行情演绎_article",
@@ -850,7 +1140,19 @@
       "references_sources_articles_2024-12-21_174901_冰冰小美_米_article",
       "references_sources_articles_2024-12-25_165007_冰冰小美_美联储的这四年_article"
     ],
-    "33": [
+    "51": [
+      "scripts_article_corpus_preflight_copy_to_staging",
+      "scripts_article_corpus_preflight_copy_update_real_directory",
+      "scripts_article_corpus_preflight_ensure_real_directory_target",
+      "scripts_article_corpus_preflight_get_file_attributes",
+      "scripts_article_corpus_preflight_has_reparse_flag",
+      "scripts_article_corpus_preflight_is_reparse_point",
+      "scripts_article_corpus_preflight_prepare_corpus_snapshot",
+      "scripts_article_corpus_preflight_relative_files",
+      "scripts_article_corpus_preflight_sync_real_directory",
+      "scripts_article_corpus_preflight_unsafereparsetargeterror"
+    ],
+    "52": [
       "2026-06-22_233243_冰冰小美_格林斯潘",
       "concept_guarantee_panluo",
       "references_tools_finance-data_skills_neodata-financial-search_reference",
@@ -861,18 +1163,51 @@
       "references_tools_finance-data_skills_westock-data_references_scenarios-guide",
       "references_tools_finance-data_skills_westock-data_skill"
     ],
-    "34": [
-      "references_research_02-conversations_人设构建",
-      "references_research_02-conversations_回应质疑模式",
-      "references_research_02-conversations_师尊训徒",
-      "references_research_02-conversations_幽默方式",
-      "references_research_02-conversations_拒绝讨论话题",
-      "references_research_02-conversations_粉丝互动",
-      "references_research_03-expression-dna_短句风格",
-      "references_research_03-expression-dna_第一二人称演变",
-      "references_research_04-external-views_粉丝画像"
+    "53": [
+      "references_research_01-writings_买入不败",
+      "references_research_01-writings_从天而降的掌法",
+      "references_research_01-writings_推到重来",
+      "references_research_03-expression-dna_禁忌词",
+      "references_research_04-external-views_她批评的智慧冲突",
+      "references_research_04-external-views_挨骂经历",
+      "references_research_05-decisions_江丰电子",
+      "references_research_05-decisions_联诚精密教训",
+      "references_research_05-decisions_长电科技"
     ],
-    "35": [
+    "54": [
+      "references_schemas_article_interpretation_schema_heuristic_ids_items",
+      "references_schemas_article_interpretation_schema_heuristic_ids_type",
+      "references_schemas_article_interpretation_schema_heuristic_ids_uniqueitems",
+      "references_schemas_article_interpretation_schema_items_enum",
+      "references_schemas_article_interpretation_schema_model_ids_items",
+      "references_schemas_article_interpretation_schema_model_ids_type",
+      "references_schemas_article_interpretation_schema_model_ids_uniqueitems",
+      "references_schemas_article_interpretation_schema_properties_heuristic_ids",
+      "references_schemas_article_interpretation_schema_properties_model_ids"
+    ],
+    "55": [
+      "runtimeerror",
+      "scripts_verify_g1b_codebase_memory",
+      "scripts_verify_g1b_codebase_memory_find_author_primary_match",
+      "scripts_verify_g1b_codebase_memory_load_roles",
+      "scripts_verify_g1b_codebase_memory_main",
+      "scripts_verify_g1b_codebase_memory_run_cli",
+      "scripts_verify_g1b_codebase_memory_run_search",
+      "scripts_verify_g1b_codebase_memory_sha256_file",
+      "scripts_verify_g1b_codebase_memory_verify_result"
+    ],
+    "56": [
+      "scripts_article_corpus_preflight_lockhelderror",
+      "scripts_article_corpus_preflight_parse_utc",
+      "scripts_article_corpus_preflight_preflightlock",
+      "scripts_article_corpus_preflight_preflightlock_enter",
+      "scripts_article_corpus_preflight_preflightlock_exit",
+      "scripts_article_corpus_preflight_preflightlock_init",
+      "scripts_article_corpus_preflight_preflightlock_is_stale",
+      "scripts_article_corpus_preflight_snapshotblockederror",
+      "scripts_article_corpus_preflight_snapshotblockederror_init"
+    ],
+    "57": [
       "2026-06-22_101011_冰冰小美_出海方向纠偏",
       "2026-06-22_102141_冰冰小美_分仓均衡配置",
       "2026-06-23_103559_冰冰小美_有研新材光纤",
@@ -882,7 +1217,7 @@
       "concept_sanan_ganhuaga",
       "concept_youyanxincai_sicl4"
     ],
-    "36": [
+    "58": [
       "2026-06-22_183938_冰冰小美_长川半导体设备",
       "2026-06-23_152721_冰冰小美_紫金矿业27元",
       "2026-06-24_143725_冰冰小美_进攻防御体系",
@@ -892,7 +1227,7 @@
       "concept_zhong_mei_shuangda",
       "concept_zijing_kuangye"
     ],
-    "37": [
+    "59": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_10_122457___________________________________________________________________article",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_10_122457___________________________________________________________________position_size_matches_knowledge",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_10_130140__________________________________________________________article",
@@ -902,27 +1237,7 @@
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_10_142314________________________3______136_________________________________article",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_10_142314________________________3______136_________________________________entry_price_context"
     ],
-    "38": [
-      "references_research_01-writings_500年文明周期",
-      "references_research_01-writings_AI蒸馏",
-      "references_research_01-writings_中米竞争三阶段",
-      "references_research_01-writings_五层架构",
-      "references_research_01-writings_未来七姐妹",
-      "references_research_01-writings_翟东升",
-      "references_research_01-writings_造神计划",
-      "references_research_06-timeline_500年文明史"
-    ],
-    "39": [
-      "references_research_01-writings_两个纪元",
-      "references_research_01-writings_安全与发展",
-      "references_research_01-writings_小国出局",
-      "references_research_01-writings_有序竞争",
-      "references_research_01-writings_老登新登",
-      "references_research_01-writings_酱香科技顶",
-      "references_research_04-external-views_同行批评",
-      "references_research_05-decisions_商业航天封神"
-    ],
-    "40": [
+    "60": [
       "references_sources_articles_2024-04-02_002236_____article",
       "references_sources_articles_2024-04-02_002236_____hudian_gufen",
       "references_sources_articles_2024-04-02_002236_____ningke_shengwu",
@@ -932,7 +1247,7 @@
       "references_sources_articles_2024-04-02_154325_____sunzi_bingfa",
       "references_sources_articles_2024-04-02_154325_____unbeatable_system"
     ],
-    "41": [
+    "61": [
       "references_sources_articles_2026_06_17_103020_____________________________________________t_____________space_x_investment_thesis",
       "references_sources_articles_2026_06_17_103329_______________k_____________________15_______75__25_investment_thesis",
       "references_sources_articles_2026_06_17_144955_investment_thesis",
@@ -942,7 +1257,16 @@
       "references_sources_articles_2026_06_17_182748____________10____claude____________________617_investment_thesis",
       "references_sources_articles_2026_06_17_220242_investment_thesis"
     ],
-    "42": [
+    "62": [
+      "changelog_md_changelog",
+      "changelog_v1_1",
+      "changelog_v1_2",
+      "changelog_v1_3",
+      "changelog_v1_4",
+      "changelog_v1_5",
+      "changelog_v1_7"
+    ],
+    "63": [
       "concept_中特估",
       "concept_股票供给侧改革",
       "references_sources_articles_2024_05_27_104755_体系三要素及案例应用，第一期，竞争格局的比较优势",
@@ -951,7 +1275,7 @@
       "stock_正丹股份_sz300641",
       "stock_英伟达_nvda"
     ],
-    "43": [
+    "64": [
       "concept_新高突破板",
       "person_上塘路",
       "person_炒股养家",
@@ -960,7 +1284,16 @@
       "stock_sh600415_小商品城",
       "stock_sz002315_焦点科技"
     ],
-    "44": [
+    "65": [
+      "references_models_legacy_deep_9_ai_distillation",
+      "references_models_legacy_deep_9_ai_distillation_concept",
+      "references_models_legacy_deep_9_ai_investor_competitive_environment",
+      "references_models_legacy_deep_9_ai_scope_boundary",
+      "references_models_legacy_deep_9_existing_investment_system_advantage",
+      "references_models_legacy_deep_9_human_comparative_advantage",
+      "references_models_legacy_deep_9_information_asymmetry"
+    ],
+    "66": [
       "references_research_01-writings_亏钱挣钱效应",
       "references_research_01-writings_假象",
       "references_research_01-writings_围魏救赵",
@@ -969,7 +1302,16 @@
       "references_research_01-writings_螺旋上升下降",
       "references_research_05-decisions_隆基绿能逃顶"
     ],
-    "45": [
+    "67": [
+      "references_schemas_article_interpretation_schema_honesty_boundaries_items",
+      "references_schemas_article_interpretation_schema_honesty_boundaries_type",
+      "references_schemas_article_interpretation_schema_items_type",
+      "references_schemas_article_interpretation_schema_properties_honesty_boundaries",
+      "references_schemas_article_interpretation_schema_properties_unknowns",
+      "references_schemas_article_interpretation_schema_unknowns_items",
+      "references_schemas_article_interpretation_schema_unknowns_type"
+    ],
+    "68": [
       "references_sources_articles_2024-03-31_201022_____article",
       "references_sources_articles_2024-03-31_201022_____commodities_index",
       "references_sources_articles_2024-03-31_201022_____new_energy_index",
@@ -978,7 +1320,7 @@
       "references_sources_articles_2024-03-31_201022_____xibu_kuangye",
       "references_sources_articles_2024-03-31_201022_____zijin_kuangye"
     ],
-    "46": [
+    "69": [
       "references_sources_articles_2026-02-28_冰冰小美_留一半清醒_留一半醉_article",
       "references_sources_articles_2026-03-19_冰冰小美_2026年3月（半月报）_article",
       "references_sources_articles_2026-03-20_冰冰小美_如何理解时间窗口_article",
@@ -987,7 +1329,7 @@
       "ticker_sz002594",
       "ticker_sz160723"
     ],
-    "47": [
+    "70": [
       "references_sources_articles_2026_05_10_冰冰小美_了解报团基金然后了解etf基金",
       "references_sources_articles_2026_05_10_冰冰小美_有一些主动基金集中行业持仓",
       "references_sources_articles_2026_05_10_冰冰小美_近日证监会对苏州清越光电科技",
@@ -996,7 +1338,16 @@
       "references_sources_articles_2026_05_11_冰冰小美_帖子可以按关键词查询",
       "references_sources_articles_2026_05_11_冰冰小美_长电科技_历史新高柳工_也突破10"
     ],
-    "48": [
+    "71": [
+      "tests_test_task9_artifact_integrity",
+      "tests_test_task9_artifact_integrity_load_json",
+      "tests_test_task9_artifact_integrity_task9artifactintegritytests",
+      "tests_test_task9_artifact_integrity_task9artifactintegritytests_setupclass",
+      "tests_test_task9_artifact_integrity_task9artifactintegritytests_test_batches_exactly_cover_raw_unresolved_set",
+      "tests_test_task9_artifact_integrity_task9artifactintegritytests_test_current_pointer_and_provenance_match_raw_artifact",
+      "tests_test_task9_artifact_integrity_task9artifactintegritytests_test_queue_and_status_both_report_complete_review"
+    ],
+    "72": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_10_143337___________________________________________________________________article",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_10_143337___________________________________________________________________defensive_trading_system",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_10_160519___________________________________________________________________article",
@@ -1004,7 +1355,7 @@
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_10_233925____________space_x_ipo_____________2______________________________article",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_10_233925____________space_x_ipo_____________2______________________________avoid_trading_during_event_risk"
     ],
-    "49": [
+    "73": [
       "concept_yu_heng_speculation_mode",
       "references_sources_articles_2026-01-20_冰冰小美_哀其不幸_怒其不争_article",
       "references_sources_articles_2026-01-21_冰冰小美_哀其不幸_怒其不争_二_article",
@@ -1012,7 +1363,7 @@
       "ticker_sh000016",
       "ticker_sz002931"
     ],
-    "50": [
+    "74": [
       "concept_人气为王众神接力",
       "person_古北路东北猛男",
       "references_sources_articles_2023_07_08_143557_冰冰小美_游资江湖手法第二期人气为王众神接力_游资江湖手法第二期人气为王众神接力",
@@ -1020,7 +1371,7 @@
       "stock_sz000735_罗牛山",
       "stock_sz002428_云南锗业"
     ],
-    "51": [
+    "75": [
       "concept_合成生物题材",
       "concept_投机过程中的传播学",
       "concept_挡刀套利手法",
@@ -1028,7 +1379,7 @@
       "references_sources_articles_2024_10_28_095708_情绪体系交易篇，游资交易手法，第十六期，挡刀",
       "stock_川宁生物_sz301301"
     ],
-    "52": [
+    "76": [
       "concept_市场唯一解",
       "concept_轮动套利",
       "person_溧阳路孙哥",
@@ -1036,7 +1387,15 @@
       "references_sources_articles_2023_07_18_101830_冰冰小美_如果是轮动套利一定要快准狠迟一步的都别买了_如果是轮动套利一定要快准狠迟一步的都别买了",
       "references_sources_articles_2023_07_20_151712_冰冰小美_t_1的思考_t_1的思考"
     ],
-    "53": [
+    "77": [
+      "evals_methodology_darwin_evaluation_methodology",
+      "rationale_agent_spawn_requires_blind_baseline",
+      "rationale_classifier_is_candidate_not_semantic_truth",
+      "rationale_evaluation_output_archive_checklist",
+      "rationale_explicit_unresolved_honesty_boundary",
+      "rationale_legacy_and_current_evaluations_separated"
+    ],
+    "78": [
       "evals_probe-2026-06-13_to_2026-06-22_probe-keyword_concept_frameworks",
       "evals_probe-2026-06-13_to_2026-06-22_probe-keyword_individual_stocks",
       "evals_probe-2026-06-13_to_2026-06-22_probe-keyword_industry_directions",
@@ -1044,7 +1403,15 @@
       "evals_probe-2026-06-13_to_2026-06-22_probe-keyword_market_terms",
       "evals_probe-2026-06-13_to_2026-06-22_probe-keyword_people_references"
     ],
-    "54": [
+    "79": [
+      "references_research_01-writings_两个纪元",
+      "references_research_01-writings_安全与发展",
+      "references_research_01-writings_老登新登",
+      "references_research_01-writings_酱香科技顶",
+      "references_research_04-external-views_同行批评",
+      "references_research_05-decisions_商业航天封神"
+    ],
+    "80": [
       "references_research_01-writings_格林斯潘",
       "references_research_01-writings_泡沫新定义",
       "references_research_01-writings_罗伯特希勒",
@@ -1052,7 +1419,23 @@
       "references_research_06-timeline_格林斯潘悼文",
       "references_research_06-timeline_泡沫新定义"
     ],
-    "55": [
+    "81": [
+      "references_schemas_article_interpretation_schema",
+      "references_schemas_article_interpretation_schema_description",
+      "references_schemas_article_interpretation_schema_id",
+      "references_schemas_article_interpretation_schema_oneof",
+      "references_schemas_article_interpretation_schema_schema",
+      "references_schemas_article_interpretation_schema_title"
+    ],
+    "82": [
+      "references_schemas_article_interpretation_schema_brief_additionalproperties",
+      "references_schemas_article_interpretation_schema_brief_allof",
+      "references_schemas_article_interpretation_schema_brief_comment",
+      "references_schemas_article_interpretation_schema_brief_required",
+      "references_schemas_article_interpretation_schema_brief_type",
+      "references_schemas_article_interpretation_schema_defs_brief"
+    ],
+    "83": [
       "tests_test_g1_author_primary_audit",
       "tests_test_g1_author_primary_audit_g1authorprimaryaudittests",
       "tests_test_g1_author_primary_audit_g1authorprimaryaudittests_test_g1a_receipt_matches_generated_artifacts",
@@ -1060,1465 +1443,1554 @@
       "tests_test_g1_author_primary_audit_g1authorprimaryaudittests_test_quote_matching_distinguishes_exact_and_paraphrase",
       "tests_test_g1_author_primary_audit_load_audit_module"
     ],
-    "56": [
+    "84": [
+      "docs_v1_4_pr_description_md_v1_4_pr",
+      "docs_v1_4_pr_dim3_changes",
+      "docs_v1_4_pr_dim5_changes",
+      "docs_v1_4_pr_r1_blind_baseline",
+      "docs_v1_4_pr_r3_layering"
+    ],
+    "85": [
+      "references_schemas_article_interpretation_schema_defs_line_span",
+      "references_schemas_article_interpretation_schema_line_span_additionalproperties",
+      "references_schemas_article_interpretation_schema_line_span_comment",
+      "references_schemas_article_interpretation_schema_line_span_required",
+      "references_schemas_article_interpretation_schema_line_span_type"
+    ],
+    "86": [
+      "references_sources_articles_2023-03-18_145015",
+      "references_sources_articles_2023-03-19_113043",
+      "references_sources_articles_2023-03-19_232929",
+      "references_sources_articles_2023-03-20_122713",
+      "references_sources_articles_2023-03-20_132506"
+    ],
+    "87": [
       "references_sources_articles_2024-03-20_090029_____article",
       "references_sources_articles_2024-03-20_090029_____changing_world_order",
       "references_sources_articles_2024-03-20_090029_____debt_crisis",
       "references_sources_articles_2024-03-20_090029_____principles_2",
       "references_sources_articles_2024-03-20_090029_____ray_dalio"
     ],
-    "57": [
+    "88": [
       "references_sources_articles_2026-06-21_115607_concept_baijiu_cycle_assessment",
       "references_sources_articles_2026-06-22_110303_concept_three_pillar_allocation",
       "references_sources_articles_2026-06-22_135134_concept_material_to_resource_rotation",
       "references_sources_articles_2026-06-22_154144_concept_strategic_resource_rebalance",
       "references_sources_articles_2026-06-24_180040_concept_ev_industry_downcycle"
     ],
-    "58": [
+    "89": [
       "references_sources_articles_2026_05_11_155237_article",
       "references_sources_articles_2026_05_11_155237_open_knowledge",
       "references_sources_articles_2026_05_15_071854_article",
       "references_sources_articles_2026_05_15_071854_information_equity",
       "references_sources_articles_2026_05_15_071854_initial_position"
     ],
-    "59": [
+    "90": [
       "references_sources_articles_2026_05_22_224649_ai_five_layer_architecture",
       "references_sources_articles_2026_05_22_224649_ai_infrastructure",
       "references_sources_articles_2026_05_22_224649_article",
       "references_sources_articles_2026_06_08_231852_ai_investment_value",
       "references_sources_articles_2026_06_08_231852_article"
     ],
-    "60": [
+    "91": [
       "references_sources_articles_2026_05_27_144618_article",
       "references_sources_articles_2026_05_27_144618_liquidity_squeeze",
       "references_sources_articles_2026_06_08_150916_article",
       "references_sources_articles_2026_06_08_150916_liquidity_risk",
       "references_sources_articles_2026_06_08_150916_risk_response"
     ],
-    "61": [
+    "92": [
       "advanced_materials",
       "ai_competition",
       "references_sources_articles_2026_04_18_162000______ai_______article",
       "references_sources_articles_2026_05_08_095736___________________________________________________________________article"
     ],
-    "62": [
+    "93": [
       "bingbingxiaomei_perspective_references_sources_articles_2023_05_19_110604_document",
       "bingbingxiaomei_perspective_references_sources_articles_2023_05_19_110604_liquidity_driven_rotation",
       "bingbingxiaomei_perspective_references_sources_articles_2023_06_15_173928_document",
       "bingbingxiaomei_perspective_references_sources_articles_2023_06_15_173928_liquidity_dialectical_analysis"
     ],
-    "63": [
+    "94": [
       "bingbingxiaomei_perspective_references_sources_articles_2023_05_29_102110_document",
       "bingbingxiaomei_perspective_references_sources_articles_2023_05_29_102110_emotion_target_arbitrage_target",
       "bingbingxiaomei_perspective_references_sources_articles_2023_05_31_160349_document",
       "bingbingxiaomei_perspective_references_sources_articles_2023_05_31_160349_emotion_cycle_confirmation"
     ],
-    "64": [
+    "95": [
       "bingbingxiaomei_perspective_references_sources_articles_2025_10_06_074832_ice_traps_constraints_balance",
       "bingbingxiaomei_perspective_references_sources_articles_2025_10_06_074832_ice_traps_constraints_balance_ai_bubble_risk",
       "bingbingxiaomei_perspective_references_sources_articles_2025_12_27_171812_ice_cycles",
       "bingbingxiaomei_perspective_references_sources_articles_2025_12_27_171812_ice_cycles_ai_ecosystem_closure"
     ],
-    "65": [
+    "96": [
       "bingbingxiaomei_perspective_references_sources_articles_2025_10_19_084358_ice_volatility_risk",
       "bingbingxiaomei_perspective_references_sources_articles_2025_10_19_084358_ice_volatility_risk_1",
       "bingbingxiaomei_perspective_references_sources_articles_2025_10_19_084358_ice_volatility_risk_1_volatility_risk",
       "bingbingxiaomei_perspective_references_sources_articles_2025_10_19_084358_ice_volatility_risk_volatility_risk"
     ],
-    "66": [
+    "97": [
       "bingbingxiaomei_perspective_references_sources_articles_2025_11_11_064701_ice_growth_stock_selection",
       "bingbingxiaomei_perspective_references_sources_articles_2025_11_11_064701_ice_growth_stock_selection_growth_stock_selection",
       "bingbingxiaomei_perspective_references_sources_articles_2025_12_18_204600_ice_2026_q1_outlook",
       "bingbingxiaomei_perspective_references_sources_articles_2025_12_18_204600_ice_2026_q1_outlook_profit_led_returns"
     ],
-    "67": [
+    "98": [
       "bingbingxiaomei_perspective_references_sources_articles_2025_12_05_164008_ice_automation_equipment_cycle",
       "bingbingxiaomei_perspective_references_sources_articles_2025_12_05_164008_ice_automation_equipment_cycle_equipment_cycle",
       "bingbingxiaomei_perspective_references_sources_articles_2025_12_27_132954_ice_era_timing_destiny",
       "bingbingxiaomei_perspective_references_sources_articles_2025_12_27_132954_ice_era_timing_destiny_long_cycle_resources"
     ],
-    "68": [
+    "99": [
       "bingbingxiaomei_perspective_references_sources_articles_2025_12_07_145914_ice_us_security_strategy",
       "bingbingxiaomei_perspective_references_sources_articles_2025_12_07_145914_ice_us_security_strategy_new_monroeism",
       "bingbingxiaomei_perspective_references_sources_articles_2026_01_04_120121_ice_new_monroeism_g2",
       "bingbingxiaomei_perspective_references_sources_articles_2026_01_04_120121_ice_new_monroeism_g2_g2_regional_order"
     ],
-    "69": [
+    "100": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_09_143405_article",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_09_143405_liquidity_spillover",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_09_144043_article",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_09_144043_liquidity_squeeze_rebound"
     ],
-    "70": [
+    "101": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_09_151107_article",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_09_151107_independent_thinking",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_10_120854_article",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_10_120854_capital_protection_and_independent_judgment"
     ],
-    "71": [
+    "102": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_10_071628_article",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_10_071628_balance_sheet_volatility",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_10_082211_article",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_10_082211_rate_cut_qt_regime"
     ],
-    "72": [
+    "103": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_11_101310_document",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_11_101310_liquidity_contraction_crowding",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_11_164632_document",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_11_164632_liquidity_squeeze_confirmation"
     ],
-    "73": [
+    "104": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_24_213623_gold_below_4000",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_24_213623_gold_safe_haven_narrative",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_24_213623_stop_loss_selling",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_24_213623_strong_us_dollar"
     ],
-    "74": [
+    "105": [
       "bubble_history",
       "liquidity_risk",
       "references_sources_articles_2026_01_17_094801________________________article",
       "references_sources_articles_2026_03_23_181328____________article"
     ],
-    "75": [
+    "106": [
       "central_leverage",
       "industrial_investment",
       "references_sources_articles_2026_01_10_133641_____________article",
       "references_sources_articles_2026_01_11_114226___________________________article"
     ],
-    "76": [
+    "107": [
+      "concept_reader_interaction_boundaries",
+      "rationale_ai_distillation_is_third_party_context",
+      "rationale_conversation_inference_not_author_primary",
+      "references_research_02_conversations_interaction_research"
+    ],
+    "108": [
       "concept_雅下水电工程与摸着鹰酱过河",
       "concept_顺周期与反内卷供给侧",
       "references_sources_articles_2025-07-20_075536_历史的真实写照",
       "references_sources_articles_2025-07-24_190304_顺周期与国情"
     ],
-    "77": [
+    "109": [
       "etf_market_structure",
       "references_sources_articles_2026_01_12_173553______4200_______4200________________a_____gdp__1_1_________4200____article",
       "references_sources_articles_2026_04_19_125007________2023______________article",
       "structural_market"
     ],
-    "78": [
+    "110": [
       "industry_cycle",
       "references_sources_articles_2026_01_14_084343________________________________article",
       "references_sources_articles_2026_04_24_155052_____________________________2021_____44__pb_10__21____12_6__22_____article",
       "supply_demand_cycle"
     ],
-    "79": [
+    "111": [
       "information_rating",
       "information_timeliness",
       "references_sources_articles_2026_01_05_150001___________________article",
       "references_sources_articles_2026_01_06_144030___________________article"
     ],
-    "80": [
+    "112": [
+      "references_models_legacy_deep_4_bubble_redefinition",
+      "references_models_legacy_deep_4_competition",
+      "references_models_legacy_deep_4_competition_structure_determinism",
+      "references_models_legacy_deep_4_historical_future_certainty"
+    ],
+    "113": [
+      "references_schemas_article_interpretation_schema_counter_evidence_items",
+      "references_schemas_article_interpretation_schema_counter_evidence_type",
+      "references_schemas_article_interpretation_schema_counter_evidence_uniqueitems",
+      "references_schemas_article_interpretation_schema_properties_counter_evidence"
+    ],
+    "114": [
+      "references_schemas_article_interpretation_schema_defs_input",
+      "references_schemas_article_interpretation_schema_input_additionalproperties",
+      "references_schemas_article_interpretation_schema_input_required",
+      "references_schemas_article_interpretation_schema_input_type"
+    ],
+    "115": [
+      "references_schemas_article_interpretation_schema_input_segments_minitems",
+      "references_schemas_article_interpretation_schema_input_segments_type",
+      "references_schemas_article_interpretation_schema_input_segments_uniqueitems",
+      "references_schemas_article_interpretation_schema_properties_input_segments"
+    ],
+    "116": [
       "references_sources_articles_2026_05_08_冰冰小美_交易坦坦荡荡命运明明白白",
       "references_sources_articles_2026_05_08_冰冰小美_哼_雪球",
       "references_sources_articles_2026_05_08_冰冰小美_至此3月中长仓位配置减仓卖铜卖化工",
       "references_sources_articles_2026_05_08_冰冰小美_西部矿业_这个股从建仓到坚守到卖出"
     ],
-    "81": [
+    "117": [
       "references_sources_articles_2026_05_11_212211_article",
       "references_sources_articles_2026_05_11_212211_fund_activity",
       "references_sources_articles_2026_05_15_101115_article",
       "references_sources_articles_2026_05_15_101115_fund_panic_liquidation"
     ],
-    "82": [
+    "118": [
       "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_产业命门投资法",
       "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_白毛战法",
       "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_白毛股神",
       "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_美籍台湾人"
     ],
-    "83": [
+    "119": [
       "references_sources_articles_2026_06_17_112131_______________1_investment_thesis",
       "references_sources_articles_2026_06_17_120256___________________etf__________20_______________40_investment_thesis",
       "references_sources_articles_2026_06_17_173930_investment_thesis",
       "references_sources_articles_2026_06_17_213822_investment_thesis"
     ],
-    "84": [
-      "references_templates_deep_stock_report",
-      "references_templates_standard_stock_report",
-      "references_tools_finance_data_rules",
-      "references_tools_finance_data_skills_neodata_financial_search_skill"
-    ],
-    "85": [
+    "120": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_24_213623_crude_oil",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_24_213623_document",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_24_213623_inflation"
     ],
-    "86": [
+    "121": [
       "evals_full_test_outputs_v1.4-case-12-model9-agent-002766d3_ai_distillation_three_layers",
       "evals_full_test_outputs_v1.4-case-12-model9-agent-002766d3_case12_model9_ai_distillation",
       "evals_full_test_outputs_v1.4-case-12-model9-agent-002766d3_model9_ai_modifying_investing"
     ],
-    "87": [
+    "122": [
+      "references_schemas_article_interpretation_schema_input_mode_const",
+      "references_schemas_article_interpretation_schema_input_mode_default",
+      "references_schemas_article_interpretation_schema_properties_input_mode"
+    ],
+    "123": [
+      "references_schemas_article_interpretation_schema_properties_source_url",
+      "references_schemas_article_interpretation_schema_source_url_format",
+      "references_schemas_article_interpretation_schema_source_url_type"
+    ],
+    "124": [
       "references_sources_articles_2024_06_21_214500_情绪体系认知篇，模式的失效",
       "stock_中远海控_sh601919",
       "stock_凤凰航运_sz000520"
     ],
-    "88": [
+    "125": [
       "references_sources_articles_2026-01-27_冰冰小美_2026年一月月报_白银资产历史性周期再现的资产波动研究_article",
       "references_sources_articles_2026-01-29_冰冰小美_2026年1月月报（二）_货币体系变迁与全球资本热钱涌动的背后安全性的考量_article",
       "references_sources_articles_2026-01-29_冰冰小美_2026年一月月报（二）_白银与经济危机以及日本野心_article"
     ],
-    "89": [
+    "126": [
       "references_sources_articles_2026-06-21_085651_concept_tongguan_copper_foil",
       "references_sources_articles_2026-06-21_085651_stock_sz301511",
       "references_sources_articles_2026-06-22_154144_stock_sz301217"
     ],
-    "90": [
+    "127": [
       "references_sources_articles_2026-06-22_115852_concept_laddered_left_buying",
       "references_sources_articles_2026-06-22_155501_concept_active_etf_method",
       "references_sources_articles_2026-06-22_161752_concept_active_fund_selection"
     ],
-    "91": [
+    "128": [
       "references_sources_articles_2026_05_08_100733_article",
       "references_sources_articles_2026_05_08_100733_memory_theme",
       "references_sources_articles_2026_05_08_100733_pcb_theme"
     ],
-    "92": [
+    "129": [
       "references_sources_articles_2026_05_11_215853_article",
       "references_sources_articles_2026_05_11_215853_compute_power_coordination",
       "references_sources_articles_2026_05_11_215853_low_cost_power"
     ],
-    "93": [
+    "130": [
       "references_sources_articles_2026_05_14_170915_article",
       "references_sources_articles_2026_05_14_170915_constructive_stability",
       "references_sources_articles_2026_05_14_170915_new_quality_productive_forces"
     ],
-    "94": [
+    "131": [
       "references_sources_articles_2026_05_22_163919_advanced_packaging",
       "references_sources_articles_2026_05_22_163919_article",
       "references_sources_articles_2026_05_22_163919_liquidity_cycle"
     ],
-    "95": [
+    "132": [
       "references_sources_articles_2026_05_23_082809_article",
       "references_sources_articles_2026_05_23_082809_fiscal_led_transition",
       "references_sources_articles_2026_05_23_082809_g2_industrial_competition"
     ],
-    "96": [
+    "133": [
       "references_sources_articles_2026_05_23_093452_article",
       "references_sources_articles_2026_05_23_093452_sterling_crisis",
       "references_sources_articles_2026_05_23_093452_strong_dollar"
     ],
-    "97": [
+    "134": [
       "references_sources_articles_2026_05_26_161410_advanced_packaging_path",
       "references_sources_articles_2026_05_26_161410_article",
       "references_sources_articles_2026_05_26_161410_domestic_semiconductor_supply_chain"
     ],
-    "98": [
+    "135": [
       "references_sources_articles_2026_05_26_183618_article",
       "references_sources_articles_2026_05_26_183618_cash_flow",
       "references_sources_articles_2026_05_26_183618_expectation_premium"
     ],
-    "99": [
+    "136": [
       "references_sources_articles_2026_05_27_151553_article",
       "references_sources_articles_2026_05_27_151553_bottom_line_thinking",
       "references_sources_articles_2026_05_27_151553_trading_three_elements"
     ],
-    "100": [
+    "137": [
       "references_sources_articles_2026_05_27_160943_article",
       "references_sources_articles_2026_05_27_160943_balanced_allocation",
       "references_sources_articles_2026_05_27_160943_industrial_thinking"
     ],
-    "101": [
+    "138": [
       "references_tools_finance_data_skills_neodata_financial_search_scripts_query_detect_python",
       "references_tools_finance_data_skills_neodata_financial_search_scripts_query_sh__entry",
       "references_tools_finance_data_skills_neodata_financial_search_scripts_query_sh_references_tools_finance_data_skills_neodata_financial_search_scripts_query"
     ],
-    "102": [
+    "139": [
       "2026-06-23_105730_冰冰小美_老登跷跷板",
       "concept_macroshijian_taizhan"
     ],
-    "103": [
+    "140": [
       "2026-06-23_154341_冰冰小美_交易理解",
       "2026-06-24_190321_冰冰小美_恐慌应对对话"
     ],
-    "104": [
+    "141": [
       "2026-06-24_002029_冰冰小美_转型g进m退",
       "concept_g_in_m_tui"
     ],
-    "105": [
+    "142": [
       "2026-06-25_084517_冰冰小美_etf方向",
       "concept_etf_fangxiang"
     ],
-    "106": [
+    "143": [
       "baseline_case_13_jiangfeng",
       "probe_report_article_94"
     ],
-    "107": [
+    "144": [
       "bingbingxiaomei_perspective_references_research_g1_local_batch_03_direction_timing_model",
       "bingbingxiaomei_perspective_references_research_g1_local_batch_03_document"
     ],
-    "108": [
+    "145": [
       "bingbingxiaomei_perspective_references_research_g1_local_batch_04_document",
       "bingbingxiaomei_perspective_references_research_g1_local_batch_04_risk_control_model"
     ],
-    "109": [
+    "146": [
       "bingbingxiaomei_perspective_references_research_g1_local_batch_05_candidate_taxonomy",
       "bingbingxiaomei_perspective_references_research_g1_local_batch_05_document"
     ],
-    "110": [
+    "147": [
       "bingbingxiaomei_perspective_references_research_g1_local_g1a_phase_2_candidates_document",
       "bingbingxiaomei_perspective_references_research_g1_local_g1a_phase_2_candidates_evidence_revalidation"
     ],
-    "111": [
+    "148": [
       "bingbingxiaomei_perspective_references_research_g1_local_phase_2_candidates_document",
       "bingbingxiaomei_perspective_references_research_g1_local_phase_2_candidates_three_element_alignment"
     ],
-    "112": [
+    "149": [
       "bingbingxiaomei_perspective_references_research_g1_local_readme_document",
       "bingbingxiaomei_perspective_references_research_g1_local_readme_local_evidence_scope"
     ],
-    "113": [
+    "150": [
       "bingbingxiaomei_perspective_references_sources_articles_2023_03_10_161631_cyclical_countercyclical_allocation",
       "bingbingxiaomei_perspective_references_sources_articles_2023_03_10_161631_document"
     ],
-    "114": [
+    "151": [
       "bingbingxiaomei_perspective_references_sources_articles_2023_05_10_084709_document",
       "bingbingxiaomei_perspective_references_sources_articles_2023_05_10_084709_personality_constrained_trading"
     ],
-    "115": [
+    "152": [
       "bingbingxiaomei_perspective_references_sources_articles_2023_05_22_122926_document",
       "bingbingxiaomei_perspective_references_sources_articles_2023_05_22_122926_market_context_interpretation"
     ],
-    "116": [
+    "153": [
       "bingbingxiaomei_perspective_references_sources_articles_2023_06_12_135443_document",
       "bingbingxiaomei_perspective_references_sources_articles_2023_06_12_135443_profit_cushion"
     ],
-    "117": [
+    "154": [
       "bingbingxiaomei_perspective_references_sources_articles_2023_06_13_083932_document",
       "bingbingxiaomei_perspective_references_sources_articles_2023_06_13_083932_news_interpretation"
     ],
-    "118": [
+    "155": [
       "bingbingxiaomei_perspective_references_sources_articles_2023_06_19_162118_document",
       "bingbingxiaomei_perspective_references_sources_articles_2023_06_19_162118_limit_up_as_observation_anchor"
     ],
-    "119": [
+    "156": [
       "bingbingxiaomei_perspective_references_sources_articles_2023_06_20_115912_contextual_chasing_definition",
       "bingbingxiaomei_perspective_references_sources_articles_2023_06_20_115912_document"
     ],
-    "120": [
+    "157": [
       "bingbingxiaomei_perspective_references_sources_articles_2023_07_20_111528_document",
       "bingbingxiaomei_perspective_references_sources_articles_2023_07_20_111528_leader_strategy"
     ],
-    "121": [
+    "158": [
       "bingbingxiaomei_perspective_references_sources_articles_2023_10_12_085616_document",
       "bingbingxiaomei_perspective_references_sources_articles_2023_10_12_085616_height_board_suppression"
     ],
-    "122": [
+    "159": [
       "bingbingxiaomei_perspective_references_sources_articles_2023_10_13_082238_a50_as_sentiment_indicator",
       "bingbingxiaomei_perspective_references_sources_articles_2023_10_13_082238_document"
     ],
-    "123": [
+    "160": [
       "bingbingxiaomei_perspective_references_sources_articles_2023_10_17_085423_document",
       "bingbingxiaomei_perspective_references_sources_articles_2023_10_17_085423_trade_record_review"
     ],
-    "124": [
+    "161": [
       "bingbingxiaomei_perspective_references_sources_articles_2023_10_18_072901_document",
       "bingbingxiaomei_perspective_references_sources_articles_2023_10_18_072901_three_factor_buying"
     ],
-    "125": [
+    "162": [
       "bingbingxiaomei_perspective_references_sources_articles_2023_11_11_091236_document",
       "bingbingxiaomei_perspective_references_sources_articles_2023_11_11_091236_strategic_cash_position"
     ],
-    "126": [
+    "163": [
       "bingbingxiaomei_perspective_references_sources_articles_2024_04_11_115133_document",
       "bingbingxiaomei_perspective_references_sources_articles_2024_04_11_115133_ice_point_reversal"
     ],
-    "127": [
+    "164": [
       "bingbingxiaomei_perspective_references_sources_articles_2024_04_23_112913_counter_emotion_arbitrage",
       "bingbingxiaomei_perspective_references_sources_articles_2024_04_23_112913_document"
     ],
-    "128": [
+    "165": [
       "bingbingxiaomei_perspective_references_sources_articles_2024_05_05_110838_document",
       "bingbingxiaomei_perspective_references_sources_articles_2024_05_05_110838_positioning_and_stance"
     ],
-    "129": [
+    "166": [
       "bingbingxiaomei_perspective_references_sources_articles_2024_05_05_161919_document",
       "bingbingxiaomei_perspective_references_sources_articles_2024_05_05_161919_genealogical_reading"
     ],
-    "130": [
+    "167": [
       "bingbingxiaomei_perspective_references_sources_articles_2024_05_09_132417_document",
       "bingbingxiaomei_perspective_references_sources_articles_2024_05_09_132417_risk_weakening_node"
     ],
-    "131": [
+    "168": [
       "bingbingxiaomei_perspective_references_sources_articles_2024_05_09_220952_document",
       "bingbingxiaomei_perspective_references_sources_articles_2024_05_09_220952_timing_and_preparation"
     ],
-    "132": [
+    "169": [
       "bingbingxiaomei_perspective_references_sources_articles_2024_06_09_155547_document",
       "bingbingxiaomei_perspective_references_sources_articles_2024_06_09_155547_maritime_power_history"
     ],
-    "133": [
+    "170": [
       "bingbingxiaomei_perspective_references_sources_articles_2024_07_01_184738_debt_cycle_study",
       "bingbingxiaomei_perspective_references_sources_articles_2024_07_01_184738_document"
     ],
-    "134": [
+    "171": [
       "bingbingxiaomei_perspective_references_sources_articles_2024_09_25_111703_document",
       "bingbingxiaomei_perspective_references_sources_articles_2024_09_25_111703_liquidity_source_analysis"
     ],
-    "135": [
+    "172": [
       "bingbingxiaomei_perspective_references_sources_articles_2024_10_06_090143_balance_sheet_liquidity",
       "bingbingxiaomei_perspective_references_sources_articles_2024_10_06_090143_document"
     ],
-    "136": [
+    "173": [
       "bingbingxiaomei_perspective_references_sources_articles_2024_10_30_153625_document",
       "bingbingxiaomei_perspective_references_sources_articles_2024_10_30_153625_value_price_pendulum"
     ],
-    "137": [
+    "174": [
       "bingbingxiaomei_perspective_references_sources_articles_2025_09_05_212057_document",
       "bingbingxiaomei_perspective_references_sources_articles_2025_09_05_212057_mind_capture_in_trading"
     ],
-    "138": [
+    "175": [
       "bingbingxiaomei_perspective_references_sources_articles_2025_09_08_112222_crisis_and_change_framework",
       "bingbingxiaomei_perspective_references_sources_articles_2025_09_08_112222_document"
     ],
-    "139": [
+    "176": [
       "bingbingxiaomei_perspective_references_sources_articles_2025_09_15_164718_document",
       "bingbingxiaomei_perspective_references_sources_articles_2025_09_15_164718_institutional_herding"
     ],
-    "140": [
+    "177": [
       "bingbingxiaomei_perspective_references_sources_articles_2025_09_20_091631_document",
       "bingbingxiaomei_perspective_references_sources_articles_2025_09_20_091631_time_sequenced_risk_observation"
     ],
-    "141": [
+    "178": [
       "bingbingxiaomei_perspective_references_sources_articles_2025_10_01_154922_document",
       "bingbingxiaomei_perspective_references_sources_articles_2025_10_01_154922_national_transformation_investment"
     ],
-    "142": [
+    "179": [
       "bingbingxiaomei_perspective_references_sources_articles_2025_10_02_081843_ice_long_termism_and_adaptation",
       "bingbingxiaomei_perspective_references_sources_articles_2025_10_02_081843_ice_long_termism_and_adaptation_cycle_path_investing"
     ],
-    "143": [
+    "180": [
       "bingbingxiaomei_perspective_references_sources_articles_2025_10_05_165239_ice_state_capital_and_financial_center",
       "bingbingxiaomei_perspective_references_sources_articles_2025_10_05_165239_ice_state_capital_and_financial_center_financial_internationalization"
     ],
-    "144": [
+    "181": [
       "bingbingxiaomei_perspective_references_sources_articles_2025_10_11_093352_ice_complex_situation",
       "bingbingxiaomei_perspective_references_sources_articles_2025_10_11_093352_ice_complex_situation_supply_chain_fragmentation"
     ],
-    "145": [
+    "182": [
       "bingbingxiaomei_perspective_references_sources_articles_2025_11_27_112905_ice_us_stock_anchoring",
       "bingbingxiaomei_perspective_references_sources_articles_2025_11_27_112905_ice_us_stock_anchoring_us_stock_anchoring"
     ],
-    "146": [
+    "183": [
       "bingbingxiaomei_perspective_references_sources_articles_2025_11_29_002757_ice_major_event_nodes",
       "bingbingxiaomei_perspective_references_sources_articles_2025_11_29_002757_ice_major_event_nodes_global_inflation_turn"
     ],
-    "147": [
+    "184": [
       "bingbingxiaomei_perspective_references_sources_articles_2025_11_29_102502_ice_bitcoin_silver",
       "bingbingxiaomei_perspective_references_sources_articles_2025_11_29_102502_ice_bitcoin_silver_asset_repricing"
     ],
-    "148": [
+    "185": [
       "bingbingxiaomei_perspective_references_sources_articles_2025_12_17_171131_ice_market_capital_guidance",
       "bingbingxiaomei_perspective_references_sources_articles_2025_12_17_171131_ice_market_capital_guidance_etf_market_structure"
     ],
-    "149": [
+    "186": [
       "bingbingxiaomei_perspective_references_sources_articles_2025_12_17_182527_ice_return_and_composure",
       "bingbingxiaomei_perspective_references_sources_articles_2025_12_17_182527_ice_return_and_composure_capital_preservation"
     ],
-    "150": [
+    "187": [
       "bingbingxiaomei_perspective_references_sources_articles_2025_12_17_191600_ice_huawei_five_realms",
       "bingbingxiaomei_perspective_references_sources_articles_2025_12_17_191600_ice_huawei_five_realms_automotive_competition"
     ],
-    "151": [
+    "188": [
       "bingbingxiaomei_perspective_references_sources_articles_2025_12_18_195607_ice_2025_summary",
       "bingbingxiaomei_perspective_references_sources_articles_2025_12_18_195607_ice_2025_summary_market_cycle_review"
     ],
-    "152": [
+    "189": [
       "bingbingxiaomei_perspective_references_sources_articles_2025_12_27_181302_ice_copper_aluminum",
       "bingbingxiaomei_perspective_references_sources_articles_2025_12_27_181302_ice_copper_aluminum_manufacturing_supply_demand"
     ],
-    "153": [
+    "190": [
       "bingbingxiaomei_perspective_references_sources_articles_2025_12_29_082643_ice_information_financial_meaning",
       "bingbingxiaomei_perspective_references_sources_articles_2025_12_29_082643_ice_information_financial_meaning_information_filtering"
     ],
-    "154": [
+    "191": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_08_233329_ai_capital_rotation",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_08_233329_article"
     ],
-    "155": [
+    "192": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_08_233850_article",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_08_233850_evidence_based_positioning"
     ],
-    "156": [
+    "193": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_09_134355_article",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_09_134355_growth_based_valuation"
     ],
-    "157": [
+    "194": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_09_140913_article",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_09_140913_liquid_cooling_not_bottleneck"
     ],
-    "158": [
+    "195": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_09_142840_ai_materials_swing_trading",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_09_142840_article"
     ],
-    "159": [
+    "196": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_09_144920_article",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_09_144920_exit_risk_under_volatility"
     ],
-    "160": [
+    "197": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_09_145621_article",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_09_145621_inventory_cycle_valuation"
     ],
-    "161": [
+    "198": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_10_002636_article",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_10_002636_position_cost_discipline"
     ],
-    "162": [
+    "199": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_10_061230_article",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_10_061230_long_short_asymmetry"
     ],
-    "163": [
+    "200": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_10_065911_article",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_10_065911_recurring_market_cycles"
     ],
-    "164": [
+    "201": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_10_085832_article",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_10_085832_timing_hierarchy"
     ],
-    "165": [
+    "202": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_10_102022_article",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_10_102022_leverage_driven_selloff"
     ],
-    "166": [
+    "203": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_10_105229_adversity_aware_investing",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_10_105229_article"
     ],
-    "167": [
+    "204": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_10_114025_article",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_10_114025_trade_conflict_industrial_support"
     ],
-    "168": [
+    "205": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_10_115157_article",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_10_115157_knowledge_based_cost_reduction"
     ],
-    "169": [
+    "206": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_10_141744___________________________________________________________________article",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_10_141744___________________________________________________________________short_term_liquidity_premium"
     ],
-    "170": [
+    "207": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_10_145025___________________52______________________________________________article",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_10_145025___________________52______________________________________________low_point_growth_investing"
     ],
-    "171": [
+    "208": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_10_162830_____________cpi__________________cpi_______cpi____________________article",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_10_162830_____________cpi__________________cpi_______cpi____________________valuation_anchor_absence"
     ],
-    "172": [
+    "209": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_11_094630_chip_material_price_increase",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_11_094630_document"
     ],
-    "173": [
+    "210": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_11_103303_document",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_11_103303_investment_to_speculation"
     ],
-    "174": [
+    "211": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_11_105309_document",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_11_105309_semiconductor_capacity_expansion"
     ],
-    "175": [
+    "212": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_11_112441_document",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_11_112441_position_control"
     ],
-    "176": [
+    "213": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_11_115612_document",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_11_115612_south_korea_supply_chain_cooperation"
     ],
-    "177": [
+    "214": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_11_131633_new_battery_standard",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_11_203202_electric_vehicle_safety_standard"
     ],
-    "178": [
+    "215": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_11_132434_buy_unpopular_sell_crowded",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_11_132434_document"
     ],
-    "179": [
+    "216": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_11_135714_document",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_11_135714_domestic_monetary_easing"
     ],
-    "180": [
+    "217": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_11_141212_document",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_11_141212_long_term_investing"
     ],
-    "181": [
+    "218": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_11_142447_document",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_11_142447_valuation_mean_reversion"
     ],
-    "182": [
+    "219": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_11_144429_document",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_11_144429_enterprise_responsibility"
     ],
-    "183": [
+    "220": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_11_153353_document",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_11_153353_value_discovery"
     ],
-    "184": [
+    "221": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_11_155931_document",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_11_155931_risk_control"
     ],
-    "185": [
+    "222": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_11_213415__investment_hierarchy",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_12_164756__retail_investment_ruler"
     ],
-    "186": [
+    "223": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_11_214609_80_500_350_350_80__long_term_industry_research",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_13_113141_20229__three_year_investment_horizon"
     ],
-    "187": [
+    "224": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_12_115144__macro_timing",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_15_151338_527_612__liquidity_risk_timeline"
     ],
-    "188": [
+    "225": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_13_105940_space_x__spacex_business_model",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_16_221325_1_spacex_1_2_8__commercial_space_valuation"
     ],
-    "189": [
+    "226": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_15_101225_ai_1_2__ai_resource_dual_track",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_16_104408__materials_supply_chain"
     ],
-    "190": [
+    "227": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_23_104700_document",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_23_104700_shallow_research"
     ],
-    "191": [
+    "228": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_24_213623_high_interest_rates",
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_24_213623_rate_cut_expectations"
     ],
-    "192": [
+    "229": [
       "concept_流动性溢价假象引导",
       "references_sources_articles_2023_07_28_111010_冰冰小美_游资江湖手法第五期流动性溢价假象引导_游资江湖手法第五期流动性溢价假象引导"
     ],
-    "193": [
+    "230": [
       "concept_猪周期与cpi",
       "references_sources_articles_2025-04-19_202213_猪周期分析框架"
     ],
-    "194": [
+    "231": [
       "evals_full_test_outputs_v1_5_case_13_h14_agent_5079e81b_txt_changdian",
       "evals_full_test_outputs_v1_5_case_13_h14_agent_5079e81b_txt_xinjieneng"
     ],
-    "195": [
-      "evals_methodology_agent_spawn_evaluation",
-      "evals_methodology_darwin_evaluation_methodology"
-    ],
-    "196": [
+    "232": [
       "evals_probe_2026_06_13_to_2026_06_22_probe_freq_txt_anomaly",
       "evals_probe_2026_06_13_to_2026_06_22_probe_freq_txt_probe"
     ],
-    "197": [
+    "233": [
       "information_uselessness",
       "references_sources_articles_2026_01_12_110818___________________article"
     ],
-    "198": [
+    "234": [
       "references_research_01-writings_龙空龙",
       "references_research_05-decisions_HW产业链"
     ],
-    "199": [
-      "references_research_02-conversations_承认错误",
-      "references_research_05-decisions_赛力斯"
+    "235": [
+      "references_research_03-expression-dna_确定性表达",
+      "references_research_03-expression-dna_结论先行"
     ],
-    "200": [
+    "236": [
       "references_research_05-decisions_4200flag",
       "references_research_06-timeline_4200flag达成"
     ],
-    "201": [
+    "237": [
+      "references_sources_articles_2023-04-10_204031",
+      "references_sources_articles_2023-05-05_153744"
+    ],
+    "238": [
+      "references_sources_articles_2023-04-13_161113",
+      "references_sources_articles_2023-04-28_080747"
+    ],
+    "239": [
       "references_sources_articles_2024-04-05_090020_____article",
       "references_sources_articles_2024-04-05_090020_____q1_summary_image"
     ],
-    "202": [
+    "240": [
       "references_sources_articles_2025-01-03_112122_冰冰小美_交易的风控_article",
       "references_sources_articles_2025-01-04_115434_冰冰小美_机遇再后来源认知_article"
     ],
-    "203": [
+    "241": [
       "references_sources_articles_2026-01-23_冰冰小美_传统产业与新兴产业_article",
       "ticker_aapl"
     ],
-    "204": [
+    "242": [
       "references_sources_articles_2026-06-23_234335_concept_ytd_rankings_structural_rotation",
       "references_sources_articles_2026-06-27_191523_concept_k_shape_extreme_june"
     ],
-    "205": [
+    "243": [
       "references_sources_articles_2026_05_08_100438_article",
       "references_sources_articles_2026_05_08_100438_macro_window"
     ],
-    "206": [
+    "244": [
       "references_sources_articles_2026_05_08_101239_article",
       "references_sources_articles_2026_05_08_101239_trend_upper_band"
     ],
-    "207": [
+    "245": [
       "references_sources_articles_2026_05_08_111422_article",
       "references_sources_articles_2026_05_08_111422_wait_and_see"
     ],
-    "208": [
+    "246": [
       "references_sources_articles_2026_05_11_150905_article",
       "references_sources_articles_2026_05_11_150905_commercial_spaceflight"
     ],
-    "209": [
+    "247": [
       "references_sources_articles_2026_05_11_170755_article",
       "references_sources_articles_2026_05_11_170755_emotional_equanimity"
     ],
-    "210": [
+    "248": [
       "references_sources_articles_2026_05_11_211055_article",
       "references_sources_articles_2026_05_11_211055_six_layer_rotation"
     ],
-    "211": [
+    "249": [
       "references_sources_articles_2026_05_11_213441_active_fund_rebalance",
       "references_sources_articles_2026_05_11_213441_article"
     ],
-    "212": [
+    "250": [
       "references_sources_articles_2026_05_11_221449_anomaly_observation",
       "references_sources_articles_2026_05_11_221449_article"
     ],
-    "213": [
+    "251": [
       "references_sources_articles_2026_05_11_223954_article",
       "references_sources_articles_2026_05_11_223954_event_window"
     ],
-    "214": [
+    "252": [
       "references_sources_articles_2026_05_14_173920_article",
       "references_sources_articles_2026_05_14_173920_inflation_turning_point"
     ],
-    "215": [
+    "253": [
       "references_sources_articles_2026_05_14_181830_article",
       "references_sources_articles_2026_05_14_181830_macro_historical_analysis"
     ],
-    "216": [
+    "254": [
       "references_sources_articles_2026_05_14_184730_article",
       "references_sources_articles_2026_05_14_184730_oil_inflation_link"
     ],
-    "217": [
+    "255": [
       "references_sources_articles_2026_05_14_185254_article",
       "references_sources_articles_2026_05_14_185254_single_stock_uncertainty"
     ],
-    "218": [
+    "256": [
       "references_sources_articles_2026_05_15_102234_article",
       "references_sources_articles_2026_05_15_102234_margin_quality"
     ],
-    "219": [
+    "257": [
       "references_sources_articles_2026_05_15_103538_article",
       "references_sources_articles_2026_05_15_103538_long_term_industry_view"
     ],
-    "220": [
+    "258": [
       "references_sources_articles_2026_05_15_104454___________________________________________________________________article",
       "references_sources_articles_2026_05_15_104454___________________________________________________________________market_confidence"
     ],
-    "221": [
+    "259": [
       "references_sources_articles_2026_05_15_140206___________________________________________________________________article",
       "references_sources_articles_2026_05_15_140206___________________________________________________________________monetary_policy_chain"
     ],
-    "222": [
+    "260": [
       "references_sources_articles_2026_05_15_142156___________________________________________________________________article",
       "references_sources_articles_2026_05_15_142156___________________________________________________________________industrial_chain_position"
     ],
-    "223": [
+    "261": [
       "references_sources_articles_2026_05_15_142924____________514__________all_in___________________________________article",
       "references_sources_articles_2026_05_15_142924____________514__________all_in___________________________________risk_reduction"
     ],
-    "224": [
+    "262": [
       "references_sources_articles_2026_05_15_145910______4_28______5_14____________zz_________________________________article",
       "references_sources_articles_2026_05_15_145910______4_28______5_14____________zz_________________________________policy_tolerance"
     ],
-    "225": [
+    "263": [
       "references_sources_articles_2026_05_16_102948_________________article",
       "references_sources_articles_2026_05_16_102948_________________crisis_preparedness"
     ],
-    "226": [
+    "264": [
       "references_sources_articles_2026_05_16_113341___________________________________________________________________article",
       "references_sources_articles_2026_05_16_113341___________________________________________________________________mature_process_packaging"
     ],
-    "227": [
+    "265": [
       "references_sources_articles_2026_05_16_114842________________________________________________________a__________article",
       "references_sources_articles_2026_05_16_114842________________________________________________________a__________real_industrial_strength"
     ],
-    "228": [
+    "266": [
       "references_sources_articles_2026_05_16_123713___________________________________________________________________article",
       "references_sources_articles_2026_05_16_123713___________________________________________________________________industrial_trend_tracking"
     ],
-    "229": [
+    "267": [
       "references_sources_articles_2026_05_16_130413___________511____________________________________________________article",
       "references_sources_articles_2026_05_16_130413___________511____________________________________________________funds_circulation_risk"
     ],
-    "230": [
+    "268": [
       "references_sources_articles_2026_05_16_133142___________________________________________________________________article",
       "references_sources_articles_2026_05_16_133142___________________________________________________________________financial_transparency_enforcement"
     ],
-    "231": [
+    "269": [
       "references_sources_articles_2026_05_16_155009_________________________________________________a_________________article",
       "references_sources_articles_2026_05_16_155009_________________________________________________a_________________hedging_strategy"
     ],
-    "232": [
+    "270": [
       "references_sources_articles_2026_05_17_115852___________________________________________________________________article",
       "references_sources_articles_2026_05_17_115852___________________________________________________________________long_equities_long_gold"
     ],
-    "233": [
+    "271": [
       "references_sources_articles_2026_05_17_153111______ai____ai_national_threshold",
       "references_sources_articles_2026_05_17_153111______ai____article"
     ],
-    "234": [
+    "272": [
       "references_sources_articles_2026_05_17_181713___________________________________________________________________article",
       "references_sources_articles_2026_05_17_181713___________________________________________________________________generational_wealth_shift"
     ],
-    "235": [
+    "273": [
       "references_sources_articles_2026_05_17_183455_______________ipo__________2______________________________________article",
       "references_sources_articles_2026_05_17_183455_______________ipo__________2______________________________________changxin_ipo_valuation"
     ],
-    "236": [
+    "274": [
       "references_sources_articles_2026_05_17_200135_________________________________________________90________________article",
       "references_sources_articles_2026_05_17_200135_________________________________________________90________________equipment_bottleneck"
     ],
-    "237": [
+    "275": [
       "references_sources_articles_2026_05_18_095113__________________________________________________________article",
       "references_sources_articles_2026_05_18_095113__________________________________________________________trading_confidence"
     ],
-    "238": [
+    "276": [
       "references_sources_articles_2026_05_18_115604___________________________________________________________________article",
       "references_sources_articles_2026_05_18_115604___________________________________________________________________june_sixteenth_inflection"
     ],
-    "239": [
+    "277": [
       "references_sources_articles_2026_05_18_155739_________________________________________________________________n_article",
       "references_sources_articles_2026_05_18_155739_________________________________________________________________n_drawdown_causes"
     ],
-    "240": [
+    "278": [
       "references_sources_articles_2026_05_18_162734____________ai______ai_____________________________________________ai_human_screening",
       "references_sources_articles_2026_05_18_162734____________ai______ai_____________________________________________article"
     ],
-    "241": [
+    "279": [
       "references_sources_articles_2026_05_18_195333___________________________________________________________________article",
       "references_sources_articles_2026_05_18_195333___________________________________________________________________capital_recycling"
     ],
-    "242": [
+    "280": [
       "references_sources_articles_2026_05_21_213659_article",
       "references_sources_articles_2026_05_21_213659_macro_investing"
     ],
-    "243": [
+    "281": [
       "references_sources_articles_2026_05_21_220313_article",
       "references_sources_articles_2026_05_21_220313_long_term_holding"
     ],
-    "244": [
+    "282": [
       "references_sources_articles_2026_05_21_221201_article",
       "references_sources_articles_2026_05_21_221201_economic_barometer"
     ],
-    "245": [
+    "283": [
       "references_sources_articles_2026_05_21_222941_article",
       "references_sources_articles_2026_05_21_222941_bottom_line_thinking"
     ],
-    "246": [
+    "284": [
       "references_sources_articles_2026_05_21_224111_article",
       "references_sources_articles_2026_05_21_224111_industrial_chain_value_share"
     ],
-    "247": [
+    "285": [
       "references_sources_articles_2026_05_21_224428_article",
       "references_sources_articles_2026_05_21_224428_healthy_investment_philosophy"
     ],
-    "248": [
+    "286": [
       "references_sources_articles_2026_05_22_094502_article",
       "references_sources_articles_2026_05_22_094502_overseas_benchmarking"
     ],
-    "249": [
+    "287": [
       "references_sources_articles_2026_05_22_095336_article",
       "references_sources_articles_2026_05_22_095336_trading_cost_reduction"
     ],
-    "250": [
+    "288": [
       "references_sources_articles_2026_05_22_100820_article",
       "references_sources_articles_2026_05_22_100820_creative_destruction"
     ],
-    "251": [
+    "289": [
       "references_sources_articles_2026_05_22_102103_article",
       "references_sources_articles_2026_05_22_102103_early_buying_cost_reduction"
     ],
-    "252": [
+    "290": [
       "references_sources_articles_2026_05_22_102320_article",
       "references_sources_articles_2026_05_22_102320_index_drag"
     ],
-    "253": [
+    "291": [
       "references_sources_articles_2026_05_22_103422_article",
       "references_sources_articles_2026_05_22_103422_securities_industry_dynamics"
     ],
-    "254": [
+    "292": [
       "references_sources_articles_2026_05_22_115349_article",
       "references_sources_articles_2026_05_22_115349_power_semiconductor_robotics"
     ],
-    "255": [
+    "293": [
       "references_sources_articles_2026_05_22_141217_article",
       "references_sources_articles_2026_05_22_141217_efficiency_changes_ecosystem"
     ],
-    "256": [
+    "294": [
       "references_sources_articles_2026_05_22_141716_article",
       "references_sources_articles_2026_05_22_141716_t0_liquidity"
     ],
-    "257": [
+    "295": [
       "references_sources_articles_2026_05_22_143107_article",
       "references_sources_articles_2026_05_22_143107_etf_long_termism"
     ],
-    "258": [
+    "296": [
       "references_sources_articles_2026_05_22_143641_article",
       "references_sources_articles_2026_05_22_143641_industrial_expansion_perspective"
     ],
-    "259": [
+    "297": [
       "references_sources_articles_2026_05_22_144037_article",
       "references_sources_articles_2026_05_22_144037_speculation_exit"
     ],
-    "260": [
+    "298": [
       "references_sources_articles_2026_05_22_145051_article",
       "references_sources_articles_2026_05_22_145051_short_selling_mentality"
     ],
-    "261": [
+    "299": [
       "references_sources_articles_2026_05_22_145904_article",
       "references_sources_articles_2026_05_22_145904_competitive_enterprises"
     ],
-    "262": [
+    "300": [
       "references_sources_articles_2026_05_22_151438_article",
       "references_sources_articles_2026_05_22_151438_industrial_cognition"
     ],
-    "263": [
+    "301": [
       "references_sources_articles_2026_05_22_152330_article",
       "references_sources_articles_2026_05_22_152330_national_confidence"
     ],
-    "264": [
+    "302": [
       "references_sources_articles_2026_05_22_155623_article",
       "references_sources_articles_2026_05_22_155623_investment_conviction"
     ],
-    "265": [
+    "303": [
       "references_sources_articles_2026_05_26_171628_article",
       "references_sources_articles_2026_05_26_171628_investment_framework"
     ],
-    "266": [
+    "304": [
       "references_sources_articles_2026_05_26_174511_article",
       "references_sources_articles_2026_05_26_174511_valuation_bubble"
     ],
-    "267": [
+    "305": [
       "references_sources_articles_2026_05_27_102530_article",
       "references_sources_articles_2026_05_27_102530_etf_concentration"
     ],
-    "268": [
+    "306": [
       "references_sources_articles_2026_05_27_145835_article",
       "references_sources_articles_2026_05_27_145835_market_extreme"
     ],
-    "269": [
+    "307": [
       "references_sources_articles_2026_05_27_162712_article",
       "references_sources_articles_2026_05_27_162712_evidence_based_investigation"
     ],
-    "270": [
+    "308": [
       "references_sources_articles_2026_06_08_153745_article",
       "references_sources_articles_2026_06_08_153745_turkey_fiscal_crisis"
     ],
-    "271": [
+    "309": [
       "references_sources_articles_2026_06_08_155405_article",
       "references_sources_articles_2026_06_08_155405_investment_specialization"
     ],
-    "272": [
+    "310": [
       "references_sources_articles_2026_06_08_224110_ai_information_distillation",
       "references_sources_articles_2026_06_08_224110_article"
     ],
-    "273": [
+    "311": [
       "references_sources_articles_2026_06_08_230142_ai_industrial_transformation",
       "references_sources_articles_2026_06_08_230142_article"
     ],
-    "274": [
+    "312": [
       "references_sources_articles_2026_06_08_231027_article",
       "references_sources_articles_2026_06_08_231027_market_timing"
     ],
-    "275": [
+    "313": [
       "references_sources_articles_2026_06_17_155958______g2_investment_thesis",
       "references_sources_articles_2026_06_17_171113___________100__________________________100_investment_thesis"
     ],
-    "276": [
+    "314": [
       "references_tools_finance_data_hooks_session_start_sh__entry",
       "references_tools_finance_data_hooks_session_start_sh_references_tools_finance_data_hooks_session_start"
     ],
-    "277": [
+    "315": [
       "2026-06-22_131120_冰冰小美_东材科技清仓"
     ],
-    "278": [
+    "316": [
       "2026-06-22_164407_冰冰小美_年化复利"
     ],
-    "279": [
+    "317": [
       "2026-06-22_180417_冰冰小美_长期主义研究"
     ],
-    "280": [
+    "318": [
       "2026-06-22_190633_冰冰小美_宏观回调"
     ],
-    "281": [
+    "319": [
       "2026-06-22_193227_冰冰小美_锂电新国标"
     ],
-    "282": [
+    "320": [
       "2026-06-23_102418_冰冰小美_pcb分歧"
     ],
-    "283": [
+    "321": [
       "2026-06-23_105155_冰冰小美_美光储存分化"
     ],
-    "284": [
+    "322": [
       "2026-06-23_164001_冰冰小美_港股创业板"
     ],
-    "285": [
+    "323": [
       "2026-06-23_165824_冰冰小美_港股25500"
     ],
-    "286": [
+    "324": [
       "2026-06-24_115445_冰冰小美_三安不畏挑战"
     ],
-    "287": [
+    "325": [
       "2026-06-24_153144_冰冰小美_普通人etf"
     ],
-    "288": [
+    "326": [
       "2026-06-24_154915_冰冰小美_交易体系"
     ],
-    "289": [
+    "327": [
       "2026-06-24_160010_冰冰小美_回顾帖子"
     ],
-    "290": [
+    "328": [
       "2026-06-24_182657_冰冰小美_低谷行业研究"
     ],
-    "291": [
+    "329": [
       "2026-06-24_184154_冰冰小美_有色邓晓峰"
     ],
-    "292": [
+    "330": [
       "2026-06-24_212356_冰冰小美_独立思考"
     ],
-    "293": [
+    "331": [
       "baseline_case_14_zijin"
     ],
-    "294": [
+    "332": [
       "baseline_case_17_tencent"
     ],
-    "295": [
+    "333": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_09_150117_article"
     ],
-    "296": [
+    "334": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_11_095856_document"
     ],
-    "297": [
+    "335": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_11_095856_domestic_semiconductor"
     ],
-    "298": [
+    "336": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_11_131633_document"
     ],
-    "299": [
+    "337": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_11_133009_document"
     ],
-    "300": [
+    "338": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_11_140012_document"
     ],
-    "301": [
+    "339": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_11_154422_document"
     ],
-    "302": [
+    "340": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_11_160937_document"
     ],
-    "303": [
+    "341": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_11_163555_document"
     ],
-    "304": [
+    "342": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_11_203202_document"
     ],
-    "305": [
+    "343": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_11_210920_1_2__battery_standard_supply_reform"
     ],
-    "306": [
+    "344": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_11_220909_k__risk_narrative"
     ],
-    "307": [
+    "345": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_11_223408_1__fundamental_investing"
     ],
-    "308": [
+    "346": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_11_230657__ipo_liquidity_pressure"
     ],
-    "309": [
+    "347": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_12_124850__intraday_liquidity_divergence"
     ],
-    "310": [
+    "348": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_12_170528_20__risk_aware_trade_switching"
     ],
-    "311": [
+    "349": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_15_102609_a_1_2__ashare_liquidity_structure"
     ],
-    "312": [
+    "350": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_16_081749__information_financial_meaning"
     ],
-    "313": [
+    "351": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_16_083139__earnings_signal_research"
     ],
-    "314": [
+    "352": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_16_214811_space_x_a__spacex_ipo_liquidity_effect"
     ],
-    "315": [
+    "353": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_17_100402__trade_record"
     ],
-    "316": [
+    "354": [
       "bingbingxiaomei_perspective_references_sources_articles_2026_06_17_100920__risk_reduction_rally"
     ],
-    "317": [
+    "355": [
       "evals_full_test_outputs_v1_4_case_20_cognitive_fallback_agent_a20619f2_cognitive_fallback_test"
     ],
-    "318": [
+    "356": [
       "evals_probe_2026_06_13_to_2026_06_22_run_probe"
     ],
-    "319": [
+    "357": [
       "evals_probe_keyword_samples_keyword_probe_samples"
     ],
-    "320": [
+    "358": [
       "evals_probe_themes_theme_probe_results"
     ],
-    "321": [
+    "359": [
       "probe_report_article_101"
     ],
-    "322": [
+    "360": [
       "probe_report_article_123"
     ],
-    "323": [
+    "361": [
       "references_research_01-writings_514魔咒"
     ],
-    "324": [
+    "362": [
       "references_research_01-writings_大作手回忆录"
     ],
-    "325": [
+    "363": [
       "references_research_01-writings_定位理论"
     ],
-    "326": [
+    "364": [
       "references_research_01-writings_巴菲特"
     ],
-    "327": [
+    "365": [
       "references_research_01-writings_情绪标"
     ],
-    "328": [
+    "366": [
       "references_research_01-writings_显学隐学"
     ],
-    "329": [
+    "367": [
       "references_research_01-writings_毛泽东"
     ],
-    "330": [
+    "368": [
       "references_research_01-writings_牛顿分形"
     ],
-    "331": [
+    "369": [
       "references_research_01-writings_邓小平"
     ],
-    "332": [
+    "370": [
       "references_research_01-writings_马克思"
     ],
-    "333": [
+    "371": [
       "references_research_01-writings_马斯克"
     ],
-    "334": [
-      "references_research_g1_local_batch_02_evidence_batch"
-    ],
-    "335": [
-      "references_sources_articles_2026-01-23_冰冰小美_何为国运红利的分配_article"
-    ],
-    "336": [
-      "references_sources_articles_2026-06-21_100953_concept_oil_crisis_three_layers"
-    ],
-    "337": [
-      "references_sources_articles_2026-06-22_113149_stock_sh601208"
-    ],
-    "338": [
-      "references_sources_articles_2026-06-22_154144_entity_trader_zhang"
-    ],
-    "339": [
-      "references_sources_articles_2026_01_16_125453_______________article"
-    ],
-    "340": [
-      "references_sources_articles_2026_03_31_161909____________article"
-    ],
-    "341": [
-      "references_sources_articles_2026_04_14_085533_________________article"
-    ],
-    "342": [
-      "references_sources_articles_2026_04_27_101303____________________________________________________________________article"
-    ],
-    "343": [
-      "references_sources_articles_2026_04_28_161205______2026_4________article"
-    ],
-    "344": [
-      "references_sources_articles_2026_04_30_165149______2026_4________article"
-    ],
-    "345": [
-      "references_sources_articles_2026_05_05_235529______ai___________article"
-    ],
-    "346": [
-      "references_sources_articles_2026_05_08_095531_____________pcb________pcb______________article"
-    ],
-    "347": [
-      "references_sources_articles_2026_05_08_100310__________________________ai________________________________________article"
-    ],
-    "348": [
-      "references_sources_articles_2026_05_08_冰冰小美_卫星etf等于_航天电子_走势"
-    ],
-    "349": [
-      "references_sources_articles_2026_05_08_冰冰小美_有色崛起上证翻红"
-    ],
-    "350": [
-      "references_sources_articles_2026_05_11_冰冰小美_信维通信_与_宁德时代_第一轮上涨"
-    ],
-    "351": [
-      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_三安光电"
-    ],
-    "352": [
-      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_上海瀚讯"
-    ],
-    "353": [
-      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_东方钽业"
-    ],
-    "354": [
-      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_中国卫通"
-    ],
-    "355": [
-      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_中材科技"
-    ],
-    "356": [
-      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_云南锗业"
-    ],
-    "357": [
-      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_亨通光电"
-    ],
-    "358": [
-      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_京东方"
-    ],
-    "359": [
-      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_亿纬锂能"
-    ],
-    "360": [
-      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_先导智能"
-    ],
-    "361": [
-      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_双环传动"
-    ],
-    "362": [
-      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_商络电子"
-    ],
-    "363": [
-      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_国轩高科"
-    ],
-    "364": [
-      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_太极实业"
-    ],
-    "365": [
-      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_小米汽车_小米"
-    ],
-    "366": [
-      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_德福科技"
-    ],
-    "367": [
-      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_拓斯达"
-    ],
-    "368": [
-      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_新洁能"
-    ],
-    "369": [
-      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_星源材质"
-    ],
-    "370": [
-      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_有研新材"
-    ],
-    "371": [
-      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_柳工"
-    ],
     "372": [
-      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_江丰电子_海力士"
+      "references_research_03-expression-dna_短句风格"
     ],
     "373": [
-      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_江波龙_江丰电子"
+      "references_research_03-expression-dna_第一二人称演变"
     ],
     "374": [
-      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_江淮汽车"
+      "references_research_04-external-views_粉丝画像"
     ],
     "375": [
-      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_洛阳钼业"
+      "references_research_05-decisions_赛力斯"
     ],
     "376": [
-      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_浩辰软件"
+      "references_research_06-timeline_2025风险信息时间窗口"
     ],
     "377": [
-      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_湖北宜化"
+      "references_research_g1_local_batch_02_evidence_batch"
     ],
     "378": [
-      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_盛龙股份"
+      "references_sources_articles_2023-05-06_104149"
     ],
     "379": [
-      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_移动互联网"
+      "references_sources_articles_2023-05-09_201754"
     ],
     "380": [
-      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_自由现金流"
+      "references_sources_articles_2023-05-10_080020"
     ],
     "381": [
-      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_铜陵有色"
+      "references_sources_articles_2023-05-10_084108"
     ],
     "382": [
-      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_长飞光纤"
+      "references_sources_articles_2026-01-23_冰冰小美_何为国运红利的分配_article"
     ],
     "383": [
-      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_阿石创"
+      "references_sources_articles_2026-06-21_100953_concept_oil_crisis_three_layers"
     ],
     "384": [
-      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_飞凯材料"
+      "references_sources_articles_2026-06-22_113149_stock_sh601208"
     ],
     "385": [
-      "references_sources_articles_2026_06_17_105215_investment_thesis"
+      "references_sources_articles_2026-06-22_154144_entity_trader_zhang"
     ],
     "386": [
-      "references_sources_articles_2026_06_17_110340_investment_thesis"
+      "references_sources_articles_2026_01_16_125453_______________article"
     ],
     "387": [
-      "references_sources_articles_2026_06_17_203321_____________________________________ai_investment_thesis"
+      "references_sources_articles_2026_03_31_161909____________article"
     ],
     "388": [
-      "references_sources_articles_2026_06_17_210949______________________________________________________________5_investment_thesis"
+      "references_sources_articles_2026_04_14_085533_________________article"
     ],
     "389": [
-      "references_sources_articles_2026_06_18_214812______________________space_x_____________anthropic_investment_thesis"
+      "references_sources_articles_2026_04_27_101303____________________________________________________________________article"
     ],
     "390": [
-      "references_sources_articles_2026_06_21_092036_investment_thesis"
+      "references_sources_articles_2026_04_28_161205______2026_4________article"
     ],
     "391": [
-      "references_sources_articles_2026_06_21_093344________20_investment_thesis"
+      "references_sources_articles_2026_04_30_165149______2026_4________article"
     ],
     "392": [
-      "references_sources_articles_2026_06_22_100006____________________108_investment_thesis"
+      "references_sources_articles_2026_05_05_235529______ai___________article"
     ],
     "393": [
-      "references_tools_finance_data_hooks_session_start_ps1_references_tools_finance_data_hooks_session_start"
+      "references_sources_articles_2026_05_08_095531_____________pcb________pcb______________article"
     ],
     "394": [
-      "scripts_analyze_classification"
+      "references_sources_articles_2026_05_08_100310__________________________ai________________________________________article"
+    ],
+    "395": [
+      "references_sources_articles_2026_05_08_冰冰小美_卫星etf等于_航天电子_走势"
+    ],
+    "396": [
+      "references_sources_articles_2026_05_08_冰冰小美_有色崛起上证翻红"
+    ],
+    "397": [
+      "references_sources_articles_2026_05_11_冰冰小美_信维通信_与_宁德时代_第一轮上涨"
+    ],
+    "398": [
+      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_三安光电"
+    ],
+    "399": [
+      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_上海瀚讯"
+    ],
+    "400": [
+      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_东方钽业"
+    ],
+    "401": [
+      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_中国卫通"
+    ],
+    "402": [
+      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_中材科技"
+    ],
+    "403": [
+      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_云南锗业"
+    ],
+    "404": [
+      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_亨通光电"
+    ],
+    "405": [
+      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_京东方"
+    ],
+    "406": [
+      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_亿纬锂能"
+    ],
+    "407": [
+      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_先导智能"
+    ],
+    "408": [
+      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_双环传动"
+    ],
+    "409": [
+      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_商络电子"
+    ],
+    "410": [
+      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_国轩高科"
+    ],
+    "411": [
+      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_太极实业"
+    ],
+    "412": [
+      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_小米汽车_小米"
+    ],
+    "413": [
+      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_德福科技"
+    ],
+    "414": [
+      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_拓斯达"
+    ],
+    "415": [
+      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_新洁能"
+    ],
+    "416": [
+      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_星源材质"
+    ],
+    "417": [
+      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_有研新材"
+    ],
+    "418": [
+      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_柳工"
+    ],
+    "419": [
+      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_江丰电子_海力士"
+    ],
+    "420": [
+      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_江波龙_江丰电子"
+    ],
+    "421": [
+      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_江淮汽车"
+    ],
+    "422": [
+      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_洛阳钼业"
+    ],
+    "423": [
+      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_浩辰软件"
+    ],
+    "424": [
+      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_湖北宜化"
+    ],
+    "425": [
+      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_盛龙股份"
+    ],
+    "426": [
+      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_移动互联网"
+    ],
+    "427": [
+      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_自由现金流"
+    ],
+    "428": [
+      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_铜陵有色"
+    ],
+    "429": [
+      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_长飞光纤"
+    ],
+    "430": [
+      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_阿石创"
+    ],
+    "431": [
+      "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_飞凯材料"
+    ],
+    "432": [
+      "references_sources_articles_2026_06_17_105215_investment_thesis"
+    ],
+    "433": [
+      "references_sources_articles_2026_06_17_110340_investment_thesis"
+    ],
+    "434": [
+      "references_sources_articles_2026_06_17_203321_____________________________________ai_investment_thesis"
+    ],
+    "435": [
+      "references_sources_articles_2026_06_17_210949______________________________________________________________5_investment_thesis"
+    ],
+    "436": [
+      "references_sources_articles_2026_06_18_214812______________________space_x_____________anthropic_investment_thesis"
+    ],
+    "437": [
+      "references_sources_articles_2026_06_21_092036_investment_thesis"
+    ],
+    "438": [
+      "references_sources_articles_2026_06_21_093344________20_investment_thesis"
+    ],
+    "439": [
+      "references_sources_articles_2026_06_22_100006____________________108_investment_thesis"
+    ],
+    "440": [
+      "references_tools_finance_data_hooks_session_start_ps1_references_tools_finance_data_hooks_session_start"
+    ],
+    "441": [
+      "references_tools_finance_data_rules"
+    ],
+    "442": [
+      "references_tools_finance_data_skills_neodata_financial_search_skill"
     ]
   },
   "cohesion": {
     "0": 0.05480225988700565,
-    "1": 0.06291591046581972,
-    "2": 0.08106219426974144,
-    "3": 0.03773584905660377,
-    "4": 0.05365402405180388,
-    "5": 0.06376811594202898,
-    "6": 0.07560975609756097,
-    "7": 0.05641025641025641,
-    "8": 0.09206349206349207,
-    "9": 0.08615384615384615,
-    "10": 0.08333333333333333,
-    "11": 0.09486166007905138,
-    "12": 0.09090909090909091,
-    "13": 0.11695906432748537,
-    "14": 0.22875816993464052,
-    "15": 0.2,
-    "16": 0.26373626373626374,
-    "17": 0.15384615384615385,
-    "18": 0.28205128205128205,
-    "19": 0.15384615384615385,
-    "20": 0.18181818181818182,
-    "21": 0.19696969696969696,
-    "22": 0.2727272727272727,
-    "23": 0.24242424242424243,
-    "24": 0.16666666666666666,
-    "25": 0.19696969696969696,
-    "26": 0.25757575757575757,
-    "27": 0.21818181818181817,
-    "28": 0.36363636363636365,
-    "29": 0.21818181818181817,
-    "30": 0.2,
-    "31": 0.3333333333333333,
-    "32": 0.24444444444444444,
-    "33": 0.2222222222222222,
-    "34": 0.2222222222222222,
-    "35": 0.25,
-    "36": 0.25,
-    "37": 0.25,
-    "38": 0.25,
-    "39": 0.25,
-    "40": 0.39285714285714285,
-    "41": 0.25,
-    "42": 0.38095238095238093,
-    "43": 0.47619047619047616,
-    "44": 0.2857142857142857,
-    "45": 0.2857142857142857,
-    "46": 0.3333333333333333,
-    "47": 0.2857142857142857,
-    "48": 0.3333333333333333,
-    "49": 0.4,
-    "50": 0.4,
-    "51": 0.4,
-    "52": 0.3333333333333333,
-    "53": 0.3333333333333333,
-    "54": 0.3333333333333333,
-    "55": 0.4666666666666667,
-    "56": 0.7,
-    "57": 0.4,
-    "58": 0.4,
-    "59": 0.5,
-    "60": 0.4,
-    "61": 0.5,
-    "62": 0.5,
-    "63": 0.5,
-    "64": 0.5,
-    "65": 0.5,
-    "66": 0.5,
-    "67": 0.5,
-    "68": 0.5,
-    "69": 0.5,
-    "70": 0.5,
-    "71": 0.5,
-    "72": 0.5,
-    "73": 0.5,
-    "74": 0.5,
-    "75": 0.5,
-    "76": 0.6666666666666666,
-    "77": 0.5,
-    "78": 0.5,
-    "79": 0.5,
-    "80": 0.5,
-    "81": 0.5,
-    "82": 0.5,
-    "83": 0.5,
-    "84": 0.6666666666666666,
-    "85": 0.6666666666666666,
-    "86": 0.6666666666666666,
-    "87": 1.0,
-    "88": 0.6666666666666666,
-    "89": 0.6666666666666666,
-    "90": 0.6666666666666666,
-    "91": 1.0,
-    "92": 0.6666666666666666,
-    "93": 0.6666666666666666,
-    "94": 0.6666666666666666,
-    "95": 0.6666666666666666,
-    "96": 0.6666666666666666,
-    "97": 0.6666666666666666,
-    "98": 0.6666666666666666,
-    "99": 0.6666666666666666,
-    "100": 0.6666666666666666,
-    "101": 0.6666666666666666,
-    "102": 1.0,
-    "103": 1.0,
-    "104": 1.0,
-    "105": 1.0,
-    "106": 1.0,
-    "107": 1.0,
-    "108": 1.0,
-    "109": 1.0,
-    "110": 1.0,
-    "111": 1.0,
-    "112": 1.0,
-    "113": 1.0,
-    "114": 1.0,
-    "115": 1.0,
-    "116": 1.0,
-    "117": 1.0,
-    "118": 1.0,
-    "119": 1.0,
-    "120": 1.0,
-    "121": 1.0,
-    "122": 1.0,
-    "123": 1.0,
+    "1": 0.03773584905660377,
+    "2": 0.053061224489795916,
+    "3": 0.05365402405180388,
+    "4": 0.06376811594202898,
+    "5": 0.05641025641025641,
+    "6": 0.07661290322580645,
+    "7": 0.07056451612903226,
+    "8": 0.10080645161290322,
+    "9": 0.13978494623655913,
+    "10": 0.10574712643678161,
+    "11": 0.07126436781609195,
+    "12": 0.14333333333333334,
+    "13": 0.1,
+    "14": 0.08333333333333333,
+    "15": 0.09486166007905138,
+    "16": 0.09090909090909091,
+    "17": 0.11695906432748537,
+    "18": 0.14035087719298245,
+    "19": 0.10526315789473684,
+    "20": 0.1895424836601307,
+    "21": 0.22875816993464052,
+    "22": 0.21666666666666667,
+    "23": 0.26373626373626374,
+    "24": 0.15384615384615385,
+    "25": 0.21978021978021978,
+    "26": 0.28205128205128205,
+    "27": 0.15384615384615385,
+    "28": 0.16666666666666666,
+    "29": 0.15384615384615385,
+    "30": 0.28205128205128205,
+    "31": 0.18181818181818182,
+    "32": 0.19696969696969696,
+    "33": 0.2727272727272727,
+    "34": 0.24242424242424243,
+    "35": 0.19696969696969696,
+    "36": 0.16666666666666666,
+    "37": 0.16666666666666666,
+    "38": 0.25757575757575757,
+    "39": 0.21818181818181817,
+    "40": 0.18181818181818182,
+    "41": 0.36363636363636365,
+    "42": 0.21818181818181817,
+    "43": 0.2,
+    "44": 0.2,
+    "45": 0.2,
+    "46": 0.2,
+    "47": 0.2,
+    "48": 0.2,
+    "49": 0.3333333333333333,
+    "50": 0.24444444444444444,
+    "51": 0.3333333333333333,
+    "52": 0.2222222222222222,
+    "53": 0.2222222222222222,
+    "54": 0.2222222222222222,
+    "55": 0.5,
+    "56": 0.25,
+    "57": 0.25,
+    "58": 0.25,
+    "59": 0.25,
+    "60": 0.39285714285714285,
+    "61": 0.25,
+    "62": 0.2857142857142857,
+    "63": 0.38095238095238093,
+    "64": 0.47619047619047616,
+    "65": 0.2857142857142857,
+    "66": 0.2857142857142857,
+    "67": 0.2857142857142857,
+    "68": 0.2857142857142857,
+    "69": 0.3333333333333333,
+    "70": 0.2857142857142857,
+    "71": 0.3333333333333333,
+    "72": 0.3333333333333333,
+    "73": 0.4,
+    "74": 0.4,
+    "75": 0.4,
+    "76": 0.3333333333333333,
+    "77": 0.3333333333333333,
+    "78": 0.3333333333333333,
+    "79": 0.3333333333333333,
+    "80": 0.3333333333333333,
+    "81": 0.3333333333333333,
+    "82": 0.3333333333333333,
+    "83": 0.4666666666666667,
+    "84": 0.4,
+    "85": 0.4,
+    "86": 0.4,
+    "87": 0.7,
+    "88": 0.4,
+    "89": 0.4,
+    "90": 0.5,
+    "91": 0.4,
+    "92": 0.5,
+    "93": 0.5,
+    "94": 0.5,
+    "95": 0.5,
+    "96": 0.5,
+    "97": 0.5,
+    "98": 0.5,
+    "99": 0.5,
+    "100": 0.5,
+    "101": 0.5,
+    "102": 0.5,
+    "103": 0.5,
+    "104": 0.5,
+    "105": 0.5,
+    "106": 0.5,
+    "107": 0.5,
+    "108": 0.6666666666666666,
+    "109": 0.5,
+    "110": 0.5,
+    "111": 0.5,
+    "112": 0.5,
+    "113": 0.5,
+    "114": 0.5,
+    "115": 0.5,
+    "116": 0.5,
+    "117": 0.5,
+    "118": 0.5,
+    "119": 0.5,
+    "120": 0.6666666666666666,
+    "121": 0.6666666666666666,
+    "122": 0.6666666666666666,
+    "123": 0.6666666666666666,
     "124": 1.0,
-    "125": 1.0,
-    "126": 1.0,
-    "127": 1.0,
+    "125": 0.6666666666666666,
+    "126": 0.6666666666666666,
+    "127": 0.6666666666666666,
     "128": 1.0,
-    "129": 1.0,
-    "130": 1.0,
-    "131": 1.0,
-    "132": 1.0,
-    "133": 1.0,
-    "134": 1.0,
-    "135": 1.0,
-    "136": 1.0,
-    "137": 1.0,
-    "138": 1.0,
+    "129": 0.6666666666666666,
+    "130": 0.6666666666666666,
+    "131": 0.6666666666666666,
+    "132": 0.6666666666666666,
+    "133": 0.6666666666666666,
+    "134": 0.6666666666666666,
+    "135": 0.6666666666666666,
+    "136": 0.6666666666666666,
+    "137": 0.6666666666666666,
+    "138": 0.6666666666666666,
     "139": 1.0,
     "140": 1.0,
     "141": 1.0,
@@ -2774,23 +3246,61 @@
     "391": 1.0,
     "392": 1.0,
     "393": 1.0,
-    "394": 1.0
+    "394": 1.0,
+    "395": 1.0,
+    "396": 1.0,
+    "397": 1.0,
+    "398": 1.0,
+    "399": 1.0,
+    "400": 1.0,
+    "401": 1.0,
+    "402": 1.0,
+    "403": 1.0,
+    "404": 1.0,
+    "405": 1.0,
+    "406": 1.0,
+    "407": 1.0,
+    "408": 1.0,
+    "409": 1.0,
+    "410": 1.0,
+    "411": 1.0,
+    "412": 1.0,
+    "413": 1.0,
+    "414": 1.0,
+    "415": 1.0,
+    "416": 1.0,
+    "417": 1.0,
+    "418": 1.0,
+    "419": 1.0,
+    "420": 1.0,
+    "421": 1.0,
+    "422": 1.0,
+    "423": 1.0,
+    "424": 1.0,
+    "425": 1.0,
+    "426": 1.0,
+    "427": 1.0,
+    "428": 1.0,
+    "429": 1.0,
+    "430": 1.0,
+    "431": 1.0,
+    "432": 1.0,
+    "433": 1.0,
+    "434": 1.0,
+    "435": 1.0,
+    "436": 1.0,
+    "437": 1.0,
+    "438": 1.0,
+    "439": 1.0,
+    "440": 1.0,
+    "441": 1.0,
+    "442": 1.0
   },
   "gods": [
     {
       "id": "references_sources_articles_2026_06_08_221849_冰冰小美_白毛股神_冰冰小美",
       "label": "冰冰小美（作者）",
       "degree": 54
-    },
-    {
-      "id": "skill_md_skill",
-      "label": "Skill Main Document (768 lines)",
-      "degree": 36
-    },
-    {
-      "id": "references_research_07-article-clusters",
-      "label": "文章主题聚类与证据地图",
-      "degree": 27
     },
     {
       "id": "tests_test_article_corpus_preflight_articlecorpuspreflighttests",
@@ -2803,9 +3313,19 @@
       "degree": 25
     },
     {
+      "id": "tests_test_classification_pipeline_classificationpipelinetests",
+      "label": "ClassificationPipelineTests",
+      "degree": 23
+    },
+    {
       "id": "evals_probe-2026-06-13_to_2026-06-22_probe-themes_theme_clustering",
       "label": "主题聚类分析 2026-06-13~22",
       "degree": 18
+    },
+    {
+      "id": "tests_test_article_interpretation_contract_articleinterpretationcontracttests",
+      "label": "ArticleInterpretationContractTests",
+      "degree": 17
     },
     {
       "id": "references_sources_articles_2023-08-15_104616_情绪体系交易篇第二期借势",
@@ -2813,83 +3333,103 @@
       "degree": 15
     },
     {
-      "id": "skill_core_md_skill_core",
-      "label": "Skill Core Version (Agent Prompt Injection, ~200 lines)",
+      "id": "scripts_classify_articles_main",
+      "label": "main()",
+      "degree": 14
+    },
+    {
+      "id": "scripts_article_corpus_preflight_prepare",
+      "label": "prepare()",
       "degree": 12
     },
     {
-      "id": "references_research_07_article-clusters_topic_xi_ti_jiao_yi",
-      "label": "主题簇:体系情绪交易",
-      "degree": 12
-    },
-    {
-      "id": "references_sources_articles_2023-08-15_205331_常见的亏钱认知第十四期假象与反人性的折磨",
-      "label": "常见的亏钱认知，第十四期，假象与反人性的折磨",
+      "id": "scripts_article_corpus_preflight_main",
+      "label": "main()",
       "degree": 12
     }
   ],
   "surprises": [
     {
-      "source": "主题：交易/仓位",
-      "target": "启发式17：主动买亏的边界",
+      "source": "冰冰小美思维操作系统",
+      "target": "文章解释与股票报告路由互斥",
       "source_files": [
-        "evals/probe-2026-06-13_to_2026-06-22/probe-themes.txt",
-        "references/heuristics/h17-active-loss-boundary.md"
-      ],
-      "confidence": "INFERRED",
-      "relation": "conceptually_related_to",
-      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; peripheral node `主题：交易/仓位` unexpectedly reaches hub `启发式17：主动买亏的边界`"
-    },
-    {
-      "source": "Version v1.3",
-      "target": "Heuristic 14: Industry Belief Over Technicals",
-      "source_files": [
-        "CHANGELOG.md",
-        "SKILL.md"
-      ],
-      "confidence": "EXTRACTED",
-      "relation": "references",
-      "why": "connects across different repos/directories; peripheral node `Heuristic 14: Industry Belief Over Technicals` unexpectedly reaches hub `Version v1.3`"
-    },
-    {
-      "source": "v1.4 R3 SKILL.md Layering (Core/Main)",
-      "target": "Skill Core Version (Agent Prompt Injection, ~200 lines)",
-      "source_files": [
-        "docs/v1.4-pr-description.md",
+        "SKILL.md",
         "SKILL.core.md"
       ],
       "confidence": "EXTRACTED",
-      "relation": "references",
-      "why": "connects across different repos/directories; peripheral node `v1.4 R3 SKILL.md Layering (Core/Main)` unexpectedly reaches hub `Skill Core Version (Agent Prompt Injection, ~200 lines)`"
+      "relation": "defines",
+      "why": "connects across different repos/directories; peripheral node `文章解释与股票报告路由互斥` unexpectedly reaches hub `冰冰小美思维操作系统`"
     },
     {
-      "source": "Promotion Rules (New Model/Heuristic)",
-      "target": "Model 9: AI Transforming Investment Itself",
+      "source": "冰冰小美思维操作系统",
+      "target": "封闭的关系与 taxonomy 枚举",
       "source_files": [
-        "docs/maintenance.md",
-        "SKILL.md"
+        "SKILL.md",
+        "references/templates/article-interpretation.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "constrains",
+      "why": "connects across different repos/directories; peripheral node `封闭的关系与 taxonomy 枚举` unexpectedly reaches hub `冰冰小美思维操作系统`"
+    },
+    {
+      "source": "冰冰小美思维操作系统",
+      "target": "新文章的一次性输入边界",
+      "source_files": [
+        "SKILL.md",
+        "docs/maintenance.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "requires",
+      "why": "connects across different repos/directories; peripheral node `新文章的一次性输入边界` unexpectedly reaches hub `冰冰小美思维操作系统`"
+    },
+    {
+      "source": "Agent Research Tasks",
+      "target": "Systematic Claims Research Summary",
+      "source_files": [
+        "evals/agent-prompts.md",
+        "references/research/g1-local/01-writings.md"
       ],
       "confidence": "EXTRACTED",
       "relation": "references",
-      "why": "connects across different repos/directories; peripheral node `Promotion Rules (New Model/Heuristic)` unexpectedly reaches hub `Model 9: AI Transforming Investment Itself`"
+      "why": "connects across different repos/directories; peripheral node `Systematic Claims Research Summary` unexpectedly reaches hub `Agent Research Tasks`"
     },
     {
-      "source": "Seven-Step Update Process",
-      "target": "Evaluation Methodology (evals/METHODOLOGY.md)",
+      "source": "Agent Research Tasks",
+      "target": "Decision Research Summary",
       "source_files": [
-        "docs/maintenance.md",
-        "SKILL.md"
+        "evals/agent-prompts.md",
+        "references/research/g1-local/05-decisions.md"
       ],
       "confidence": "EXTRACTED",
       "relation": "references",
-      "why": "connects across different repos/directories; peripheral node `Evaluation Methodology (evals/METHODOLOGY.md)` unexpectedly reaches hub `Seven-Step Update Process`"
+      "why": "connects across different repos/directories; peripheral node `Decision Research Summary` unexpectedly reaches hub `Agent Research Tasks`"
     }
   ],
   "questions": [
     {
+      "type": "bridge_node",
+      "question": "Why does `$defs` connect `Community 36` to `Community 37`, `Community 40`, `Community 11`, `Community 47`, `Community 81`, `Community 82`, `Community 114`, `Community 85`, `Community 28`?",
+      "why": "High betweenness centrality (0.009) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `properties` connect `Community 46` to `Community 67`, `Community 48`, `Community 113`, `Community 82`, `Community 115`, `Community 27`?",
+      "why": "High betweenness centrality (0.005) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `brief` connect `Community 82` to `Community 36`, `Community 46`?",
+      "why": "High betweenness centrality (0.005) - this node is a cross-community bridge."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 64 inferred relationships involving `Path` (e.g. with `load_json()` and `load_taxonomy()`) actually correct?",
+      "why": "`Path` has 64 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
       "type": "isolated_nodes",
-      "question": "What connects `session-start.sh script`, `缺失 requests 时尝试自动安装到当前解释器（自动环境修复）。      - 仅在真正需要发起网络请求时调用，--save-token 等离线操作不触发。`, `从缓存文件读取 token，超过 12 小时返回 None` to the rest of the system?",
-      "why": "874 weakly-connected nodes found - possible documentation gaps or missing edges."
+      "question": "What connects `$schema`, `$id`, `title` to the rest of the system?",
+      "why": "1091 weakly-connected nodes found - possible documentation gaps or missing edges."
     },
     {
       "type": "low_cohesion",
@@ -2899,27 +3439,7 @@
     {
       "type": "low_cohesion",
       "question": "Should `Community 1` be split into smaller, more focused modules?",
-      "why": "Cohesion score 0.06291591046581972 - nodes in this community are weakly interconnected."
-    },
-    {
-      "type": "low_cohesion",
-      "question": "Should `Community 2` be split into smaller, more focused modules?",
-      "why": "Cohesion score 0.08106219426974144 - nodes in this community are weakly interconnected."
-    },
-    {
-      "type": "low_cohesion",
-      "question": "Should `Community 3` be split into smaller, more focused modules?",
       "why": "Cohesion score 0.03773584905660377 - nodes in this community are weakly interconnected."
-    },
-    {
-      "type": "low_cohesion",
-      "question": "Should `Community 4` be split into smaller, more focused modules?",
-      "why": "Cohesion score 0.05365402405180388 - nodes in this community are weakly interconnected."
-    },
-    {
-      "type": "low_cohesion",
-      "question": "Should `Community 5` be split into smaller, more focused modules?",
-      "why": "Cohesion score 0.06376811594202898 - nodes in this community are weakly interconnected."
     }
   ]
 }

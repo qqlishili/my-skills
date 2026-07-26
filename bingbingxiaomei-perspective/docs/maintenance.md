@@ -1,149 +1,103 @@
-# Skill 维护手册
+# 冰冰小美 Skill 维护指南
 
-> 最后更新：2026-06-24（关联词权重 0.2→0.05 修复后）| 关联文档：`evals/METHODOLOGY.md` / `CHANGELOG.md` / `evals/agent-prompts.md`
+## 当前基线
 
----
+- `references/sources/articles/` 是真实目录，包含 520 篇雪球专栏语料。
+- 2025 年本地有 68 篇；当前年份分布为 2023/2024/2025/2026 = 70/35/68/347。
+- 本地 corpus 不含作者全部日常发言和非专栏内容，因此不覆盖作者全部公开表达。
+- `references/taxonomy.json` 是模型、启发式 ID 和状态的唯一机器可读真相源。
+- 当前分类入口是 `scripts/classification_output/current.json`。
+- 新文章解读默认 `input_mode=ephemeral`，不进入 corpus，也不触发 taxonomy 重建。
 
-## 触发条件（任一成立 → 启动更新）
+## 触发条件
 
-| # | 条件 | 检测方法 |
-|---|------|---------|
-| 1 | 新文章 ≥30 篇 | `evals/probe-*/run_probe.py` 跑 probe 扫描 |
-| 2 | 30 天窗口 | 距上次 `research/` 更新 >30 天 |
-| 3 | 关键事件 | 央行重大政策 / 中米关系转折 / 新模型候选出现 / 主题显著衰减 |
-| 4 | 评估分数下降 | Darwin 9 维总分较上一版本跌 >2 分 |
+以下任一条件成立时，进入正式 corpus 更新流程：
 
-**当前状态**（2026-06-24）：条件 1 ✅ 已处理 — probe 6/13-22 扫描到 58 篇新文章，R5 增量已落 `0ef1332`/`f9f379e`，research/ 6 文件全量更新。下次触发窗口：扫描 6/23 之后的新文章。
+1. 经用户确认新增作者专栏原文；
+2. 现有文章正文、来源身份或角色分段发生纠正；
+3. corpus digest 与 taxonomy、角色清单或当前分类产物不一致；
+4. 新证据可能导致当前模型或启发式合并、拆分、退役或改变状态；
+5. 当前分类、测试或 MCP 索引无法覆盖 canonical corpus。
 
----
+用户临时粘贴的新文章不属于以上条件，除非另行明确授权持久化。
 
-## 7 步更新流程
+## 更新流程
 
-### Step 1: Probe 扫描（30 min）
+### 1. 固化语料快照
 
-```
-1. 在 evals/probe-YYYY-MM-DD_to_YYYY-MM-DD/ 新建目录
-2. 复制 run_probe.py 模板（从上一轮 probe 目录）
-3. 修改时间窗口参数（START_DATE / END_DATE）
-4. 跑 python run_probe.py
-5. 输出：probe-freq.txt / probe-keyword.txt / probe-themes.txt
-```
+- 只读扫描 canonical articles 目录；
+- 记录文章数、稳定路径 manifest、逐文件 SHA-256 和 corpus digest；
+- 禁止删除、移动、批量覆盖原文。
 
-**输入**：外部 vault `D:\Temp\karpathy-llm-wiki-vault\raw\02-投资\01-xueqiu\冰冰小美/` 的新文章
-**输出**：3 个 probe 文件 + 文章列表
+### 2. 内容角色分段
 
-### Step 2: 跨域复现核对（30 min）
+- 对每篇文章生成无重叠 segment；
+- 角色只允许 `author_post`、`author_reply`、`third_party_comment`、`secondary_analysis`、`unknown`；
+- 只有前两类获得 `author_primary` 资格；
+- override 必须有人工复核理由。
 
-对新出现的主题概念（如"流动性挤压""新登老登"），核对其在 ≥3 个独立板块的出现次数。
-**判断规则**：
-- 翻倍 + ≥3 板块 → 晋升新模型候选
-- ≥3 板块 + 边界清晰 + 不重复 → 晋升新启发式候选
-- 不满足 → 注入到现有模型的特化段落
+### 3. 全量重读与 taxonomy 审查
 
-### Step 3: Research 增量 — 3 路 Agent 并行（2-3h）
+- 模型数量和启发式数量只能由全量重读后的证据决定，不预设数量；
+- 每个模型须有支持证据、反例和失效边界；
+- 每条启发式须有支持证据、反例/失效边界、适用场景和禁用条件；
+- 旧 ID 必须显式映射为保留、合并、拆分或退役；
+- 用户通过 Gate 后才能更新 taxonomy。
 
-复用 `evals/agent-prompts.md`（10631 字节）中的 Agent 提示词模板。
+### 4. 同步派生产物
 
-| Agent | 目标文件 | 工作内容 |
-|-------|---------|---------|
-| Agent 1 | `references/research/01-writings.md` | 著作与系统思考——识别新主题、框架延伸、概念更新 |
-| Agent 5 | `references/research/05-decisions.md` | 决策记录——识别新交易案例、纠错链路、决策理由 |
-| Agent 6 | `references/research/06-timeline.md` | 时间线——追加新事件、更新最新动态 |
+按以下顺序同步：
 
-**Agent 2-4**（conversations / expression-dna / external-views）：当新文章 ≥50 篇或 stale >60 天时做。
+1. `references/models/` 与 `references/heuristics/catalog.md`；
+2. research 差异文件；
+3. `scripts/classify-articles.py` 与 `scripts/analyze_classification.py`；
+4. 520 篇当前分类产物、人工审查和 current 指针；
+5. `SKILL.md`、`SKILL.core.md`、模板、Schema 和 `test-prompts.json`；
+6. codebase-memory、graphify 和 codegraph 索引。
 
-**输入**：probe 扫描出的文章列表（≤100 篇时全量，>100 篇时抽样 60 篇覆盖时间窗口）
-**输出**：追加到各 research 文件末尾（不覆盖已有内容），标注 `> 来源：[probe 窗口]` 引用
+不得手改 graphify 生成图；必须由工具重新生成。
 
-### Step 4: SKILL.md 更新（1-2h）
+### 5. 验证
 
-基于 research 增量，更新：
-- 模型证据段（如有新证据）
-- 2026 特化段落（如有新内容）
-- 决策启发式（如有新启发式）
-- 时间线和最新动态
-- 诚实边界（如数据窗口有变）
-- CHANGELOG 追加热身
+- taxonomy、模型文档、启发式 catalog、Skill、Schema 和测试中的当前 ID 集合一致；
+- 520 篇角色覆盖完整，无重叠、无未解释正文；
+- 当前分类覆盖 520 篇，未决状态显式保留；
+- current 指针 SHA 与不可变 artifact 一致；
+- MCP 能召回作者原文，但候选结论必须回读 `author_primary`；
+- 所有相关单元测试、集成测试和 `git diff --check` 通过。
 
-**规则**：改动后 `wc -l SKILL.md` 不超过原 150%（当前 768 × 1.5 = 1152）。
+## 新文章解读维护
 
-### Step 5: Test-prompts 增量（30 min）
+权威文件：
 
-对新增/修改的模型或启发式，追加 1-3 条 test case。
-**格式**：`{"id": N, "prompt": "...", "expected": "..."}`
+- Schema：`references/schemas/article-interpretation.schema.json`；
+- 跨对象语义校验：`scripts/validate_article_interpretation.py`；
+- 模板：`references/templates/article-interpretation.md`；
+- 入口：`SKILL.md` 和 `SKILL.core.md`；
+- 回归：`tests/test_article_interpretation_contract.py` 与 `test-prompts.json`。
 
-### Step 6: Full_test + Darwin 评估（1-2h）
+维护时必须保持：
 
-1. 用 `SKILL.core.md`（240 行）作为 agent prompt 注入
-2. 回归跑全部 20 case + 新 case
-3. 存档 agent 输出到 `evals/full_test_outputs/vN-case-*.txt`
-4. Darwin v2.0 评分 9 维
-5. 写入 `evals/0N-post-rN.json` → **写前先查 `evals/METHODOLOGY.md` "Eval 自检清单"**（防 R1/v1.5 同源错误：跳过存档直接写 JSON）
-6. 更新 `results.tsv`
+- 输入默认一次性，不自动改变 corpus；
+- 二次解读默认归为分析者推断；
+- 历史关系枚举封闭；
+- 非 `no_evidence` 关系必须回到作者一级原文；
+- 每个 Claim 必须与一个历史关系结果绑定，且通过 Schema 与跨对象语义校验；
+- 文章解释简报和股票报告按用户意图分流；
+- 历史未命中只表示当前 520 篇语料内无证据。
 
-### Step 7: 落盘 + CHANGELOG（30 min）
+## 当前 taxonomy
 
-```
-git add -A bingbingxiaomei-perspective/
-git commit -m "vN+1: [改动摘要]"
-```
-更新 `CHANGELOG.md` 追加版本条目。
+模型：`m01`、`m02`、`m03`、`m04`、`m05`、`m06`。
 
----
+启发式：`h01`、`h02`、`h03`、`h04`、`h05`、`h06`、`h07`、`h08`、`h09`。
 
-## 决策规则
+不要在维护文档复制完整定义；定义、状态、证据与映射统一从 taxonomy 读取。
 
-### 新模型晋升
-```
-翻倍（≥4 → ≥8 篇）+ 跨域 ≥3 独立板块 → 晋升
-不满足 → 注入到现有模型的特化段落
-```
+## 回退规则
 
-### 新启发式晋升
-```
-跨域 ≥3 板块 + 边界清晰 + 不与现有启发式重复 → 晋升
-不满足 → 观察中候选
-```
-
-### 观察中候选管理
-在 SKILL.md 末尾维护"观察中候选"section，标注：
-- 主题名称 + 当前频次 + 跨域板块数 + 晋升条件
-
-### 模型/启发式过期
-```
-当某个启发式的"前提条件"中标注的外部事件发生时（如"假设 AI 革命持续"→ AI 泡沫破灭），
-立即标注过期并回退到基础三要素。
-```
-
----
-
-## 复用资源
-
-| 资源 | 路径 | 用途 |
-|------|------|------|
-| Agent 提示词 | `evals/agent-prompts.md` | 3 路 Agent 并行 research |
-| Probe 模板 | `evals/probe-*/run_probe.py` | 新文章频率/关键词扫描 |
-| 评估方法学 | `evals/METHODOLOGY.md` | Darwin 评分标准 + 分数解读 |
-| 变更日志 | `CHANGELOG.md` | 版本记录 + 评估快照 |
-| 测试用例 | `test-prompts.json` | full_test 回归 |
-| Core 提示词 | `SKILL.core.md` | agent prompt 注入 |
-
----
-
-## 限制
-
-- **不上 GitHub** — 无 CI/CD 自动化
-- **不做本地 cron** — 手动触发，不做 Windows Task Scheduler
-- **数据更新靠人工** — articles/ 依赖外部 vault `D:\Temp\karpathy-llm-wiki-vault`
-- **no blind baseline per update** — 仅重大版本（v2.0）做完整 blind baseline；小版本（v1.N）只跑 agent_spawn
-
----
-
-## 当前待执行
-
-| 项 | 紧迫度 | 关联 |
-|----|--------|------|
-| Stage 2: R5 补做（6/13-22 + 2025）| ✅ 已完成 | commit `0ef1332`/`f9f379e`，research/ 6 文件 +1,465 行 |
-| Stage 3: scripts/classify-articles.py | ✅ 已完成 | commit `29ffc0f`，411 行 + 363 篇全量分类 |
-| Stage 4: 模型 1 关联词权重调优 | ✅ 已完成 | commit `3410b9b`，0.2→0.05，命中率 34.4%→23.7% 落入目标区间 |
-| 下次：扫描 6/23 之后新文章 | 🟢 监控 | 触发条件 1（新文章 ≥30）|
+- 原文不回退、不覆盖；
+- 旧分类和历史 eval 保留为 legacy baseline；
+- 新 taxonomy 或 current 未通过 Gate 时，默认入口继续指向上一个已验证版本；
+- 索引失败时如实记录 fail/deferred，不把候选索引状态写成 pass；
+- 任何持久化、Git 提交或外部发布都需要当轮明确授权。

@@ -1,0 +1,25 @@
+{
+  "nodes": [
+    {"id":"references_research_06-timeline_体系三要素提出","label":"2023-05-20体系三要素首次系统提出","file_type":"document","source_file":"references/research/06-timeline.md","source_location":null,"source_url":null,"captured_at":null,"author":"冰冰小美","contributor":null},
+    {"id":"references_research_06-timeline_2025风险信息时间窗口","label":"2025 风险、信息层级与时间窗口系统化","file_type":"document","source_file":"references/research/06-timeline.md","source_location":"2025全年","source_url":null,"captured_at":null,"author":"冰冰小美","contributor":null},
+    {"id":"references_research_06-timeline_4200flag达成","label":"2026-05-11 4200点Flag达成","file_type":"document","source_file":"references/research/06-timeline.md","source_location":null,"source_url":null,"captured_at":null,"author":"冰冰小美","contributor":null},
+    {"id":"references_research_06-timeline_流动性挤压","label":"2026-05-26 流动性挤压概念首次提出","file_type":"document","source_file":"references/research/06-timeline.md","source_location":null,"source_url":null,"captured_at":null,"author":"冰冰小美","contributor":null},
+    {"id":"references_research_06-timeline_泡沫新定义","label":"2026-06-09 泡沫新定义Mark级观点","file_type":"document","source_file":"references/research/06-timeline.md","source_location":null,"source_url":null,"captured_at":null,"author":"冰冰小美","contributor":null},
+    {"id":"references_research_06-timeline_500年文明史","label":"2026-06-17 500年文明史视角首现","file_type":"document","source_file":"references/research/06-timeline.md","source_location":null,"source_url":null,"captured_at":null,"author":"冰冰小美","contributor":null},
+    {"id":"references_research_06-timeline_格林斯潘悼文","label":"2026-06-22 格林斯潘100岁去世悼文","file_type":"document","source_file":"references/research/06-timeline.md","source_location":null,"source_url":null,"captured_at":null,"author":"冰冰小美","contributor":null},
+    {"id":"bingbingxiaomei_perspective_references_research_g1_local_batch_05_document","label":"G1 Local Corpus Reread Batch 05","file_type":"document","source_file":"references/research/g1-local/batch-05.md","source_location":null,"source_url":null,"captured_at":null,"author":null,"contributor":null},
+    {"id":"bingbingxiaomei_perspective_references_research_g1_local_batch_05_candidate_taxonomy","label":"Candidate Taxonomy","file_type":"concept","source_file":"references/research/g1-local/batch-05.md","source_location":null,"source_url":null,"captured_at":null,"author":null,"contributor":null}
+  ],
+  "edges": [
+    {"source":"references_research_06-timeline_体系三要素提出","target":"references_research_01-writings_体系三要素","relation":"shares_data_with","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"references/research/06-timeline.md","source_location":null,"weight":1.0},
+    {"source":"references_research_06-timeline_4200flag达成","target":"references_research_05-decisions_4200flag","relation":"shares_data_with","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"references/research/06-timeline.md","source_location":null,"weight":1.0},
+    {"source":"references_research_06-timeline_流动性挤压","target":"references_research_01-writings_流动性挤压","relation":"shares_data_with","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"references/research/06-timeline.md","source_location":null,"weight":1.0},
+    {"source":"references_research_06-timeline_泡沫新定义","target":"references_research_01-writings_泡沫新定义","relation":"shares_data_with","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"references/research/06-timeline.md","source_location":null,"weight":1.0},
+    {"source":"references_research_06-timeline_500年文明史","target":"references_research_01-writings_500年文明周期","relation":"shares_data_with","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"references/research/06-timeline.md","source_location":null,"weight":1.0},
+    {"source":"references_research_06-timeline_格林斯潘悼文","target":"references_research_01-writings_格林斯潘","relation":"shares_data_with","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"references/research/06-timeline.md","source_location":null,"weight":1.0},
+    {"source":"bingbingxiaomei_perspective_references_research_g1_local_batch_05_document","target":"bingbingxiaomei_perspective_references_research_g1_local_batch_05_candidate_taxonomy","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"references/research/g1-local/batch-05.md","source_location":null,"weight":1.0}
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

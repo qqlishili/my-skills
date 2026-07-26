@@ -2,6 +2,7 @@ import importlib.util
 import json
 import tempfile
 import unittest
+from datetime import datetime
 from pathlib import Path
 
 
@@ -154,6 +155,68 @@ class ClassificationPipelineTests(unittest.TestCase):
         self.assertIn("evidence_snippets", output["per_article"][0])
         self.assertNotIn("top_models", output["per_article"][0])
 
+    def test_loaded_corpus_digest_is_derived_from_actual_article_bytes(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            articles_dir = Path(tmp)
+            first = articles_dir / "2026-07-24 120000_冰冰小美_第一篇.md"
+            second = articles_dir / "2026-07-24 130000_冰冰小美_第二篇.md"
+            first.write_text("第一篇正文", encoding="utf-8")
+            second.write_text("第二篇正文", encoding="utf-8")
+            articles = [
+                {"fname": first.name},
+                {"fname": second.name},
+            ]
+            expected_records = [
+                {
+                    "path": path.name,
+                    "sha256": self.classifier.hashlib.sha256(
+                        path.read_bytes()
+                    ).hexdigest(),
+                    "bytes": len(path.read_bytes()),
+                }
+                for path in (first, second)
+            ]
+            loaded = self.classifier.load_articles(
+                *self.classifier.parse_date_range(
+                    "2026-07-24",
+                    "2026-07-24",
+                ),
+                articles_dir,
+            )
+            first.write_text("分类加载后发生变化", encoding="utf-8")
+            snapshot = self.classifier.scan_loaded_corpus(articles_dir, loaded)
+
+        self.assertEqual(snapshot["file_count"], 2)
+        self.assertEqual(
+            snapshot["corpus_digest"],
+            self.classifier.sha256_json(expected_records),
+        )
+
+    def test_current_update_rejects_noncanonical_corpus_digest(self):
+        with self.assertRaisesRegex(ValueError, "corpus digest mismatch"):
+            self.classifier.require_canonical_corpus(
+                "actual-digest",
+                {"corpus_digest": "canonical-digest"},
+            )
+
+    def test_end_date_includes_articles_later_that_day(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            articles_dir = Path(tmp)
+            article = articles_dir / "2026-07-24 235959_冰冰小美_当天末尾.md"
+            article.write_text("正文", encoding="utf-8")
+            start, end_exclusive = self.classifier.parse_date_range(
+                "2026-07-24",
+                "2026-07-24",
+            )
+
+            loaded = self.classifier.load_articles(
+                start,
+                end_exclusive,
+                articles_dir,
+            )
+
+        self.assertEqual([item["fname"] for item in loaded], [article.name])
+
     def test_analyzer_reads_current_pointer_and_validates_current_ids(self):
         current_data = {
             "schema_version": 2,
@@ -188,6 +251,161 @@ class ClassificationPipelineTests(unittest.TestCase):
         self.assertEqual(summary["mode"], "current")
         self.assertEqual(summary["model_counts"], {"m01": 1})
         self.assertEqual(summary["unresolved_count"], 0)
+
+    def test_current_pointer_records_artifact_contract_and_checksum(self):
+        output = self.classifier.build_output(
+            [],
+            self.taxonomy,
+            self.taxonomy_digest,
+            corpus_digest="corpus-digest",
+            timestamp="2026-07-26T120000",
+        )
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_path = Path(tmp)
+            artifact = self.classifier.output_json(output, tmp_path)
+            pointer_path = self.classifier.write_current_pointer(
+                artifact,
+                output,
+                tmp_path / "current.json",
+            )
+            pointer = json.loads(pointer_path.read_text(encoding="utf-8"))
+
+            self.assertEqual(pointer["path"], artifact.name)
+            self.assertEqual(pointer["total_articles"], 0)
+            self.assertEqual(pointer["unresolved_count"], 0)
+            self.assertEqual(pointer["corpus_digest"], "corpus-digest")
+            self.assertEqual(pointer["taxonomy_digest"], self.taxonomy_digest)
+            self.assertEqual(
+                self.analyzer.resolve_input_path(None, pointer_path),
+                artifact,
+            )
+
+    def test_classification_artifact_refuses_same_timestamp_overwrite(self):
+        output = self.classifier.build_output(
+            [],
+            self.taxonomy,
+            self.taxonomy_digest,
+            corpus_digest="corpus-digest",
+            timestamp="2026-07-26T120000000000",
+        )
+        with tempfile.TemporaryDirectory() as tmp:
+            self.classifier.output_json(output, tmp)
+            with self.assertRaises(FileExistsError):
+                self.classifier.output_json(output, tmp)
+
+    def test_default_current_rejects_noncanonical_source_paths(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            custom = Path(tmp)
+            with self.assertRaisesRegex(ValueError, "canonical taxonomy"):
+                self.classifier.require_canonical_current_target(
+                    custom / "taxonomy.json",
+                    self.classifier.ARTICLES_DIR,
+                    self.classifier.OUTDIR,
+                )
+            with self.assertRaisesRegex(ValueError, "canonical articles"):
+                self.classifier.require_canonical_current_target(
+                    self.classifier.TAXONOMY_PATH,
+                    custom / "articles",
+                    self.classifier.OUTDIR,
+                )
+
+            self.classifier.require_canonical_current_target(
+                custom / "taxonomy.json",
+                custom / "articles",
+                custom / "output",
+            )
+
+    def test_analyzer_rejects_current_pointer_checksum_mismatch(self):
+        output = self.classifier.build_output(
+            [],
+            self.taxonomy,
+            self.taxonomy_digest,
+            corpus_digest="corpus-digest",
+            timestamp="2026-07-26T120000",
+        )
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_path = Path(tmp)
+            artifact = self.classifier.output_json(output, tmp_path)
+            pointer_path = self.classifier.write_current_pointer(
+                artifact,
+                output,
+                tmp_path / "current.json",
+            )
+            artifact.write_text("{}", encoding="utf-8")
+
+            with self.assertRaisesRegex(ValueError, "checksum mismatch"):
+                self.analyzer.resolve_input_path(None, pointer_path)
+
+    def test_analyzer_keeps_plain_text_pointer_compatibility(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_path = Path(tmp)
+            artifact = tmp_path / "classification.json"
+            pointer_path = tmp_path / "current.txt"
+            artifact.write_text("{}", encoding="utf-8")
+            pointer_path.write_text(artifact.name, encoding="utf-8")
+
+            self.assertEqual(
+                self.analyzer.resolve_input_path(None, pointer_path),
+                artifact,
+            )
+
+    def test_review_queue_covers_all_unresolved_and_four_per_model(self):
+        articles = []
+        for model in self.taxonomy["models"]:
+            for index in range(5):
+                articles.append(
+                    {
+                        "article": f"{model['id']}-{index}",
+                        "fname": f"{model['id']}-{index}.md",
+                        "primary_model_id": model["id"],
+                        "model_candidates": [
+                            {"id": model["id"], "score": 3}
+                        ],
+                        "candidate_heuristics": [],
+                        "evidence_snippets": [],
+                        "confidence": 0.8 - index * 0.01,
+                        "unresolved": False,
+                    }
+                )
+        for index in range(3):
+            articles.append(
+                {
+                    "article": f"unresolved-{index}",
+                    "fname": f"unresolved-{index}.md",
+                    "primary_model_id": None,
+                    "model_candidates": [],
+                    "candidate_heuristics": [],
+                    "evidence_snippets": [],
+                    "confidence": 0.0,
+                    "unresolved": True,
+                }
+            )
+        data = {
+            "schema_version": 2,
+            "timestamp": "2026-07-26T120000",
+            "corpus_digest": "corpus-digest",
+            "taxonomy_digest": self.taxonomy_digest,
+            "per_article": articles,
+        }
+
+        queue = self.analyzer.build_review_queue(data, per_model=4)
+
+        self.assertEqual(queue["unresolved_total"], 3)
+        self.assertEqual(queue["model_sample_counts"], {
+            model["id"]: 4 for model in self.taxonomy["models"]
+        })
+        self.assertEqual(queue["queued_total"], 27)
+        self.assertEqual(
+            len({item["fname"] for item in queue["items"]}),
+            27,
+        )
+        self.assertTrue(
+            all(item["review_status"] == "pending" for item in queue["items"])
+        )
+        self.assertEqual(
+            sum("unresolved" in item["review_reasons"] for item in queue["items"]),
+            3,
+        )
 
     def test_analyzer_accepts_explicit_legacy_file_as_read_only_history(self):
         legacy_data = {
@@ -254,6 +472,40 @@ class ClassificationPipelineTests(unittest.TestCase):
             )
             with self.assertRaisesRegex(ValueError, "taxonomy digest mismatch"):
                 self.analyzer.analyze_file(path, TAXONOMY_PATH)
+
+    def test_analyzer_counts_verified_heuristics_for_adjudicated_output(self):
+        adjudicated = {
+            "schema_version": 2,
+            "classification_stage": "adjudicated",
+            "taxonomy_digest": self.taxonomy_digest,
+            "corpus_digest": "corpus-digest",
+            "per_article": [
+                {
+                    "article": "reviewed",
+                    "primary_model_id": "m03",
+                    "candidate_heuristics": [{"id": "h01", "score": 1}],
+                    "verified_heuristic_ids": ["h04"],
+                    "confidence": 0.35,
+                    "unresolved": False,
+                },
+                {
+                    "article": "unreviewed",
+                    "primary_model_id": "m01",
+                    "candidate_heuristics": [{"id": "h01", "score": 2}],
+                    "confidence": 0.8,
+                    "unresolved": False,
+                }
+            ],
+        }
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "adjudicated.json"
+            path.write_text(
+                json.dumps(adjudicated, ensure_ascii=False),
+                encoding="utf-8",
+            )
+            summary = self.analyzer.analyze_file(path, TAXONOMY_PATH)
+
+        self.assertEqual(summary["heuristic_counts"], {"h04": 1})
 
 
 if __name__ == "__main__":

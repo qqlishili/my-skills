@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "path": "classification-adjudicated-2026-07-26T154025081805.json",
+  "sha256": "abc1eb1bae3ff3c0de17db122ab0ecc929765d0442d9aaa469502961387ba5f0",
+  "artifact_timestamp": "2026-07-26T154025081805",
+  "total_articles": 520,
+  "unresolved_count": 228,
+  "corpus_digest": "aa562d951deba34430f5ce9a7f7615c9aed9050d8355167e5d77d95d26696fcf",
+  "taxonomy_digest": "9f2e28c67a120daaca6f44262c7152d9b17b4b89bab41ecfe3aa1b9cad0a9e04",
+  "classification_stage": "adjudicated"
+}

@@ -1,0 +1,303 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "article-interpretation.schema.json",
+  "title": "冰冰小美新文章解读契约",
+  "description": "定义一次性新文章输入与文章解释简报输出；新输入不会自动加入 520 篇 corpus。",
+  "oneOf": [
+    {"$ref": "#/$defs/input"},
+    {"$ref": "#/$defs/brief"}
+  ],
+  "$defs": {
+    "line_span": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["start_line", "end_line"],
+      "properties": {
+        "start_line": {"type": "integer", "minimum": 1},
+        "end_line": {"type": "integer", "minimum": 1}
+      },
+      "$comment": "start_line <= end_line is enforced by scripts/validate_article_interpretation.py."
+    },
+    "source_span": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["start_line", "end_line", "quote"],
+      "properties": {
+        "start_line": {"type": "integer", "minimum": 1},
+        "end_line": {"type": "integer", "minimum": 1},
+        "quote": {"type": "string", "minLength": 1, "maxLength": 500}
+      },
+      "$comment": "start_line <= end_line is enforced by scripts/validate_article_interpretation.py."
+    },
+    "input": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema_version", "input_mode", "article_text"],
+      "properties": {
+        "schema_version": {"const": 1},
+        "input_mode": {"const": "ephemeral", "default": "ephemeral"},
+        "article_text": {"type": "string", "minLength": 1},
+        "title": {"type": ["string", "null"]},
+        "published_at": {"type": ["string", "null"], "format": "date-time"},
+        "source_url": {"type": ["string", "null"], "format": "uri"},
+        "declared_author": {"type": ["string", "null"]}
+      }
+    },
+    "input_segment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["segment_id", "role", "line_span", "text"],
+      "properties": {
+        "segment_id": {"type": "string", "pattern": "^s[0-9]{2,}$"},
+        "role": {
+          "enum": ["quoted_source", "analyst_text", "external_context", "unknown"]
+        },
+        "line_span": {"$ref": "#/$defs/line_span"},
+        "text": {"type": "string", "minLength": 1}
+      }
+    },
+    "claim": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "claim_id",
+        "input_segment_id",
+        "input_segment_role",
+        "source_span",
+        "claim_type",
+        "normalized_concept",
+        "statement",
+        "confidence"
+      ],
+      "properties": {
+        "claim_id": {"type": "string", "pattern": "^c[0-9]{2,}$"},
+        "input_segment_id": {"type": "string", "pattern": "^s[0-9]{2,}$"},
+        "input_segment_role": {
+          "enum": ["quoted_source", "analyst_text", "external_context", "unknown"]
+        },
+        "source_span": {"$ref": "#/$defs/source_span"},
+        "claim_type": {
+          "enum": [
+            "author_quote",
+            "author_judgement",
+            "analyst_inference",
+            "external_fact"
+          ]
+        },
+        "normalized_concept": {"type": "string", "minLength": 1},
+        "statement": {"type": "string", "minLength": 1},
+        "confidence": {"type": "number", "minimum": 0, "maximum": 1}
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {"input_segment_role": {"const": "analyst_text"}},
+            "required": ["input_segment_role"]
+          },
+          "then": {"properties": {"claim_type": {"const": "analyst_inference"}}}
+        },
+        {
+          "if": {
+            "properties": {"input_segment_role": {"const": "external_context"}},
+            "required": ["input_segment_role"]
+          },
+          "then": {"properties": {"claim_type": {"const": "external_fact"}}}
+        },
+        {
+          "if": {
+            "properties": {"input_segment_role": {"const": "unknown"}},
+            "required": ["input_segment_role"]
+          },
+          "then": {
+            "properties": {
+              "claim_type": {"enum": ["analyst_inference", "external_fact"]}
+            }
+          }
+        }
+      ]
+    },
+    "historical_evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "article_path",
+        "segment_id",
+        "role",
+        "evidence_eligibility",
+        "line_span",
+        "quote",
+        "retrieval_method",
+        "verified_against_primary_text"
+      ],
+      "properties": {
+        "article_path": {
+          "type": "string",
+          "pattern": "^references/sources/articles/(?!.*\\.\\.)[^\\r\\n]+\\.md$"
+        },
+        "segment_id": {"type": "string", "minLength": 1},
+        "role": {"enum": ["author_post", "author_reply"]},
+        "evidence_eligibility": {"const": "author_primary"},
+        "line_span": {"$ref": "#/$defs/line_span"},
+        "quote": {"type": "string", "minLength": 1, "maxLength": 500},
+        "retrieval_method": {
+          "enum": ["exact", "lexical", "semantic_candidate", "graph_candidate"]
+        },
+        "verified_against_primary_text": {"const": true}
+      }
+    },
+    "historical_relation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["relation", "historical_evidence", "reasoning", "confidence"],
+      "properties": {
+        "relation": {
+          "enum": [
+            "repeats",
+            "extends",
+            "narrows",
+            "revises",
+            "contradicts",
+            "applies",
+            "no_evidence"
+          ]
+        },
+        "historical_evidence": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/historical_evidence"}
+        },
+        "reasoning": {"type": "string", "minLength": 1},
+        "confidence": {"type": "number", "minimum": 0, "maximum": 1}
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {"relation": {"const": "no_evidence"}},
+            "required": ["relation"]
+          },
+          "then": {"properties": {"historical_evidence": {"maxItems": 0}}},
+          "else": {"properties": {"historical_evidence": {"minItems": 1}}}
+        }
+      ]
+    },
+    "claim_result": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["claim", "historical_relation"],
+      "properties": {
+        "claim": {"$ref": "#/$defs/claim"},
+        "historical_relation": {"$ref": "#/$defs/historical_relation"}
+      },
+      "description": "每个 Claim 与且仅与一个历史关系结果绑定；没有一级证据时该结果必须是 no_evidence。"
+    },
+    "taxonomy_mapping": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "model_ids", "heuristic_ids", "reasoning"],
+      "properties": {
+        "status": {"enum": ["mapped", "unavailable_before_G2"]},
+        "model_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"enum": ["m01", "m02", "m03", "m04", "m05", "m06"]}
+        },
+        "heuristic_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": ["h01", "h02", "h03", "h04", "h05", "h06", "h07", "h08", "h09"]
+          }
+        },
+        "reasoning": {"type": "string", "minLength": 1}
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {"status": {"const": "unavailable_before_G2"}},
+            "required": ["status"]
+          },
+          "then": {
+            "properties": {
+              "model_ids": {"maxItems": 0},
+              "heuristic_ids": {"maxItems": 0}
+            }
+          }
+        }
+      ]
+    },
+    "brief": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version",
+        "input",
+        "input_summary",
+        "document_type",
+        "input_segments",
+        "claim_results",
+        "taxonomy_mapping",
+        "supporting_evidence",
+        "counter_evidence",
+        "unknowns",
+        "honesty_boundaries"
+      ],
+      "properties": {
+        "schema_version": {"const": 1},
+        "input": {"$ref": "#/$defs/input"},
+        "input_summary": {"type": "string", "minLength": 1},
+        "document_type": {
+          "enum": ["primary_article", "secondary_analysis", "mixed", "unknown"]
+        },
+        "input_segments": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/input_segment"}
+        },
+        "claim_results": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/claim_result"}
+        },
+        "taxonomy_mapping": {"$ref": "#/$defs/taxonomy_mapping"},
+        "supporting_evidence": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/historical_evidence"}
+        },
+        "counter_evidence": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/historical_evidence"}
+        },
+        "unknowns": {"type": "array", "items": {"type": "string"}},
+        "honesty_boundaries": {"type": "array", "items": {"type": "string"}}
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "document_type": {"enum": ["secondary_analysis", "unknown"]}
+            },
+            "required": ["document_type"]
+          },
+          "then": {
+            "properties": {
+              "claim_results": {
+                "items": {
+                  "properties": {
+                    "claim": {
+                      "properties": {
+                        "claim_type": {"not": {"const": "author_judgement"}}
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "$comment": "ID uniqueness, segment references and line ordering are enforced by scripts/validate_article_interpretation.py."
+    }
+  }
+}
