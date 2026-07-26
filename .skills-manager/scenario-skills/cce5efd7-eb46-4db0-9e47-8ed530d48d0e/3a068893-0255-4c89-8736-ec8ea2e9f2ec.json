@@ -6,6 +6,7 @@
   "tools": {
     "claude_code": true,
     "codex": true,
+    "grok": true,
     "opencode": true,
     "pi": true,
     "workbuddy": true

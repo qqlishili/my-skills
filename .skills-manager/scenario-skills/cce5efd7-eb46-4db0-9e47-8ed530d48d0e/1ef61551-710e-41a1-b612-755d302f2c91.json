@@ -9,6 +9,7 @@
     "codex": true,
     "gemini_cli": true,
     "github_copilot": true,
+    "grok": true,
     "openclaw": true,
     "opencode": true,
     "pi": true,
