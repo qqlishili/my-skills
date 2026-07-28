@@ -6,6 +6,7 @@
   "tools": {
     "claude_code": true,
     "codex": true,
+    "github_copilot": true,
     "grok": true,
     "opencode": true,
     "pi": true,
