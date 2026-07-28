@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "b1a1c4e1-92db-49e9-b8ae-6e89622ff509",
+  "path": "batch-grill-me",
+  "path_key": "batch-grill-me",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/mattpocock/skills",
+    "subpath": "skills\\in-progress\\batch-grill-me",
+    "branch": null
+  }
+}
