@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "8b25d917-aaa0-45ac-a5e7-fe277dac2349",
+  "path": "team-mode",
+  "path_key": "team-mode",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/oil-oil/codex-team-mode",
+    "subpath": "skills\\team-mode",
+    "branch": null
+  }
+}
