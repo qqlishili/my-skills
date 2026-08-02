@@ -6,8 +6,9 @@ Read this reference only when the user asks to assess Team Mode's routing, Agent
 
 1. Record the root task ID, repository or artifact baseline, acceptance checks, and installed role-to-model mapping.
 2. Verify actual child runtime metadata from local traces: `agent_role`, `model`, `effort`, and effective sandbox. Configuration files alone do not prove runtime selection or isolation.
-3. Choose the smallest useful delegation. Keep a comparable slice in the main thread when the goal includes comparing delegation with direct work.
-4. Give different Agents independent slices or one stable writer boundary. Do not create duplicate work solely to produce a benchmark.
+3. Treat a custom profile's TOML effort as authoritative unless the runtime trace proves an override. Passing `reasoning_effort` to `spawn_agent` does not by itself establish an A/B trial; use isolated CLI sessions or separately configured profiles when comparing effort levels.
+4. Choose the smallest useful delegation. Keep a comparable slice in the main thread when the goal includes comparing delegation with direct work.
+5. Give different Agents independent slices or one stable writer boundary. Do not create duplicate work solely to produce a benchmark.
 
 ## Measure What Happened
 
@@ -39,11 +40,11 @@ When a child fails, inspect the shared target before counting the attempt as los
 ## Interpret The Roles
 
 - Keep `Explorer` on a lower-cost model when it reliably returns compact evidence and prevents noisy discovery from entering the main context. Remove it from short tasks whose sources the main thread must inspect anyway.
-- Keep `Executor` on a lower-cost model for bounded work when its output passes deterministic checks with little rework. Escalate only when unresolved judgment or failure impact exceeds the role.
-- Use `Complex Executor` when the main thread has already fixed the important decisions and substantial execution still benefits from isolated deep reasoning.
-- Use `Reviewer` when independent judgment can catch consequential or hard-to-verify mistakes. Do not make it an automatic final stage.
+- Use `Executor` for both small and substantial bounded work when the main thread has fixed unresolved decisions and deterministic checks exist. Measure whether Luna High enables useful multi-file execution with little rework; do not assume Max is more reliable without completed-return evidence.
+- Prefer improving decomposition and launching independent Executor slices in parallel before moving bounded implementation back into the main thread.
+- Use one `Reviewer` for a concrete unresolved risk. After substantial code changes, evaluate the three-lens Simplify review as one coordinated route: code quality, performance, and reuse.
 
-Evaluate a Complex Executor inside the real controlled workflow, not only as a standalone author: measure the candidate plus main-thread inspection and bounded repair. Strong main-thread acceptance can close observable implementation gaps cheaply. It cannot reliably compensate for a plausible but product-weaker architecture that passes shallow checks, so route novel architecture, weak or visual oracles, export/compiler behavior, and high-consequence rollback or security judgment back to the main thread and use a risk-focused Reviewer only when needed.
+Evaluate an Executor inside the real controlled workflow, including the candidate, main-thread inspection, and bounded repair. Strong main-thread acceptance can close observable implementation gaps cheaply. It cannot reliably compensate for a plausible but product-weaker architecture that passes shallow checks, so keep novel architecture, weak or visual oracles, export/compiler behavior, and high-consequence rollback or security judgment in the main thread.
 
 Prefer changing routing thresholds or brief quality before upgrading every role's model or reasoning effort. Change a profile only when repeated task-scoped evidence shows a role cannot meet its boundary.
 

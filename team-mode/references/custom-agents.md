@@ -4,7 +4,7 @@ Read this reference only when the expected custom Agent profiles or `default` di
 
 ## Run Onboarding Once
 
-Do not inspect these files or repeat onboarding during each Team Mode task. The active `spawn_agent.agent_type` choices and descriptions are sufficient readiness evidence: when the four working profiles are selectable and `default` is described as the dispatch guard, continue normal routing without loading this reference again.
+Do not inspect these files or repeat onboarding during each Team Mode task. The active `spawn_agent.agent_type` choices and descriptions are sufficient readiness evidence: when the three working profiles are selectable and `default` is described as the dispatch guard, continue normal routing without loading this reference again.
 
 Run onboarding only for a first installation, a missing or mismatched profile, an explicit verification request, or a user-requested move, disable, restore, or customization. Configuration changes require user authorization. After setup or repair, report the installed scope and paths, all role-to-model mappings, the guard's behavioral effect, restart or new-task requirements, and the reversible disable/restore instructions below.
 
@@ -20,9 +20,10 @@ Some GPT-5.6 Sol sessions select MultiAgent V2 from model metadata and can defau
 
 If the active schema is missing `agent_type`, or a fresh explicit-profile probe inherits the parent model instead of the profile model:
 
-1. Do not silently use a generic child or claim Team Mode is ready.
-2. Tell the user that the active runtime has the Sol/MultiAgent V2 routing regression and ask before changing personal or project Codex configuration.
-3. If authorized, replace—not alongside—a scalar `multi_agent_v2 = true` entry with this table, then open a new Codex task or restart before re-testing:
+1. Do not silently use a generic child or claim Team Mode is ready. Report that custom-profile routing is unavailable.
+2. If the parent is not GPT-5.6 Sol, or runtime evidence does not confirm the MultiAgent V2 metadata-hiding behavior, do not apply the workaround below. Update or restart Codex, open a new task, and inspect the schema again.
+3. Only when the parent is GPT-5.6 Sol and the regression is confirmed, tell the user the specific cause and ask before changing personal or project Codex configuration.
+4. If authorized, replace—not alongside—a scalar `multi_agent_v2 = true` entry with this table, then open a new Codex task or restart before re-testing:
 
    ```toml
    [features.multi_agent_v2]
@@ -31,7 +32,7 @@ If the active schema is missing `agent_type`, or a fresh explicit-profile probe 
    ```
 
    TOML cannot define both `features.multi_agent_v2 = true` and `[features.multi_agent_v2]`; preserve unrelated configuration and make only that conversion. `tool_namespace = "agents"` addresses the known namespace/schema mismatch reported with the same workaround.
-4. Re-inspect the new task's tool schema and run the controlled guard and explicit Explorer probes below. Treat their runtime traces—not the child self-report—as the acceptance evidence.
+5. Re-inspect the new task's tool schema and run the controlled guard and explicit Explorer probes below. Treat their runtime traces—not the child self-report—as the acceptance evidence.
 
 If `agent_type` remains missing after a restart/new task, update Codex and repeat the schema check. Do not enable undocumented or stale flags from memory. See the current [Codex subagent manual](https://learn.chatgpt.com/docs/agent-configuration/subagents.md).
 
@@ -39,19 +40,18 @@ When spawning, pass the exact working profile name through `agent_type`. `task_n
 
 ## What Must Be Installed
 
-The Skill and custom Agent profiles are separate Codex configuration surfaces. Standard onboarding installs four working profiles plus one fail-closed `default` guard; installing `team-mode` alone does not create them.
+The Skill and custom Agent profiles are separate Codex configuration surfaces. Standard onboarding installs three working profiles plus one fail-closed `default` guard; installing `team-mode` alone does not create them.
 
 Use these exact profile names and recommended defaults:
 
 - `Explorer`（探索者）: `gpt-5.6-luna`, `medium`, `read-only`.
 - `Executor`（执行者）: `gpt-5.6-luna`, `high`, `workspace-write`.
-- `Complex Executor`（复杂执行者）: `gpt-5.6-terra`, `high`, `workspace-write`.
-- `Reviewer`（复审者）: `gpt-5.6-sol`, `high`, `read-only`.
+- `Reviewer`（复审者）: `gpt-5.6-terra`, `medium`, `read-only`.
 - `default`（派发哨兵）: `gpt-5.6-terra`, `low`, `read-only`; it refuses every task and tells the parent to respawn with an explicit working profile.
 
-The guard is not a fifth working role. Codex selects it only when the parent omits `agent_type` or explicitly passes `default`. Its low-cost model minimizes the cost of a routing mistake. Each profile's explicit `model` and `model_reasoning_effort` override the parent for that child only; installing the Terra Low guard does not change a Sol XHigh main thread.
+The guard is not a fourth working role. Codex selects it only when the parent omits `agent_type` or explicitly passes `default`. Its low-cost model minimizes the cost of a routing mistake. Each profile's explicit `model` and `model_reasoning_effort` override the parent for that child only; installing the Terra Low guard does not change the main thread.
 
-These model IDs are repository defaults verified in the intended installation. Terra High is the default substantial executor because the main thread retains architecture decisions and final acceptance; Sol High remains the independent review tier for concrete consequential risks. If a configured model is unavailable, ask before substituting another model, preserve the role boundary, and verify the actual runtime trace after the change.
+These model IDs are the intended installation defaults. Luna High handles bounded execution, while Terra Medium provides the default independent review after the main thread fixes unresolved decisions. If a configured model is unavailable, ask before substituting another model, preserve the role boundary, and verify the actual runtime trace after the change.
 
 Use the canonical templates in the repository's [`agents`](https://github.com/oil-oil/codex-team-mode/tree/main/agents) directory. Do not duplicate or rewrite their developer instructions from memory.
 
@@ -64,7 +64,6 @@ Keep these filenames:
 
 - `Explorer.toml`
 - `Executor.toml`
-- `Complex Executor.toml`
 - `Reviewer.toml`
 - `default.toml`
 
@@ -85,7 +84,7 @@ Current Codex releases default `agents.max_depth` to `1`; keep that default unle
 
 1. Confirm that the user has authorized writing personal or project Codex configuration. Do not silently create global profiles just because a substantial task triggered the Skill.
 2. Inspect the destination directory first. Preserve unrelated profiles. If a same-named file already exists, compare it with the template and ask before replacing user changes.
-3. Copy the five canonical TOML templates to the selected Agent directory with the exact filenames above. The four named working profiles perform tasks; `default.toml` only blocks invalid dispatches.
+3. Copy the four canonical TOML templates to the selected Agent directory with the exact filenames above. The three named working profiles perform tasks; `default.toml` only blocks invalid dispatches.
 4. Parse every file with Python `tomllib` or an equivalent TOML parser. Confirm that each contains `name`, `description`, and `developer_instructions`, plus the intended model, reasoning effort, and sandbox mode.
 5. Report the final path and role-to-model mapping. Explain that a personal `default.toml` affects omitted/default subagent dispatches across the user's Codex tasks, while a project-scoped guard affects only that trusted project configuration scope.
 6. Explain the reversible guard controls below. Do not disable, move, or delete anything unless the user asks.
@@ -93,7 +92,7 @@ Current Codex releases default `agents.max_depth` to `1`; keep that default unle
 
 ## Explain How To Disable The Guard
 
-The onboarding completion message must say that disabling only the guard leaves `Explorer`, `Executor`, `Complex Executor`, and `Reviewer` installed. Prefer a recoverable move outside the active `agents` directory over deletion.
+The onboarding completion message must say that disabling only the guard leaves `Explorer`, `Executor`, and `Reviewer` installed. Prefer a recoverable move outside the active `agents` directory over deletion.
 
 For a personal installation, tell the user they can ask Codex to perform this move or run:
 
@@ -113,7 +112,7 @@ Verify installation by checking the TOML files and their exact `name` fields. Re
 First run one controlled guard self-test: deliberately omit `agent_type`, set `fork_turns="none"`, and give the child a no-tool one-line probe. This onboarding self-test is the only permitted omission. The child must ignore the probe and return exactly:
 
 ```text
-DISPATCH BLOCKED: the delegated task was not executed because agent_type was omitted or set to default. Respawn with agent_type=Explorer, Executor, Complex Executor, or Reviewer.
+DISPATCH BLOCKED: the delegated task was not executed because agent_type was omitted or set to default. Respawn with agent_type=Explorer, Executor, or Reviewer.
 ```
 
 The trace should show `gpt-5.6-terra` with `low` effort. Because the invalid dispatch omitted its role, retained logs may label it `subagent/unknown`; that is expected for this test. If it performs the probe instead, the guard was not loaded: stop the child, verify `default.toml`, then restart or open a new task before trying once more.
@@ -142,7 +141,7 @@ Model availability and cost preferences may differ between Codex environments. T
 Preserve these boundaries when customizing:
 
 - Keep `Explorer` and `Reviewer` read-only.
-- Keep mutation permissions limited to the two executors.
+- Keep mutation permissions limited to the Executor.
 - Keep child fan-out disabled; all standard Team Mode routing stays in the main thread.
 - Keep `Reviewer` independent through the Skill's fresh-context rule.
 - Keep unresolved user intent, product, editorial, architecture, and safety decisions in the main thread.
