@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "5c27cca1-c35c-4598-a6f4-7592e680c2c4",
+  "path": "workbuddy-agent-routing",
+  "path_key": "workbuddy-agent-routing",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "local",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}
