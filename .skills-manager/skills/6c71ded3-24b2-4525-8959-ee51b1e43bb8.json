@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "6c71ded3-24b2-4525-8959-ee51b1e43bb8",
+  "path": "ftshare-market-data",
+  "path_key": "ftshare-market-data",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/FTShare-Lab/FTShare-skills",
+    "subpath": "ftshare-market-data",
+    "branch": null
+  }
+}
