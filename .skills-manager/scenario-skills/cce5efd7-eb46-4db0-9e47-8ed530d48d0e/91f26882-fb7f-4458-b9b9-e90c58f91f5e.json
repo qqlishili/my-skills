@@ -9,10 +9,11 @@
     "codex": true,
     "gemini_cli": true,
     "github_copilot": true,
-    "grok": true,
+    "grok": false,
+    "omp_agent": false,
     "openclaw": true,
     "opencode": true,
-    "pi": true,
+    "pi": false,
     "workbuddy": true
   }
 }

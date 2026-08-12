@@ -8,9 +8,10 @@
     "codebuddy": false,
     "codex": true,
     "github_copilot": true,
-    "grok": true,
+    "grok": false,
+    "omp_agent": false,
     "opencode": true,
-    "pi": true,
+    "pi": false,
     "workbuddy": true
   }
 }
