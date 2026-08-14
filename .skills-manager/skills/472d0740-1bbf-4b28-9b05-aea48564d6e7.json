@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "472d0740-1bbf-4b28-9b05-aea48564d6e7",
+  "path": "ascetic-breaker",
+  "path_key": "ascetic-breaker",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/Square-Q/ascetic-breaker",
+    "subpath": null,
+    "branch": null
+  }
+}
