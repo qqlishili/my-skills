@@ -8,6 +8,7 @@
     "codex": true,
     "grok": true,
     "pi": true,
+    "tdxclaw": true,
     "workbuddy": true
   }
 }
