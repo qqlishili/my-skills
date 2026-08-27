@@ -8,6 +8,7 @@
     "codex": true,
     "deepseek_harness": false,
     "tdxclaw": true,
-    "workbuddy": true
+    "workbuddy": true,
+    "zcode": true
   }
 }
