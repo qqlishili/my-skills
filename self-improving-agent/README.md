@@ -1,138 +1,78 @@
 # Self-Improving Agent
 
-A self-improvement system that captures learning artifacts from skill experiences and proposes validated updates.
+A bounded, redacted learning lifecycle for agent workflows. It separates observation
+from durable behavior change:
 
-## Overview
-
-This agent captures reusable evidence from skill interactions. It implements a feedback loop with memory artifacts, self-correction proposals, and evolution markers. Durable skill or code changes still require validation or explicit approval.
-
-## Key Features
-
-- **Multi-Memory Architecture**: Semantic + Episodic + Working memory
-- **Evidence-Gated Learning**: Captures reusable lessons from skill workflows
-- **Pattern Extraction**: Converts experiences into reusable patterns
-- **Self-Correction**: Fixes skill guidance when errors occur
-- **Self-Validation**: Periodically verifies skill accuracy
-- **Proposal Artifacts**: Writes proposed updates before durable skill changes
-- **Confidence Tracking**: Measures pattern reliability over time
-- **Human-in-the-Loop**: Collects feedback to validate improvements
-
-## Memory System
-
-Current Claude Code hook integration writes to:
-
-```
-~/.claude/memory/
-├── semantic/       # Patterns, rules, best practices
-├── episodic/       # Specific experiences and episodes
-└── working/        # Current session context
+```text
+failure/correction -> candidate -> validated -> applied -> superseded/rollback
 ```
 
-## How It Works
+## What Is Implemented
 
-```
-Any Skill Completes
-        ↓
-Extract Experience → Identify Patterns → Write Proposals → Consolidate Memory
-        ↓                     ↓                  ↓              ↓
-   What happened?    What can we reuse?   Which proposals? Track metrics
-```
+- Claude Code failure-hook capture without storing raw tool input or output
+- Redaction, bounded event records, stable candidate fingerprints, and deduplication
+- Explicit review states: `candidate`, `validated`, `applied`, `rejected`, `superseded`, and `rolled_back`
+- Executable behavior eval artifacts plus an owner/change reference before application
+- Markdown export for Obsidian or another local knowledge notebook
+- Executable CLI tests plus human-scored scenario eval specifications in `evals/`
 
-## Installation
+## Quick Start
+
+Install skills and explicitly enable the Claude failure hook:
 
 ```bash
-apb skills add ./skills/self-improving-agent --scope global --target all --link
+pnpm dlx @codeharbor/agent-playbook init --hooks
 ```
 
-## Hooks (Optional)
+Capture a manual lesson:
 
-Wire hooks to capture errors and session-end signals:
-
-```json
-{
-  "hooks": {
-    "PreToolUse": [
-      {
-        "matcher": "Bash|Write|Edit",
-        "hooks": [
-          { "type": "command", "command": "bash ${SKILLS_DIR}/self-improving-agent/hooks/pre-tool.sh \"$TOOL_NAME\" \"$TOOL_INPUT\"" }
-        ]
-      }
-    ],
-    "PostToolUse": [
-      {
-        "matcher": "Bash",
-        "hooks": [
-          { "type": "command", "command": "bash ${SKILLS_DIR}/self-improving-agent/hooks/post-bash.sh \"$TOOL_OUTPUT\" \"$EXIT_CODE\"" }
-        ]
-      }
-    ],
-    "Stop": [
-      {
-        "matcher": "",
-        "hooks": [
-          { "type": "command", "command": "bash ${SKILLS_DIR}/self-improving-agent/hooks/session-end.sh" }
-        ]
-      }
-    ]
-  }
-}
+```bash
+apb self-improve capture \
+  --kind correction \
+  --summary "Verify the current source before relying on cached state" \
+  --evidence "focused-test"
 ```
 
-## Triggering
+Review the queue, run the behavior eval, then record application only after the owner changes:
 
-### Host-Supported Follow-up
-When the host runtime supports hook follow-ups, this skill can be recorded or run after high-signal workflows such as:
-- prd-planner
-- code-reviewer
-- debugger
-- refactoring-specialist
-- etc.
+```bash
+apb behavior inbox
+apb behavior owners cand-123 --repo .
+apb behavior eval cand-123 --artifact behavior-eval.json
+apb behavior review cand-123 \
+  --decision validate \
+  --reason "confirmed by a representative test" \
+  --eval-result /path/printed/by/the/eval/command.json
 
-### Manual
-```
-"自我进化"
-"self-improve"
-"分析今天的经验"
-"总结这次教训"
-```
+apb behavior proposal cand-123 \
+  --owner "skill:self-improving-agent" \
+  --output behavior-proposal.md
 
-## Example Learning
-
-### Episode
-```yaml
-Skill: debugger
-Situation: Form submission doesn't refresh data
-Root Cause: Empty callback function
-Pattern: Always verify callbacks have implementations
-Confidence: 0.95 → Proposals: debugger, prd-implementation-precheck
+apb self-improve review cand-123 \
+  --decision apply \
+  --reason "installed in the durable owner" \
+  --owner "skill:self-improving-agent" \
+  --change-ref "commit:abc123"
 ```
 
-### Skill Update
-```markdown
-## Proposed Update (2025-01-11)
+Export to a knowledge notebook:
 
-### Pattern Added
-**Callback Verification**: Always verify that callback functions
-passed as props are not empty and actually execute logic.
-
-**Source**: Episode ep-2025-01-11-003 (3 occurrences)
-**Action**: Propose adding to debugger checklist
+```bash
+apb self-improve export --output /path/to/vault/Agent/Learning.md
 ```
 
-## Research Basis
+State defaults to `~/.agent-playbook/self-improvement/`. Set
+`AGENT_PLAYBOOK_DATA_DIR` to use another local root.
 
-- [SimpleMem: Efficient Lifelong Memory](https://arxiv.org/html/2601.02553v1)
-- [ACM Memory Mechanisms Survey](https://dl.acm.org/doi/10.1145/3748302)
-- [Lifelong Learning of LLM Agents](https://arxiv.org/html/2501.07278v1)
+## Safety Model
 
-## Templates
+Automatic capture is limited to failed tool events. It stores a redacted summary
+and generic evidence label, not a transcript or raw tool payload. A candidate
+cannot become an applied rule without a passing executable eval and an explicit
+owner/change reference. Raw eval stdout and stderr are not persisted.
 
-Reusable templates live in `skills/self-improving-agent/templates`:
-- `pattern-template.md`
-- `correction-template.md`
-- `validation-template.md`
+Run `apb conformance` after installation to distinguish locally proven files and
+hook structure from host discovery or runtime invocation that has not been observed.
 
-## License
-
-MIT
+See [learning-lifecycle.md](./references/learning-lifecycle.md) for data and host
+adapter contracts.

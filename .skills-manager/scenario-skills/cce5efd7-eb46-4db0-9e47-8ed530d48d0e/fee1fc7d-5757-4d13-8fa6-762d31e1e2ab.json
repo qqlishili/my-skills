@@ -10,6 +10,7 @@
     "gemini_cli": true,
     "github_copilot": true,
     "grok": false,
+    "hermes": true,
     "omp_agent": false,
     "openclaw": true,
     "opencode": true,
