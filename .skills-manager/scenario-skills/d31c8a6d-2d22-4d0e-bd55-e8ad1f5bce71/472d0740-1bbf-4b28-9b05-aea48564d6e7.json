@@ -8,6 +8,7 @@
     "codex": true,
     "deepseek_harness": false,
     "hermes": false,
+    "hermes_agent_cn_desktop": true,
     "pi": true,
     "tdxclaw": true,
     "workbuddy": true,
