@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "99b7eea2-be7f-4c1d-8ced-22767e12dad7",
+  "path": "x-ui-deploy",
+  "path_key": "x-ui-deploy",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/ystyleb/claude-vpn-skill",
+    "subpath": "skills\\x-ui-deploy",
+    "branch": null
+  }
+}

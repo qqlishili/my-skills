@@ -5,6 +5,8 @@
   "sort_order": 0,
   "tools": {
     "claude_code": true,
+    "codex": true,
+    "hermes_agent_cn_desktop": true,
     "openclaw": true,
     "workbuddy": true
   }
