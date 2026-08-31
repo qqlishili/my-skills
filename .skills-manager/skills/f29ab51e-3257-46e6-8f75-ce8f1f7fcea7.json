@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "f29ab51e-3257-46e6-8f75-ce8f1f7fcea7",
+  "path": "doubao-style",
+  "path_key": "doubao-style",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/stellarkey/doubao-style",
+    "subpath": "skills\\doubao-style",
+    "branch": null
+  }
+}
