@@ -4,9 +4,9 @@
   "skill_id": "f29ab51e-3257-46e6-8f75-ce8f1f7fcea7",
   "sort_order": 0,
   "tools": {
-    "claude_code": true,
-    "codex": true,
-    "hermes_agent_cn_desktop": true,
+    "claude_code": false,
+    "codex": false,
+    "hermes_agent_cn_desktop": false,
     "workbuddy": true
   }
 }
