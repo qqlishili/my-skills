@@ -6,6 +6,7 @@
   "tools": {
     "claude_code": true,
     "codex": true,
+    "hermes": true,
     "hermes_agent_cn_desktop": true,
     "workbuddy": true
   }
