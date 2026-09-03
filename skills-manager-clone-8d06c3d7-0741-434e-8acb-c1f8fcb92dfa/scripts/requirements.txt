@@ -1,3 +1,0 @@
-# v4.0 core: stdlib only (json, hashlib, pathlib, datetime, argparse)
-# Legacy scripts (analyzer.py, session_harvester.py): PyYAML for frontmatter parsing
-PyYAML>=6.0

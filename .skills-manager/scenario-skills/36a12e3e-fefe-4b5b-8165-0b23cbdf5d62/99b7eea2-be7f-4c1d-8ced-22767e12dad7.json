@@ -4,10 +4,10 @@
   "skill_id": "99b7eea2-be7f-4c1d-8ced-22767e12dad7",
   "sort_order": 0,
   "tools": {
-    "claude_code": true,
-    "codex": true,
-    "hermes": true,
+    "claude_code": false,
+    "codex": false,
+    "hermes": false,
     "hermes_agent_cn_desktop": true,
-    "workbuddy": true
+    "workbuddy": false
   }
 }
