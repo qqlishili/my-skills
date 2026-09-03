@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "a65b4caa-b5d3-48a0-9908-93cbf687a617",
+  "path": "stss",
+  "path_key": "stss",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/lennney/stop-that-shit",
+    "subpath": "skills\\stss",
+    "branch": null
+  }
+}
