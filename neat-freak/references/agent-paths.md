@@ -70,3 +70,27 @@ Agent Skills 是开放标准（2025-12 由 Anthropic 开放），已有约 40 �
 - Claude Code memory and CLAUDE.md: <https://code.claude.com/docs/en/memory>
 - OpenAI Codex AGENTS.md: <https://developers.openai.com/codex/guides/agents-md/>
 - OpenAI Codex Memories: <https://learn.chatgpt.com/docs/customization/memories>
+
+## 规则归类决策矩阵（Hermes / 跨平台通用）
+
+遇到一条新规则或一条看起来"位置错"的现有条款，先按四问分类，再决定写/移/删：
+
+| 规则类型 | 判定问题 | 写入位置 | 不要做的事 |
+|---|---|---|---|
+| **项目特定边界/约束** | 删了 → 下次 Agent 在**这个项目**会犯错 | `AGENTS.md` / `CLAUDE.md` / `.claude/rules/` | 不要塞进 docs（Agent 不会读 docs 学规则） |
+| **跨项目操作纪律**（LLM 编码卫生、调试工作流） | 删了 → **任何项目**的 Agent 都会犯错 | Hermes skill（`skill_manage` create）或 user memory | 不要塞进 AGENTS.md（污染项目特定文件） |
+| **事实/偏好**（"用户偏好精简回复"、"用户工作风格"） | 是事实，不是流程 | Hermes user memory（`MEMORY.md` / `USER.md`） | 不要写成 skill（memory 适合事实，skill 适合流程） |
+| **人或下游要读的现役答案**（架构、API 合同、运维） | 读者不是 Agent | `README.md` / `docs/` | 不要塞进 AGENTS.md（Agent 触发而非用户触发） |
+| **历史/单次事件** | 时间性内容 | git / changelog / incident docs | 不要塞进 AGENTS.md（占用注意力预算） |
+
+### AGENTS.md 漂移处理流程（洁癖专项）
+
+发现 AGENTS.md 里有"看起来多余"的小节（用户上一次追加的、复制自其它项目的、与现有条款重复的），按顺序处理：
+
+1. **先用上面决策矩阵分类**——不靠直觉。
+2. **跨项目操作纪律** → 不删，建议升格到 Hermes skill 或并入 user memory。删除 = 丢失用户已经表达的强制约束。
+3. **与现有 AGENTS.md 内同层级条款重复**（如 LLM 编码卫生 vs 已有"奥卡姆剃刀/KISS/YAGNI"）→ 合并或互链，**不直接删**。同一个文件内出现两份并行规则会触发规则冲突。
+4. **项目特定但已过时** → 改写到 `docs/coding_rules.md` 或直接移除，保留 git diff 作为去向证据。
+5. **分类不明** → 标 `pending`，不要在洁癖收尾里强行处置。
+
+> 反面教训：用户曾问"这条规则编码时一定要用，难道不放 AGENTS.md？那放哪里？"——答"删掉"是错的判断。该规则属于跨项目操作纪律，正确路径是升格到 Hermes skill，不是删除。
