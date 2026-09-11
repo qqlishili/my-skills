@@ -7,6 +7,7 @@
     "antigravity": false,
     "claude_code": false,
     "codex": false,
+    "gemini_cli": false,
     "hermes": false,
     "hermes_agent_cn_desktop": true,
     "workbuddy": false
